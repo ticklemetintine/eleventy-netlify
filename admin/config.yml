@@ -1,6 +1,7 @@
 backend: 
   name: git-gateway
   branch: master
+  repo: ticklemetintine/eleventy-netlify
 
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
@@ -18,3 +19,4 @@ collections:
       - { label: "Date", name: "date", widget: "date", default: "" }
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Show in home?", name: "isFeatured", widget: "boolean" }

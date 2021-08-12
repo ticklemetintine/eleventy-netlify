@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Press+Start+2P&display=swap');
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Press Start 2P', cursive;
+
+$black: #000;
+
+$white: #fff;
+
+$neon-pink: #fe019a;
+$neon-blue: #1F51FF;
+$neon-green: #39FF14;
+
+@keyframes color-change {
+    0% { color: $white; }
+    50% { color: $neon-blue; }
+    100% { color: $white; }
+  }

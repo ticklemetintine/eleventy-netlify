@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+<img src="{{ 'images/banner.jpg' | url }}" alt="banner" class="full banner">
+
+<div class="container">
+    <p class="text-center">
+        Hello! Welcome to the Eleventy + Netlify CMS!<br/>
+    </p>
+
+    <p class="heading text-center">
+        Featured Posts
+    </p>
+
+    <ul>
+        {% for post in collections.posts %}
+            <li>
+                <strong>
+                    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+                </strong>
+                -
+                <span>
+                    {{ post.data.description }}
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
