@@ -20,3 +20,16 @@ collections:
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Show in home?", name: "isFeatured", widget: "boolean" }
+  - name: "news"
+    label: "News"
+    folder: "src/news"
+    create: true
+    slug: "{{ slug }}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/news.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Show in home?", name: "isFeatured", widget: "boolean" }

@@ -26,6 +26,7 @@ body {
 
 .main-content {
   min-height: 80vh;
+  padding-bottom: 40px;
 }
 
 .flex {
@@ -36,6 +37,12 @@ body {
 }
 .flex.align-center {
   align-items: center;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.column {
+  flex-direction: column;
 }
 
 .text-center {
@@ -97,6 +104,35 @@ header .menu a:hover:after {
 
 .banner {
   margin-bottom: 40px;
+}
+
+.featured-articles {
+  margin-bottom: 40px;
+}
+.featured-articles .post {
+  width: 30%;
+  border: solid 1px #fe019a;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+  height: inherit;
+  transition: border-color 0.5s ease;
+  color: #fff;
+  text-decoration: none;
+}
+.featured-articles .post:hover {
+  border-color: #39FF14;
+}
+.featured-articles .post img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.featured-articles .post strong {
+  display: block;
+}
+.featured-articles .post span {
+  font-size: 0.875em;
 }
 
 /*# sourceMappingURL=master.css.map */
