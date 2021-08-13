@@ -6,27 +6,42 @@ backend:
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
-collections: 
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "src/pages/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "src/pages/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
   - name: "posts"
     label: "Posts"
     folder: "src/posts"
     create: true
-    slug: "{{ year }}--{{ month }}--{{ day }}--{{ slug }}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
-      - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
-      - { label: "Show in home?", name: "isFeatured", widget: "boolean" }
-  - name: "news"
-    label: "News"
-    folder: "src/news"
-    create: true
-    slug: "{{ slug }}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/news.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "date", default: "" }

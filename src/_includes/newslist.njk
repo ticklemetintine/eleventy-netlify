@@ -1,0 +1,13 @@
+<ul>
+    {% for news in newslist %}
+        <li>
+            <strong>
+                <a href="{{ news.url | url }}">{{ news.data.title }}</a>
+            </strong>
+            -
+            <span>
+                {{ news.data.description }}
+            </span>
+        </li>
+    {% endfor %}
+</ul>
