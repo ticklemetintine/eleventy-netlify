@@ -1,21 +1,21 @@
 ---
 layout: layouts/base.njk
 permalink: /
+slug: 'home'
 ---
-{% set pages = collections.pages %}
 
 <img src="{{ 'images/banner.jpg' | url }}" alt="banner" class="full banner">
 
 <div class="container">
     <p class="text-center">
-       {{ pages.home.data }}gg
+        Hello! Welcome to the Eleventy + Netlify CMS!
     </p>
 
     <p class="heading text-center">
         Featured Posts
     </p>
 
-    <div class="flex featured-articles justify-center">
+    <div class="flex article-list justify-center">
         {% for post in collections.posts %}
         {% if post.data.isFeatured %}
         <a href="{{ post.url | url }}" class="post flex column space-between">

@@ -66,6 +66,7 @@ body {
 
 header {
   border-bottom: #fe019a double;
+  margin-bottom: 40px;
 }
 header .title {
   font-size: 2em;
@@ -102,14 +103,18 @@ header .menu a:hover:after {
   width: 100%;
 }
 
+body.home header {
+  margin-bottom: 0;
+}
+
 .banner {
   margin-bottom: 40px;
 }
 
-.featured-articles {
+.article-list {
   margin-bottom: 40px;
 }
-.featured-articles .post {
+.article-list .post {
   width: 30%;
   border: solid 1px #fe019a;
   border-radius: 5px;
@@ -120,19 +125,48 @@ header .menu a:hover:after {
   color: #fff;
   text-decoration: none;
 }
-.featured-articles .post:hover {
+.article-list .post:hover {
   border-color: #39FF14;
 }
-.featured-articles .post img {
+.article-list .post img {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
-.featured-articles .post strong {
+.article-list .post strong {
   display: block;
 }
-.featured-articles .post span {
+.article-list .post span {
   font-size: 0.875em;
+}
+
+.post-inner header {
+  margin-bottom: 0;
+}
+.post-inner img {
+  width: 100%;
+}
+.post-inner .breadcrumbs {
+  margin: 20px 0 40px;
+}
+.post-inner .breadcrumbs * {
+  font-size: 0.875em;
+}
+.post-inner .breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+.post-inner .breadcrumbs a:after {
+  content: " > ";
+}
+.post-inner .breadcrumbs span {
+  color: #39FF14;
+}
+.post-inner .container img {
+  width: auto;
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=master.css.map */

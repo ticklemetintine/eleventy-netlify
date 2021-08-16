@@ -1,0 +1,38 @@
+.post-inner {
+    header {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .breadcrumbs {
+        margin: 20px 0 40px;
+        * {
+            font-size: 0.875em;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:after {
+                content: ' > ';
+            }
+        }
+
+        span { 
+            color: $neon-green;
+        }
+    }
+
+    .container {
+        img {
+            width: auto;
+            display: block;
+            margin: 40px auto;
+            max-width: 100%;
+        }
+    }
+}

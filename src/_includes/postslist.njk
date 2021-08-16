@@ -1,13 +1,18 @@
-<ul>
-    {% for post in postslist %}
-        <li>
-            <strong>
-                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-            </strong>
-            -
-            <span>
-                {{ post.data.description }}
-            </span>
-        </li>
-    {% endfor %}
-</ul>
+<div class="flex article-list justify-center">
+        {% for post in collections.posts %}
+        <a href="{{ post.url | url }}" class="post flex column space-between">
+            <img src="{{ post.data.featuredImage | url }}" alt="featured-image">
+            
+            <div class="details">
+                <strong>
+                    {{ post.data.title }}
+                </strong>
+                <span>
+                    {{ post.data.description }}
+                </span>
+            </div>
+            
+        </a>
+           
+        {% endfor %}
+    </div>

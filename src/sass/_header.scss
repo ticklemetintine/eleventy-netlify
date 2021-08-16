@@ -1,5 +1,7 @@
+
 header {
     border-bottom: $neon-pink double;
+    margin-bottom: 40px;
 
     .title {
         font-size: 2em;
@@ -40,5 +42,11 @@ header {
                 }
             }
         }
+    }
+}
+
+body.home {
+    header {
+        margin-bottom: 0;
     }
 }

@@ -7,30 +7,11 @@ media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Home Page"
-        name: "home"
-        file: "src/pages/home.md"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - { label: "Show featured posts?", name: "showFeatured", widget: "boolean" }
-          - {label: Breaker, name: breaker, widget: markdown}
-          - { label: "Show latest news?", name: "showNews", widget: "boolean" }
-          - {label: Outro, name: outro, widget: markdown}
-      - label: "About Page"
-        name: "about"
-        file: "src/pages/about.md"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
   - name: "posts"
     label: "Posts"
     folder: "src/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    slug: "{{ year }}-{{ month }}-{{ day }}-{{ slug }}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { label: "Title", name: "title", widget: "string" }
@@ -39,3 +20,13 @@ collections:
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Show in home?", name: "isFeatured", widget: "boolean" }
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/testimonials"
+    create: true
+    slug: "testimonial"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/testimonial.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Testimonial Body", name: "body", widget: "markdown" }
+      - { label: "Author", name: "author", widget: "string" }
