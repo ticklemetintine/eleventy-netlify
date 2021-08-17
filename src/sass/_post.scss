@@ -38,3 +38,37 @@
         margin-bottom: 50px;
     }
 }
+
+.article-list {
+    margin-bottom: 40px;
+
+    .post {
+        width: 30%;
+        border: solid 1px $neon-pink;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 10px 20px;
+        height: inherit;
+        transition: border-color 0.5s ease;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            border-color: $neon-green;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            display: block;
+        }
+
+        span {
+            font-size: 0.875em;
+        }
+    }
+}

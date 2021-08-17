@@ -59,3 +59,19 @@ body {
     text-transform: uppercase;
     margin: 30px 0;
 }
+
+.pagination {
+    >* {
+        color: $white;
+        margin: 0 10px;
+        font-size: 1.5em;
+    }
+
+    a:hover {
+        color: $neon-pink;
+    }
+
+    span {
+        color: darken($white, 40%);
+    }
+}

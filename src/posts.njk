@@ -1,9 +1,46 @@
 ---
 layout: layouts/base.njk
-permalink: /posts/
 slug: 'posts'
 title: Blog List
+pagination:
+  data: collections.posts
+  size: 2
+  alias: blogs
 ---
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+<div class="container">
+    <p class="heading text-center">Blog</p>
+
+    <div class="flex article-list justify-center wrap">
+        {% for post in blogs %}
+        <a href="{{ post.url | url }}" class="post flex column space-between">
+            <img src="{{ post.data.featuredImage | url }}" alt="featured-image">
+            
+            <div class="details">
+                <strong>
+                    {{ post.data.title }}
+                </strong>
+                <span>
+                    {{ post.data.description }}
+                </span>
+            </div>
+            
+        </a>
+           
+        {% endfor %}
+    </div>
+
+    <div class="pagination flex justify-center align-center">
+        {% if pagination.href.previous %}
+            <a href="{{pagination.href.previous}}"><i class="las la-arrow-left"></i></a>
+        {% else %}
+            <span><i class="las la-arrow-left"></i></span>
+        {% endif %}
+
+        {% if pagination.href.next %}
+            <a href="{{pagination.href.next}}"><i class="las la-arrow-right"></i></a>
+        {% else %}
+            <span><i class="las la-arrow-right"></i></span>
+        {% endif %}
+    </div>
+</div>

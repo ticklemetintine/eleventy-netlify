@@ -67,6 +67,18 @@ body {
   margin: 30px 0;
 }
 
+.pagination > * {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+.pagination a:hover {
+  color: #fe019a;
+}
+.pagination span {
+  color: #999999;
+}
+
 header {
   border-bottom: #fe019a double;
   margin-bottom: 40px;
@@ -117,35 +129,6 @@ body.home header {
   margin-bottom: 40px;
 }
 
-.article-list {
-  margin-bottom: 40px;
-}
-.article-list .post {
-  width: 30%;
-  border: solid 1px #fe019a;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 0 10px 20px;
-  height: inherit;
-  transition: border-color 0.5s ease;
-  color: #fff;
-  text-decoration: none;
-}
-.article-list .post:hover {
-  border-color: #39FF14;
-}
-.article-list .post img {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.article-list .post strong {
-  display: block;
-}
-.article-list .post span {
-  font-size: 0.875em;
-}
-
 .post-inner header {
   width: 100%;
 }
@@ -176,12 +159,41 @@ body.home header {
   margin-bottom: 50px;
 }
 
+.article-list {
+  margin-bottom: 40px;
+}
+.article-list .post {
+  width: 30%;
+  border: solid 1px #fe019a;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px 20px;
+  height: inherit;
+  transition: border-color 0.5s ease;
+  color: #fff;
+  text-decoration: none;
+}
+.article-list .post:hover {
+  border-color: #39FF14;
+}
+.article-list .post img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.article-list .post strong {
+  display: block;
+}
+.article-list .post span {
+  font-size: 0.875em;
+}
+
 .testimonial-list {
   flex-wrap: wrap;
   margin-top: 40px;
 }
 .testimonial-list .testimonial-item {
-  width: 45%;
+  width: 28%;
   border: solid 1px #39FF14;
   margin: 0 10px 40px;
   padding: 20px;
