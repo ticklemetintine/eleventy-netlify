@@ -1,7 +1,7 @@
 
 <div class="container">
     <p class="heading text-center">Testimonials</p>
-    
+
     <div class="flex testimonial-list justify-center">
         {% for post in collections.testimonials %}
 
@@ -9,7 +9,7 @@
                 <p class="title">{{post.data.title}}</p>
 
                 <div class="testimonial">
-                    {{ post.templateContent  | safe }}          
+                    {{ post.templateContent  | safe }}  
                 </div>  
 
                 <p class="author">{{ post.data.author }}</p>
