@@ -35,7 +35,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "src/content/about.md"
+        file: "src/content/about.njk"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
