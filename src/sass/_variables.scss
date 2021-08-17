@@ -11,8 +11,14 @@ $neon-pink: #fe019a;
 $neon-blue: #1F51FF;
 $neon-green: #39FF14;
 
+$screen-xlg: 1024px;
+$screen-lg: 992px;
+$screen-md: 600px;
+$screen-sm: 480px;
+$screen-xs: 320px;
+
 @keyframes color-change {
     0% { color: $white; }
     50% { color: $neon-blue; }
     100% { color: $white; }
-  }
+}

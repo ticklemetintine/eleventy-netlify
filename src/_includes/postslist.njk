@@ -1,4 +1,7 @@
-<div class="flex article-list justify-center">
+<div class="container">
+    <p class="heading text-center">Blog</p>
+
+    <div class="flex article-list justify-center wrap">
         {% for post in collections.posts %}
         <a href="{{ post.url | url }}" class="post flex column space-between">
             <img src="{{ post.data.featuredImage | url }}" alt="featured-image">
@@ -16,3 +19,4 @@
            
         {% endfor %}
     </div>
+</div>

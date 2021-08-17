@@ -1,9 +1,5 @@
 .post-inner {
     header {
-        margin-bottom: 0;
-    }
-
-    img {
         width: 100%;
     }
 
@@ -34,5 +30,11 @@
             margin: 40px auto;
             max-width: 100%;
         }
+    }
+}
+
+.posts {
+    .heading {
+        margin-bottom: 50px;
     }
 }

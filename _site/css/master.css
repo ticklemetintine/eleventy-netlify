@@ -44,6 +44,9 @@ body {
 .flex.column {
   flex-direction: column;
 }
+.flex.wrap {
+  flex-wrap: wrap;
+}
 
 .text-center {
   text-align: center;
@@ -74,7 +77,7 @@ header .title {
   text-transform: uppercase;
   font-family: "Press Start 2P", cursive;
 }
-header .menu a {
+header .menu a:not(.close) {
   color: #39FF14;
   text-decoration: none;
   margin-right: 15px;
@@ -83,7 +86,7 @@ header .menu a {
   position: relative;
   transition: all 0.5s ease;
 }
-header .menu a:after {
+header .menu a:not(.close):after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -96,11 +99,14 @@ header .menu a:after {
   height: 1px;
   transition: all 0.5s ease;
 }
-header .menu a:hover {
+header .menu a:not(.close):hover {
   color: #fe019a;
 }
-header .menu a:hover:after {
+header .menu a:not(.close):hover:after {
   width: 100%;
+}
+header .menu-toggle, header .close {
+  display: none;
 }
 
 body.home header {
@@ -119,7 +125,7 @@ body.home header {
   border: solid 1px #fe019a;
   border-radius: 5px;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 10px 20px;
   height: inherit;
   transition: border-color 0.5s ease;
   color: #fff;
@@ -141,9 +147,6 @@ body.home header {
 }
 
 .post-inner header {
-  margin-bottom: 0;
-}
-.post-inner img {
   width: 100%;
 }
 .post-inner .breadcrumbs {
@@ -167,6 +170,79 @@ body.home header {
   display: block;
   margin: 40px auto;
   max-width: 100%;
+}
+
+.posts .heading {
+  margin-bottom: 50px;
+}
+
+.testimonial-list {
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.testimonial-list .testimonial-item {
+  width: 45%;
+  border: solid 1px #39FF14;
+  margin: 0 10px 40px;
+  padding: 20px;
+  border-radius: 5px;
+  height: inherit;
+}
+.testimonial-list .title {
+  font-weight: 700;
+  font-size: 1.125em;
+}
+.testimonial-list .testimonial {
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 2;
+}
+
+.testimonials .heading {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  header {
+    position: relative;
+  }
+  header .title {
+    font-size: 1.125em;
+  }
+  header .menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #39FF14;
+    padding: 0;
+    border-radius: 3px;
+    font-size: 1.75em;
+  }
+  header .menu {
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+    right: -400px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    padding: 20px;
+    transition: right 0.5s ease;
+  }
+  header .menu.active {
+    right: 0;
+  }
+  header .menu a {
+    margin-bottom: 10px;
+  }
+  header .close {
+    display: block;
+    margin: 0 0 0 auto;
+    color: #39FF14;
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=master.css.map */

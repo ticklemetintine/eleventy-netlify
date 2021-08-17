@@ -8,10 +8,11 @@ header {
         font-weight: 700;
         text-transform: uppercase;
         font-family: $font-secondary;
+        
     }
 
     .menu {
-        a {
+        a:not(.close) {
             color: $neon-green;
             text-decoration: none;
             margin-right: 15px;
@@ -42,6 +43,10 @@ header {
                 }
             }
         }
+    }
+
+    .menu-toggle, .close {
+        display: none;
     }
 }
 
