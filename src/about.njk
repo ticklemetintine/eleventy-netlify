@@ -1,8 +1,7 @@
 ---
 layout: layouts/base.njk
-
 ---
-{% set pages = collections.content.pages %}
+{% set pages = collections.all %}
 {% for item in pages %}
     {{ item.data.title }}
 {% endfor %}
