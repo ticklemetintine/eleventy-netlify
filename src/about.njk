@@ -2,3 +2,7 @@
 layout: layouts/base.njk
 
 ---
+{% set pages = collections.content.pages %}
+{% for item in pages %}
+    {{ item.data.title }}
+{% endfor %}
