@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/sass/");
     eleventyConfig.addPassthroughCopy("./src/css/");
 
+    eleventyConfig.addCollection('about', collection => {
+        return collection.getFilteredByGlob('src/pages/*.md');
+    });
+
     return {
         dir: {
             input: 'src',

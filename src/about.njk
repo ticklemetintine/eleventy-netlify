@@ -1,7 +1,3 @@
----
-layout: layouts/base.njk
----
-{% set pages = collections.all %}
-{% for item in pages %}
-    {{ item.data.title }}
-{% endfor %}
+{% set about = collections.about %}
+
+{{ about.url }}
