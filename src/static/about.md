@@ -2,5 +2,5 @@
 permalink: /about/
 title: About-file
 intro: this is from file collection hehe
-layout: layouts/post.njk
+layout: layouts/about.njk
 ---
