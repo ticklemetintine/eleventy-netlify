@@ -54,7 +54,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "src/static/about.md"
+        file: "src/static/about.yml"
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.njk" }
           - {label: Permalink, name: permalink, widget: string}
