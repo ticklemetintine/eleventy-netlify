@@ -79,6 +79,23 @@ body {
   color: #999999;
 }
 
+.breadcrumbs {
+  margin: 20px 0 40px;
+}
+.breadcrumbs * {
+  font-size: 0.875em;
+}
+.breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+.breadcrumbs a:after {
+  content: " > ";
+}
+.breadcrumbs span {
+  color: #39FF14;
+}
+
 header {
   border-bottom: #fe019a double;
   margin-bottom: 40px;
@@ -131,22 +148,6 @@ body.home header {
 
 .post-inner header {
   width: 100%;
-}
-.post-inner .breadcrumbs {
-  margin: 20px 0 40px;
-}
-.post-inner .breadcrumbs * {
-  font-size: 0.875em;
-}
-.post-inner .breadcrumbs a {
-  color: #fff;
-  text-decoration: none;
-}
-.post-inner .breadcrumbs a:after {
-  content: " > ";
-}
-.post-inner .breadcrumbs span {
-  color: #39FF14;
 }
 .post-inner .container img {
   width: auto;

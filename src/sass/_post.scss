@@ -3,26 +3,6 @@
         width: 100%;
     }
 
-    .breadcrumbs {
-        margin: 20px 0 40px;
-        * {
-            font-size: 0.875em;
-        }
-
-        a {
-            color: $white;
-            text-decoration: none;
-
-            &:after {
-                content: ' > ';
-            }
-        }
-
-        span { 
-            color: $neon-green;
-        }
-    }
-
     .container {
         img {
             width: auto;

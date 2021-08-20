@@ -20,6 +20,7 @@ collections:
       - { label: "Post Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Show in home?", name: "isFeatured", widget: "boolean" }
+ 
   - name: "testimonials"
     label: "Testimonials"
     folder: "src/testimonials"
@@ -30,33 +31,30 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Testimonial Body", name: "body", widget: "markdown" }
       - { label: "Author", name: "author", widget: "string" }
-  - name: pages
-    label: Pages
-    label_singular: Page
-    folder: src/pages
-    create: true
-    # adding a nested object will show the collection folder structure
-    nested:
-      depth: 100 # max depth to show in the collection tree
-      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Permalink
-        name: permalink
-        widget: string
-      - label: Body
-        name: body
-        widget: markdown
+ 
   - label: "Static"
     name: "static"
     files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/static/home.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/index.njk" }
+          - { label: "Banner Image", name: "banner", widget: "image" }
+          - { label: "Intro", name: "intro", widget: markdown }
+          - { label: "Show featured posts?", name: "fp_show", widget: "boolean" }
+          - { label: "Featured Post Heading", name: "fp_heading", widget: "string" }
+          - { label: "Number of posts", name: "fp_count", widget: "number" }
+          - { label: "Outro", name: "outro", widget: "markdown" }
+          - { label: "Show testimonials?", name: "ft_show", widget: "boolean" }
+          - { label: "Testimonials Section Heading", name: "ft_heading", widget: "string" }
+          - { label: "Number of testimonials", name: "ft_count", widget: "number" }
+
       - label: "About Page"
         name: "about"
         file: "src/static/about.md"
         fields:
-          - {label: Permalink, name: permalink, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "markdown" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }

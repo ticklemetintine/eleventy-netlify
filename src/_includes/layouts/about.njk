@@ -2,5 +2,14 @@
 layout: layouts/base.njk
 slug: about
 ---
+<div class="container">
+    <div class="breadcrumbs">
+        <a href="/">Home</a>
+        <span>{{ title }}</span>
+    </div>
 
-{{ content | safe }}
+    {{ content | safe }}
+
+    <h1 class="heading">{{ title }}</h1>
+
+</div>
