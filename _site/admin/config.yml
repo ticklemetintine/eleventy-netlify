@@ -56,7 +56,7 @@ collections:
         name: "about"
         file: "src/static/about.md"
         fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.njk" }
           - {label: Permalink, name: permalink, widget: string}
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}

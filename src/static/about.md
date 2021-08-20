@@ -1,6 +1,5 @@
 ---
-permalink: /about-123/
-title: About from file
-intro: this is an about file content
-layout: layouts/about.njk
+permalink: /about/
+title: About-file
+intro: this is from file collection
 ---
