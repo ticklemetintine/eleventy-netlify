@@ -1,5 +1,12 @@
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addFilter('markdown', function(value) {
+        let markdown = require('markdown-it')({
+            html: true
+        });
+        return markdown.render(value);
+    });
+
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/scripts");
     eleventyConfig.addPassthroughCopy("admin");
@@ -12,6 +19,7 @@ module.exports = function(eleventyConfig) {
     });
 
     return {
+        templateFormats: ['html', 'njk', 'md'],
         dir: {
             input: 'src',
             output: '_site'

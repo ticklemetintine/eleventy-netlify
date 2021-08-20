@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Press+Start+2P&display=swap");
 @keyframes color-change {
   0% {
@@ -18,10 +19,18 @@ body {
   font-weight: 400;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1920px;
   margin: auto;
   padding: 0 40px;
+}
+
+.section {
+  padding: 40px 0;
 }
 
 .main-content {
@@ -96,6 +105,29 @@ body {
   color: #39FF14;
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.slick-dots li {
+  margin: 0 5px;
+}
+.slick-dots li button {
+  font-size: 0;
+  background: transparent;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: solid 1px #fe019a;
+  padding: 0;
+  transition: background 0.5s ease;
+}
+.slick-dots li.slick-active button {
+  background: #fe019a;
+}
+
 header {
   border-bottom: #fe019a double;
   margin-bottom: 40px;
@@ -142,8 +174,46 @@ body.home header {
   margin-bottom: 0;
 }
 
+footer {
+  background: #98015c;
+  margin: 0;
+  padding: 10px;
+}
+
 .banner {
   margin-bottom: 40px;
+}
+
+.home .testimonials .testimonial-item {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.home .testimonials .testimonial-item * {
+  max-width: 600px;
+  margin: auto;
+}
+.home .testimonials .testimonial-item .title {
+  color: #1F51FF;
+  font-family: "Press Start 2P", cursive;
+  line-height: 1.4;
+  font-size: 1.5em;
+}
+.home .testimonials .testimonial-item .testimonial {
+  font-style: italic;
+  line-height: 1.7;
+  padding: 40px 0;
+}
+.home .testimonials .testimonial-item .testimonial:before {
+  content: "“";
+}
+.home .testimonials .testimonial-item .testimonial:after {
+  content: "”";
+}
+.home .testimonials .testimonial-item .testimonial p {
+  display: inline;
+}
+.home .testimonials .testimonial-item .author {
+  font-weight: 700;
 }
 
 .post-inner header {

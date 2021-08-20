@@ -39,6 +39,7 @@ collections:
         name: "home"
         file: "src/static/home.md"
         fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/index.njk" }
           - { label: "Banner Image", name: "banner", widget: "image" }
           - { label: "Intro", name: "intro", widget: markdown }

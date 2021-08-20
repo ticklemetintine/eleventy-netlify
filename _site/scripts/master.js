@@ -9,3 +9,15 @@ el.onclick = function() {
 close.onclick = function() {
     menu.classList.toggle('active');
 }
+
+$(document).ready(function() {
+    if($('.home .testimonials').length > 0) {
+        $('.home .testimonials').slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            adaptiveHeight: true,
+            slide: '.testimonial-item'
+        });
+    }
+});
