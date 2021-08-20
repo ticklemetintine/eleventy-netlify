@@ -1,4 +1,5 @@
 ---
+permalink: /
 layout: layouts/index.njk
 banner: /images/uploads/1624.jpg
 intro: Hello! Welcome to the Eleventy + Netlify CMS!
