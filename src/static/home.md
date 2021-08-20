@@ -5,7 +5,7 @@ banner: /images/uploads/1624.jpg
 intro: Hello! Welcome to the Eleventy + Netlify CMS!
 fp_show: true
 fp_heading: Featured Posts
-fp_count: 3
+fp_count: 2
 outro: "At vero eos et accusamus et iusto odio dignissimos ducimus qui
   blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
   molestias excepturi sint occaecati cupiditate non provident, similique sunt in
