@@ -7,10 +7,7 @@ fp_show: true
 fp_heading: Featured Posts
 fp_count: 1
 outro: >-
-  <!--StartFragment-->
-
-
-  ### At vero eos et accusamus et 
+  ### At vero eos et accusamus et
 
 
   Justo odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
@@ -29,9 +26,6 @@ outro: >-
 
 
   ``
-
-
-  <!--EndFragment-->
 ft_show: true
 ft_heading: What they say
 ft_count: 5
