@@ -8,8 +8,7 @@ slug: about
         <span>{{ title }}</span>
     </div>
 
-    {{ content | safe }}
-
     <h1 class="heading">{{ title }}</h1>
 
+    {{ content | markdown | safe }}
 </div>
