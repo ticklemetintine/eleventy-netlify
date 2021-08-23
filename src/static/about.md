@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: About
-intro: this is from file collection hehe
+intro: This is an intro message for about us
 layout: layouts/about.njk
 ---
 
