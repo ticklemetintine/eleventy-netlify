@@ -45,7 +45,7 @@ favorite_post: -------2
 date: 1991-08-01T16:00:00.000Z
 airport-code: SG
 datetime_ex: 2021-08-31T03:15:00.021Z
-datetime: 2021-08-31T03:24:50.407Z
+datetime: 2021-08-31T03:26:23.362Z
 image: /images/uploads/2819.jpg
 ---
 Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!
