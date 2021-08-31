@@ -1,0 +1,3 @@
+set PATH=C:\Users\jsalangsang\AppData\Roaming\npm;%PATH%
+
+Temasek less compiler: aem-front -t http://admin:admin@localhost:6502
