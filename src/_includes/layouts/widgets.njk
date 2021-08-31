@@ -8,5 +8,32 @@ slug: widgets
         <span>{{ title }}</span>
     </div>
 
-  
+    {{ content | safe }}
+
+    <div class="section">
+        <p class="heading">{{ code_heading }}</p>
+        <blockquote>
+            {{ code.code }}
+        </blockquote>
+    </div>
+
+    <div class="section">
+        <p class="heading">{{ color_heading }}</p>
+        <blockquote class="flex ">
+            <span style="background-color: {{ color }}; width: 20px; height: 20px; display: block; margin-right: 10px;"></span> {{ color }} 
+        </blockquote>
+    </div>
+
+    <div class="section">
+        <p class="heading">{{ date_heading }}</p>
+        <blockquote class="flex ">
+            {{date}}
+        </blockquote>
+        
+        <p class="heading">{{ datetime_heading }}</p>
+        <blockquote class="flex ">
+            {{datetime}}
+        </blockquote>
+    </div>
+
 </div>

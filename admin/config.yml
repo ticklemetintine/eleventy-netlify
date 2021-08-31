@@ -78,14 +78,15 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/widgets.njk" }
+          - { label: "Body", name: "body", widget: "string", output_code_only: false }
           - { label: "Code Heading", name: "code_heading", widget: "string" }
           - { label: "Code", name: "code", widget: "code" }
           - { label: "Color Picker Heading", name: "color_heading", widget: "string" }
           - { label: "Color", name: "color", widget: "color" }
           - { label: "Date Picker Heading", name: "date_heading", widget: "string" }
-          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Date", name: "date_ex", widget: "date", format: 'MMM Do, YYYY' }
           - { label: "Date time Picker Heading", name: "datetime_heading", widget: "string" }
-          - { label: "Date time", name: "datetime", widget: "datetime" }
+          - { label: "Date time", name: "datetime_ex", widget: "datetime" }
           - { label: "File", name: "file", widget: "file" }
           - { label: "Image", name: "image", widget: "image" }
           - label: "List"
