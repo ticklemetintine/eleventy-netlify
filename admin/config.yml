@@ -86,7 +86,7 @@ collections:
           - { label: "Date Picker Heading", name: "date_heading", widget: "string" }
           - { label: "Date", name: "date_ex", widget: "date", format: 'MMM Do, YYYY' }
           - { label: "Date time Picker Heading", name: "datetime_heading", widget: "string" }
-          - { label: "Date time", name: "datetime", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm" }
+          - { label: "Date time", name: "datetime", widget: "datetime", date_format: "MMM Do, YYYY", time_format: "HH:mm" }
           - { label: "File", name: "file", widget: "file" }
           - { label: "Image", name: "image", widget: "image" }
           - label: "List"
