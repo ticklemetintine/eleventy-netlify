@@ -22,7 +22,12 @@ color: "#ff00ab"
 date_heading: Date Picker Value
 date_ex: Aug 2nd, 1991
 datetime_heading: Date Time Picker Value
+datetime: August 31, 2021 11:27 AM
+file_heading: File Value
 file: /images/uploads/test.html.txt
+image_heading: Image Value
+image: /images/uploads/2819.jpg
+list_heading: List Values
 list:
   - quote: Love For All, Hatred For None.
     author: Khalifatul Masih III
@@ -32,7 +37,9 @@ list:
     author: Walt Disney
   - quote: Every moment is a fresh beginning.
     author: T.S Eliot
+map_heading: Map Value
 map: '{"type":"Point","coordinates":[103.8416778,1.2785753]}'
+object_heading: Object Values
 profile:
   birthdate: 08/02/1991
   public: true
@@ -43,10 +50,10 @@ profile:
     city: Singapore
 favorite_post: -------2
 date: 1991-08-01T16:00:00.000Z
+relation_heading: Relation Value
 airport-code: SG
 datetime_ex: 2021-08-31T03:15:00.021Z
-datetime: August 31, 2021 11:27 AM
-image: /images/uploads/2819.jpg
+select_heading: Select Value
 ---
 Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!
 
