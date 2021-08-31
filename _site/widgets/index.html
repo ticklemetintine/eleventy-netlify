@@ -8,10 +8,7 @@
         <title>Widgets</title>
 
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
         <link rel="stylesheet" href="/css/master.css">
     </head>
     <body class="widgets">
@@ -48,9 +45,9 @@
 <p><a href="https://www.netlifycms.org/docs/widgets/">https://www.netlifycms.org/docs/widgets/</a></p>
 
 
-    <div class="section">
-        <p class="heading">Code Widget</p>
-        <blockquote>
+    <div class="section flex">
+        <div>
+            <p class="heading">Code Widget</p>
             &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -63,26 +60,82 @@
     
 &lt;/body&gt;
 &lt;/html&gt;
-        </blockquote>
-    </div>
-
-    <div class="section">
-        <p class="heading">Color Picker Value</p>
-        <blockquote class="flex ">
-            <span style="background-color: #ff00ab; width: 20px; height: 20px; display: block; margin-right: 10px;"></span> #ff00ab 
-        </blockquote>
-    </div>
-
-    <div class="section">
-        <p class="heading">Date Picker Value</p>
-        <blockquote class="flex ">
-            Aug 2nd, 1991
-        </blockquote>
+        </div>
         
-        <p class="heading">Date Time Picker Value</p>
-        <blockquote class="flex ">
+        <div>
+            <p class="heading">Color Picker Value</p>
+            <div class="flex ">
+                <span style="background-color: #ff00ab; width: 20px; height: 20px; display: block; margin-right: 10px;"></span> #ff00ab 
+            </div>
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">Date Picker Value</p>
+            Aug 2nd, 1991
+        </div>
+        
+        <div>
+            <p class="heading">Date Time Picker Value</p>
             August 31, 2021 11:27 AM
-        </blockquote>
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">File Value</p>
+            <a href="/images/uploads/test.html.txt" target="_blank">Download</a>
+        </div>
+
+        <div>
+            <p class="heading">Image Value</p>
+            <img src="/images/uploads/2819.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">List Values</p>
+            <ul>
+                
+                    <li>Love For All, Hatred For None. - Khalifatul Masih III</li>
+                
+                    <li>Change the world by being yourself.  - Amy Poehler</li>
+                
+                    <li>Whatever you do, do it well. - Walt Disney</li>
+                
+                    <li>Every moment is a fresh beginning. - T.S Eliot</li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <p class="heading">Map Value</p>
+
+            <div class="map"></div>
+
+            <input type="hidden" value="{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[103.8519573,1.3055434]}" class="coords">
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">Object Values</p>
+            <ul>
+                <li>Justine Salangsang</li>
+                <li>08/02/1991</li>
+                <li>1 Simei St 4 Singapore </li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="heading">Map Value</p>
+
+            <div class="map"></div>
+
+            <input type="hidden" value="{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[103.8519573,1.3055434]}" class="coords">
+        </div>
     </div>
 
 </div>

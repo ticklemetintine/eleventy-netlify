@@ -10,30 +10,80 @@ slug: widgets
 
     {{ content | safe }}
 
-    <div class="section">
-        <p class="heading">{{ code_heading }}</p>
-        <blockquote>
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ code_heading }}</p>
             {{ code.code }}
-        </blockquote>
-    </div>
-
-    <div class="section">
-        <p class="heading">{{ color_heading }}</p>
-        <blockquote class="flex ">
-            <span style="background-color: {{ color }}; width: 20px; height: 20px; display: block; margin-right: 10px;"></span> {{ color }} 
-        </blockquote>
-    </div>
-
-    <div class="section">
-        <p class="heading">{{ date_heading }}</p>
-        <blockquote class="flex ">
-            {{date_ex}}
-        </blockquote>
+        </div>
         
-        <p class="heading">{{ datetime_heading }}</p>
-        <blockquote class="flex ">
+        <div>
+            <p class="heading">{{ color_heading }}</p>
+            <div class="flex ">
+                <span style="background-color: {{ color }}; width: 20px; height: 20px; display: block; margin-right: 10px;"></span> {{ color }} 
+            </div>
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ date_heading }}</p>
+            {{date_ex}}
+        </div>
+        
+        <div>
+            <p class="heading">{{ datetime_heading }}</p>
             {{datetime}}
-        </blockquote>
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ file_heading }}</p>
+            <a href="{{file | url}}" target="_blank">Download</a>
+        </div>
+
+        <div>
+            <p class="heading">{{ image_heading }}</p>
+            <img src="{{image |url}}" alt="">
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ list_heading }}</p>
+            <ul>
+                {% for item in list %}
+                    <li>{{item.quote}} - {{item.author}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <p class="heading">{{ map_heading }}</p>
+
+            <div class="map"></div>
+
+            <input type="hidden" value="{{map}}" class="coords">
+        </div>
+    </div>
+
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ object_heading }}</p>
+            <ul>
+                <li>{{ profile.name }}</li>
+                <li>{{ profile.birthdate }}</li>
+                <li>{{ profile.address.street }} {{ profile.address.city }} {{ profile.address.postcode }}</li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="heading">{{ map_heading }}</p>
+
+            <div class="map"></div>
+
+            <input type="hidden" value="{{map}}" class="coords">
+        </div>
     </div>
 
 </div>
