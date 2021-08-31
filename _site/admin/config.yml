@@ -84,7 +84,7 @@ collections:
           - { label: "Color Picker Heading", name: "color_heading", widget: "string" }
           - { label: "Color", name: "color", widget: "color" }
           - { label: "Date Picker Heading", name: "date_heading", widget: "string" }
-          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Date", name: "date_ex", widget: "date", format: 'MMM Do, YYYY' }
           - { label: "Date time Picker Heading", name: "datetime_heading", widget: "string" }
           - { label: "Date time", name: "datetime", widget: "datetime" }
           - { label: "File", name: "file", widget: "file" }
