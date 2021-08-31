@@ -20,7 +20,7 @@ code:
 color_heading: Color Picker Value
 color: "#ff00ab"
 date_heading: Date Picker Value
-date: 1991-08-01T16:00:00.000Z
+date_ex: Aug 3rd, 1991
 datetime_heading: Date Time Picker Value
 file: /images/uploads/test.html.txt
 list:
@@ -42,7 +42,7 @@ profile:
     post-code: "529861"
     city: Singapore
 favorite_post: -------2
-date_ex: Aug 2nd, 1991
+date: 1991-08-01T16:00:00.000Z
 airport-code: SG
 datetime_ex: 2021-08-31T03:15:00.021Z
 datetime: 2021-08-31T03:21:04.137Z
