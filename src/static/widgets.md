@@ -38,7 +38,7 @@ list:
   - quote: Every moment is a fresh beginning.
     author: T.S Eliot
 map_heading: Map Value
-map: '{"type":"Point","coordinates":[103.8416778,1.2785753]}'
+map: '{"type":"Point","coordinates":[103.8519573,1.3055434]}'
 object_heading: Object Values
 profile:
   birthdate: 08/02/1991
