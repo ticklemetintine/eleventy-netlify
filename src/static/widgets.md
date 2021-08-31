@@ -20,9 +20,9 @@ code:
 color_heading: Color Picker Value
 color: "#ff00ab"
 date_heading: Date Picker Value
-date: Aug 2nd, 91
+date_ex: Aug 2nd, 1991
 datetime_heading: Date Time Picker Value
-datetime: 2021-08-31T02:09:54.880Z
+datetime_ex: 2021-08-31T03:15:00.021Z
 file: /images/uploads/test.html.txt
 image: /images/uploads/2819.jpg
 list:
@@ -44,7 +44,9 @@ profile:
     post-code: "529861"
     city: Singapore
 favorite_post: -------2
+date: Aug 2nd, 91
 airport-code: SG
+datetime: 2021-08-31T02:09:54.880Z
 ---
 Widgets define the data type and interface for entry fields. Netlify CMS comes with several built-in widgets. Click the widget names in the sidebar to jump to specific widget details. We’re always adding new widgets, and you can also create your own!
 
