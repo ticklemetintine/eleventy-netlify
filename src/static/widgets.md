@@ -48,6 +48,7 @@ profile:
     street: 1 Simei St 4
     post-code: "529861"
     city: Singapore
+    postcode: "529861"
 favorite_post: -------2
 date: 1991-08-01T16:00:00.000Z
 relation_heading: Relation Value
