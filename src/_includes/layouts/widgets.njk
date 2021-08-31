@@ -78,11 +78,24 @@ slug: widgets
         </div>
 
         <div>
-            <p class="heading">{{ map_heading }}</p>
+            <p class="heading">{{ relation_heading }}</p>
+            {{favorite_post}}
+        </div>
+    </div>
 
-            <div class="map"></div>
+    <div class="section flex">
+        <div>
+            <p class="heading">{{ select_heading }}</p>
+            <ul>
+                <li>{{ profile.name }}</li>
+                <li>{{ profile.birthdate }}</li>
+                <li>{{ profile.address.street }} {{ profile.address.city }} {{ profile.address.postcode }}</li>
+            </ul>
+        </div>
 
-            <input type="hidden" value="{{map}}" class="coords">
+        <div>
+            <p class="heading">{{ relation_heading }}</p>
+            {{airport_code}}
         </div>
     </div>
 

@@ -130,7 +130,7 @@ collections:
             display_fields: ["{{title}}"]
           - { label: "Select Heading", name: "select_heading", widget: "string" }
           - label: "City"
-            name: "airport-code"
+            name: "airport_code"
             widget: "select"
             options:
               - { label: "Chicago", value: "ORD" }
