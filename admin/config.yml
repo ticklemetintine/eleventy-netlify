@@ -60,3 +60,74 @@ collections:
           - { label: "Intro", name: "intro", widget: "markdown" }
           - { label: "Body", name: "body", widget: "markdown"}
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
+
+      - label: "Post Page"
+        name: "posts"
+        file: "src/static/posts.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown"}
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
+
+      - label: "Widgets"
+        name: "widget"
+        file: "src/static/widgets.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/widgets.njk" }
+          - { label: "Code Heading", name: "code_heading", widget: "string" }
+          - { label: "Code", name: "code", widget: "code" }
+          - { label: "Color Picker Heading", name: "color_heading", widget: "string" }
+          - { label: "Color", name: "color", widget: "color" }
+          - { label: "Date Picker Heading", name: "date_heading", widget: "string" }
+          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Date time Picker Heading", name: "datetime_heading", widget: "string" }
+          - { label: "Date time", name: "datetime", widget: "datetime" }
+          - { label: "File", name: "file", widget: "file" }
+          - { label: "Image", name: "image", widget: "image" }
+          - label: "List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+              - {label: Author, name: author, widget: string }
+          - { label: "Map", name: "map", widget: "map" }
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            summary: '{{fields.name}}: {{fields.birthdate}}'
+            fields:
+              - {label: "Public", name: "public", widget: "boolean", default: true}
+              - {label: "Name", name: "name", widget: "string"}
+              - label: "Birthdate"
+                name: "birthdate"
+                widget: "date"
+                default: ""
+                format: "MM/DD/YYYY"
+              - label: "Address"
+                name: "address"
+                widget: "object"
+                collapsed: true
+                fields: 
+                  - {label: "Street Address", name: "street", widget: "string"}
+                  - {label: "City", name: "city", widget: "string"}
+                  - {label: "Postal Code", name: "post-code", widget: "string"}
+          - label: "Favorite Post"
+            name: "favorite_post"
+            widget: "relation"
+            collection: "posts"
+            search_fields: ['title']
+            value_field: "{{slug}}"
+            display_fields: ["{{title}}"]
+          - label: "City"
+            name: "airport-code"
+            widget: "select"
+            options:
+              - { label: "Chicago", value: "ORD" }
+              - { label: "Paris", value: "CDG" }
+              - { label: "Tokyo", value: "HND" }
+              - { label: "Singapore", value: "SG" }
+          
