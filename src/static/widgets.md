@@ -20,7 +20,7 @@ code:
 color_heading: Color Picker Value
 color: "#ff00ab"
 date_heading: Date Picker Value
-date: 1991-08-02T02:07:06.353Z
+date: Aug 2nd, 91
 datetime_heading: Date Time Picker Value
 datetime: 2021-08-31T02:09:54.880Z
 file: /images/uploads/test.html.txt
