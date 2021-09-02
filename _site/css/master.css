@@ -18,6 +18,9 @@ body {
   color: #fff;
   font-weight: 400;
 }
+body * {
+  box-sizing: border-box;
+}
 
 img {
   width: 100%;
@@ -44,6 +47,7 @@ a {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .flex.space-between {
   justify-content: space-between;
@@ -78,6 +82,7 @@ a {
   font-family: "Press Start 2P", cursive;
   text-transform: uppercase;
   margin: 30px 0;
+  line-height: 1.5;
 }
 
 .pagination > * {
@@ -181,7 +186,10 @@ body.home header {
 footer {
   background: #98015c;
   margin: 0;
-  padding: 10px;
+  padding: 5px 10px;
+}
+footer p {
+  margin: 0;
 }
 
 .banner {
@@ -238,29 +246,38 @@ footer {
   margin-bottom: 40px;
 }
 .article-list .post {
-  width: 30%;
+  width: 28%;
   border: solid 1px #fe019a;
   border-radius: 5px;
-  padding: 10px;
   margin: 0 10px 20px;
   height: inherit;
   transition: border-color 0.5s ease;
+  align-content: center;
+  overflow: hidden;
+}
+.article-list .post a {
   color: #fff;
+  width: 100%;
   text-decoration: none;
 }
-.article-list .post:hover {
+.article-list .post a:hover {
   border-color: #39FF14;
 }
 .article-list .post img {
   display: block;
-  width: 100%;
   margin-bottom: 10px;
+  height: 140px;
+  width: auto;
 }
 .article-list .post strong {
   display: block;
 }
 .article-list .post span {
   font-size: 0.875em;
+}
+.article-list .post .details {
+  padding: 10px;
+  width: 100%;
 }
 
 .testimonial-list {
@@ -289,14 +306,20 @@ footer {
   margin-bottom: 50px;
 }
 
-.widgets .flex {
+.widgets .container .flex {
   align-items: flex-start;
 }
-.widgets .flex > * {
+.widgets .container .flex > * {
   margin-right: 20px;
   width: 50%;
 }
-.widgets .heading:after {
+.widgets .container iframe {
+  width: 100%;
+}
+.widgets .container .heading {
+  line-height: 1.5;
+}
+.widgets .container .heading:after {
   content: "";
   width: 50px;
   height: 4px;
@@ -305,6 +328,11 @@ footer {
   margin-top: 10px;
 }
 
+@media (max-width: 1024px) {
+  header .title {
+    font-size: 1.25em;
+  }
+}
 @media (max-width: 992px) {
   header {
     position: relative;
@@ -345,6 +373,24 @@ footer {
     margin: 0 0 0 auto;
     color: #39FF14;
     font-size: 1.5em;
+  }
+
+  .widgets .container .flex > *,
+.testimonial-list .testimonial-item {
+    width: 100%;
+  }
+
+  .article-list .post {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .article-list .post {
+    width: 100%;
   }
 }
 

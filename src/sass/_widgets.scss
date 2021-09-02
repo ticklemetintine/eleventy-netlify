@@ -1,4 +1,4 @@
-.widgets {
+.widgets .container {
     .flex {
         align-items: flex-start;
 
@@ -8,7 +8,13 @@
         }
     }
 
+    iframe {
+        width: 100%;
+    }
+
     .heading {
+        line-height: 1.5;
+        
         &:after {
             content: '';
             width: 50px;

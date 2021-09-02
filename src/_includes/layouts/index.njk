@@ -22,8 +22,8 @@ title: Home
                 {% for post in collections.posts %}
 
                     {% if post.data.isFeatured and count <= fp_count %}
-
-                        <a href="{{ post.url | url }}" class="post flex column space-between">
+                        <div class="post ">
+                        <a href="{{ post.url | url }}" class="flex column">
                             <img src="{{ post.data.featuredImage | url }}" alt="featured-image">
                             
                             <div class="details">
@@ -35,6 +35,7 @@ title: Home
                                 </span>
                             </div>
                         </a>
+                        </div>
                         {% set count = count + 1 %}
 
                     {% endif %}

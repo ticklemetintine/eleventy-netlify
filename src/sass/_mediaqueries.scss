@@ -1,5 +1,7 @@
 @media (max-width: $screen-xlg) {
-
+    header .title {
+        font-size: 1.25em;
+    }
 }
 
 @media (max-width: $screen-lg) {
@@ -49,10 +51,26 @@
             font-size: 1.5em;
         }
     }
+    
+    .widgets .container .flex > *,
+    .testimonial-list .testimonial-item {
+        width: 100%;
+    }
+
+    .article-list .post {
+        width: 45%;
+    }
+    
 }
 
 @media (max-width: $screen-md) {
-
+    .container {
+        padding: 20px;
+    }
+    
+    .article-list .post {
+        width: 100%;
+    }
 }
 
 @media (max-width: $screen-sm) {

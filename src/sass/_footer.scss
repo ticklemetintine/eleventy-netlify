@@ -1,5 +1,9 @@
 footer {
     background: darken($neon-pink, 20%);
     margin: 0;
-    padding: 10px;
+    padding: 5px 10px;
+
+    p {
+        margin: 0;
+    }
 }
