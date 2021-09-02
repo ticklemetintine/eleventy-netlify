@@ -7,7 +7,7 @@ intro: >
 
 
   Nunc ut dui purus. Donec efficitur nisl ac metus dignissim, sed tristique dolor sagittis. Nam id fermentum quam, egestas tristique lorem.
-fp_show: true
+fp_show: false
 fp_heading: Featured Posts
 fp_count: 3
 outro: >-
