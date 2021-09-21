@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: 1914 translation by H. Rackham
+title: 1914 translation by H. Rackhamd
 description: But I must explain to you how all this mistaken idea of denouncing
 date: 2021-08-11T16:00:00.000Z
 featuredImage: /images/uploads/3660.jpg
