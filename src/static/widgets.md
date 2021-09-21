@@ -41,15 +41,15 @@ map_heading: Map Value
 map: '{"type":"Point","coordinates":[103.8337827,1.2935731]}'
 object_heading: Object Values
 profile:
-  birthdate: 08/02/1991
+  birthdate: 06/29/1995
   public: true
   name: Justine Salangsang
   address:
-    street: 1 Simei St 4
+    street: Simei
     post-code: "529861"
     city: Singapore
-    postcode: "529861"
-favorite_post: -------2
+    postcode: "123456"
+favorite_post: my-third-blog-post
 airport_code: SG
 date: 1991-08-01T16:00:00.000Z
 airport-code: SG
