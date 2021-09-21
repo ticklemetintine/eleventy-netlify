@@ -25,7 +25,7 @@ collections:
     label: "Testimonials"
     folder: "src/testimonials"
     create: true
-    slug: "testimonial"
+    slug: "{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/testimonial.njk" }
       - { label: "Title", name: "title", widget: "string" }
