@@ -2,8 +2,8 @@
 permalink: /
 layout: layouts/index.njk
 banner: /images/uploads/1624.jpg
-intro: >
-  Hello! Welcome to the Eleventy + Netlify CMS!
+intro: >-
+  Hello! Welcome to the Eleventy + Netlify CMS! Hello
 
 
   Nunc ut dui purus. Donec efficitur nisl ac metus dignissim, sed tristique dolor sagittis. Nam id fermentum quam, egestas tristique lorem.
