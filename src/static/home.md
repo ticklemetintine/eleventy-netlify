@@ -24,7 +24,7 @@ outro: >-
 
 
   Pellentesque sem mauris, luctus in sagittis vitae, luctus ut ante. Praesent diam lacus, tempor ut egestas eu, aliquet non velit. Quisque vel turpis malesuada, eleifend diam eget, consequat sem. Quisque ultricies magna sit amet tempor vulputate. Proin eu scelerisque neque. Quisque lobortis faucibus orci sed laoreet. Nulla tincidunt feugiat tellus. Donec feugiat luctus tellus, non aliquam massa ornare eget. Maecenas et gravida justo. Sed finibus sit amet ligula vitae ultrices. Phasellus ac dolor augue. Sed sollicitudin eros eget turpis egestas, quis hendrerit tortor varius. Mauris et neque elementum, volutpat dolor ac, egestas nisl.
-ft_show: false
+ft_show: true
 ft_heading: What they say
 ft_count: 5
 ---
