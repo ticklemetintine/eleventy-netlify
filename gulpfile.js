@@ -25,10 +25,12 @@ gulp.task('min-js', function() {
             "_site/scripts/common/*.js"
         ], { base: './' }))
         .pipe(concat("all.min.js"))
+        .pipe(uglify())
         .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest('./src/scripts'));
     var footer = gulp.src(['./src/scripts/common/footer.js'])
         .pipe(concat("footer.min.js"))
+        .pipe(uglify())
         .pipe(gulp.dest('./src/scripts'));
     var vendors = gulp.src(['./src/scripts/vendors/blacksunplc-115258.min.js',
             './src/scripts/vendors/jquery-3.5.1.min.js'
@@ -51,6 +53,7 @@ gulp.task('min-js', function() {
 /* minify and dist javascript files that have not been named as minified already */
 gulp.task('dist-others', function() {
     var mini = gulp.src(['_site/scripts/**/*.js', '!_site/scripts/common/*.js', '!_site/scripts/vendors/*.js', '!_site/scripts/*.min.js'])
+        .pipe(uglify())
         .pipe(gulp.dest('./_site/scripts'));
     var copy = gulp.src(['_site/scripts/*.min.js'])
         .pipe(gulp.dest('./_site/scripts'));

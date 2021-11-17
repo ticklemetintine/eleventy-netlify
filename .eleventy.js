@@ -25,7 +25,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/styles");
     eleventyConfig.addPassthroughCopy("src/fonts");
     eleventyConfig.addPassthroughCopy("src/scripts");
+    eleventyConfig.addPassthroughCopy("src/main");
+    eleventyConfig.addPassthroughCopy("src/sitemap.html");
+    eleventyConfig.addPassthroughCopy("src/sitemap-en.xml");
+    eleventyConfig.addPassthroughCopy("src/sitemap-zh.xml");
     eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("bin");
+    eleventyConfig.addPassthroughCopy("config");
 
     eleventyConfig.addWatchTarget("./src/sass/");
     eleventyConfig.addPassthroughCopy("./src/css/");

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <stringAttribute key="bad_container_name" value="\blacksun-ex\bin"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/blacksunplc-js/lib/closure-compiler.jar"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.javascript.jscomp.CommandLineRunner"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--compilation_level SIMPLE --strict_mode_input --language_in ECMASCRIPT3 --language_out ECMASCRIPT3 --output_wrapper_file src/resources/conf/output_wrapper.txt --assume_function_wrapper --define INCLUDE_DEPRECATED=false --js_output_file ${workspace_loc:/temasek-review-2021}/web/scripts/blacksunplc-${string_prompt:SVN revision number?}.min.js --externs src/externs/javascript/google_universal_analytics_api.js --externs src/externs/javascript/browsers.js --externs src/externs/javascript/blacksunplc.js --js src/main/javascript/defines.js src/main/javascript/blacksunplc-objects.js src/main/javascript/blacksunplc-iterables.js src/main/javascript/blacksunplc-numbers.js src/main/javascript/blacksunplc-functions.js src/main/javascript/blacksunplc-arrays.js src/main/javascript/blacksunplc-strings.js src/main/javascript/blacksunplc-dates.js src/main/javascript/blacksunplc-collections.js src/main/javascript/blacksunplc-async.js src/main/javascript/blacksunplc-attributes.js src/main/javascript/blacksunplc-nodes.js src/main/javascript/blacksunplc-events.js src/main/javascript/blacksunplc-jsonml.js src/main/javascript/blacksunplc-css.js src/main/javascript/blacksunplc-urls.js src/main/javascript/blacksunplc-security.js src/main/javascript/blacksunplc-storage.js src/main/javascript/blacksunplc-geometry.js src/main/javascript/blacksunplc-analytics.js"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="blacksunplc-js"/>
+</launchConfiguration>

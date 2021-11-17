@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <stringAttribute key="bad_container_name" value="\blacksun-ex\bin"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/blacksunplc-js/lib/closure-compiler.jar"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.javascript.jscomp.CommandLineRunner"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--compilation_level SIMPLE --strict_mode_input --language_in ECMASCRIPT3 --language_out ECMASCRIPT3 --assume_function_wrapper --js_output_file web/vslashr/th_common/assets/js/iframeResizer.min.js --js src/main/javascript/iframeResizer.js"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="temasek-review-2021"/>
+</launchConfiguration>
