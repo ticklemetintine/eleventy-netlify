@@ -1,7 +1,9 @@
 ---
 permalink: /
 layout: layouts/index.njk
-banner: /images/uploads/1624.jpg
+banner: /images/uploads/banner.jpg
+banner_mobile: /images/uploads/banner-mobile.jpg
+banner_mobile_landscape: /images/uploads/banner-mobile-landscape.jpg
 intro: >-
   Hello! Welcome to the Eleventy + Netlify CMS! Hello
 
