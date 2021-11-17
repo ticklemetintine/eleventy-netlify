@@ -20,6 +20,24 @@ teasers:
     writeup: A year on, the despair and devastation of the COVID-19 pandemic waves
       are still fresh in our collective memory.
     teaser_name: overcoming
+  - placement: left
+    custom_id: no-one-is-safe-till-everyone-is-id
+    custom_class: teaser-safe-till-everyone
+    background: /images/uploads/teaser-2.png
+    clickables:
+      - type: link
+        placeholder: Rising Above COVID-19
+        value: steward/rising-above-covid-19.html
+    background_mobile: /images/uploads/teaser-mobile-2.jpg
+    title: No One is Safe
+    sub_title: Till Everyone is
+    writeup: >-
+      The world had pulled together, however untidily, to accelerate science and
+      solutions to overcome the scourge.
+
+
+      We now see a ray of hope that research and vaccines can offer.
+    teaser_name: safe
 outro: >-
   ### At vero eos et accusamus et
 
