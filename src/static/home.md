@@ -116,6 +116,6 @@ ft_heading: What they say
 fp_show: true
 fp_count: 1
 description: We commit to sustainability at our core; to stay resilient and
-  purposeful always; as we bounce forward together.
+  purposeful always; as we bounce forward together..
 ft_count: 5
 ---
