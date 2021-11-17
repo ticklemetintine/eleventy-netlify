@@ -1,11 +1,11 @@
 .tr-homepage-banner {
     height: 100vh;
-    background-image: url(/images/homepage/banner-v2.jpg);
+    // background-image: url(/images/homepage/banner-v2.jpg);
     background-size: cover;
     background-position: top;
     display: flex;
     justify-content: center;
-    padding: 80px 40px;
+    // padding: 80px 40px;
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -14,7 +14,7 @@
     transform-origin: 52vw 27vw;
 
     @media screen and (min-width: 1800px) {
-        background-image: url(/images/homepage/banner.jpg);
+        // background-image: url(/images/homepage/banner.jpg);
         transform-origin: 53.10vw 19vw;
     }
 
@@ -35,12 +35,12 @@
     }
 
     @media @device-max840 {
-        background-image: url(/images/homepage/banner-mobile.jpg);
+        // background-image: url(/images/homepage/banner-mobile.jpg);
     }
 
     @media @mobile-landscape {
         transform-origin: 51vw 15vw;
-        background-image: url(/images/homepage/banner-mobile-landscape.jpg);
+        // background-image: url(/images/homepage/banner-mobile-landscape.jpg);
     }
 
     @media all and (-ms-high-contrast: none),
@@ -52,7 +52,18 @@
     }
 
     img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        @media @device-max840 {
+            height: 100%;
+            width: auto;
+        }
+
+        @media @mobile-landscape {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 

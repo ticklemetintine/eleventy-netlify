@@ -41,6 +41,8 @@ collections:
         fields:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
           - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/index.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
           - { label: "Banner Image", name: "banner", widget: "image" }
           - { label: "Banner Mobile Image", name: "banner_mobile", widget: "image" }
           - { label: "Banner Mobile Image (Landscape)", name: "banner_mobile_landscape", widget: "image" }

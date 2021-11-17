@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 slug: tr-homepage
-title: Home
 ---
 
 <div class="tr-switch-section">
@@ -135,6 +134,12 @@ title: Home
 <div class="group-section-animation overflow-hidden">
 
     <section class="tr-homepage-banner">
+        <picture>
+            <source srcset="{{banner | url}}" media="(min-width: 1800px)">
+            <source srcset="{{banner_mobile_landscape | url}}" media="(max-height: 548px) and (orientation: landscape)">
+            <source srcset="{{banner_mobile | url}}" media="(max-width: 840px)">
+            <img srcset="{{banner | url}}" alt="…">
+        </picture>
     </section>
 
     <section id="overcoming-challenges-id" class="fullwidth-teaser teaser-overcoming-challenges" data-element="overcoming">

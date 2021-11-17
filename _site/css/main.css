@@ -9496,12 +9496,10 @@ html[lang="zh"] .tr-keystats .desc {
 }
 .tr-homepage-banner {
   height: 100vh;
-  background-image: url(/images/homepage/banner-v2.jpg);
   background-size: cover;
   background-position: top;
   display: flex;
   justify-content: center;
-  padding: 80px 40px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -9511,7 +9509,6 @@ html[lang="zh"] .tr-keystats .desc {
 }
 @media screen and (min-width: 1800px) {
   .tr-homepage-banner {
-    background-image: url(/images/homepage/banner.jpg);
     transform-origin: 53.1vw 19vw;
   }
 }
@@ -9536,14 +9533,10 @@ html[lang="zh"] .tr-keystats .desc {
   }
 }
 @media screen and (max-width: 840px) {
-  .tr-homepage-banner {
-    background-image: url(/images/homepage/banner-mobile.jpg);
-  }
 }
 @media only screen and (max-height: 548px) and (orientation: landscape) {
   .tr-homepage-banner {
     transform-origin: 51vw 15vw;
-    background-image: url(/images/homepage/banner-mobile-landscape.jpg);
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -9555,7 +9548,20 @@ html[lang="zh"] .tr-keystats .desc {
   }
 }
 .tr-homepage-banner img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 840px) {
+  .tr-homepage-banner img {
+    height: 100%;
+    width: auto;
+  }
+}
+@media only screen and (max-height: 548px) and (orientation: landscape) {
+  .tr-homepage-banner img {
+    width: 100%;
+    height: auto;
+  }
 }
 .tr-sectionpage-banner {
   display: flex;
