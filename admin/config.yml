@@ -50,6 +50,10 @@ collections:
             name: "teasers"
             widget: "list"
             fields:
+              - {label: Teaser name, name: teaser_name, widget: "string" }
+              - {label: Title, name: title, widget: "string" }
+              - {label: Sub-title, name: sub_title, widget: "string" }
+              - {label: Writeup, name: writeup, widget: "text" }
               - label: "Content Placement"
                 name: "placement"
                 widget: "select"
@@ -59,9 +63,6 @@ collections:
 
               - {label: Custom ID, name: custom_id, widget: "string", required: false }
               - {label: Custom Class, name: custom_class, widget: "string", required: false }
-              - {label: Title, name: title, widget: "string" }
-              - {label: Sub-title, name: sub_title, widget: "string" }
-              - {label: Writeup, name: writeup, widget: "text" }
               - {label: "Background Image", name: 'background', widget: 'image'}
               - {label: "Background Image Mobile", name: 'background_mobile', widget: 'image'}
               - label: "Clickables"
