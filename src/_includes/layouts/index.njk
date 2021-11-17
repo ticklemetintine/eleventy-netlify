@@ -175,8 +175,6 @@ slug: tr-homepage
                             </a>
                         {% endif %}
                     {% endfor %}
-                    
-                    
                 </div>
             </div>
         </div>
@@ -184,7 +182,47 @@ slug: tr-homepage
 </div>
 
 {% for item in teasers %}
-<p>{{loop.index}}</p> 
+    {% if loop.index > 1 %}
+        <section id="{{item['custom_id']}}" class="fullwidth-teaser {{item['custom_class']}} overlap-top" data-element="{{item['teaser_name']}}">
+            <div class="tr-teaser">
+
+                <div class="tr-teaser__image"></div>
+                <div class="tr-teaser__content content-{{item['placement']}} text-white ">
+                    <div class="tr-teaser__description">
+                        <h2 class="animate__animated">
+                            <span class="h2-butter-times">{{item['title']}}</span>
+                            {{item['sub_title']}}
+                        </h2>
+                        <p class="animate__animated">
+                            {{item['writeup']}}
+                        </p>
+                    </div>
+                    <div class="tr-teaser__action animate__animated">
+                        {% for clickable in teasers[0]['clickables'] %}
+                            {% if clickable['type'] == 'link' %}
+                                <a class="anchor anchor-white" href="{{clickable['value']}}">
+                                    <span class="icon"><span class="icon-inner"></span></span>
+                                    <span class="anchor-text">
+                                        {{clickable['placeholder']}}
+                                    </span>
+                                </a>
+                            {% else %}
+                                <a class="anchor anchor-white media-open" href="#" data-video-id="{{clickable['value']}}">
+                                    <div class="button-play button-play-transparent">
+                                        <span class="play-icon">
+                                        </span>
+                                    </div>
+                                    <span class="play-link-text">
+                                        {{clickable['placeholder']}}
+                                    </span>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
 {% endfor %}
 
 <section id="no-one-is-safe-till-everyone-is-id" class="fullwidth-teaser teaser-safe-till-everyone overlap-top" data-element="safe">
