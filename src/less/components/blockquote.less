@@ -1,0 +1,109 @@
+.blockquote {
+    position: relative;
+    text-align: center;
+    margin: 40px 0 40px;
+
+    @media @mobile {
+        padding: 20px 0;
+        margin: 20px 0 20px;
+    }
+
+    &.padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    &--text {
+        margin-bottom: 30px;
+        position: relative;
+
+        html:lang(zh) & {
+            font-style: normal;
+        }
+
+        p {
+            font-style: italic;
+
+            html:lang(zh) & {
+                font-style: normal;
+            }
+
+            &:before {
+                content: "\201C";
+                display: inline;
+                font-style: italic;
+                margin-right: 5px;
+            }
+
+            &:after {
+                content: "\201D";
+                display: inline;
+                font-style: italic;
+            }
+        }
+    }
+
+    &--attribution span {
+        white-space: nowrap;
+    }
+
+    html:lang(zh) &--attribution  {
+        margin: 20px 0;
+        line-height: 1.3;
+    }
+
+    p {
+        margin-bottom: 0 !important;
+        font-weight: normal;
+    }
+
+    .h3 {
+        font-weight: 300;
+
+        html:lang(zh) & {
+            letter-spacing: 0.12em;
+        }
+    }
+
+    &--attribution-name {
+        font-weight: 700;
+    }
+
+    .h4 {
+        color: @grey-p  !important;
+        font-size: 14px;
+        font-weight: 300;
+
+        @media @desktop {
+            font-size: 17px;
+        }
+    }
+
+    .on-top {
+        html:lang(zh) & {
+            margin-bottom: 15px !important;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: 'a';
+        font-family: "BetterTimesSwash";
+        font-size: 60px;
+        line-height: 1;
+        display: block;
+    }
+
+    &:before {
+        top: 0
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    &--no-attribution {
+        .blockquote--text {
+            margin-bottom: 0;
+        }
+    }
+}

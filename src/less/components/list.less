@@ -1,0 +1,54 @@
+ul.disc {
+    padding: 0;
+    list-style: none;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 0;
+        padding-left: 15px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 4px;
+            height: 4px;
+            border-radius: 1000px;
+
+            @media @tablet {
+                top: 12px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ul.lower-roman {
+    padding: 0 0 0 20px;
+    list-style: lower-roman;
+
+    html[lang="zh"] & {
+        padding: 0 0 0 30px;
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ul.decimal {
+    margin-left: 20px;
+    list-style: decimal;
+    .contentpage .contentpage-body & {
+        margin-left: 20px;
+    }
+}

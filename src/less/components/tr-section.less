@@ -1,0 +1,380 @@
+.tr-section {
+    padding: 80px 0 60px;
+    overflow: hidden;
+
+    .tr-section-wrapper {
+        @media screen and (max-width : 1024px) {
+            padding: 0 80px;
+        }
+
+        @media @mobile-portrait {
+            padding: 0 20px;
+        }
+    }
+
+    &__header {
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        color: @temasek-purple;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p,
+        html[lang="zh"] & p {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: normal;
+
+            @media @device-max840 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__carousel {
+        margin: 0 -20px;
+
+        @media screen and (max-width: 600px) {
+            width: 90%;
+
+            .slick-list {
+                overflow: visible;
+            }
+        }
+    }
+
+    &__carousel-item {
+        padding: 40px 20px;
+        outline: none;
+
+        * {
+            outline: none;
+        }
+    }
+
+    .slick-arrow {
+        font-family: "icomoon";
+        height: 35px;
+        width: 35px;
+        border: 2px solid white;
+        border-radius: 50%;
+
+        &::before {
+            font-size: 14px;
+            opacity: 1;
+        }
+
+        &:hover {
+            background-color: @temasek-purple;
+            border-color: @temasek-purple;
+            .box-shadow(black, 0, 10px, 10px, .30);
+
+            &::before {
+                color: white;
+            }
+        }
+    }
+
+    .slick-next {
+        right: -35px;
+
+        @media @mobile-portrait {
+            right: -25px;
+        }
+
+        &::before {
+            content: "\e927";
+        }
+    }
+
+    .slick-prev {
+        left: -35px;
+
+        @media @mobile-portrait {
+            left: -25px;
+        }
+
+        &::before {
+            content: "\e926";
+        }
+    }
+}
+
+/* Our Major Investment carousel styling */
+.tr-section-major-investments {
+    background-color: @investor;
+
+    .tr-section__header {
+        color: white;
+
+        h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 38px;
+
+            @media @desktop-large-max {
+                font-size: 32px;
+            }
+
+            @media @device-max840 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .investments-slide {
+        height: 300px;
+        background-color: white;
+        position: relative;
+        border-radius: 10px;
+        text-align: center;
+        .box-shadow (black, @hOffset: 0, @vOffset: 10px, @blur: 20px, @opacity: .16);
+
+        @media @device-max840 {
+            height: 240px;
+        }
+
+        img {
+            height: 80%;
+            display: inline-block;
+
+            @media @desktop-large-max {
+                width: 100%;
+            }
+        }
+
+        .anchor-perent {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            margin: 0;
+            align-items: flex-end;
+            display: flex;
+
+            &:hover {
+                .icon-inner {
+                    animation-name: animate-arrow;
+                    animation-duration: .8s;
+                    animation-iteration-count: 2;
+                }
+            }
+
+            .anchor {
+                margin: 20px 10px;
+                color: @investor;
+                width: 100%;
+                justify-content: center;
+
+                @media @desktop-large-max {
+                    font-size: 16px;
+                }
+            }
+
+            .anchor .icon {
+                border-color: @investor;
+
+                @media @desktop-large-max {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+/* More stories carousel styling */
+.tr-section-more-stories {
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: @temasek-purple;
+
+        &:hover {
+            color: white;
+        }
+
+        &.anchor {
+            &:hover {
+                color: @temasek-purple;
+            }
+        }
+    }
+
+    &.financials h4,
+    &.our-financials-and-portfolio h5 {
+        color: @temasek-purple;
+    }
+
+    &.our-financials-and-portfolio h5 {
+        font-size: 19px;
+
+        @media screen and (max-width: 1380px) {
+            font-size: 16px;
+        }
+    }
+
+    h4,
+    &.our-financials-and-portfolio h5 {
+        font-weight: 700;
+        margin-bottom: 12px;
+        height: 50px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 14px;
+            height: 44px;
+        }
+    }
+
+    .story-slide {
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        .box-shadow (black, @hOffset: 0, @vOffset: 10px, @blur: 20px, @opacity: .16);
+        padding-bottom: 150px;
+
+        .towards-a-net-zero-world & {
+            padding-bottom: 140px;
+        }
+
+        &__image {
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+        }
+
+        &__content {
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.57;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity .3s, max-height .3s;
+        }
+
+        &:hover {
+            .story-slide__content {
+                background-color: @investor;
+
+                [data-theme=institution]& {
+                    background-color: @institution;
+                }
+
+                [data-theme=steward]& {
+                    background-color: @steward;
+                }
+
+                [data-theme=overview]& {
+                    background-color: @overview;
+                }
+            }
+
+            p {
+                max-height: 120px;
+                opacity: 1;
+                color: @white;
+            }
+
+            .icon-inner {
+                animation-name: animate-arrow;
+                animation-duration: .8s;
+                animation-iteration-count: 2;
+            }
+
+            .icon {
+                border-color: white;
+                color: white;
+            }
+        }
+    }
+
+    .slick-arrow {
+        border-color: @temasek-purple;
+        height: 40px;
+        width: 40px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: @temasek-purple;
+    }
+
+    &.financials,
+    &.our-financials-and-portfolio {
+        .tr-section__carouse {
+            padding-bottom: 40px;
+        }
+
+        .slick-slide,
+        a:focus,
+        p:focus {
+            outline: none;
+        }
+
+        .story-slide {
+            padding-bottom: 70px;
+
+            h4,
+            h5 {
+                height: auto;
+                margin-bottom: 0;
+                position: relative;
+
+                &::after {
+                    content: "\e927";
+                    font-family: "icomoon";
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            h5 {
+                margin-bottom: 4px;
+            }
+
+            &:hover {
+                padding-bottom: 70px;
+
+                p {
+                    color: white;
+                    max-height: 200px;
+                }
+
+                h4,
+                h5 {
+                    display: none;
+                }
+
+                .story-slide__content {
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+
+        .story-slide__content {
+            border-radius: 0 0 10px 10px;
+
+            p {
+                margin-bottom: 0;
+                transition: max-height 0.5s, opacity 0.3s;
+
+            }
+        }
+
+    }
+}

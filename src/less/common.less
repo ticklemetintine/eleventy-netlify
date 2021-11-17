@@ -1,0 +1,513 @@
+@keyframes arrow-head {
+    0% {
+        bottom: 100%;
+        opacity: 1;
+    }
+
+    30% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    55% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    70% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.no-break {
+    display: inline-block;
+}
+
+.tooltip {
+    border-bottom: 1px dotted @temasek-purple;
+    cursor: help;
+    color: @temasek-purple;
+    z-index: 1;
+    position: relative;
+    font-weight: normal;
+}
+
+.tooltipster-box {
+    border-radius: 5px;
+}
+
+.tooltipster-content {
+    a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.mac-os-scrollbar-override {
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        height: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+}
+
+.fake-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 20px;
+    .mac-os-scrollbar-override;
+}
+
+.scroll {
+    height: 20px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+.bond-update-date {
+    font-size: 15px;
+    color: #242A2D;
+    font-weight: 300;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        display: block;
+        padding: 10px 0 0 0;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+
+    &--till-iPad {
+        @media @tablet {
+            white-space: nowrap;
+        }
+    }
+}
+
+.overflow-x-scroll {
+    overflow-x: auto;
+    .mac-os-scrollbar-override;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.link-button {
+    float: right;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: #006ba6;
+    border: 2px solid #bfdae9;
+    border-radius: 20px;
+    padding: 10px 16px;
+    transition: all .25s cubic-bezier(.19, 1, .22, 1);
+
+    @media (max-width:767px) {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:hover {
+        color: @white;
+        background: @temasek-blue;
+        border-color: @temasek-blue;
+        transition: .25s;
+    }
+
+    &.lightbox-button {
+        color: @temasek-purple;
+        border: 2px solid @pale-purple;
+
+        &:hover {
+            border-color: @temasek-purple;
+            background: @temasek-purple;
+            color: @white;
+        }
+    }
+}
+
+.link {
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+
+    &-animated {
+
+        &:not(.circle-off) {
+            color: @temasek-purple;
+            line-height: 32px;
+            position: relative;
+            padding-left: 30px;
+
+            .homepage & {
+                font-size: 14px;
+                margin-bottom: 30px;
+
+                @media @mobile {
+                    html:lang(zh) & {
+                        font-size: 16px;
+                    }
+                }
+
+                @media @tablet {
+                    font-size: 17px;
+                    padding-left: 40px;
+
+                    html:lang(zh) & {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &.expand-arrow {
+
+            .arrow {
+                position: absolute;
+                display: block;
+                top: 5px;
+                left: 0;
+                height: 20px;
+                width: 20px;
+
+                @media @desktop {
+                    height: 32px;
+                    width: 28px;
+                    top: 0;
+                }
+
+                .sectionpage &,
+                .our-story-page & {
+                    top: 0;
+                }
+
+                &::before {
+                    content: "";
+                    width: 14px;
+                    height: 2px;
+                    background: @temasek-purple;
+                    position: relative;
+                    top: 50%;
+                    left: 0;
+                    transition: all 0.2s ease-in-out;
+                    display: block;
+
+                    @media @tablet {
+                        width: 18px;
+                    }
+
+                }
+
+                &-head {
+                    display: block;
+                    height: 100%;
+                    width: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 3px;
+                    font-size: 16px;
+                    color: @temasek-purple;
+                    transition: all 0.2s ease-in-out;
+
+                    @media @tablet {
+                        left: 7px;
+                    }
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        display: block;
+                        background: @temasek-purple;
+                        height: 0;
+                        border: 1px solid #3c1053;
+                        width: 7px;
+                        left: 1px;
+
+                        @media @tablet {
+                            width: 9px;
+
+                            html:lang(zh) & {
+                                width: 8px;
+                            }
+                        }
+                    }
+
+                    &::before {
+                        transform: rotate(42deg);
+                        transform-origin: bottom right;
+                        position: absolute;
+
+                    }
+
+                    &::after {
+                        transform: rotate(-42deg);
+                        transform-origin: top right;
+                        position: relative;
+                    }
+
+                }
+
+                &-link-text {
+                    display: block;
+                    position: relative;
+                    left: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            &:hover,
+            &:active {
+
+                .arrow {
+                    opacity: 0.5;
+
+                    &-head {
+                        left: 10px;
+                    }
+
+                    &:before {
+                        width: 21px;
+                    }
+
+                    &-link-text {
+                        left: 9px;
+                    }
+
+                    @media @tablet {
+                        &-head {
+                            left: 15px;
+                        }
+
+                        &:before {
+                            width: 27px;
+                        }
+                    }
+                }
+            }
+
+            &-white {
+                .arrow {
+                    &::before {
+                        background: white;
+                    }
+
+                    &-head {
+                        color: white;
+
+                        &::before,
+                        &::after {
+                            background: white;
+                            border: 1px solid white;
+                        }
+                    }
+
+                    &-link-text {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &.play-button {
+            .play {
+                position: absolute;
+                display: block;
+                top: 5px;
+                left: -2px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: @temasek-purple;
+                padding: 1px;
+                box-shadow: 0 0 1px 0 @temasek-purple inset, 0 0 1px 0 @temasek-purple;
+
+                @media @desktop {
+                    height: 30px;
+                    width: 30px;
+                    top: 0;
+                    left: -4px;
+                }
+
+                @media @desktop {
+                    &:before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        border: 1px solid;
+                        border-radius: 50%;
+                        width: 94%;
+                        height: 94%;
+                        top: 0px;
+                        left: 0px;
+                        opacity: 0.8;
+                    }
+                }
+
+                &-inner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 5;
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    box-shadow: 0 0 1px 0 white inset, 0 0 1px 0 white;
+
+                    @media @desktop {
+                        height: 28px;
+                        width: 28px;
+                    }
+
+                    .play-fill-before {
+                        font-size: 6px;
+                        margin-left: 3px;
+                        margin-top: 2px;
+
+                        @media @desktop {
+                            font-size: 9px;
+                            margin-left: 3px;
+
+                            html:lang(zh) & {
+                                margin-top: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media @desktop {
+                &:hover {
+                    .play:before {
+                        animation: play-pulse 1s linear 2 forwards;
+                    }
+                }
+            }
+
+
+        }
+
+        &.circle-off {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 0;
+            transform: translateZ(0);
+            transition: transform .5s;
+            overflow: hidden;
+            display: block;
+
+            @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+                &:before {
+                    content: '';
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    opacity: 1;
+                    display: block;
+                    transition: opacity 0.3s ease;
+
+                    .sectionpage &,
+                    .our-major-investments-index & {
+                        position: absolute;
+                        border: 1px solid @temasek-purple;
+                        top: 0;
+                        left: 0;
+                        height: 27px;
+                        width: 27px;
+                    }
+                }
+
+                svg.arrow-icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            path {
+                fill: white;
+                stroke: none;
+            }
+
+            &.purple {
+                path {
+                    fill: @temasek-purple;
+                }
+            }
+
+            .arrow-icon {
+                position: relative;
+                -webkit-transition: -webkit-transform 0.3s ease;
+                transition: -webkit-transform 0.3s ease;
+                transition: transform 0.3s ease;
+                transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                vertical-align: middle;
+            }
+
+            .arrow-icon--circle {
+                stroke-linecap: round;
+                stroke-dasharray: 200;
+                stroke-dashoffset: 0;
+                transition: stroke-dashoffset ease-out .4s;
+            }
+
+            &:hover,
+            &:active {
+                .arrow-icon--circle {
+                    stroke-dashoffset: 200;
+                }
+
+                @media all and (-ms-high-contrast: none),
+                (-ms-high-contrast: active) {
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

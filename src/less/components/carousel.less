@@ -1,0 +1,69 @@
+.carousel {
+    &.slick-slider {
+        position: inherit;
+        -webkit-user-select: auto;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    &.slick-vertical {
+        .slick-arrow {
+            height: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .slick {
+
+        &-slide {
+            overflow: auto;
+            border: 0;
+            outline: none;
+            backface-visibility: hidden;
+        }
+
+        &-pager {
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            text-align: center;
+            color: @temasek-purple;
+        }
+
+        &-arrow {
+            width: 40px;
+            height: 43px;
+            text-align: center;
+            line-height: 43px;
+            z-index: 1;
+
+            @media @tablet {
+                top: -10px;
+                right: 35px;
+            }
+
+            &:before {
+                display: none;
+            }
+
+            i {
+                position: relative;
+                font-size: 16px;
+                color: @temasek-purple;
+
+                &:before {
+                    position: relative;
+                }
+            }
+        }
+
+        &-prev {
+            transform: rotate(180deg);
+        }
+    }
+}

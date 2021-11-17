@@ -1,0 +1,117 @@
+.tr-homepage {
+    padding-top: 0;
+
+    .fullwidth-teaser {
+
+        &[data-element=overcoming] {
+            min-height: 100vh;
+            opacity: 0;
+
+            @media @device-max840 {
+                min-height: auto;
+                background-color: white;
+
+                .tr-teaser__image::before {
+                    content: none;
+                }
+            }
+        }
+
+        &[data-element=forward],
+        &[data-element=determination] {
+            .tr-teaser::after {
+                left: auto;
+                right: -5%;
+            }
+        }
+
+        &[data-element=overcoming] .tr-teaser__image {
+            background-image: url(/images/homepage/teasers/teaser-1.jpg);
+            background-position: left;
+
+            @media @device-max840 {
+                background-image: url(/images/homepage/teasers/teaser-mobile-1.jpg);
+            }
+        }
+
+        &[data-element=safe] {
+            .tr-teaser__image {
+                background-image: url(/images/homepage/teasers/teaser-2.png);
+
+                @media @device-max840 {
+                    background-image: url(/images/homepage/teasers/teaser-mobile-2.jpg);
+                }
+            }
+
+            .tr-teaser__content {
+                max-width: 450px;
+            }
+        }
+
+        &[data-element=forward] {
+            .tr-teaser__image {
+                background-image: url(/images/homepage/teasers/teaser-3.png);
+
+                @media @tablet-max1 {
+                    background-position: 40%;
+                }
+
+                @media @device-max840 {
+                    background-image: url(/images/homepage/teasers/teaser-mobile-3.jpg);
+                }
+            }
+
+            .tr-teaser__content {
+                top: 46%;
+            }
+
+            .h2-butter-times {
+                margin-left: 4px;
+            }
+        }
+
+        &[data-element=catalysing] .tr-teaser__image {
+            background-image: url(/images/homepage/teasers/teaser-4.png);
+
+            @media @device-max840 {
+                background-image: url(/images/homepage/teasers/teaser-mobile-4.jpg);
+            }
+        }
+
+        &[data-element=bouncing] {
+            .tr-teaser__image {
+                background-image: url(/images/homepage/teasers/teaser-5.png);
+
+                @media @device-max840 {
+                    background-image: url(/images/homepage/teasers/teaser-mobile-5.jpg);
+                }
+            }
+
+            .tr-teaser__content {
+                max-width: 475px;
+
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    max-width: 485px;
+                
+                }
+
+                @media @desktop-large-max {
+                    max-width: 400px;
+                }
+            }
+        }
+
+        html[lang=zh] & .title {
+            height: 80px;
+            margin-bottom: 44px;
+
+            @media @mobile {
+                height: 70px;
+
+                .cls-3 {
+                    fill: @temasek-purple;
+                }
+            }
+        }
+    }
+}

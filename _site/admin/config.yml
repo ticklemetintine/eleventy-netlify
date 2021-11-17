@@ -40,8 +40,10 @@ collections:
         file: "src/static/home.md"
         fields:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/index.njk" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/index.njk" }
           - { label: "Banner Image", name: "banner", widget: "image" }
+          - { label: "Banner Mobile Image", name: "banner_mobile", widget: "image" }
+          - { label: "Banner Mobile Image (Landscape)", name: "banner_mobile_landscape", widget: "image" }
           - { label: "Intro", name: "intro", widget: markdown }
           - { label: "Show featured posts?", name: "fp_show", widget: "boolean" }
           - { label: "Featured Post Heading", name: "fp_heading", widget: "string" }

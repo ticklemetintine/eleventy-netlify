@@ -1,0 +1,33 @@
+.breadcrumb {
+    margin: 0 30px;
+
+    ul {
+        font-size: 0;
+        margin-bottom: 0;
+
+        html[lang="zh"] & {
+            font-size: 0;
+        }
+    }
+
+    li {
+        display: inline-block;
+        font-size: 11px;
+        color: #828282;
+
+        .breadcrumb-seperator {
+            margin: 0 5px;
+        }
+
+        a {
+            font-size: 11px;
+            color: #828282;
+        }
+
+        &.is-active {
+            a {
+                color: @temasek-purple;
+            }
+        }
+    }
+}

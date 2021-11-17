@@ -1,0 +1,45 @@
+.animate__animated {
+    opacity: 0;
+
+    &.animate-active {
+        animation-name: fadeInUp;
+        animation-duration: .8s;
+        /* don't forget to set a duration! */
+        opacity: 1;
+    }
+
+    .fullwidth-teaser:not([data-element=net-portfolio], [data-element=financial-capital-2]) .tr-teaser &.animate-active {
+        animation-name: fadeInLeft;
+        animation-duration: .5s;
+    }
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        .fullwidth-teaser .tr-teaser .tr-teaser__content &.animate-active {
+            animation-name: fadeInLeft;
+            animation-duration: .5s;
+        }
+        .fullwidth-teaser[data-element=net-portfolio] .tr-teaser .tr-teaser__content &.animate-active,
+        .fullwidth-teaser[data-element=financial-capital-2] .tr-teaser .tr-teaser__content &.animate-active {
+            animation-name: fadeInUp;
+            animation-duration: .5s;
+        }
+    }
+
+    .fullwidth-teaser .tr-teaser .content-right &.animate-active {
+        animation-name: fadeInRight;
+        animation-duration: .5s;
+    }
+}
+
+.tr-keystats__list li {
+    @numitems: 6;
+    @delay: .1;
+    .keystats-delay-animation(@numitems, @delay);
+}
+
+.portfolio-highlights .tr-icons a {
+    @numitems: 6;
+    @delay: .2;
+    .keystats-delay-animation(@numitems, @delay);
+}

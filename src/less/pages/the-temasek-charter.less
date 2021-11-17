@@ -1,0 +1,92 @@
+.the-charter {
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        @media @mobile {
+            flex-direction: column;
+            margin-top: 35px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .the-charter__content {
+            @media @mobile {
+                align-self: flex-start;
+            }
+
+            h3 {
+                margin: 0 0 10px;
+                font-size: 24px;
+                font-weight: 500;
+
+                @media @mobile {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                color: @grey-intro;
+                font-weight: 400;
+                font-size: 18px;
+
+                @media @mobile {
+                    font-size: 14px;
+                }
+
+                margin-bottom: 0 !important;
+            }
+
+            a {
+                font-size: inherit;
+            }
+        }
+    }
+
+    &__image {
+        height: 144px;
+        width: 144px;
+        border-radius: 50%;
+        border: solid 3px;
+        margin-right: 55px;
+        padding: 30px;
+        flex: 0 0 144px;
+
+        @media @mobile {
+            margin: 0 0 20px;
+        }
+    }
+
+    .investor {
+        h3 {
+            color: @investor;
+        }
+
+        .the-charter__image {
+            border-color: @investor;
+        }
+    }
+
+    .institution {
+        h3 {
+            color: @institution;
+        }
+
+        .the-charter__image {
+            border-color: @institution;
+        }
+    }
+
+    .steward {
+        h3 {
+            color: @steward;
+        }
+
+        .the-charter__image {
+            border-color: @steward;
+        }
+    }
+}

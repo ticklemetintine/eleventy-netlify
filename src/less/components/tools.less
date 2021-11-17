@@ -1,0 +1,580 @@
+.tools {
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+    .language {
+        float: left;
+        margin-right: 20px;
+
+        ul {
+            color: #4e2475;
+            font-size: 14px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+                float: left;
+                margin: 0;
+
+                &.language-divider {
+                    padding: 0 5px;
+                }
+
+                a {
+                    color: #4e2475;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .download {
+        color: #4e2475;
+        float: left;
+        margin-right: 20px;
+
+        a {
+            background-size: 15px 18px;
+            display: block;
+            height: 18px;
+            width: 15px;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    .search {
+        border-bottom: 1px solid transparent;
+        float: right;
+        margin-right: 2px;
+        padding: 4px 18px 0 0;
+        width: 18px;
+        overflow: hidden;
+        position: relative;
+        transition: width 500ms, min-width 700ms;
+        box-sizing: border-box;
+        min-width: 0;
+
+
+        &.active {
+            border-bottom-color: #4e2475;
+
+            @media screen and(min-width: 767px) {
+
+                width: 200px;
+            }
+
+        }
+
+        .search-text {
+            background: none;
+            border: 0;
+            color: #4e2475;
+            font-size: 14px;
+            outline: 0;
+            padding: 0 10px 0 0;
+            width: 100%;
+            position: relative;
+            top: -2px;
+
+            &::placeholder {
+                color: @temasek-purple;
+            }
+        }
+
+
+
+        .search-submit {
+            background-size: 18px 18px;
+            border: 0;
+            cursor: pointer;
+            display: block;
+            height: 18px;
+            width: 18px;
+            outline: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+    }
+
+    .share {
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        transition: opacity 50ms, margin 500ms;
+
+        .search-active & {
+            opacity: 0;
+            margin: 0 0 0 -20px;
+        }
+
+        >a {
+            background-size: 12px 18px;
+            cursor: pointer;
+            display: block;
+            height: 18px;
+            position: relative;
+            top: 3px;
+            transition: all 0.3s;
+        }
+
+        .share-links-menu {
+            background: #fff;
+            border: 1px solid #d1d2d4;
+            display: none;
+            width: 180px;
+            padding: 20px;
+            position: absolute;
+            top: 40px;
+            right: -20px;
+
+            &:after {
+                background: #fff;
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: -6px;
+                right: 20px;
+                transform: rotate(-45deg);
+                border-right: 1px solid #d1d2d4;
+                border-top: 1px solid #d1d2d4;
+            }
+
+            p {
+                color: @temasek-purple;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 1;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 0;
+
+                li {
+                    cursor: pointer;
+                    font-size: 14px;
+                    list-style: none;
+                    margin-bottom: 8px;
+                    padding-left: 26px;
+                    position: relative;
+                    line-height: 18px;
+                    font-weight: bold;
+
+                    &.email a {
+                        font-size: 14px;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    i {
+                        color: @grey-p;
+                        cursor: pointer;
+                        font-weight: bold;
+                        position: absolute;
+                        left: 0;
+                        width: 18px;
+                        transition: opacity 300ms;
+                        font-size: 18px;
+                    }
+
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 1px;
+                        transition: opacity 300ms;
+
+                        &:before {
+                            color: @grey-p;
+                            font-size: 15px;
+                        }
+
+                        &.tr-icon.email-before:before {
+                            font-size: 13px;
+                        }
+
+                        &.tr-icon.tencent-before:before {
+                            font-size: 19px;
+                            padding-left: 3px;
+                        }
+                    }
+
+                    a {
+                        color: @grey-p;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        line-height: 18px;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                        i,
+                        span {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.active .share-links-menu {
+            display: block;
+        }
+    }
+
+    .cookieConsent {
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        color: @temasek-purple;
+        transition: opacity 50ms, margin 500ms;
+
+        .search-active & {
+            opacity: 0;
+            margin: 0 0 0 -20px;
+        }
+
+        a {
+            font-size: 14px;
+            display: block;
+            cursor: pointer;
+            transition: opacity 300ms;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------
+     Quick Links, Back to top and Share
+     ---------------------------------------------------------------------------------------------------- */
+
+.quicknav {
+    display: none;
+}
+
+.quicklinks {
+    position: fixed;
+    right: 20px;
+    top: ~"calc(50% - 185px)";
+    height: 140px;
+    width: 40px;
+    z-index: 401;
+}
+
+.quicklinks .quicknav-icon {
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+
+.quicklinks .quicknav-links {
+    display: none;
+    transform: translateY(50%);
+}
+
+.quicklinks .quicknav.active .quicknav-links {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    right: 47px;
+    bottom: 40px;
+    width: 300px;
+    border-radius: 6px;
+    border: solid 2px #d5dce0;
+}
+
+.quicklinks .quicknav.active .quicknav-links ul {
+    padding-left: 17px;
+    margin: 0;
+}
+
+.quicklinks .quicknav.active .quicknav-links ul li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.quicklinks .quicknav.active .quicknav-links ul li a {
+    color: #303030;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.quicklinks .quicknav.active .quicknav-links ul li a:hover {
+    color: @pale-purple;
+}
+
+.quicklinks .quicknav.active .quicknav-links ul li i {
+    font-weight: bold;
+    color: #4e2475;
+    font-size: 5px;
+    margin-left: -18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.quicklinks-button {
+    background-color: @white;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #cbcbcb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 300ms;
+    outline: 0;
+    margin-bottom: 10px;
+    text-align: center;
+
+    [class^="tr-icon-"],
+    [class*=" tr-icon-"] {
+        &:before {
+            transition: all 300ms;
+            display: block;
+        }
+    }
+
+    &:hover {
+        background-color: @white;
+        border-color: @temasek-purple;
+
+        [class^="tr-icon-"]:before,
+        [class*=" tr-icon-"]:before {
+            color: @pale-purple;
+        }
+    }
+}
+
+.quicklinks {
+
+    button {
+        color: @temasek-purple;
+        padding: 0;
+
+
+
+        &:hover {
+            color: @white;
+            background-color: @temasek-purple;
+
+        }
+
+        .tr-icon {
+            display: block;
+
+            &.submenu-before {
+                margin-top: 2px;
+            }
+        }
+    }
+
+    .tool-share {
+        position: relative;
+        z-index: 2;
+    }
+
+    .sharelink {
+        position: relative;
+    }
+
+    .back-to-top {
+        opacity: 0;
+
+        i {
+            &:before {
+                font-weight: 900;
+            }
+        }
+
+        &.back-to-top--visible {
+            opacity: 1;
+        }
+    }
+
+    .quicknav-button {
+        margin-bottom: 0;
+    }
+}
+
+.quicklinks .share.active .share-links-menu {
+    width: 340px;
+    opacity: 1;
+}
+
+.quicklinks .share .share-links-menu {
+    opacity: 0;
+    width: 0;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: @white;
+    padding-left: 13px;
+    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    border-radius: 30px 0 0 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.8s;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.quicklinks .share .share-links-menu ul {
+    padding-left: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.quicklinks .share .share-links-menu ul li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 9px;
+    line-height: 1;
+
+    span:before {
+        color: @grey-p;
+        transition: color 300ms;
+    }
+
+    .tr-icon-Email {
+        font-size: 13px;
+    }
+}
+
+.quicklinks .share .share-links-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.quicklinks .share .share-links-menu ul li i {
+    font-weight: bold;
+    color: @grey-intro;
+    vertical-align: center;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+
+.quicklinks .share .share-links-menu ul li a {
+    color: #303030;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quicklinks .share .share-links-menu ul li:hover i,
+.quicklinks .share .share-links-menu ul li:hover span:before {
+    text-decoration: none;
+    color: @pale-purple;
+}
+
+#share-dialog {
+    position: fixed;
+    z-index: 9999;
+    left: 100%;
+
+    &.is-show {
+        transform: translate(-50%, -120%);
+    }
+
+    .share-dialogue-inner {
+        width: 326px;
+        z-index: 2;
+        background-color: @white;
+        padding: 15px 8px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: @white;
+        position: absolute;
+        top: ~"calc(100% - 10px)";
+        left: ~"calc(50% - 10px)";
+        transform: rotate(-45deg);
+    }
+
+    &:after {
+        z-index: 2;
+    }
+
+    &:before {
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+
+#share-dialog button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    padding: 0 9px;
+    min-width: 36px;
+    background-color: @white;
+
+    span:before {
+        color: @grey-p;
+        font-size: 18px;
+        transition: color 300ms;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    .tr-icon-Email:before {
+        font-size: 13px;
+    }
+}
+
+#share-dialog button:focus {
+    border: none;
+}
+
+#share-dialog button i,
+#share-dialog button span {
+    font-size: 18px;
+    color: @grey-p;
+    text-align: center;
+    transition: opacity 300ms;
+    line-height: 1;
+}
+
+#share-dialog button:hover i,
+#share-dialog button:hover span:before {
+    color: fade(@grey-p, 60%);
+}
+
+@media screen and (max-width: 1090px) {
+    .quicklinks {
+        display: none;
+    }
+}

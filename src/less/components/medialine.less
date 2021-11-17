@@ -1,0 +1,97 @@
+.medialine {
+    margin-bottom: 30px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+    }
+
+    &-caption {
+        position: relative;
+        margin-right: 10px;
+        margin-left: auto;
+        padding: 10px 10px 0 0;
+        font-size: 11px;
+        text-align: right;
+        color: @grey-intro;
+
+        @media @tablet {
+            margin-right: 20px;
+            padding: 20px 14px 3px 0;
+        }
+
+        @media @desktop {
+            opacity: 0;
+            transition: .3s;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        html[lang="zh"] & {
+            letter-spacing: 0.1em;
+
+            @media @desktop {
+                font-size: 14px;
+            }
+        }
+
+        a {
+            color: #006ba6;
+            font-size: 11px;
+
+            html[lang="zh"] & {
+                font-size: inherit;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: -3px;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: transparent;
+            transition: .3s;
+
+            @media @desktop {
+                height: 0;
+            }
+        }
+    }
+
+    @media @ipad-pro {
+        .medialine-caption {
+            opacity: 1;
+            transition: .3s;
+
+            &:after {
+                height: 100%;
+                transition: .3s;
+            }
+        }
+    }
+
+    &.is-active,
+    &:hover {
+        @media @desktop {
+
+            .medialine-caption {
+                opacity: 1;
+                transition: .3s;
+
+                &:after {
+                    height: 100%;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+
+}

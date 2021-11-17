@@ -1,0 +1,41 @@
+.clearfix() {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.keystats-delay-animation(@items, @delay) {
+    .loopingClass(0); // Start loop
+
+    .loopingClass(@index) when (@index <=@items) {
+        &:nth-of-type(@{index}) {
+            animation-delay: unit((@index * @delay), s);
+        }
+
+        .loopingClass(@index + 1); // Increment loop
+    }
+}
+
+.aspect-ratio(@width, @height) {
+    padding-bottom: (@height / @width) * 100%;
+}
+
+.box-shadow (@color, @hOffset: 0, @vOffset: 6px, @blur: 12px, @opacity: .35) {
+    box-shadow: rgba(red(@color), green(@color), blue(@color), @opacity) @hOffset @vOffset @blur;
+}
+
+.arrowIcon(@color: black) {
+    content: "";
+    border: solid @color;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}

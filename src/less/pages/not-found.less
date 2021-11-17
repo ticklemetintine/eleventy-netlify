@@ -1,0 +1,49 @@
+.errorpage {
+    padding-top: 59px;
+
+    .fullwidth-teaser {
+        .tr-teaser__image {
+            min-height: auto;
+            height: ~"calc(100vh - 59px)";
+
+            @media @device-max840 {
+                height: 500px;
+            }
+        }
+    }
+
+    .tr-teaser__image {
+        background-image: url(/images/not-found/not-found.jpg);
+
+        @media screen and (max-width: 1024px) {
+            background-image: url(/images/not-found/not-found-mobile-bg.jpg);
+        }
+
+
+    }
+
+    .tr-teaser__description {
+        h1 {
+            font-size: 90px;
+            font-weight: normal;
+
+            @media screen and (max-width: 840px) {
+                color: @temasek-purple;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            padding: 0;
+        }
+
+        a {
+            color: #fff;
+
+            @media @mobile {
+                color: @temasek-purple;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,226 @@
+/*.cookieConsent{
+    display: none;
+}
+
+.cc-window {
+    display: none !important;
+}
+*/
+
+
+.cc-window {
+  display      : block;
+  position     : fixed;
+  top          : 59px;
+  right        : 0px;
+  z-index      : 100;
+  transition   : all 1s;
+  max-width    : 340px;
+  overflow     : hidden;
+  font-size    : 12px;
+  line-height  : 17px;
+  color        : @temasek-purple;
+  box-sizing   : content-box;
+  padding      : 15px 40px 15px 15px;
+  background   : fade(@white, 80%);
+  box-shadow   : 0px 2px 6px rgba(0, 0, 0, .3);
+
+  @media screen and (max-width: 767px) {
+    top: initial;
+    max-width : ~"calc(100% - 20px)";
+    padding   : 10px 40px 10px 10px;
+    bottom    : 50px;
+    left      : 10px;
+    box-sizing: border-box;
+    #cc-mobile-dialog& {
+      background: none;
+      box-shadow: none;
+    }
+  }
+  &.cc-dropdown.cc-main {
+
+      @media screen and (max-width: 767px){
+        display: none;
+      }
+  }
+  a {
+    font-size: 12px;
+  }
+
+  * {
+    position: relative;
+    z-index : 1;
+  }
+
+
+  .cc-message {
+    font-size  : 12px;
+    line-height: 17px;
+  }
+
+
+  .learn-more {
+    margin-top: 0;
+    display   : block;
+
+    .cc-link {
+      font-size: inherit;
+      color        : @temasek-purple;
+      border-bottom: 1px solid @temasek-purple;
+    }
+  }
+
+  .cc-btn {
+    font-size      : 12px;
+    color          : @temasek-purple;
+    cursor         : pointer;
+    text-decoration: underline;
+  }
+
+
+  .cc-turn-on {
+    display: none;
+    /* invisible by default */
+  }
+
+  &.cc-no-cookies .cc-turn-off {
+    display: none;
+    /* invisible when opted-out */
+  }
+
+  &.cc-no-cookies .cc-turn-on {
+    display: inline;
+    /* invisible when opted-in */
+  }
+
+  .cc-close {
+    display: none;
+  }
+
+  /* this happens when it's not shown */
+  &.cc-invisible {
+    opacity: 0;
+    z-index: -1 !important;
+  }
+
+  .cc-dropdown-message {
+    display: none;
+    /* invisible by default, visible when shows as dropdown */
+  }
+
+  /* shows in the top-right corner when it's a dropdown */
+  &.cc-dropdown {
+    bottom : auto;
+    top    : 59px;
+    right  : 0;
+    left   : auto;
+    padding: 25px;
+    width  : auto;
+    z-index: 999999;
+
+    .inner {
+      padding: 0;
+      border : none;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &::before {
+      right           : -2220px;
+      background-color: #eeeeee;
+      opacity         : 1;
+    }
+
+    .cc-btn {
+      &:after {
+        background-image: url(/assets/icons/cookies-solid.svg);
+      }
+    }
+
+    .cc-message {
+      display: none;
+      /* invisible when shows as dropdown */
+    }
+
+    .cc-dropdown-message {
+      display: inline;
+      /* visible when shows as dropdown */
+      font-size    : 12px;
+      line-height  : 17px;
+      color        : @temasek-purple;
+      margin-bottom: 5px;
+    }
+
+    .cc-close {
+      cursor: pointer;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+        /* popup-dt has no close */
+      }
+    }
+  }
+
+
+  .cc-close {
+    position   : absolute;
+    color      : @temasek-purple;
+    right      : 0;
+    top        : 0;
+    margin     : 10px;
+    width      : 14px;
+    height     : 14px;
+    display    : block;
+    font-family: "icomoon" !important;
+
+    &:before {
+      content  : "\e90f";
+      font-size: 14px;
+    }
+  }
+}
+
+.tools .cookieConsent {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.no-cookies .tools .cookieConsent,
+.allow-cookies .tools .cookieConsent {
+  display: block;
+}
+
+.cc-dropdown-li {
+  display : none;
+  overflow: hidden;
+
+  &:after {
+    display: none;
+  }
+
+  .cc-window.cc-dropdown {
+    position: relative;
+    top     : auto;
+
+    &.cc-invisible {
+      height    : 0;
+      min-height: 0;
+      opacity   : 0;
+      margin    : -25px 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+
+    &.cc-collapsed {
+      min-height: 0;
+      height    : 0;
+    }
+
+  }
+}

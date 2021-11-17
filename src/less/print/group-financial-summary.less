@@ -1,0 +1,37 @@
+@media print {
+    .contentpage {
+        &.group-financial-summary {
+            .contentpage-container {
+                max-width: none !important;
+                padding: 0 !important;
+
+                #statements {
+                    display: none !important;
+                }
+
+                #table-container {
+                    transform: translateY(100px) !important;
+                    opacity: 1 !important;
+                    page-break-before: always !important;
+
+                    .table-mobile-dropdown {
+                        display: none;
+                    }
+
+                    .tab-links {
+                        margin-bottom: 0 !important;
+
+                        li {
+                            display: none !important;
+
+                            &.is-active {
+                                display: block !important;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

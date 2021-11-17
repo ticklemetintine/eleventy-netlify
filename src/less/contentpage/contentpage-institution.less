@@ -1,0 +1,663 @@
+.contentpage.institution {
+    &.institution-bod {
+
+        .contentpage-subheader {
+            margin-bottom: 20px;
+        }
+
+        table {
+
+            colgroup {
+                display: none;
+            }
+
+            tbody {
+                th {
+                    color: #434c50;
+                }
+
+                .tooltip {
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .member-list {
+
+            margin-top: 50px;
+
+            &-content {
+
+                @media @tablet {
+                    margin: 0 -20px;
+                }
+
+                .row {
+                    flex-direction: row;
+
+                    @media (max-width:767px) {
+                        margin: 0 -7.5px;
+                    }
+                }
+
+                [class*="col-"] {
+                    margin-bottom: 45px;
+
+                    @media (max-width:767px) {
+                        width: 50%;
+                        padding: 0 7.5px;
+                    }
+                }
+            }
+        }
+
+        .related-list {
+            padding-top: 55px;
+        }
+
+        .modal {
+
+            &#bod {
+                .row {
+                    @media (max-width:767px) {
+                        flex-direction: unset;
+                    }
+                }
+
+                .slick-item-media {
+                    @media (max-width:767px) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.institution-sm {
+
+        .management-list {
+            margin-top: 50px;
+
+            .row {
+                margin: 0 -10px;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+            [class*="col-"] {
+                margin-bottom: 50px;
+
+                @media (max-width:767px) {
+                    margin-bottom: 30px;
+                    padding: 0 10px;
+                    width: 50%;
+                }
+
+                @media @tablet {
+                    padding: 0 40px;
+                }
+            }
+
+
+            &-item {
+                color: @grey-intro;
+
+                h5 {
+                    margin-top: 0;
+                    color: @grey-p;
+
+                    @media @desktop {
+                        font-size: 18px;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+
+                    @media (max-width:767px) {
+                        font-size: 11px;
+                    }
+
+                    @media @desktop {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .related-list {
+            padding-top: 40px;
+
+            @media @tablet {
+                padding-top: 90px;
+            }
+        }
+    }
+
+    &.institution-heartbeat {
+        .fadeup {
+            .stripe {
+                .contentpage-container {
+                    opacity: 1;
+                    transition: .3s opacity .5s;
+                }
+            }
+        }
+
+        .stripe {
+            .contentpage-container {
+                opacity: 0;
+                transition: .3s opacity .5s;
+            }
+        }
+
+        .heartbeat-map {
+            h2 {
+                margin-top: 0;
+            }
+        }
+
+        .chart {
+            .chart-footer {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .chart-legend {
+                li {
+                    padding-right: 30px;
+                    width: auto;
+
+                    @media @mobile {
+                        padding-right: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.chart-gender .chart-legend li {
+                &:nth-child(1):before {
+                    background: #D50065;
+                }
+
+                &:nth-child(2):before {
+                    background: #009EE4;
+                }
+            }
+        }
+    }
+
+    &.institution-public-markers {
+
+        .contentpage-body .contentpage-body-desktop-reverse-column.highlight-below {
+            @media @tablet {
+                flex-direction: row;
+            }
+
+            .col-4 {
+                @media (max-width:992px) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    &.financial-discipline {
+        .chart {
+            .chart-legend {
+                li {
+                    @media @mobile {
+                        width: percentage(1/2);
+                    }
+
+                    @media (max-width: 479px) {
+                        width: 100%;
+                    }
+
+                    &.indicator-empty {
+                        @media @mobile {
+                            display: none;
+                        }
+                    }
+
+                    &.color--yellow:before {
+                        background: #EDC333;
+                    }
+                }
+            }
+        }
+    }
+
+    &.credit-quality {
+        .chart {
+
+            h3 {
+                line-height: 1.2;
+                color: @temasek-blue;
+
+                html[lang="zh"] & {
+                    position: relative;
+                }
+
+                .text-rate {
+                    font-size: 30px;
+                    html[lang="zh"] & {
+                        bottom: -4px;
+                        position: absolute;
+                    }
+
+                    @media @tablet-max {
+                        html[lang="zh"] & {
+                            bottom: -5px;
+                        }
+                    }
+
+                    @media @mobile {
+                        font-size: 20px;
+
+                        html[lang="zh"] & {
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .chart-legend {
+                li {
+                    padding-right: 20px;
+                    width: auto;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media @tablet {
+            .row {
+                .col-6 {
+                    &:first-child {
+                        padding-right: 40px;
+                    }
+
+                    &:last-child {
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+
+        h4.chart-figure {
+            color: @temasek-purple;
+            font-weight: 500;
+            font-size: 45px;
+            z-index: 10;
+
+            html[lang="zh"] & {
+                font-size: 45px;
+                line-height: 1.46;
+            }
+
+            @media @tablet {
+                position: absolute;
+            }
+        }
+
+        .chart_horizon {
+            display: none;
+
+            @media @tablet {
+                height: 1px;
+                width: 0;
+                background-color: black;
+                margin: 0 auto;
+                position: relative;
+                top: -19px;
+            }
+        }
+
+        // @media screen and (min-width: 350px) {
+        //     .tooltipster-base {
+        //         width: 340px !important;
+        //         max-width: 340px !important;
+        //     }
+        // }
+
+        .chart-display-mobile {
+            display: block;
+
+            @media @tablet {
+                display: none;
+            }
+        }
+
+        .chart-display-desktop {
+            display: none;
+
+            @media @tablet {
+                min-height: 207px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .table-wrapper {
+            display: block;
+            overflow: auto;
+
+            @media @mobile {
+                table {
+                    table-layout: auto;
+                }
+            }
+        }
+
+
+        .creditprofile--section-chart-double {
+            html[lang="zh"] & {
+                .subheader {
+                    line-height: 1.3;
+                }
+            }
+        }
+
+        table.financial {
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-top: none;
+
+            colgroup {
+                display: none;
+            }
+
+            td,
+            th {
+                border-style: none;
+                border-bottom: 1px solid @grey-bg-dark;
+                padding-top: 5px;
+                padding-right: 0.5em;
+                padding-bottom: 3px;
+                padding-left: 3px;
+                border-radius: 0;
+                /*ie11 */
+                background: none;
+                font-weight: normal;
+                color: @grey-p;
+
+                width: 60px;
+
+                &:last-child {
+                    &.TableFiguresBold {
+                        color: @institution;
+                    }
+                }
+            }
+
+
+            th {
+                text-align: right;
+                vertical-align: bottom;
+
+                &:first-child {
+
+                    width: 60%;
+
+                    @media (max-width:767px) {
+                        width: 116px;
+                    }
+                }
+
+            }
+
+
+            .TableColHeadsLeftBold {
+                span {
+                    display: inline-block;
+                    font-size: 16px;
+                }
+            }
+
+            .Tabletext,
+            .TabletextBold,
+            .TabletextBoldBold,
+            .TabletextIndent,
+            .TableColHeadsLeft,
+            .TableColHeadsLeftBold {
+                text-align: left;
+            }
+
+            .TableTextIndent {
+                padding-left: 2em;
+            }
+
+            .TableFigures,
+            .TableFiguresBrackets,
+            .TableFiguresBold,
+            .TableFiguresBoldBold,
+            .TableFiguresBracketsBold,
+            .TableFiguresBracketsBoldBold {
+                text-align: right;
+                vertical-align: bottom;
+            }
+
+            .TableFiguresBrackets,
+            .TableFiguresBracketsBold,
+            .TableFiguresBracketsBoldBold {
+                padding-right: 0.25em;
+            }
+
+            .TableFiguresBold,
+            .TableColHeadsLeftBold {
+                font-weight: 500;
+
+            }
+
+            .TabletextExtraBold {
+                font-weight: normal;
+                font-size: 18px !important;
+                line-height: 25.5px !important;
+            }
+
+            .border_bottom_none {
+                border-bottom-style: none;
+            }
+
+
+            .border_bottom_width_4 {
+                border-bottom: 1px solid @institution;
+            }
+
+            .border_bottom_width_8 {
+                border-bottom: 2px solid @institution;
+            }
+
+
+            thead.no-tint td,
+            thead.no-tint th {
+                background-color: transparent;
+            }
+
+            .tinted {
+                background-color: @grey-bg-light;
+            }
+
+
+            html[lang="zh"] table.financial thead th,
+            html[lang="zh"] table.financial thead th.TableColHeads,
+            html[lang="zh"] table.financial thead th.TableColHeadsLeft,
+            html[lang="zh"] table.financial tbody th {
+                font-weight: normal;
+            }
+
+
+            html[lang="zh"] table.financial .TableColHeadsLeft,
+            html[lang="zh"] table.financial .TableColHeadsLeftBold {
+                text-align: left !important;
+            }
+
+            html[lang="zh"] table.financial th.TableColHeadsBold,
+            html[lang="zh"] table.financial th.TabletextBoldBold,
+            html[lang="zh"] table.financial thead th.TabletextExtraBold,
+            html[lang="zh"] table.financial tbody th.TabletextExtraBold {
+                font-weight: 500;
+                text-align: right;
+            }
+
+            table.financial .highlight,
+            table.financial .TableColHeadsBold:last-child,
+            table.financial .TableColHeadsLeftBold:last-child,
+            table.financial .TableFiguresBoldBold:last-child,
+            table.financial .TableFiguresBold:last-child,
+            table.financial .TableFiguresBracketsBold:last-child,
+            table.financial .TableFiguresBracketsBoldBold:last-child {
+                color: @temasek-blue;
+            }
+
+
+            thead td,
+            thead th {
+                background-color: #f1f1f1;
+                font-weight: 600 !important;
+            }
+        }
+
+        .contentpage-body {
+            .row {
+                @media (max-width:640px) {
+                    flex-direction: unset;
+                }
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            html[lang="zh"] table.financial {
+                min-width: 700px;
+            }
+
+            html[lang="zh"] table.thin-first-col {
+                min-width: 400px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .credit-quality .column:first-child .chart-display-mobile {
+                margin-bottom: 40px;
+            }
+
+        }
+    }
+
+    &.investing-in-bonds-institution {
+        .chart {
+            img {
+                max-width: 650px;
+            }
+        }
+
+        .img-interest-rate-risks {
+            max-width: 400px;
+        }
+    }
+
+    &.temasek-bonds {
+        .chart {
+            margin-bottom: 0;
+
+            .chart-legend {
+                margin-bottom: 15px;
+
+                li {
+                    width: auto;
+                    padding-right: 30px;
+
+                    @media (max-width: 479px) {
+                        padding-right: 0;
+                        width: 100%;
+                    }
+
+                    &:nth-child(1):before {
+                        border-radius: 1000px;
+                        background: #B90051;
+                    }
+
+                    &:nth-child(2):before {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(3):before {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 6px 12px 6px;
+                        border-color: transparent transparent @institution transparent;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.instilling-ownership {
+        .chart {
+            .chart-legend {
+                li {
+                    width: auto;
+                    padding-right: 20px;
+
+                    @media @mobile {
+                        padding-right: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .chart-wa {
+            .chart-legend {
+                margin-bottom: 15px;
+
+                li {
+                    padding-right: 0;
+                    width: 100%;
+
+                    &:nth-child(2):before {
+                        background: #C5D58A;
+                    }
+
+                    &:nth-child(6):before {
+                        background: url("/images/institution/instilling-ownership/legend-icons/WA_legend_blue_redline.svg");
+                    }
+
+                    &:nth-child(7):before {
+                        background: url("/images/institution/instilling-ownership/legend-icons/WA_legend_stripe_redline.svg");
+                    }
+
+                    &:nth-child(8):before {
+                        background: url("/images/institution/instilling-ownership/legend-icons/WA_legend_stripe_orangepinkline.svg");
+                    }
+
+                }
+            }
+        }
+    }
+
+    #wealth-added_incentives {
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width:767px) {
+        table.min-width-table {
+            html[lang="zh"] & {
+                min-width: 400px;
+            }
+        }
+
+        table.min-width-800-mobile {
+            html[lang="zh"] & {
+                min-width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+.relatedcontent {
+    max-width: 1280px;
+    margin: 70px auto 0;
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 23px 0 0 0;
+
+        li {
+            flex-basis: ~"calc(33.3333% - 10px)";
+            position: relative;
+
+            .pod-wrap {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                .box-link {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 2;
+                }
+
+                .detail {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    opacity: 0;
+                    display: flex;
+                    padding: 10px;
+                    align-items: flex-end;
+
+                    p {
+                        color: white;
+                        line-height: 1.25;
+                    }
+                }
+            }
+
+            .image-wrapper {
+                transition: all .3s;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                .bg-gradient {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: @temasek-blue;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+            }
+
+            .cta-wrap {
+                a {
+                    display: block;
+                    cursor: pointer;
+                    color: @grey-p;
+                }
+
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: white;
+                    margin-bottom: 0;
+                    align-self: flex-end;
+                    padding: 0 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    max-height: 100%;
+                }
+            }
+
+            .link-icon {
+                margin-top: 8px;
+            }
+
+            &:hover {
+                .pod-wrap {
+                    .detail {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+                }
+
+                .image-wrapper {
+                    .bg-gradient {
+                        opacity: 0.95;
+                    }
+                }
+
+                h4 {
+                    color: @temasek-blue;
+                }
+
+                .link-icon {
+                    color: @temasek-blue;
+
+                    span.icon {
+                        background: @temasek-blue;
+                        border: 1px solid @temasek-blue;
+
+                        .icon-inner {
+                            &:before {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .relatedcontent {
+        margin: 70px 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .relatedcontent {
+        ul {
+            display: block;
+            margin-top: 17px;
+
+            li {
+                display: flex;
+                margin-top: 24px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                >div {
+                    flex-basis: 50%;
+                }
+
+                .pod-wrap {
+                    margin: 0 20px 0 0;
+                    margin-bottom: 0;
+                }
+
+                .cta-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

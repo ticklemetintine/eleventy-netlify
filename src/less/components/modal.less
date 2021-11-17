@@ -1,0 +1,842 @@
+.modal-backdrop {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(@black, .4);
+    z-index: 9997;
+
+    @media (max-width:1024px) {
+        pointer-events: none;
+    }
+}
+
+.modal {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    // set up height will causing iphone safari bottom bar blocking the modal issue.
+    // do not remove this line.
+
+    // height:100%;
+    // max-height:100vh;
+    z-index: 9998;
+    transform: translate(0, 0);
+    transition: all .5s cubic-bezier(.86, 0, .07, 1) .2s;
+
+    .btn-close {
+        position: absolute;
+        right: 15px;
+        top: 58px;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: 1px solid #cbcbcb;
+        background-color: white;
+        border-radius: 1000px;
+        z-index: 1;
+        -webkit-appearance: none;
+        transform-origin: 50% 50%;
+        transition: .3s;
+
+        @media @tablet {
+            right: 25px;
+            top: 65px;
+            width: 38px;
+            height: 38px;
+            border-width: 2px;
+        }
+
+        @media @desktop {
+            top: 58px;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 12px;
+            height: 1px;
+            background: @temasek-purple;
+            transition: all 0.6s ease-out;
+        }
+
+        &:before {
+            transform: rotate(-135deg);
+        }
+
+
+        &:after {
+            top: -1px;
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+            background: @temasek-purple;
+            border-color: @temasek-purple;
+            transition: .3s;
+
+            &:before,
+            &:after {
+                background: white;
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform: rotate(225deg);
+            }
+        }
+
+    }
+
+    .quicklinks {
+        position: absolute;
+        display: block;
+        margin-right: 0 !important;
+        width: 25px;
+        height: auto;
+        top: 101px;
+        right: 15px;
+
+        @media @tablet {
+            top: 115px;
+            right: 25px;
+            width: 38px;
+        }
+
+        @media @desktop {
+            top: 108px;
+        }
+
+        .quicklinks-button {
+            margin: 0;
+            padding: 0;
+
+            @media (max-width:767px) {
+                width: 25px;
+                height: 25px;
+                font-size: 12px;
+                border-width: 1px;
+            }
+        }
+
+        .share {
+
+            &.active {
+                .share-links-menu {
+                    @media (max-width:767px) {
+                        width: 280px;
+                    }
+                }
+            }
+
+            .share-links-menu {
+                @media (max-width:767px) {
+                    right: 13px;
+                    height: 25px;
+                }
+
+                ul li {
+                    @media (max-width:767px) {
+                        font-size: 12px;
+                    }
+
+                    a {
+                        @media (max-width:767px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .disc {
+        margin-bottom: 25px;
+        font-size: 14px;
+
+        @media @tablet {
+            font-size: 16px;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            &:before {
+                top: 9px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .modal-dialog {
+        width: 100%;
+        max-height: 100%;
+        padding: 160px 0 0;
+
+        @media @tablet {
+            padding: 180px 0 0;
+        }
+
+        @media (max-device-width: 1280px) and (orientation: landscape) {
+            padding: 80px 0 0;
+        }
+    }
+
+    .modal-content {
+        position: relative;
+        margin: auto auto 0;
+        background: white;
+    }
+
+    .modal-body {
+        position: relative;
+
+        >.bg-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &.is-hidden {
+        transform: translate(0, 220%); //Extra y-offset for mobile soft keyboard
+        transition: all .6s cubic-bezier(.86, 0, .07, 1) .4s;
+    }
+
+    &.have-carousel {
+
+        &#statement-by-directors,
+        &#statement-by-auditors {
+            .slick-pager {
+                display: none;
+            }
+        }
+
+        &.is-hidden {
+            .slick-vertical {
+                opacity: 0;
+                will-change: transform, opacity;
+                transform: translate3d(0, 100px, 0);
+                transition: all .4s cubic-bezier(0, 0, .2, .92) .6s;
+                -webkit-font-smoothing: antialiased;
+                -webkit-transform-style: preserve-3d;
+                -webkit-backface-visibility: hidden;
+                -webkit-perspective: 1000;
+                -moz-osx-font-smoothing: grayscale;
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+                perspective: 1000;
+            }
+        }
+
+
+        .modal-content {
+            width: 100%;
+            box-shadow: 7px 0 38px rgba(@black, .48);
+        }
+
+        .slick-vertical {
+            opacity: 1;
+            transform: translateZ(0);
+            transition: all .6s cubic-bezier(0, 0, .2, .92) .4s;
+
+            .slick-slide {
+                width: 100% !important;
+                overflow: auto;
+                // do not enable this one it wil causing the carousel not working properly in iphone
+                // -webkit-overflow-scrolling: touch;
+
+                padding: 60px 0;
+                height: calc(100vh - 160px);
+
+                opacity: 0;
+                will-change: transform, opacity;
+                transform: translate(0, 100px);
+                transition: all .4s cubic-bezier(0, 0, 0, .92);
+                -webkit-font-smoothing: antialiased;
+                -webkit-transform-style: preserve-3d;
+                -webkit-backface-visibility: hidden;
+                -webkit-perspective: 1000;
+                -moz-osx-font-smoothing: grayscale;
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+                perspective: 1000;
+
+                &.slick-active {
+                    opacity: 1;
+                    transform: translate(0, 0);
+                    transition: all .6s cubic-bezier(0, 0, .2, .92) .4s;
+                }
+
+                @media @tablet {
+                    padding: 60px 0;
+                    height: calc(100vh - 180px);
+                }
+
+                @media (max-device-width: 1280px) and (orientation: landscape) {
+                    height: calc(100vh - 80px);
+                }
+            }
+
+            .slick-pager {
+                position: absolute;
+                right: 8px;
+                top: 185px;
+
+                @media @tablet {
+                    top: 50%;
+                    right: 24px;
+                    margin-top: -6px;
+                }
+
+                @media (max-device-width: 1280px) and (orientation: landscape) {
+                    transform: none;
+                    margin-top: 185px;
+                    top: 0;
+                }
+
+            }
+
+            .slick-arrow {
+                left: auto;
+                right: 8px;
+
+                @media @tablet {
+                    top: -10px;
+                    right: 24px;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+                &.slick-prev {
+                    top: 148px;
+
+                    @media @tablet {
+                        top: 50%;
+                        margin-top: -60px;
+                    }
+
+                    @media (max-device-width: 1280px) and (orientation: landscape) {
+                        transform: rotate(180deg);
+                        margin-top: 162px;
+                        top: 0;
+                    }
+
+                }
+
+                &.slick-next {
+                    top: 232px;
+
+                    @media @tablet {
+                        top: 50%;
+                        margin-top: 50px;
+                    }
+
+                    @media (max-device-width: 1280px) and (orientation: landscape) {
+                        transform: none;
+                        margin-top: 207px;
+                        top: 0;
+                    }
+                }
+
+                &.slick-disabled {
+                    opacity: 0.3;
+                }
+
+            }
+        }
+
+        .slick-item {
+
+            @media @desktop {
+                -ms-user-select: text;
+                user-select: text;
+            }
+
+            &.is-desktop-revert {
+                .row:not(.row-not-revers) {
+                    @media @tablet {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+
+            &.is-desktop-content-space-between {
+
+                .slick-item-container {
+
+
+                    >.row {
+                        margin-bottom: 30px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &:not(.is-desktop-revert) {
+                    .row {
+                        min-height: calc(100vh - 280px);
+                        flex-direction: row;
+                        align-content: space-between;
+
+                    }
+                }
+
+                .slick-item {
+
+                    &-media {
+
+                        &:last-child {
+
+                            @media (max-width:767px) {
+                                margin: 50px 0 0;
+                            }
+
+                        }
+
+                        .slick-item-header {
+
+                            @media (max-width:767px) {
+                                margin: 0 0 30px;
+                            }
+
+                            @media @tablet {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+
+                        body.steward-touching-lives &,
+                        body.institution-heartbeat & {
+                            margin-top: 0 !important;
+                        }
+
+                        .slick-item-body {
+                            margin-top: 0;
+
+                            @media @tablet {
+                                margin-bottom: 42px;
+                            }
+
+                            body.institution-heartbeat & {
+                                margin-top: 20px;
+                                margin-bottom: 15px;
+
+                                @media @tablet {
+                                    margin-top: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.is-desktop-revert {
+                    .slick-item-content {
+                        .slick-item-header {
+
+                            body:not(.steward-touching-lives) & {
+                                @media (max-width:767px) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-mediacentre {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @pink;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @pink;
+                }
+            }
+
+            &.is-steward {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @steward;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @steward;
+                }
+            }
+
+            &.is-major-investment {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @major-investments;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @major-investments;
+                }
+            }
+
+            &.is-yellow {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @yellow;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @yellow
+                }
+            }
+
+            &.is-investor {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @investor;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @investor
+                }
+            }
+
+            &.is-overview {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @overview;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @overview;
+                }
+            }
+
+            &.is-gfs {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: @gfs;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: @gfs;
+                }
+            }
+
+            &.is-tifanny {
+
+                .dash-above,
+                .dash-below,
+                .medialine .medialine-caption {
+
+                    &:before,
+                    &:after {
+                        color: #46c1be;
+                    }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: #46c1be;
+                }
+            }
+
+            .medialine {
+                margin: 0;
+            }
+
+            .row-not-revers {
+                .medialine {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &-container {
+
+                position: relative;
+                margin: 0 auto;
+                max-width: 1440px;
+                min-height: 100%;
+                padding: 0 50px 0 20px;
+
+                .signature-box {
+                    padding-top: 30px;
+
+                    img {
+                        width: 198px;
+                        height: auto;
+                        margin-bottom: 10px;
+
+                        &.ceo-sign {
+                            margin-bottom: -18px;
+                        }
+                    }
+
+                    h4 {
+                        color: black;
+                        font-weight: normal;
+                    }
+                }
+
+                @media @tablet {
+                    padding: 0 90px;
+                }
+
+                .row {
+                    justify-content: flex-start;
+                }
+
+                [class*="col-"] {
+                    @media (max-width:767px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-media {
+
+                @media (max-width:767px) {
+                    margin-bottom: 50px;
+                }
+
+                &.is-mobile-media-expand {
+                    @media (max-width:767px) {
+                        margin-bottom: 0;
+                    }
+
+                    .medialine {
+                        @media (max-width:767px) {
+                            margin: 0 -50px 0 -20px;
+                        }
+                    }
+                }
+            }
+
+            &-header {
+                margin: 0 0 20px;
+                margin-bottom: 20px;
+                color: @grey-intro;
+
+                @media @tablet {
+                    margin: 0 0 45px;
+
+                    body.steward-touching-lives &,
+                    body.institution-heartbeat & {
+                        padding-bottom: 45px;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+
+            &-body {
+                margin-top: 50px;
+
+                @media @tablet {
+                    margin-top: 60px;
+                }
+
+                h5 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.modal-video {
+        height: 100%;
+
+        .btn-close {
+            right: 10px;
+            top: -35px;
+
+            @media @tablet {
+                top: -50px;
+            }
+
+            @media @desktop {
+                right: -40px;
+            }
+        }
+
+        .modal-dialog {
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+
+            .modal-content {
+                width: 100%;
+
+                @media @desktop {
+                    width: 60%;
+                }
+
+                @media @mobile-landscape {
+                    .video-wrapper {
+                        max-height: 290px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                @media @mobile-landscape-sm {
+                    .video-wrapper {
+                        max-height: 230px;
+                    }
+                }
+            }
+        }
+
+        +.modal-backdrop {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+    }
+
+}
+
+.no-carousel {
+    .no-carousel-container {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1440px;
+        height: ~"calc(100vh - 160px)";
+        padding: 30px 40px 80px 20px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}

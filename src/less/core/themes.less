@@ -1,0 +1,157 @@
+.mainThemeDependentCss() {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    th,
+    .section-color,
+    .link-arrow,
+    .contentpage-highlight p,
+    .grid-item p,
+    .grid-item .grid-item-overlay a:hover .icon-inner,
+    .accordion-item-header.active a,
+    .accordionWrapper .accordion-controls,
+    .story-type {
+        color: @theme;
+    }
+
+    .next-story {
+        background-color: @theme;
+        color: @white;
+    }
+
+    .disc li,
+    .medialine .medialine-caption,
+    .accordionWrapper .accordion-controls .plus-icon {
+
+        &::before,
+        &::after {
+            background-color: @theme;
+        }
+    }
+
+    .dash-above,
+    .dash-below {
+
+        &::before,
+        &::after {
+            color: @theme;
+        }
+    }
+
+    .grid-item .grid-item-overlay {
+        background-color: @theme;
+    }
+
+    .accordionWrapper .accordion-controls .plus-icon,
+    .related-item.is-theme-border-top .related-item-media {
+        border-color: @theme;
+    }
+
+    .column-left.image .overlay,
+    .section__image .section__heading-overlay {
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: @theme;
+        }
+    }
+
+    table.simple {
+
+        td,
+        th {
+            border: 1px solid @theme;
+
+            &.TabletextBoldBlue {
+                font-weight: bold;
+                color: @theme;
+            }
+        }
+
+        thead tr:first-child th {
+            border-top: 1px solid @theme;
+        }
+    }
+
+    .main-header {
+        &::after  {
+            background-color: @theme;
+        }
+    }
+
+    .breadcrumb li.is-active a {
+        color: @theme;
+    }
+
+    .blockquote {
+
+        &:after,
+        &:before {
+            color: @theme;
+        }
+    }
+
+    &.tr-section {
+        background-color: @theme;
+    }
+
+}
+
+body.investor,
+.theme-investor {
+    @theme: @investor;
+    .mainThemeDependentCss();
+}
+
+body.institution,
+.theme-institution {
+    @theme: @institution;
+    .mainThemeDependentCss();
+}
+
+body.steward,
+.theme-steward {
+    @theme: @steward;
+    .mainThemeDependentCss();
+}
+
+body.our-major-investments,
+.theme-investments {
+    @theme: @major-investments;
+    .mainThemeDependentCss();
+}
+
+body.group-financial-summary,
+.theme-gfs {
+    @theme: @gfs;
+    .mainThemeDependentCss();
+}
+
+body.overview,
+body.pathway,
+body.contacts,
+body.siteservices,
+.theme-overview,
+.theme-contacts {
+    @theme: @overview;
+    .mainThemeDependentCss();
+}
+
+body.media-centre,
+.theme-media-centre {
+    @theme: @pink;
+    .mainThemeDependentCss();
+}

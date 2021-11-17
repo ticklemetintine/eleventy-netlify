@@ -1,0 +1,188 @@
+.tr-sectionpage {
+    padding-top: 0;
+
+    .fullwidth-teaser {
+
+        &[data-element=net-portfolio] .tr-teaser__content,
+        &[data-element=human-capital-2] .tr-teaser__content {
+            max-width: none;
+            width: 100%;
+            padding: 0;
+        }
+
+        &[data-element=net-portfolio],
+        &[data-element=financial-capital-2] {
+            @media @device-max840 {
+                .tr-teaser__image {
+                    height: 800px;
+                }
+
+                .tr-teaser__content {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    margin-top: 0;
+                }
+            }
+        }
+
+        /* Our Financials and Portfolio */
+        &[data-element=net-portfolio] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-financials-and-portfolio/fin2.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-financials-and-portfolio/fin2-mobile.png);
+
+                &::before {
+                    content: none;
+                }
+            }
+        }
+
+        &[data-element=financial-capital-2] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-financials-and-portfolio/fin3.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-financials-and-portfolio/fin3-mobile.png);
+            }
+        }
+
+        &[data-element=financial-capital-3] {
+            .tr-teaser__image {
+                background-image: url(/images/sectionpages/our-financials-and-portfolio/fin4.png);
+                @media @tablet-max1 {
+                    background-position: right 20% top;
+                }
+
+                @media @device-max840 {
+                    background-image: url(/images/sectionpages/our-financials-and-portfolio/fin4-mobile.jpg);
+                }
+            }
+
+            @media @device-max840 {
+                .tr-teaser__content {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+
+        /* Our Journey Towards Net Zero */
+        &[data-element=nature-capital-1] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat2.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat2-mobile.jpg);
+            }
+        }
+
+        &[data-element=nature-capital-2] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat3.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat3-mobile.jpg);
+            }
+        }
+
+        &[data-element=nature-capital-3] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat4.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat4-mobile.jpg);
+            }
+        }
+
+        &[data-element=nature-capital-4] .tr-teaser__image {
+            background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat5.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/our-journey-towards-net-zero/nat5-mobile.jpg);
+                background-position: right;
+            }
+        }
+
+        /* OneTemasek: Our People */
+        &[data-element=human-capital-1] .tr-teaser__image {
+            background-image: url(/images/sectionpages/oneTemasek-our-people/hum2.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/oneTemasek-our-people/hum2-mobile.jpg);
+            }
+        }
+
+        &[data-element=human-capital-3] .tr-teaser__image {
+            background-image: url(/images/sectionpages/oneTemasek-our-people/hum4.png);
+            background-position: 30% top;
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/oneTemasek-our-people/hum4-mobile.jpg);
+            }
+        }
+
+        &[data-element=human-capital-4] .tr-teaser__image {
+            background-image: url(/images/sectionpages/oneTemasek-our-people/hum5.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/oneTemasek-our-people/hum5-mobile.jpg);
+            }
+        }
+
+        /* Uplifting Lives and Communities */
+        &[data-element=social-capital-1] {
+            .tr-teaser__image {
+                background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc2.png);
+
+                @media @device-max840 {
+                    background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc2-mobile.png);
+                }
+            }
+
+            .tr-teaser__content {
+                @media @device-max840 {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &[data-element=social-capital-2] .tr-teaser__image {
+            background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc3.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc3-mobile.jpg);
+            }
+        }
+
+        &[data-element=social-capital-3] .tr-teaser__image {
+            background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc4.png);
+
+            @media @device-max840 {
+                background-image: url(/images/sectionpages/uplifting-lives-and-communities/soc4-mobile.jpg);
+            }
+        }
+
+    }
+
+    .gredient {
+        &::after {
+            content: "";
+            height: 150px;
+            width: 100%;
+            bottom: -2px;
+            background: rgb(0, 158, 228);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+
+            @media @device-max840 {
+                height: 100px;
+            }
+        }
+
+        &[data-gredient=investor]::after {
+            background: linear-gradient(0deg, rgba(0, 158, 228, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        &[data-gredient=institution]::after {
+            background: linear-gradient(0deg, rgba(20, 164, 57, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+}

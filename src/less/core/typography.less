@@ -1,0 +1,367 @@
+body {
+    font-family: "noto-sans", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    color: @grey-p;
+
+    html:lang(zh) & {
+        font-family: "Microsoft Yahei", serif;
+    }
+
+    &.touch-enabled {
+        letter-spacing: 0;
+    }
+    @media @mobile {
+        letter-spacing: 0;
+    }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: "noto-sans", Arial, sans-serif;
+
+    html:lang(zh) & {
+        font-family: "Microsoft Yahei", serif;
+    }
+}
+
+h1,
+.h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @media @desktop {
+        font-size: 45px;
+        line-height: 1.22;
+    }
+
+    html[lang="zh"] & {
+        font-size: 34px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+
+        @media @desktop {
+            font-size: 45px;
+            line-height: 55px;
+        }
+    }
+}
+
+h2,
+.h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+
+    .contentpage-container & {
+        margin-bottom: 10px;
+
+        html[lang="zh"] & {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media @desktop {
+        font-size: 30px;
+        line-height: 1.33;
+    }
+
+    html[lang="zh"] & {
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.12em;
+
+        @media @desktop {
+            font-size: 28px;
+            line-height: 1.3;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+.h2-butter-times {
+    font-family: "BetterTimes", "noto-sans", Arial;
+    font-size: 99px;
+    line-height: .7;
+    @media @desktop-large-max {
+        font-size: 80px;
+    }
+    @media @device-max840 {
+        font-size: 70px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: 400;
+
+    @media @desktop {
+        font-size: 24px;
+        line-height: 1.42;
+    }
+
+    html[lang="zh"] & {
+        font-size: 22px;
+        line-height: 1.36;
+        letter-spacing: 0.12em;
+
+        @media @desktop {
+            font-size: 25px;
+            line-height: 1.21;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+h4,
+.h4 {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+
+    @media @desktop {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    html[lang="zh"] & {
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.12em;
+
+        @media @desktop {
+            font-size: 22px;
+            line-height: 1.1;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+h5,
+.h5 {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+
+    @media @desktop {
+        font-size: 15px;
+        line-height: 1.46;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.12em;
+
+        @media @desktop {
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.571;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    @media @desktop {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        line-height: 1.77;
+        letter-spacing: 0.1em;
+
+        @media @desktop {
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &.intro {
+        color: @grey-intro;
+        font-weight: 400;
+
+        html[lang="zh"] & {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: 0.1em;
+
+            @media @desktop {
+                font-size: 23px;
+                line-height: 30px;
+                letter-spacing: 0.1em;
+            }
+        }
+
+    }
+
+    &.callout {
+        font-size: 20px;
+        line-height: 1.5;
+
+        @media @desktop {
+            font-size: 28px;
+            line-height: 1.43;
+        }
+
+        html[lang="zh"] & {
+            font-size: 23px;
+            line-height: 30px;
+            letter-spacing: 0.12em;
+
+            @media @desktop {
+                font-size: 21px;
+                line-height: 36px;
+                letter-spacing: 0.12em;
+            }
+        }
+
+    }
+
+    &.related,
+    &.caption {
+        font-size: 11px;
+        line-height: 1.27;
+
+        @media @desktop {
+            line-height: 1.45;
+            font-size: 12px;
+        }
+
+        html[lang="zh"] & {
+            font-size: 11px;
+            line-height: 22px;
+            letter-spacing: 0.12em;
+
+            @media @desktop {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.12em;
+            }
+        }
+    }
+
+    a {
+        color: @temasek-blue;
+    }
+}
+
+.p-butter-times {
+    font-family: "BetterTimes", "noto-sans", Arial;
+    font-size: 40px;
+    line-height: .7;
+}
+
+a {
+    font-size: 14px;
+    line-height: 1.571;
+
+    @media @desktop {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        line-height: 1.77;
+        letter-spacing: 0.1em;
+
+        @media @desktop {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &.link {
+        display: flex;
+        justify-content: flex-start;
+
+        .icon {
+            display: block;
+
+            &-inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &-arrow {
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        &-arrow-white {
+            width: 52px;
+            height: 52px;
+            color: white;
+            font-size: 3em;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+ul,
+ol {
+    font-size: 14px;
+    line-height: 1.571;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    @media @desktop {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        line-height: 1.77;
+        letter-spacing: 0.1em;
+
+        @media @desktop {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+.Italic {
+    font-style: italic;
+}
+
+strong,
+.Bold,
+.bold {
+    font-weight: 500;
+
+    html:lang(zh) & {
+        font-family: Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+        font-weight: 700;
+    }
+}

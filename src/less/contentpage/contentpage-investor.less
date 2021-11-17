@@ -1,0 +1,444 @@
+.contentpage.investor {
+    table.gfs-table.table-1 {
+        .number-header span {
+            color: @investor;
+        }
+
+        .TabletextExtraBold {
+            color: @investor;
+        }
+
+        .header-tinted {
+            color: @investor;
+        }
+
+        tbody th.border_bottom_teal:after {
+            background-color: @investor;
+        }
+
+        tbody td.border_bottom_teal:after {
+            background-color: @investor;
+        }
+    }
+
+    &.investor-twenty-year {
+        .contentpage-body {
+            h2 {
+                &.no-top-margin {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .chart {
+            margin-bottom: 0;
+        }
+
+        .quicklinks {
+            .quicknav.active .quicknav-links {
+                width: 360px;
+                bottom: -60px;
+
+                @media screen and (min-width: 1280px) and (max-height: 800px) {
+                    bottom: 0;
+                }
+
+                @media screen and (min-width: 1300px) and (max-height: 800px) {
+                    transform: translateY(340px);
+                }
+
+                ul li {
+                    margin-bottom: 0;
+                    line-height: 20px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        table.investor {
+            tr {
+
+                th:first-child,
+                td:first-child {
+                    width: 30%;
+                }
+            }
+        }
+
+        .chart-label-list {
+            list-style: none;
+            display: flex;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media @mobile {
+                font-size: 12px;
+                justify-content: flex-start;
+            }
+
+            li {
+                position: relative;
+                margin: 0 20px 10px 0;
+                padding-left: 46px;
+
+                @media @mobile {
+                    width: 100%;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .dash-chart {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    width: 36px;
+                    height: 7px;
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Purple-Line.svg);
+                    background-position: center center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    @media @mobile {
+                        top: 6px;
+                    }
+                }
+
+                .dash-chart-blue {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Blue-Line.svg);
+                }
+
+                .dash-chart-blue.dash-dashed {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Blue-Dash.svg);
+                }
+
+                .dash-chart-turqoise {
+                    top: 13px;
+                    height: 2px;
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Turqoise-Line_v1.svg);
+                    background-size: cover;
+                }
+
+                .dash-chart-green {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Green-Line.svg);
+                }
+
+                .dash-chart-green.dash-dashed {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Green-Dash.svg);
+                }
+
+                .dash-chart-grass.dash-dashed {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Lime-Dash.svg);
+                }
+
+                .dash-chart-orange {
+                    top: 12px;
+                    height: 4px;
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Orange-Line_v1.svg);
+                    background-size: cover;
+                }
+
+                .dash-chart-yellow.dash-dotted {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Yellow-Dot.svg);
+                }
+
+                .dash-chart-pink {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Purple-Line.svg);
+                }
+
+                .dash-chart-pink.dash-dotted {
+                    background-image: url(/images/investor/20-year-return-outlook/legend-icons/Legend-Pink-Dot.svg);
+                }
+
+            }
+        }
+
+    }
+
+    &.how-we-manage-risks {
+        .image-lightbox {
+
+            html[lang=zh] & {
+                padding: 0 2px;
+            }
+        }
+
+        .featherlight-content {
+            width: 90%;
+        }
+    }
+
+    &.how-we-grew {
+
+        .tabtable {
+            .tbl-left-wrap {
+                position: relative;
+                width: 150px;
+                box-shadow: none;
+
+                html[lang="zh"] & {
+                    width: 180px;
+
+                    @media (max-width: 701px) {
+                        width: 120px;
+                    }
+                }
+
+                &:before,
+                &:after {
+                    display: none;
+                }
+
+                .tbl-dropshadow {
+                    overflow: hidden;
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    left: auto;
+                    right: -20px;
+                    top: 0;
+                    z-index: 1;
+                    pointer-events: none;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: auto;
+                        right: 20px;
+                        top: 0;
+                        width: 20px;
+                        height: 100%;
+                        box-shadow: rgba(0, 0, 0, 0.15) 8px 0px 10px 0px;
+                    }
+                }
+            }
+
+            .tbl-right-wrap {
+                width: ~"calc(100% - 150px)";
+
+                html[lang="zh"] & {
+                    width: ~"calc(100% - 180px)";
+
+                    @media (max-width: 701px) {
+                        width: ~"calc(100% - 120px)";
+                    }
+                }
+
+                table {
+                    width: auto;
+
+                    thead {
+                        th {
+                            &:nth-child(1) {
+                                height: 57px;
+
+                                html[lang="zh"] & {
+                                    height: 73px;
+
+                                    @media screen and (max-width: 1023px) {
+                                        height: 67px;
+                                    }
+
+                                    @media screen and (max-width: 701px) {
+                                        height: 51px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            &:nth-child(1) {
+                                td {
+                                    height: 58px;
+
+                                    @media screen and (max-width: 701px) {
+                                        height: 48px;
+                                    }
+
+                                    html[lang="zh"] & {
+                                        height: 80px;
+
+                                        @media screen and (max-width: 701px) {
+                                            height: 62px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                td {
+                                    height: 58px;
+
+                                    @media screen and (max-width: 701px) {
+                                        height: 36px;
+                                    }
+
+                                    html[lang="zh"] & {
+                                        height: 52px;
+
+                                        @media screen and (max-width: 1023px) {}
+
+                                        @media screen and (max-width: 701px) {
+                                            height: 43px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        td {
+                            @media screen and (max-width: 701px) {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.total-shareholder-return {
+        .chart {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            .chart-media {
+                padding-right: 40px;
+                width: 630px;
+
+                @media @tablet-max {
+                    width: 50%;
+                }
+
+                @media @mobile {
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                img {
+                    padding: 0;
+                }
+            }
+
+            .chart-legend-accordion {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                font-weight: 500;
+                width: ~"calc(100% - 630px)";
+
+                @media @tablet-max {
+                    width: 50%;
+                }
+
+                @media @mobile {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+
+                li {
+                    position: relative;
+                    margin-bottom: 15px;
+                    padding-left: 30px;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background: @temasek-blue;
+                        border-radius: 1000px;
+                    }
+
+                    &.dotted-green:before {
+                        background: #12A639;
+                    }
+
+                    &.dotted-yellow:before {
+                        background: #FAB600;
+                    }
+
+                    &.dotted-pinktint:before {
+                        background: #ECA5B7;
+                    }
+
+                    &.dotted-bluetint:before {
+                        background: #bdd7ee;
+                    }
+
+                    &.dotted-orangetint:before {
+                        background: #f4b183;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &.is-active {
+                        .legend-title:after {
+                            transform: rotate(180deg);
+                        }
+
+                        .legend-body {
+                            display: block;
+                        }
+                    }
+
+                    &.no-collapsable {
+                        .legend-title {
+                            cursor: inherit !important;
+                        }
+
+                        .legend-title:after {
+                            display: none;
+                        }
+
+                        .legend-body {
+                            display: block;
+                        }
+                    }
+                }
+
+                .legend-title {
+                    position: relative;
+                    padding-right: 20px;
+                    cursor: pointer;
+
+                    &:after {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        font-family: "FontAwesome";
+                        font-size: 20px;
+                        line-height: 23px;
+                        content: "\f107";
+                    }
+                }
+
+                .legend-body {
+                    display: none;
+                    color: #666666;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

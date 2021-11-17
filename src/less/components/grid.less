@@ -1,0 +1,28 @@
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    .column {
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+
+    }
+}
+
+.grid-3-2-1 {
+
+    .column {
+        width: 100%;
+
+        @media @tablet {
+            width: percentage(1/2);
+        }
+
+        @media @desktop {
+            width: percentage(1/3);
+        }
+    }
+}

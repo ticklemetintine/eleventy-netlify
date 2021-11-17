@@ -1,0 +1,279 @@
+.video {
+    transition: 0.5s;
+    opacity: 1;
+
+    &-wrapper {
+        margin-bottom: 25px;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    &-container {
+        width: 100%;
+        height: 0;
+        padding: 28.2%;
+        box-sizing: border-box;
+
+        &-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            outline: 0;
+        }
+    }
+
+    &.hide {
+        opacity: 0;
+    }
+
+    &-js {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        outline: 0;
+
+        .vjs-big-play-button {
+            border-radius: 66px !important;
+            border: solid 2px @temasek-purple;
+            margin-top: -33px !important;
+            margin-left: -33px !important;
+            width: 66px !important;
+            height: 66px !important;
+            background: @white;
+            box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .3);
+            
+            @media screen and (max-width: 767px) {
+                transform: scale(0.8);
+            }
+
+            span:first-child {
+                position: relative;
+                background-color: @temasek-purple;
+                text-align: left;
+                width: 8px;
+                height: 8px;
+                border-top-right-radius: 40%;
+                transform: rotate(45deg);
+                display: block;
+                transition: all 0.2s ease;
+                margin: auto auto auto 47%;
+
+                &:before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: inherit;
+                    width: 8px;
+                    height: 8px;
+                    border-top-right-radius: 40%;
+                }
+
+                &:before {
+                    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+                }
+
+                &:after {
+                    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+                }
+            }
+        }
+
+        &:hover {
+            .vjs-big-play-button {
+                transition: .3s;
+                background: @temasek-purple;
+                border-color: @temasek-purple;
+                
+                span:first-child {
+                    background-color: @white;
+                }
+
+                &:after {
+                    animation: play-pulse 1s linear 2 forwards;
+                }
+            }
+        }
+    }
+}
+
+.contentpage .contentpage-body {
+    .hapyak-contents-column1 .popcorn-contents-list {
+        margin: 0 24px 24px 24px;
+    }
+
+    .popcorn-contents .popcorn-contents-title {
+        font-size: 27px;
+        font-weight: normal;
+        line-height: 1em;
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .vjs-modal-dialog-content {
+
+        h2,
+        h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.video-overly {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: fade(@black, 90%);
+    z-index: 99999;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+
+    .video-wrapper {
+        background: #fff;
+        width: 60%;
+        height: 0;
+        margin: 0 auto;
+        padding-bottom: 34%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+
+        .bc-player-default_default {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            padding-bottom: 57%;
+        }
+    }
+
+    &.active {
+        display: block;
+        pointer-events: auto;
+    }
+
+    .close {
+        position: absolute;
+        top: -45px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: 1px solid #cbcbcb;
+        background-color: white;
+        border-radius: 1000px;
+        z-index: 1;
+        -webkit-appearance: none;
+        transform-origin: 50% 50%;
+        transition: all 0.6s ease-out;
+
+        @media @tablet {
+            right: 10px;
+            border-width: 2px;
+        }
+
+        @media @desktop {
+            right: -45px;
+            border-width: 2px;
+        }
+
+        @media @mobile {
+            width: 28px;
+            height: 28px;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 12px;
+            height: 1px;
+            background: @temasek-purple;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.6s ease-out;
+            opacity: 1 !important;
+        }
+
+        &:before {
+            transform: rotate(-135deg);
+        }
+
+
+        &:after {
+            top: 48%;
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+            background: @temasek-purple;
+            border-color: @temasek-purple;
+
+            &:before,
+            &:after {
+                background: white;
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform: rotate(225deg);
+            }
+        }
+
+        @media @mobile-landscape {
+            top: 10px;
+        }
+    }
+
+    .video-container-popup {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .video-container-popup .video-container-inner .video-js,
+    .video-container-popup .video-container-inner .video-js .vjs-tech {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

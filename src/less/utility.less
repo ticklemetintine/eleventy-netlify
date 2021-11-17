@@ -1,0 +1,325 @@
+.tr-intro {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+
+    &__community-capital {
+        text-align: center;
+        color: @temasek-purple;
+        max-width: 880px;
+        margin: 0 auto 40px;
+    }
+}
+
+.tr-strong {
+    font-weight: bold;
+}
+
+.tr-align-centre {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.color-overview {
+    color: @overview;
+}
+
+.tr-separator {
+    height: 80px;
+}
+
+.column-step-up {
+    >[class*=col-] {
+        &:nth-child(2) {
+            margin-top: -60px;
+        }
+
+        &:nth-child(3) {
+            margin-top: -120px;
+        }
+    }
+}
+
+.group-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+
+    @media @mobile {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    >a {
+        margin: 0 20px;
+
+        @media @mobile {
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.anchor {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: @temasek-purple;
+    font-weight: bold;
+
+    &:hover,
+    .anchor-feature {
+        .icon-inner {
+            animation-name: animate-arrow;
+            animation-duration: .8s;
+            animation-iteration-count: 2;
+        }
+    }
+
+    &:hover {
+        .button-play-transparent {
+            background: @temasek-purple;
+            border-color: @temasek-purple;
+        }
+    }
+
+    .icon {
+        border-radius: 50px;
+        border: 2px solid @temasek-purple;
+        background: 0 0;
+        width: 38px;
+        height: 38px;
+        overflow: hidden;
+        transition: all .25s cubic-bezier(.19, 1, .22, 1);
+        margin-right: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 38px;
+
+        @media @device-max840 {
+            margin-right: 10px;
+        }
+    }
+
+    .button-play {
+        margin-right: 13px;
+    }
+
+    .icon-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+
+        &::before {
+            content: "\e90c";
+        }
+    }
+
+    .play-fill-before {
+        margin: 2px 0 0 5px;
+    }
+
+    &-white {
+        color: white;
+
+        .icon {
+            border-color: white;
+        }
+
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-teaser {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1;
+        font-size: 20px;
+
+        .icon {
+            background-color: white;
+            margin-right: 0;
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &-feature {
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        padding-left: 50px;
+        top: 0;
+        margin-top: 0;
+
+        .anchor {
+            position: absolute;
+            left: 0;
+            margin-top: 0;
+        }
+    }
+
+}
+
+
+.link-button {
+    float: right;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: #006ba6;
+    border: 2px solid #bfdae9;
+    border-radius: 20px;
+    padding: 10px 16px;
+    transition: all .25s cubic-bezier(.19, 1, .22, 1);
+
+    @media (max-width:767px) {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:hover {
+        color: @white;
+        background: @temasek-blue;
+        border-color: @temasek-blue;
+        transition: .25s;
+    }
+
+    &.lightbox-button {
+        color: @temasek-purple;
+        border: 2px solid @pale-purple;
+
+        &:hover {
+            border-color: @temasek-purple;
+            background: @temasek-purple;
+            color: @white;
+        }
+    }
+}
+
+.link-icon {
+    span.icon {
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, .4);
+        display: block;
+        background: 0 0;
+        width: 36px;
+        height: 36px;
+        overflow: hidden;
+        transition: all .25s cubic-bezier(.19, 1, .22, 1);
+        margin-left: 13px;
+
+        .icon-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@keyframes animate-arrow {
+    0% {
+        transform: translateX(0)
+    }
+
+    30% {
+        transform: translateX(0)
+    }
+
+    70% {
+        transform: translateX(110%)
+    }
+
+    71% {
+        transform: translateX(110%);
+        visibility: hidden
+    }
+
+    72% {
+        transform: translateX(-100%);
+        visibility: hidden
+    }
+
+    73% {
+        transform: translateX(-100%);
+        visibility: visible
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.button-play {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    border: solid 2px @temasek-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: @white;
+    transition: all 0.2s ease;
+
+    &-transparent {
+        background: transparent;
+        border-color: @white;
+
+        .play-icon {
+            background-color: @white;
+        }
+    }
+}
+
+.play-icon {
+    position: relative;
+    background-color: @temasek-purple;
+    text-align: left;
+    width: 5px;
+    height: 5px;
+    border-top-right-radius: 40%;
+    transform: rotate(45deg);
+    display: block;
+    margin-left: 3px;
+    transition: all 0.2s ease;
+
+    &:before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        width: 5px;
+        height: 5px;
+        border-top-right-radius: 40%;
+    }
+
+    &:before {
+        transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+    }
+
+    &:after {
+        transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+    }
+}

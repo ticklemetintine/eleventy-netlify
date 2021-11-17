@@ -1,0 +1,200 @@
+.tr-keystats {
+    max-width: 860px;
+    margin: 60px auto 80px;
+    padding: 0 80px;
+    box-sizing: content-box;
+
+    @media @mobile {
+        margin-bottom: 40px;
+        padding: 0 40px;
+
+        [lang=zh] & {
+            padding: 0 20px;
+        }
+    }
+
+    &__intro,
+    html[lang="zh"] &__intro {
+        font-size: 28px;
+        text-align: center;
+        color: white;
+
+        @media @device-max840 {
+            font-size: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        justify-content: space-between;
+
+        [data-element=net-portfolio] & {
+            max-width: 650px;
+            margin: 0 auto 60px;
+        }
+
+        html[lang="zh"] [data-element=net-portfolio] & {
+            max-width: none;
+            margin: 0 16px 60px 16px;
+        }
+
+        li {
+            width: 40%;
+            margin: 30px 0 0;
+            list-style: none;
+
+            [lang=en] [data-element=net-portfolio] & {
+                width: 45%;
+            }
+
+            @media @device-max840 {
+                width: 50%;
+                margin: 30px 0 0;
+            }
+
+            @media @mobile {
+                [lang=en] [data-element=net-portfolio] & {
+                    width: 43%;
+                }
+
+                html[lang="zh"] [data-element=net-portfolio] &{
+                    &:nth-child( odd ) {
+                        width: 55%;
+                    }
+
+                    &:nth-child( even ) {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+
+    .number {
+        font-size: 54px;
+        line-height: 1.3;
+        font-weight: bold;
+
+        @media @device-max840 {
+            font-size: 40px
+        }
+        @media @mobile {
+            font-size: 32px;
+        }
+    }
+
+    .desc {
+        max-width: 200px;
+
+        html[lang="zh"] & {
+            max-width: none;
+        }
+
+        [lang=en] [data-element=net-portfolio] & {
+            max-width: 300px;
+        }
+
+        @media @mobile {
+            max-width: 150px;
+        }
+    }
+
+    &--institution {
+        max-width: none;
+        padding: 0;
+
+        @media @mobile {
+            margin: 0 0 80px;
+        }
+
+        .tr-keystats__list {
+            color: @grey-intro;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: ~"calc(33.33% - 26.66px)";
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 60px;
+
+                html[lang="zh"] & {
+                    width: 100%;
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+        }
+
+        .number {
+            font-size: 180px;
+            font-weight: normal;
+            line-height: .9;
+            color: @institution;
+
+            @media @desktop-large-max {
+                font-size: 150px
+            }
+
+            @media @device-max840 {
+                font-size: 100px;
+            }
+
+            .counter {
+                font-family: "BetterTimes";
+            }
+        }
+
+        .desc {
+            font-size: 28px;
+            font-weight: bold;
+            max-width: none;
+            @media @desktop-large-max {
+                font-size: 24px;
+            }
+
+            @media @device-max840 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &.one-temasek {
+        li {
+            width: ~"calc(33.33% - 60px)";
+
+            @media @mobile {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.tr-section.tr-section-institution-keystats {
+    padding: 40px 0 12vw;
+
+    @media @device-max840 {
+        padding: 0;
+
+        .tr-section-wrapper {
+            padding: 0 40px;
+        }
+    }
+
+    @media @mobile {
+        .tr-section-wrapper {
+            padding: 0 20px;
+        }
+    }
+}

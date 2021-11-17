@@ -1,0 +1,681 @@
+.contacts {
+
+    &-list {
+        margin-top: 20px !important;
+
+        .contacts-item>div {
+            padding-right: 20px;
+        }
+
+        .contacts-item .button {
+            margin-bottom: 10px;
+        }
+
+        .contacts-item:last-child {
+            border-bottom: 0;
+        }
+
+        .contacts-item[data-location="prc"],
+        .contacts-item[data-location="usa"] {
+            display: block;
+            padding: 0;
+            width: 100%;
+        }
+
+        .contacts-item[data-location="prc"]>div:first-child,
+        .contacts-item[data-location="usa"]>div:first-child {
+            width: 100%;
+        }
+
+        .contacts-accordions {
+            display: none;
+        }
+
+        .contacts-title {
+            flex: 1 0 auto;
+            padding-right: 20px;
+            width: 41%;
+
+            h5 {
+                margin-top: -21px !important;
+            }
+
+            P {
+                font-weight: 400;
+            }
+
+            a {
+                float: none !important;
+                margin-top: 10px;
+                margin-bottom: 0 !important;
+                display: inline-block;
+            }
+        }
+
+        .contacts-address {
+            flex: 1 0 auto;
+            padding-right: 20px;
+            width: 35%;
+        }
+
+        .contacts-phone {
+            width: 24%;
+        }
+
+        .contacts-accordions .button {
+            margin-bottom: 10px;
+        }
+
+        &--mobile {
+            @media screen and (max-width : 767px) {
+                display: block;
+                position: relative;
+
+            }
+
+            @media screen and (min-width : 768px) {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            @media screen and (max-width : 767px) {
+                display: none;
+
+            }
+
+            @media screen and (min-width : 768px) {
+                display: block;
+            }
+        }
+    }
+
+    .accordion .contacts-title {
+        font-weight: 400;
+    }
+
+    .link-button:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    .contacts-map {
+        position: relative;
+    }
+
+    .contacts .contacts-map-image {
+        width: 100%;
+        position: absolute;
+        display: none;
+        opacity: .2;
+    }
+
+    .contacts-map-image.desktop {
+        @media only screen and (min-width : 768px) {
+            display: block;
+        }
+
+        @media only screen and (max-width : 767px) {
+            display: none;
+        }
+    }
+
+    .contacts-map-image.mobile {
+        @media only screen and (min-width : 768px) {
+            display: none;
+        }
+
+        @media only screen and (max-width : 767px) {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    .our-heartbeat-map {
+        margin-top: 0;
+        background-color: @pink-heartbeat;
+
+        .heartbeat-pins {
+            @media only screen and (max-width : 767px) {
+                display: none;
+            }
+
+            .heartbeat-pin {
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                display: block;
+                white-space: nowrap;
+                border-radius: 1000px;
+                opacity: 0;
+                transform: scale(0);
+                transition: 0.3s;
+
+                &:before {
+                    width: 20px;
+                    height: 20px;
+                    left: 3px;
+                    top: 3px;
+                    z-index: 1;
+                    background: @temasek-blue;
+                }
+
+                &:after {
+                    left: 0;
+                    top: 0;
+                    width: 24px;
+                    height: 24px;
+                    background: #FFFFFF;
+                    border: 1px solid @temasek-blue;
+                }
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 1000px;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    &:before {
+                        transform: scale(0.9);
+                        transition: 0.3s;
+                    }
+
+                    &:after {
+                        transform: scale(1.2);
+                        transition: 0.3s;
+                    }
+                }
+
+                @media only screen and (max-width : 767px) {
+                    width: 31px;
+                    height: 27px;
+                }
+
+                >span {
+                    width: 100% !important;
+                    height: 100% !important;
+
+                    span:first-of-type {
+                        background-size: 52%;
+                        position: relative;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .heartbeat-pin-name {
+                        position: absolute;
+                        font-size: 14px;
+                        line-height: 1;
+                        font-weight: 500;
+                        width: 110px !important;
+                        top: 6px;
+                        display: block;
+
+                        @media screen and (max-width : 767px) {
+                            display: none;
+                        }
+
+                        &.left {
+                            left: -113px;
+                            text-align: right;
+                        }
+
+                        &.right {
+                            right: -114px;
+                            text-align: left;
+                        }
+
+                        &:hover {
+                            transform: scale(1);
+                        }
+                    }
+
+                    &:not(.shadow) {
+                        background-image: none !important;
+
+                        .heartbeat-pin-name {
+                            color: @temasek-blue;
+                        }
+                    }
+
+                    &.shadow {
+                        .heartbeat-pin-name {
+                            color: @temasek-purple;
+                            left: -111px;
+                            line-height: 45px;
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+
+                        &:hover {
+                            transform: scale(1) !important;
+                        }
+
+                        span:first-of-type {
+                            background-size: 40%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+
+                            &:hover {
+                                transform: scale(1.2) !important;
+                            }
+                        }
+                    }
+                }
+
+                &.singapore {
+                    top: 63%;
+                    left: 37.5%;
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0s;
+                    width: 69px;
+                    height: 68px;
+                    z-index: 2;
+
+                    &:before {
+                        background: @pink;
+                        animation: heartbeatAnimate 1s infinite;
+                    }
+
+                    &:after {
+                        border: 1px solid @pink;
+                    }
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 61%;
+                        left: 35.2%;
+                    }
+                }
+
+                &.beijing {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1.6s;
+                    top: 40%;
+                    left: 38.5%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 39.5%;
+                        left: 36%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 38%;
+                        left: 79%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 34%;
+                        left: 77.5%;
+                    }
+                }
+
+                &.hanoi {
+                    top: 53%;
+                    left: 36%;
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0.2s;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 52%;
+                        left: 34.5%;
+                    }
+
+                    .heartbeat-pin-name.left {
+                        @media @device-max840 {
+                            left: -80px;
+                            top: -16px;
+                        }
+                    }
+                }
+
+                &.london {
+                    top: 32.4%;
+                    left: 4%;
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0.4s;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 33%;
+                        left: 2.8%;
+                    }
+
+                    .heartbeat-pin-name.left {
+                        @media @tablet-max {
+                            top: -2px;
+                        }
+
+                        @media @desktop-large-max {
+                            left: -70px;
+                            top: -21px;
+                        }
+                    }
+                }
+
+                &.belgium {
+                    top: 35.5%;
+                    left: 6.2%;
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0.4s;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 35%;
+                        left: 6.2%;
+                    }
+
+                    .heartbeat-pin-name.left {
+                        @media @tablet-max {
+                            top: -2px;
+                        }
+
+                        @media @desktop-large-max {
+                            left: -21px;
+                        }
+                    }
+                }
+
+                &.san-francisco {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0.6s;
+                    top: 40%;
+                    left: 64.5%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1100px) {
+                        top: 41%;
+                        left: 65.2%;
+
+                        .heartbeat-pin-name {
+                            top: -20px;
+                            left: -45px !important;
+                        }
+                    }
+                }
+
+                &.washington {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 0.8s;
+                    top: 43%;
+                    left: 77.9%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 42%;
+                        left: 77.4%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 39.2%;
+                        left: 24.4%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 33.2%;
+                        left: 19.8%;
+                    }
+                }
+
+                &.shanghai {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1s;
+                    top: 45%;
+                    left: 41.3%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 44%;
+                        left: 39%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 38%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 38%;
+                        left: 78%;
+                    }
+
+                }
+
+                &.shenzhen {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1s;
+                    top: 50%;
+                    left: 39.5%;
+
+                    // @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                    //     top: 44%;
+                    //     left: 39%;
+                    // }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 38%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 38%;
+                        left: 78%;
+                    }
+
+                }
+
+                &.mumbai {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1.2s;
+                    top: 55%;
+                    left: 27.2%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 54%;
+                        left: 26.2%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 53%;
+                        left: 69%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 44.5%;
+                        left: 65%;
+                    }
+                }
+
+                &.mexico {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1.4s;
+                    top: 52%;
+                    left: 69.8%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 50%;
+                        left: 70%;
+                    }
+                }
+
+
+                &.brazil {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1.6s;
+                    top: 77%;
+                    left: 86%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 77.5%;
+                        left: 85.5%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 73%;
+                        left: 29%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 67%;
+                        left: 28.2%;
+                    }
+                }
+
+                &.newyork {
+                    animation: heartbeatFadeIn 0.8s forwards ease-out 1.8s;
+                    top: 39%;
+                    left: 79.5%;
+
+                    @media only screen and (min-width : 768px) and (max-width : 1023px) {
+                        top: 36.9%;
+                        left: 80.2%;
+                    }
+
+                    @media only screen and (max-width : 767px) {
+                        top: 33.2%;
+                        left: 22.8%;
+                    }
+
+                    @media only screen and (max-width : 420px) {
+                        top: 30.2%;
+                        left: 19.8%;
+                    }
+
+                }
+            }
+        }
+
+        &--container {
+            position: relative;
+            max-width: 1103px;
+            margin: 0 auto;
+        }
+
+        &--mobile {
+            @media screen and (max-width : 767px) {
+                display: block;
+
+                .accordionWrapper {
+                    margin-bottom: 0;
+
+                    .accordion-item-content {
+                        padding: 0;
+
+                        &--image {
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                z-index: 5;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 0 60px 73px;
+                                border-color: transparent transparent #ffffff transparent;
+                            }
+
+                        }
+
+                        &--inner {
+                            padding: 25px 22px;
+                        }
+
+                        h4 {
+                            font-size: 18px;
+                            line-height: 1.5;
+                            color: @pink;
+                        }
+
+                        h5 {
+                            font-size: 14px;
+                            line-height: 1.5;
+                            color: @temasek-blue;
+                            margin-bottom: 25px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (min-width : 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .contacts-item {
+        display: flex;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+        padding: 30px 0;
+        border-bottom: 2px solid @pale-blue;
+        width: 100%;
+
+        &[data-location="beijing"],
+        &[data-location="newyork"] {
+            display: block;
+        }
+
+        &[data-location="beijing"]>div,
+        &[data-location="newyork"]>div {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0;
+            margin: 0 0 30px 0;
+        }
+
+        &[data-location="beijing"]>div:last-child,
+        &[data-location="newyork"]>div:last-child {
+            margin: 0 0 0px 0;
+        }
+
+        &.active {
+            animation: grow 500ms ease-out forwards;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts .contacts-map-image {
+        display: block;
+    }
+
+    .contacts .contacts-map-image.mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-list {
+        display: none;
+    }
+
+    .contacts-accordions {
+        display: block;
+    }
+
+    .contacts .heartbeat-pin,
+    .singapore-label {
+        display: none;
+    }
+}
+
+@keyframes heartbeatFadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeatAnimate {
+    0% {
+        box-shadow: 0 0 0 @pink;
+    }
+
+    50% {
+        box-shadow: 0 0 20px @pink;
+    }
+
+    100% {
+        box-shadow: 0 0 0 @pink;
+    }
+}

@@ -1,27 +1,33 @@
 {
-  "name": "eleventy-netlify",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "sass --watch src/sass:_site/css",
-    "build:sass": "sass src/sass:_site/css",
-    "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-al build:*",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  },
-  "dependencies": {
-    "http-server": "^13.0.0",
-    "markdown-it": "^12.2.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.37.5"
-  }
+    "name": "eleventy-netlify",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch:eleventy": "eleventy --serve",
+        "build:eleventy": "eleventy",
+        "gulp": "gulp",
+        "less": "less-watch-compiler src/less _site/css main.less",
+        "start": "npm-run-all --parallel watch:* less",
+        "build": "npm-run-al build:*",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "gulp-order": "^1.2.0"
+    },
+    "dependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "http-server": "^13.0.0",
+        "markdown-it": "^12.2.0",
+        "merge-stream": "^2.0.0",
+        "npm-run-all": "^4.1.5",
+        "terser": "^5.10.0"
+    }
 }

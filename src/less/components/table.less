@@ -1,0 +1,359 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 0;
+    }
+
+
+    &.group-statement-changes {
+        td {
+            &:nth-child(2n + 1) {
+                background: @white;
+            }
+        }
+    }
+
+    thead {
+        th {
+            padding: 8px 20px;
+            border-top: 1px solid @grey-intro;
+            border-bottom: 1px solid @grey-intro;
+
+            @media @tablet {
+                padding: 6px 20px;
+            }
+        }
+    }
+
+    tbody {
+
+        th {
+            padding: 8px 20px;
+            color: #434c50;
+            font-weight: 400;
+
+            background: #f4f4f4;
+            border-top: 1px solid #cbcbcb;
+            border-bottom: 1px solid #cbcbcb;
+
+            @media @tablet {
+                padding: 6px 20px;
+            }
+        }
+
+        td {
+            padding: 8px 20px;
+            border-bottom: 1px solid #cbcbcb;
+
+            @media @tablet {
+                padding: 11px 20px;
+            }
+
+            &:first-child,
+            &:nth-child(2n + 1) {
+                background: #f4f4f4;
+                background-clip: padding-box;
+            }
+
+            &:first-child {
+                padding: 10px;
+
+                @media @tablet {
+                    padding: 11px 20px;
+                }
+            }
+        }
+    }
+
+    .border_bottom_width_8 {
+        border-bottom: 2px solid;
+    }
+
+}
+
+.overview-changes-in-accounting-standards #t1r2h1 {
+    border-top: none;
+}
+
+.table-responsive {
+    overflow: auto;
+    width: 100%;
+
+    table {
+        border-spacing: 0;
+    }
+}
+
+table.simple {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+
+    @media @desktop {
+        font-size: 15px;
+        line-height: 1.74;
+    }
+
+    html[lang="zh"] & {
+        font-size: 16px;
+        line-height: 1.77;
+        letter-spacing: 0.1em;
+
+        @media @desktop {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    td,
+    th {
+        border: 1px solid @temasek-blue;
+
+        &.TabletextBold {
+            font-weight: bold;
+        }
+
+        &.TabletextBoldBlue {
+            font-weight: bold;
+            color: @temasek-blue;
+        }
+
+        padding:10px 20px;
+
+        @media @mobile {
+            padding: 5px 10px;
+        }
+    }
+
+    tr {
+        th {
+            span {
+                display: block;
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: normal;
+
+                &.tooltip {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        td:nth-child(2n + 1) {
+            background: transparent
+        }
+
+        td:first-child,
+        th:first-child {
+            border-left: 0;
+        }
+
+        td:last-child,
+        th:last-child {
+            border-right: 0;
+        }
+    }
+
+    thead tr:first-child th {
+        border-top: 1px solid @temasek-blue;
+    }
+
+
+}
+
+.table_portfolio-by-geography {
+    tbody td {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+
+.table-sticky {
+    position: relative;
+    padding-left: 170px;
+
+    @media @tablet {
+        padding-left: 25%;
+    }
+
+    .table-sticky-list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 170px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        line-height: normal;
+
+        @media @tablet {
+            width: 25%;
+        }
+
+        li {
+            margin: 0;
+            padding: 8px 20px;
+            line-height: 1.15;
+            font-weight: 400;
+            border-bottom: 1px solid #cbcbcb;
+            background: #f4f4f4;
+
+            @media @tablet {
+                padding: 11px 20px;
+            }
+
+            &:first-child {
+                height: 30px;
+                border-top: 1px solid @grey-intro;
+                border-bottom: 1px solid @grey-intro;
+                background: transparent;
+            }
+        }
+    }
+
+    .table-responsive {
+        position: relative;
+
+        th:first-child,
+        td:first-child {
+            @media (max-width:767px) {
+                display: none;
+            }
+        }
+    }
+}
+
+/* fixed table header : adopting-international-accounting-standards.html  */
+.table-header-sticky {
+    &.is-sticky {
+        position: fixed;
+        z-index: 10;
+        top: 60px;
+        width: 100%;
+        max-width: 900px;
+
+        @media only screen and (min-width: 900px) and (max-width: 1025px) {
+            max-width: none;
+        }
+
+        background: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width : 1024px) {
+            padding: 0 40px;
+            left: 0;
+            transform: translateX(0%);
+        }
+
+        @media screen and (max-width : 767px) {
+            padding: 0 20px;
+        }
+
+        .table-header-sticky--wrapper {
+            overflow: hidden;
+        }
+    }
+
+    &+.fake-space {
+        height: 99px;
+        display: none;
+    }
+}
+
+.overview-changes-in-accounting-standards {
+    .table-responsive {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+}
+
+.contentpage.building-a-sustainable-organisation,
+.contentpage.independent {
+    .table-top-line {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid @grey-intro;
+    }
+
+    table.table-1.gfs-table {
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .tooltip,
+        .number-header,
+        .t-color-purple,
+        .TableFiguresBold.t-color-purple {
+            color: @temasek-purple;
+        }
+
+        .no-bg {
+            background-color: transparent;
+        }
+
+        .bb_purple_thick td {
+            &:after {
+                height: 2px;
+            }
+        }
+
+        th {
+            padding-bottom: 10px;
+        }
+
+        .bb_purple th,
+        .bb_purple td,
+        .bb_purple_thick td {
+            &:after {
+                background-color: @temasek-purple;
+
+            }
+        }
+    }
+}
+
+// independent-auditors-report
+.contentpage.independent {
+    td .tooltip {
+        line-height: 24px;
+    }
+
+    .modal {
+        table {
+            margin-bottom: 20px;
+
+            .align-center {
+                text-align: center;
+            }
+        }
+
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            padding-bottom: 10px;
+        }
+    }
+
+}

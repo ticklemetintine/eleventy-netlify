@@ -1,0 +1,139 @@
+.contentpage {
+    &.pathway {
+
+        #pathway-modal-1 {
+            table {
+                margin-bottom: 40px;
+            }
+
+            ol {
+                list-style-position: outside;
+                margin-left: 20px;
+                // margin-bottom: 40px;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .intro strong {
+            font-weight: 700;
+        }
+
+        .chart-legend {
+            margin-bottom: 15px;
+
+            li.no-dot.line-legend {
+                position: relative;
+
+                &:before {
+                    width: 14px;
+                    height: 0;
+                    border-radius: 15%;
+                    border-bottom: solid 3px #633169;
+                    position: absolute;
+                    left: 0;
+                    top: 45%;
+                    background: none;
+                }
+            }
+
+            .legend {
+                padding-left: 24px;
+
+                &::before {
+                    content: none;
+                }
+
+                img {
+                    top: 3px;
+                    left: 0;
+                    width: 9px;
+                    height: 9px;
+                    position: absolute;
+
+                    @media @mobile {
+                        width: 7px;
+                        height: 7px;
+                        top: 6px;
+                    }
+                }
+
+                .line {
+                    top: 7px;
+                    width: 15px;
+                    height: 4px;
+
+                    @media @mobile {
+                        width: 7px;
+                    }
+                }
+            }
+        }
+
+        .contentpage-body {
+            .row>.contentpage--section-chart-single {
+                @media @mobile {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .related-item-body {
+                .anchor {
+                    @media @mobile {
+                        display: flex;
+                        align-items: center;
+
+                        .icon {
+                            transform: scale(0.8);
+                            margin-right: 5px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .chart-display-mobile {
+            display: block;
+
+            @media @tablet {
+                display: none;
+            }
+        }
+
+        .chart-display-desktop {
+            display: none;
+
+            svg {
+                flex: 1;
+            }
+
+            @media @tablet {
+                min-height: 207px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .text-date {
+                font-size: 14px;
+                margin: auto auto 40px 20px;
+                line-height: 1.4;
+                font-weight: 500;
+            }
+        }
+
+        html[lang="zh"] & {
+            .three-pronged {
+                margin-left: 26px;
+            }
+        }
+
+        &.measuring-and-tracking-portfolio-emissions {
+            .tooltipster-base a {
+                font-size: 14px;
+            }
+        }
+    }
+}
