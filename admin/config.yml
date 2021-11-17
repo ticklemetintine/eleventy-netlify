@@ -46,15 +46,37 @@ collections:
           - { label: "Banner Image", name: "banner", widget: "image" }
           - { label: "Banner Mobile Image", name: "banner_mobile", widget: "image" }
           - { label: "Banner Mobile Image (Landscape)", name: "banner_mobile_landscape", widget: "image" }
-          - { label: "Intro", name: "intro", widget: markdown }
-          - { label: "Show featured posts?", name: "fp_show", widget: "boolean" }
-          - { label: "Featured Post Heading", name: "fp_heading", widget: "string" }
-          - { label: "Number of posts", name: "fp_count", widget: "number" }
-          - { label: "Outro", name: "outro", widget: "markdown" }
-          - { label: "Show testimonials?", name: "ft_show", widget: "boolean" }
-          - { label: "Testimonials Section Heading", name: "ft_heading", widget: "string" }
-          - { label: "Number of testimonials", name: "ft_count", widget: "number" }
+          - label: "Teasers" 
+            name: "teasers"
+            widget: "list"
+            fields:
+              - label: "Content Placement"
+                name: "placement"
+                widget: "select"
+                options:
+                  - { label: "Left", value: "left" }
+                  - { label: "Right", value: "right" }
 
+              - {label: Custom ID, name: custom_id, widget: "string", required: false }
+              - {label: Custom Class, name: custom_class, widget: "string", required: false }
+              - {label: Title, name: title, widget: "string" }
+              - {label: Sub-title, name: sub_title, widget: "string" }
+              - {label: Writeup, name: writeup, widget: "text" }
+              - {label: "Background Image", name: 'background', widget: 'image'}
+              - {label: "Background Image Mobile", name: 'background_mobile', widget: 'image'}
+              - label: "Clickables"
+                name: "clickables"
+                widget: "list"
+                fields: 
+                  - label: 'Clickable Type'
+                    name: 'type'
+                    widget: 'select'
+                    options:
+                      - { label: "Link", value: "link" }
+                      - { label: "Popup Video", value: "video" }
+                  - { label: 'Placeholder Text', name: 'placeholder', widget: 'string'}
+                  - { label: 'Value', name: 'value', widget: 'string', hint: 'Please input the video ID if type selected is Popup Video, otherwise put the URL Link'}
+                      
       - label: "About Page"
         name: "about"
         file: "src/static/about.md"
