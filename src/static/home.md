@@ -19,6 +19,7 @@ teasers:
     sub_title: Challenges
     writeup: A year on, the despair and devastation of the COVID-19 pandemic waves
       are still fresh in our collective memory.
+    teaser_name: overcoming
 outro: >-
   ### At vero eos et accusamus et
 
