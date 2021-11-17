@@ -36,6 +36,8 @@ teasers:
       solutions to overcome the scourge.
 
 
+
+
       We now see a ray of hope that research and vaccines can offer.
     teaser_name: safe
   - placement: right
