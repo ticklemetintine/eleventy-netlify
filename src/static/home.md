@@ -1,6 +1,9 @@
 ---
 permalink: /
 layout: layouts/index.njk
+title: "Temasek Review 2021: Bounce Forward"
+description: We commit to sustainability at our core; to stay resilient and
+  purposeful always; as we bounce forward together.
 banner: /images/uploads/banner.jpg
 banner_mobile: /images/uploads/banner-mobile.jpg
 banner_mobile_landscape: /images/uploads/banner-mobile-landscape.jpg
