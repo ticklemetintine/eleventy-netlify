@@ -38,6 +38,19 @@ teasers:
 
       We now see a ray of hope that research and vaccines can offer.
     teaser_name: safe
+  - placement: right
+    custom_id: forward-looking-id
+    background: /images/uploads/teaser-3.png
+    clickables:
+      - type: link
+        placeholder: See our Investment Update
+        value: investor/investment-update.html
+    background_mobile: /images/uploads/teaser-mobile-3.jpg
+    title: Forward
+    sub_title: Looking
+    writeup: Bouncing back to a pre-COVID world is not an option; Time is getting
+      short to prevent bigger devastations to come.
+    teaser_name: forward
 outro: >-
   ### At vero eos et accusamus et
 
