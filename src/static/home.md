@@ -71,6 +71,23 @@ teasers:
 
       \r\n"
     teaser_name: catalysing
+  - placement: right
+    custom_id: bounce-forward-id
+    background: /images/uploads/teaser-5.png
+    clickables:
+      - type: link
+        placeholder: Find out how we are building a better tomorrow for today’s and
+          future generations
+        value: institution/a-forward-looking-institution.html
+    background_mobile: /images/uploads/teaser-mobile-5.jpg
+    title: Bounce
+    sub_title: Forward
+    writeup: |
+      We commit to sustainability at our core;\
+      To stay resilient and purposeful always;\
+      As we bounce *forward*\
+      Together
+    teaser_name: bouncing
 outro: >-
   ### At vero eos et accusamus et
 
