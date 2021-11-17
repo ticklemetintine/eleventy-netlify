@@ -51,6 +51,24 @@ teasers:
     writeup: Bouncing back to a pre-COVID world is not an option; Time is getting
       short to prevent bigger devastations to come.
     teaser_name: forward
+  - placement: left
+    custom_id: catalysing-positive-impact-id
+    background: /images/uploads/teaser-4.png
+    clickables:
+      - type: link
+        placeholder: Learn how we take action in building a sustainable future
+        value: pathways-to-sustainability/towards-a-sustainable-future.html
+      - type: link
+        placeholder: Uncover the structural trends that guide our investments
+        value: investor/how-we-invest.html
+    background_mobile: /images/uploads/teaser-mobile-4.jpg
+    title: Catalysing
+    sub_title: Positive Impact
+    writeup: "We must act now to catalyse solutions to the global threats of climate
+      change, food security and water scarcity.\r
+
+      \r\n"
+    teaser_name: catalysing
 outro: >-
   ### At vero eos et accusamus et
 
