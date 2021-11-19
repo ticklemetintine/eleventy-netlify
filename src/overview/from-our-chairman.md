@@ -1,5 +1,5 @@
 ---
-title: From Our Chairman
+title: "From Our Chairman "
 intro: ""
 sections:
   - separator: "true"
