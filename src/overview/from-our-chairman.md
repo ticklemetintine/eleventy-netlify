@@ -99,6 +99,7 @@ sections:
       for the year
 
       <!--EndFragment-->
+    center: "true"
   - separator: "false"
     writeup: >-
       <!--StartFragment-->
@@ -150,6 +151,7 @@ sections:
       Staff efforts have helped people keep safe and cope in these trying times.
 
       <!--EndFragment-->
+    center: "true"
   - separator: "false"
     writeup: >-
       <!--StartFragment-->
@@ -182,6 +184,7 @@ sections:
 
 
       <!--EndFragment-->
+    center: "true"
   - separator: "false"
     writeup: >-
       <!--StartFragment-->
@@ -274,4 +277,81 @@ sections:
 
       <!--EndFragment-->
     center: "true"
+  - separator: "true"
+    center: "true"
+    title: Accelerating to a Sustainable World
+    sub_title: Sustainability remains at the core of all that we do.
+    writeup: >-
+      <!--StartFragment-->
+
+
+      We had delivered [carbon neutrality](http://localhost/pathways-to-sustainability/enabling-a-sustainable-company.html) as a company since two years ago. We aim to reduce the [net emissions of our portfolio](http://localhost/pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html) to half the 2010 levels by 2030. This signals our ambition for net zero emissions by 2050. We have redirected part of [our long term incentives](http://localhost/institution/instilling-ownership.html#co-ownership-alignment) towards our 10-year carbon reduction targets.
+
+
+      In April this year, we [announced a partnership with BlackRock](https://www.temasek.com.sg/en/news-and-views/news-room/news/2021/temasek-blackrock-launch-decarbonization-partnership) to advance decarbonisation solutions and accelerate global efforts for a net zero economy by 2050. To this end, the partnership will provide an initial US$600 million to launch a series of late stage venture capital and early growth private equity investment funds.
+
+
+      <!--EndFragment-->
+    highlight: >-
+      <!--StartFragment-->
+
+
+      We have redirected part of our long term incentives towards our 10-year carbon reduction targets.
+
+
+      <!--EndFragment-->
+  - separator: "false"
+    center: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      We partnered Mandai Park Holdings to [co-sponsor Mandai Nature Fund](https://www.temasek.com.sg/en/news-and-views/news-room/news/2020/temasek-mandai-park-holdings-establish-mandai-nature), a non-profit Institution of a Public Character (IPC). This IPC will support partnerships and co-sponsorships for nature conservation and climate change mitigation in Asia.
+
+
+      In 2019, we worked with [Temasek Trust](https://www.temasektrust.org.sg/) and other co-investors to launch [ABC World Asia](https://www.abcworld.com.sg/) for impact and returns in Asia. Our recent [strategic partnership with LeapFrog Investments](https://www.temasek.com.sg/en/news-and-views/news-room/news/2021/Temasek-and-LeapFrog-Investments-Forge-US500-Million-Partnership) will similarly catalyse solutions and unlock benefits for communities around the world.
+
+
+      <!--EndFragment-->
+  - separator: "true"
+    center: "false"
+    title: In Appreciation
+    writeup: >-
+      <!--StartFragment-->
+
+
+      I am heartened by the incredible adaptability and resilience of our Temasek team. They did not let up in our core responsibilities, even as they [volunteered for many pandemic relief projects](http://localhost/institution/our-temasek-heartbeat.html) around the world. I salute them.
+
+
+      [Our international and regional advisors](http://localhost/steward/sharing-perspectives.html) have been, as always, generous with their insights and advice, to help us navigate an uncertain future. I am most grateful to them all.
+
+
+      It is my great pleasure to welcome Lou Jiwei to our Temasek International Panel in April. He brings with him an incisive mind and a wealth of experience, including in macroeconomic and sectoral developments.
+
+
+      We [announced](https://www.temasek.com.sg/en/news-and-views/news-room/news/2021/leadership-transition-at-temasek-holdings) earlier this year that Ho Ching will retire from her role as Executive Director and CEO on 1 October 2021. Words cannot adequately express the collective debt of thanks we owe to her for her remarkable leadership over almost two decades. It is hard to call out her many achievements, but perhaps above all else, she will be remembered for her unwavering commitment to build the people and our values-based ethos in Temasek. She also oversaw Temasek’s evolution into a respected and trusted global investor and institution, and sharpened our role as a steward.
+
+
+      Dilhan Pillay will succeed her as Executive Director and CEO of Temasek Holdings on 1 October 2021 and will join the Temasek Holdings Board. He will concurrently retain his appointment as CEO of Temasek International. The Board looks forward to supporting him and his team in [our journey towards T2030](https://www.temasek.com.sg/en/sustainability).
+
+
+      Lee Theng Kiat will also retire as Executive Director of Temasek Holdings on 1 October 2021, but will remain on the Temasek Holdings Board as a non-executive Director. He will continue as Chairman of Temasek International, our investment management arm, to help guide our Temasek team, as he has done over nearly a decade in various leadership roles with us.
+
+
+      I am deeply grateful to Goh Yew Lin, who retired on 30 June 2021 after 16 years of service. We are pleased that he has taken on the Chairmanship of [Seviora](https://www.sevioragroup.com/), our newly consolidated asset management group.
+
+
+      Finally, I thank my fellow Directors for their continuing commitment to Temasek, especially in such challenging times. I deeply value their counsel, and the perspectives they bring, as we safeguard the governance and fulfil [the promise of Temasek](http://localhost/overview/the-temasek-charter.html).
+
+
+      Temasek has evolved and transformed over the years, seeking always to remain relevant. We have a [strong team](http://localhost/overview/onetemasek-our-people.html) with diverse skills and competencies, and a deep sense of purpose.
+
+
+      Temasek is well positioned to [bounce *forward*](http://localhost/index.html) – into a world of new opportunities created by technological change, and driven by an urgent need to address our global climate emergency.
+
+
+      I know we can and will act with courage and conviction, to deliver a better and more sustainable future for all.
+
+
+      <!--EndFragment-->
 ---
