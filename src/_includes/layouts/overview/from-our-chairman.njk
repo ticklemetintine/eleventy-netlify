@@ -21,9 +21,13 @@ layout: /layouts/overview/index.njk
                     <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-desktop">
                         {{ item['highlight'] | markdown | safe }}
                     </div>
-                   
                 </div>
+                
+                {% if item['center'] == "true" %}
+                <div class="col-4 v-centre">
+                {% else %}
                 <div class="col-4">
+                {% endif %}
                     <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-mobile">
                         {{ item['highlight'] | markdown | safe }}
                     </div>

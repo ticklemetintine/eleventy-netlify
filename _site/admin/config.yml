@@ -93,3 +93,11 @@ collections:
                   - { label: "No", value: "false" }
               - { label: "Writeup", name: "writeup", widget: 'markdown' }
               - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
