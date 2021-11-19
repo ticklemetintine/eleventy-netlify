@@ -11,6 +11,11 @@ layout: /layouts/overview/index.njk
         {% if item['title']  %}
         <h2 data-quick-links-item="{{item['title']}}" id="quicklink-{{loop.index}}">
             {{ item['title'] }}
+
+            {% if item['sub_title'] %}
+            <br/>
+            <small>{{item['sub_title']}}</small>
+            {% endif %}
         </h2>
         {% endif %}
 
@@ -41,5 +46,17 @@ layout: /layouts/overview/index.njk
             </div>
         {% endif %}
     {% endfor %}
+
+    <br />
+
+    <img src="{{ item['signature'] | url }}" alt="Sign {{item['name']}}" title="sign {{item['name']}}" width="198" style="margin-left:0;" />
+
+    <h3>{{item['name']}}</h3> 
+    <p>
+       {{item['position']}}
+    </p>
+    <p>
+        {{item['date']}}
+    </p>
 
 </div>
