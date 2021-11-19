@@ -48,15 +48,6 @@ sections:
       It was an active year, despite pandemic lockdowns and travel restrictions. We [invested S$49 billion and divested S$39 billion](http://localhost/investor/investment-update.html): record numbers on both counts.
 
 
-      As at 31 March 2021, our [net portfolio value](http://localhost/overview/performance-overview.html) was S$381 billion, up S$75 billion over the previous year. Our portfolio saw healthy investment returns, including from payments, technology and life sciences, especially in markets like China and the US. In addition, several of our unlisted companies went public as markets rebounded.
-
-
-      One-year [Total Shareholder Return (TSR)](http://localhost/investor/total-shareholder-return.html) was 24.53%. Our longer term 10-year and 20-year TSRs were 7% and 8% respectively. [TSR since inception in 1974](http://localhost/investor/how-we-grew.html) was 14%.
-
-
-      The resilience of our portfolio remains a core strength. We invested through the year, to strengthen our portfolio against a more disruptive world. We expect that rapid technological changes will upend business models, with climate risks becoming more pressing.
-
-
       <!--EndFragment-->
     highlights:
       - content: |-
