@@ -32,4 +32,48 @@ sections:
 
 
       Temasek can work to catalyse solutions to key global challenges. We will deploy *[financial capital](http://localhost/overview/our-financials-and-portfolio.html)* to stimulate innovation and growth; develop *[human capital](http://localhost/overview/onetemasek-our-people.html)* to uplift capabilities and enhance potential; enable *[natural capital](http://localhost/overview/towards-a-net-zero-world.html)* to foster sustainable solutions for the climate and a better living environment; and crowd in *[social capital](http://localhost/overview/uplifting-lives-and-communities.html)* to transform lives for a more inclusive and resilient world.
+  - separator: "true"
+    title: Portfolio Performance
+    writeup: >-
+      <!--StartFragment-->
+
+
+      It was an active year, despite pandemic lockdowns and travel restrictions. We [invested S$49 billion and divested S$39 billion](http://localhost/investor/investment-update.html): record numbers on both counts.
+
+
+      As at 31 March 2021, our [net portfolio value](http://localhost/overview/performance-overview.html) was S$381 billion, up S$75 billion over the previous year. Our portfolio saw healthy investment returns, including from payments, technology and life sciences, especially in markets like China and the US. In addition, several of our unlisted companies went public as markets rebounded.
+
+
+      One-year [Total Shareholder Return (TSR)](http://localhost/investor/total-shareholder-return.html) was 24.53%. Our longer term 10-year and 20-year TSRs were 7% and 8% respectively. [TSR since inception in 1974](http://localhost/investor/how-we-grew.html) was 14%.
+
+
+      The resilience of our portfolio remains a core strength. We invested through the year, to strengthen our portfolio against a more disruptive world. We expect that rapid technological changes will upend business models, with climate risks becoming more pressing.
+
+
+      <!--EndFragment-->
+    highlights:
+      - content: |-
+          <!--StartFragment-->
+
+          S$381b\
+          Net portfolio value\
+          as at 31 March 2021
+
+          <!--EndFragment-->
+      - content: |-
+          <!--StartFragment-->
+
+          S$49b\
+          Invested\
+          for the year
+
+          <!--EndFragment-->
+      - content: |-
+          <!--StartFragment-->
+
+          S$39b\
+          Divested\
+          for the year
+
+          <!--EndFragment-->
 ---
