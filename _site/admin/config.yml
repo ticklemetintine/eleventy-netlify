@@ -104,4 +104,3 @@ collections:
           - { label: "Signature", name: "signature", widget: "image", required: false}
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "Position", name: "position", widget: "string", required: false }
-          - { label: "Date", name: "date", widget: "date", required: false }

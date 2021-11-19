@@ -357,5 +357,4 @@ signature: /images/uploads/sign-limboonheng.png
 name: LIM BOON HENG
 position: Chairman
 intro: ""
-date: July 2021
 ---
