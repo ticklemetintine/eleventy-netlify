@@ -74,8 +74,8 @@ collections:
         name: "from-our-chairman"
         file: "src/overview/from-our-chairman.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/overview/from-our-chairman" }
-          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/overview/from-our-chairman/index.njk" }
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/from-our-chairman" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/from-our-chairman/index.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Sections"
