@@ -83,4 +83,12 @@ sections:
           for the year
 
           <!--EndFragment-->
+    highlight: |-
+      <!--StartFragment-->
+
+      S$381b\
+      Net portfolio value\
+      as at 31 March 2021
+
+      <!--EndFragment-->
 ---
