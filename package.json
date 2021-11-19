@@ -6,9 +6,9 @@
     "scripts": {
         "watch:eleventy": "eleventy --serve",
         "build:eleventy": "eleventy",
-        "gulp": "gulp",
+        "gulp": "gulp serve",
         "less": "less-watch-compiler src/less _site/css main.less",
-        "start": "npm-run-all --parallel watch:* less",
+        "start": "npm-run-all --parallel watch:* less gulp",
         "build": "npm-run-al build:*",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

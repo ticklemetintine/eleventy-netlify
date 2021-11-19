@@ -1,4 +1,6 @@
 ---
+permalink: "/overview/from-our-chairman"
+layout: "layouts/overview/from-our-chairman/index.njk"
 title: "From Our Chairman "
 intro: ""
 intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;

@@ -21,18 +21,7 @@ collections:
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - { label: "Show in home?", name: "isFeatured", widget: "boolean", default: false, required: false }
  
-  - name: "testimonials"
-    label: "Testimonials"
-    folder: "src/testimonials"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/testimonial.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Testimonial Body", name: "body", widget: "markdown" }
-      - { label: "Author", name: "author", widget: "string" }
- 
-  - label: "Static"
+  - label: "Generics"
     name: "static"
     files:
       - label: "Home Page"
@@ -63,105 +52,47 @@ collections:
 
               - {label: Custom ID, name: custom_id, widget: "string", required: false }
               - {label: Custom Class, name: custom_class, widget: "string", required: false }
-              - {label: "Background Image", name: 'background', widget: 'image'}
-              - {label: "Background Image Mobile", name: 'background_mobile', widget: 'image'}
+              - {label: "Background Image", name: "background", widget: "image"}
+              - {label: "Background Image Mobile", name: "background_mobile", widget: "image"}
               - label: "Clickables"
                 name: "clickables"
                 widget: "list"
                 fields: 
-                  - label: 'Clickable Type'
-                    name: 'type'
-                    widget: 'select'
+                  - label: "Clickable Type"
+                    name: "type"
+                    widget: "select"
                     options:
                       - { label: "Link", value: "link" }
                       - { label: "Popup Video", value: "video" }
-                  - { label: 'Placeholder Text', name: 'placeholder', widget: 'string'}
-                  - { label: 'Value', name: 'value', widget: 'string', hint: 'Please input the video ID if type selected is Popup Video, otherwise put the URL Link'}
-                      
-      - label: "About Page"
-        name: "about"
-        file: "src/static/about.md"
+                  - { label: "Placeholder Text", name: "placeholder", widget: "string"}
+                  - { label: "Value", name: "value", widget: "string", hint: "Please input the video ID if type selected is Popup Video, otherwise put the URL Link"}
+  
+  - label: "Overview"
+    name: "overview"
+    files:
+      - label: "From Our Chairman"
+        name: "from-our-chairman"
+        file: "src/overview/from-our-chairman.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/overview/from-our-chairman" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/overview/from-our-chairman/index.njk" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro", widget: "markdown" }
-          - { label: "Body", name: "body", widget: "markdown"}
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
-
-      - label: "Post Page"
-        name: "posts"
-        file: "src/static/posts.md"
-        fields:
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro", widget: "markdown" }
-          - { label: "Body", name: "body", widget: "markdown"}
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
-
-      - label: "Widgets"
-        name: "widget"
-        file: "src/static/widgets.md"
-        fields:
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/widgets.njk" }
-          - { label: "Body", name: "body", widget: "string", output_code_only: false }
-          - { label: "Code Heading", name: "code_heading", widget: "string" }
-          - { label: "Code", name: "code", widget: "code" }
-          - { label: "Color Picker Heading", name: "color_heading", widget: "string" }
-          - { label: "Color", name: "color", widget: "color" }
-          - { label: "Date Picker Heading", name: "date_heading", widget: "string" }
-          - { label: "Date", name: "date_ex", widget: "date", format: 'MMM Do, YYYY' }
-          - { label: "Date time Picker Heading", name: "datetime_heading", widget: "string" }
-          - { label: "Date time", name: "datetime", widget: "datetime", date_format: "MMM Do, YYYY", time_format: "HH:mm", format: "LLL" }
-          - { label: "File Heading", name: "file_heading", widget: "string" }
-          - { label: "File", name: "file", widget: "file" }
-          - { label: "Image Heading", name: "image_heading", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "List Heading", name: "list_heading", widget: "string" }
-          - label: "List"
-            name: "list"
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Sections"
+            name: "sections"
             widget: "list"
-            fields:
-              - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-              - {label: Author, name: author, widget: string }
-          - { label: "Map Heading", name: "map_heading", widget: "string" }
-          - { label: "Map", name: "map", widget: "map" }
-          - { label: "Object Heading", name: "object_heading", widget: "string" }
-          - label: "Profile"
-            name: "profile"
-            widget: "object"
-            summary: '{{fields.name}}: {{fields.birthdate}}'
-            fields:
-              - {label: "Public", name: "public", widget: "boolean", default: true}
-              - {label: "Name", name: "name", widget: "string"}
-              - label: "Birthdate"
-                name: "birthdate"
-                widget: "date"
-                default: ""
-                format: "MM/DD/YYYY"
-              - label: "Address"
-                name: "address"
-                widget: "object"
+            fields: 
+              - {label: "Section Title", name: "title", value: "title", widget: 'string', required: false }
+              - label: "Add top separator?"
+                name: "separator"
+                widget: "select"
+                default: "false"
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+              - { label: "Writeup", name: "writeup", value: "writeup", widget: 'markdown' }
+              - label: "Highlights"
+                name: "highlights"
+                widget: "list"
                 fields: 
-                  - {label: "Street Address", name: "street", widget: "string"}
-                  - {label: "City", name: "city", widget: "string"}
-                  - {label: "Postal Code", name: "postcode", widget: "string"}
-          - { label: "Relation Heading", name: "relation_heading", widget: "string" }
-          - label: "Favorite Post"
-            name: "favorite_post"
-            widget: "relation"
-            collection: "posts"
-            search_fields: ['title']
-            value_field: "{{slug}}"
-            display_fields: ["{{title}}"]
-          - { label: "Select Heading", name: "select_heading", widget: "string" }
-          - label: "City"
-            name: "airport_code"
-            widget: "select"
-            options:
-              - { label: "Chicago", value: "ORD" }
-              - { label: "Paris", value: "CDG" }
-              - { label: "Tokyo", value: "HND" }
-              - { label: "Singapore", value: "SG" }
-          
+                  - { label: "Highlight Content", name: "content", widget: "markdown" }

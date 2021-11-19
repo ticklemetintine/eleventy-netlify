@@ -121,6 +121,7 @@
     var utils = blacksunplc.utils; // import * as utils         from "./utils.js"
     var menu = blacksunplc.menu; // import * as menu          from "./menu.js"
 
+    import * as sitemaps from "/web/scripts/common/sitemaps-eng-zh.js"
     /**
      * @param {!jQuery} $navList
      * @param {?jQuery} $activeBtn
