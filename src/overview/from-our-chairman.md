@@ -208,4 +208,32 @@ sections:
 
 
       <!--EndFragment-->
+  - separator: "true"
+    title: Steering through Volatility
+    writeup: >-
+      <!--StartFragment-->
+
+
+      Major economies are now starting to relax lockdown measures, as vaccination brings some early successes. Growth could be strong this year and next.
+
+
+      The pace of recovery will likely be uneven across countries. Many emerging economies are still struggling with new peaks of infections, high hospitalisation numbers and slow vaccination rates. Uncertainty still remains, not least from the doubly contagious new variants, with potentially worse virulence.
+
+
+      In the US, the quick vaccination pace has cooled down infections, hospitalisations and deaths. Activities are normalising swiftly. [Extraordinary](https://www.whitehouse.gov/american-rescue-plan/) [fiscal](https://www.congress.gov/bill/116th-congress/senate-bill/3548/text) [stimulus](https://www.congress.gov/bill/116th-congress/house-bill/133/text) and [accommodative Fed policy](https://www.federalreserve.gov/newsevents/pressreleases/monetary20210616c.htm) will bolster this recovery. Real Gross Domestic Product is expected to return to pre-COVID levels this year, though inflation [risks](http://localhost/investor/how-we-manage-risks.html) may dampen medium term prospects.
+
+
+      Europe has entered into a double-dip recession in the first quarter of 2021. However, the accelerated vaccine rollout and the consequent easing of restrictions are now facilitating a recovery in activity, especially in the services and tourism sectors. The pandemic lockdowns built up excess savings. This will fuel pent-up demand to spur a pickup in consumption growth. The [Recovery Fund](https://ec.europa.eu/info/strategy/recovery-plan-europe_en) will stimulate investments later this year.
+
+
+      [China’s economic recovery](http://english.www.gov.cn/news/topnews/202106/17/content_WS60ca83a8c6d0df57f98db60b.html) continues apace. Its focus is shifting towards sustainable growth for the longer term. The very loose policy stance during the pandemic is being pulled back into a broadly neutral gear. Any further policy tightening is more likely to be [calibrated](http://english.www.gov.cn/statecouncil/ministries/202105/13/content_WS609c7adac6d0df57f98d96de.html) than abrupt.
+
+
+      Singapore’s economy is [on the mend](https://www.mti.gov.sg/Newsroom/Press-Releases/2021/05/MTI-Maintains-2021-GDP-Growth-Forecast-at-4_0-to-6_0-Per-Cent). Sectors such as manufacturing, and professional, financial, and technological services, continue to show strength. However, recovery in other sectors such as travel and leisure, will be muted and vulnerable to any resurgences in community infections. Policy remains [accommodative](https://www.mas.gov.sg/news/monetary-policy-statements/2021/mas-monetary-policy-statement-14apr21) overall. [Fiscal support](https://www.mas.gov.sg/regulation/covid-19) remains targeted at sectors most impacted by ongoing border restrictions or renewed safe management measures. [Policies](https://www.mof.gov.sg/singaporebudget) and [efforts](https://emergingstronger.sg/) to accelerate restructuring and transformation should position Singapore well in the medium term.
+
+
+      We should expect COVID-19 to become endemic, and prepare to live with it.
+
+
+      <!--EndFragment-->
 ---
