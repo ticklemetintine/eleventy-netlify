@@ -119,4 +119,93 @@ sections:
       for the year
 
       <!--EndFragment-->
+  - separator: "true"
+    title: Forging Resilience
+    writeup: >-
+      <!--StartFragment-->
+
+
+      It is adversity that brings out the strengths and values of our people.
+
+
+      I am immensely proud that our staff have volunteered tirelessly, thoughtfully and selflessly during the COVID-19 pandemic. Their efforts have helped people keep safe and cope in these trying times.
+
+
+      Temasek actively enabled various cross-border COVID-19 initiatives. During the first outbreak in Wuhan early last year, we facilitated the provision of equipment and supplies to China. Later, we supported the reverse flow of critical supplies from China to various places in dire need, including [most recently to India](http://localhost/steward/rising-above-covid-19.html#enablement).
+
+
+      <!--EndFragment-->
+  - separator: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      Our staff worked closely with colleagues from [Temasek Foundation](https://www.temasekfoundation.org.sg/) and other partners to [support COVID-19 initiatives in five key areas](http://localhost/steward/rising-above-covid-19.html): testing & diagnosis, containment & contact tracing, care & treatment, protection & prevention, and enablement. They brought their skills and knowledge, networks and organisational experience, friendship and goodwill, and tenacity and persistence, to connect people, find solutions, and make things happen.
+
+
+      <!--EndFragment-->
+    highlight: |-
+      <!--StartFragment-->
+
+      Staff efforts have helped people keep safe and cope in these trying times.
+
+      <!--EndFragment-->
+  - separator: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      Indeed, several staff were on the swabbing frontlines supporting the testing and sorting operations for migrant workers in the dormitories, to protect them and contain the massive dormitory outbreak. Others quietly helped to keep supply lines open, or supported other initiatives.
+
+
+      Initiatives in diagnosis ranged from new test kits to be developed, to production to be scaled; from expanding lab capacity in Singapore, to supporting lab capabilities beyond; from seeding novel wastewater sampling testing, to stepping up lab automation for throughput, safety and capacity. Some 6,300 kits for over 1 million diagnostic tests, and various lab equipment, were donated to over 40 countries in Asia and elsewhere.
+
+
+      An early initiative in containment was the pre-emptive development of Community Care Facilities for younger “Walking Well” patients with mild or no symptoms — these greatly relieved the pressure on hospital beds. Other efforts in containment & contract tracing included pilots in Singapore like the mass community COVID-19 screening of some 5,700 hawkers, cleaners, and retail workers; and the use of the Antigen Rapid Test to pre-screen large scale events like the Singapore International Energy Week; as well as various contact tracing solutions.
+
+
+      <!--EndFragment-->
+  - separator: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      While Temasek is not on the frontlines of treatment, we worked proactively with Temasek Foundation to support communities and hospitals around the region, as well as further afield in Latin America and the Middle East. Donations ranged from oximeters, oxygen concentrators, and BiPAP positive airway pressure machines, to ICU-grade ventilators and ECMO “artificial lung” machines. More recently, we facilitated the rapid supply of cryogenic tanks and donated more oxygen-related equipment to India, during their massive outbreak in the second quarter of 2021.
+
+
+      <!--EndFragment-->
+    highlight: >-
+      <!--StartFragment-->
+
+
+      We worked proactively with Temasek Foundation to support communities and hospitals around the region.
+
+
+      <!--EndFragment-->
+  - separator: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      The mainstays for protection & prevention are personal protective equipment, or PPEs, and hand sanitisers. These saw massive shortages last year.
+
+
+      We supported Temasek Foundation through four nationwide exercises for Singapore residents to collect over 30 million [free reusable, washable, antiviral, and antibacterial face masks](https://stayprepared.sg/staymasked/). Regional PPE donations ranged from reusable or single use masks for the community, to hospital grade items such as full protection hazmat suits and N95 respirators, to gowns, gloves, goggles and others.
+
+
+      The [\#BYOBclean](https://stayprepared.sg/byobclean/) pilot, launched in March last year, encouraged families to “Bring Your Own Bottles”, clean and ready to collect their free allocation of hand sanitiser. This was followed by a second nationwide free collection in April this year. Regional partners helped us cover Johor and the Riau Islands nearby. In all, more than 1.3 million litres of hand sanitiser were distributed for free, including to hospitals, residential care homes, and migrant workers.
+
+
+      Reusable mask distributions and #BYOBclean programmes also serve as reminders to reduce plastic waste.
+
+
+      Our portfolio companies also played their part. During the second half of 2020, Temasek Foundation [worked with Singapore Airlines to sponsor flights for the World Food Programme](https://www.temasekfoundation.org.sg/media/singapore-airlines-and-temasek-foundation-partner-to-support-world-food-programme-and-the-global-covid-19-response/). Some 40 flights carried PPEs plus other essential medical supplies and humanitarian items, to various points in Asia and the Pacific.
+
+
+      As demand for pre-travel testing increased, we connected our digital credentials technology company, [Affinidi](https://www.affinidi.com/), with global aviation industry partners and government agencies. The company has since [formed partnerships](https://www.affinidi.com/blogs/affinidi-the-commons-project-partnership) with industry leaders in the US, Europe, the Middle East and Asia Pacific, to enable safe cross-border travel solutions with mobile digital verification of health credentials including test and vaccination status.
+
+
+
+
+      <!--EndFragment-->
 ---
