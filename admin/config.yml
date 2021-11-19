@@ -82,7 +82,8 @@ collections:
             name: "sections"
             widget: "list"
             fields: 
-              - {label: "Section Title", name: "title", value: "title", widget: 'string', required: false }
+              - {label: "Section Title", name: "title", widget: 'string', required: false }
+              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
               - label: "Add top separator?"
                 name: "separator"
                 widget: "select"
@@ -91,4 +92,4 @@ collections:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
               - { label: "Writeup", name: "writeup", widget: 'markdown' }
-              - { label: "Highlight", name: "highlight", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }

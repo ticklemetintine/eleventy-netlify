@@ -12799,6 +12799,9 @@ html[lang="zh"] .contentpage .contentpage-body p {
 .contentpage .contentpage-body a {
   color: #006ba6;
 }
+.contentpage .contentpage-body .dash-above > h2 {
+  margin-top: 0;
+}
 .contentpage .contentpage-body .link-button:hover {
   color: #ffffff;
 }
