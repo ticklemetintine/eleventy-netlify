@@ -1,8 +1,7 @@
 ---
-title: "From Our Chairman "
-intro: ""
 permalink: /overview/from-our-chairman/
 layout: layouts/overview/from-our-chairman.njk
+title: "From Our Chairman "
 intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;
   the COVID-19 pandemic, and global warming.\r
 
@@ -354,4 +353,9 @@ sections:
 
 
       <!--EndFragment-->
+signature: /images/uploads/sign-limboonheng.png
+name: LIM BOON HENG
+position: Chairman
+intro: ""
+date: July 2021
 ---
