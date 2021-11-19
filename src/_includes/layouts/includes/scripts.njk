@@ -8,5 +8,13 @@
     <script src="{{ '/scripts/ScrollToPlugin-3.6.2.min.js' | url }}" defer></script>
     <script src="{{ '/scripts/ScrollTrigger-3.6.1.min.js' | url }}" defer></script>
 
-    <script src="{{ '/scripts/key-pages.js' | url }}" defer></script>
+
+    {% if slug == 'tr-homepage' %}
     <script src="{{ '/scripts/homepage.js' | url }}" defer></script>
+    <script src="{{ '/scripts/key-pages.js' | url }}" defer></script>
+    {% endif %}
+
+    {% if slug == 'overview' %}
+    <script src="{{ '/scripts/content-page.js' | url }}" defer></script>
+    <script src="{{ '/scripts/share-selected-text.js' | url }}" defer></script>
+    {% endif %}

@@ -1,4 +1,8 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
     const { minify } = require("terser");
     eleventyConfig.addNunjucksAsyncFilter("jsmin", async function(
         code,

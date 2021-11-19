@@ -90,9 +90,5 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-              - { label: "Writeup", name: "writeup", value: "writeup", widget: 'markdown' }
-              - label: "Highlights"
-                name: "highlights"
-                widget: "list"
-                fields: 
-                  - { label: "Highlight Content", name: "content", widget: "markdown" }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown' }
