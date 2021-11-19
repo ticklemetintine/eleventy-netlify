@@ -4,7 +4,9 @@ intro: ""
 intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;
   the COVID-19 pandemic, and global warming.\r
 
-  \r\n"
+  \r
+
+  \ "
 sections:
   - separator: "true"
     writeup: >-
