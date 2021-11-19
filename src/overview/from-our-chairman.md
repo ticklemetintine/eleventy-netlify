@@ -107,6 +107,9 @@ sections:
       One-year [Total Shareholder Return (TSR)](http://localhost/investor/total-shareholder-return.html) was 24.53%. Our longer term 10-year and 20-year TSRs were 7% and 8% respectively. [TSR since inception in 1974](http://localhost/investor/how-we-grew.html) was 14%.
 
 
+      The resilience of our portfolio remains a core strength. We invested through the year, to strengthen our portfolio against a more disruptive world. We expect that rapid technological changes will upend business models, with climate risks becoming more pressing.
+
+
       <!--EndFragment-->
     highlight: |-
       <!--StartFragment-->
@@ -114,15 +117,6 @@ sections:
       S$39b\
       Divested\
       for the year
-
-      <!--EndFragment-->
-  - separator: "false"
-    writeup: >-
-      <!--StartFragment-->
-
-
-      The resilience of our portfolio remains a core strength. We invested through the year, to strengthen our portfolio against a more disruptive world. We expect that rapid technological changes will upend business models, with climate risks becoming more pressing.
-
 
       <!--EndFragment-->
 ---
