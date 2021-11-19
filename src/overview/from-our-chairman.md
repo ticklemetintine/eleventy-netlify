@@ -273,4 +273,5 @@ sections:
       We established two new offices in Brussels, Belgium, and Shenzhen, China.
 
       <!--EndFragment-->
+    center: "true"
 ---
