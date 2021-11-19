@@ -1,7 +1,6 @@
 ---
 title: From Our Chairman
-intro: Two issues will greatly impact our lives in the years ahead — the
-  COVID-19 pandemic, and global warming.
+intro: ""
 sections:
   - separator: "true"
     writeup: >-
