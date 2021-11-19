@@ -1,6 +1,8 @@
 ---
 title: "From Our Chairman "
 intro: ""
+permalink: /overview/from-our-chairman
+layout: layouts/overview/from-our-chairman/index.njk
 intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;
   the COVID-19 pandemic, and global warming.\r
 
