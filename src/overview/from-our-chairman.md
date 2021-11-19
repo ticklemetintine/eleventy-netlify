@@ -236,4 +236,41 @@ sections:
 
 
       <!--EndFragment-->
+  - separator: "true"
+    title: Bouncing Forward to a Better Tomorrow
+    writeup: >-
+      <!--StartFragment-->
+
+
+      COVID-19 has not derailed our ambition to be future ready. The pandemic has accelerated the longer term trends that drove our investment posture. During the year, we have refreshed and sharpened [our focus around the trends](http://localhost/investor/how-we-invest.html) of digitisation, sustainable living, future of consumption, and longer lifespans.
+
+
+      We continue to shape our portfolio for resilience in anticipation of future threats and opportunities. The goal is to sustain our performance, generate risk-adjusted returns over the long term, and mitigate climate risks.
+
+
+      Our Artificial Intelligence (AI) and Blockchain pods have made significant strides with ventures such as Affinidi and a new Centre of Excellence in AI. Our new Strategic Development workstream is already investing further upstream in emerging science and technology innovation.
+
+
+      One major thrust is our engagement with [our portfolio companies](http://localhost/investor/investment-update.html) to prepare for future challenges and disruptive opportunities.
+
+
+      During the year, we invested in [Sembcorp Marine](https://www.sembmarine.com/) as part of its demerger from [Sembcorp Industries](https://www.sembcorp.com/en/). This will enable both companies to sharpen clarity and focus in their respective domains. We participated in [capital raising by Singapore Airlines](https://www.singaporeair.com/en_UK/sg/about-us/information-for-investors/rights-issue/), to weather the COVID-19 storm, and prepare for a post-COVID world ahead.
+
+
+      <!--EndFragment-->
+  - separator: "false"
+    writeup: >-
+      <!--StartFragment-->
+
+
+      In 2020, we established two new offices in Brussels, Belgium, and Shenzhen, China. This brings our total office locations to 13 around the world. Our Brussels office will help us track developments and gain insights into key policy areas within the European Union, and to build deeper institutional relations. Our office in Shenzhen will tap on growth opportunities in the Greater Bay Area, and complement our existing presence in Beijing and Shanghai.
+
+
+      <!--EndFragment-->
+    highlight: |-
+      <!--StartFragment-->
+
+      We established two new offices in Brussels, Belgium, and Shenzhen, China.
+
+      <!--EndFragment-->
 ---
