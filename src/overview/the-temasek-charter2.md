@@ -1,5 +1,5 @@
 ---
-permalink: /overview/the-temasek-charter2/
+permalink: /overview/the-temasek-charter/
 layout: layouts/overview/the-temasek-charter.njk
 title: The temasek charter
 ---
