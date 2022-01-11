@@ -75,7 +75,7 @@ collections:
         file: "src/overview/from-our-chairman.md"
         fields:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/from-our-chairman" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview.njk" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/overview.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Sections"
@@ -104,3 +104,10 @@ collections:
           - { label: "Signature", name: "signature", widget: "image", required: false}
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "Position", name: "position", widget: "string", required: false }
+      - label: "The Temasek Charter"
+        name: "the-temasek-charter"
+        file: "src/overview/the-temasek-charter.md"
+        fields: 
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/the-temasek-charter" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/overview.njk" }
+          - { label: "Title", name: "title", widget: "string" }

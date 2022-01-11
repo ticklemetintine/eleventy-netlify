@@ -14,7 +14,49 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-        CMS.registerPreviewStyle("/css/master.css");
+        CMS.registerPreviewStyle("/admin/style.css");
+    </script>
+
+    <script>
+        var PostPreview = createClass({
+            render: function() {
+                var $props = this.props;
+                var entry = $props.entry;
+                var image = entry.getIn(['data', 'banner']);
+                var banner = $props.getAsset(image);
+
+                return h('div', {},
+                    h('h1', {}, entry.getIn(['data', 'title'])),
+                    h('p', {}, entry.getIn(['data', 'description'])),
+                    h('img', {
+                        src: banner.toString()
+                    }),
+
+                    $props.widgetsFor('teasers').map(function(teaser, index) {
+                        var image = teaser.getIn(['data', 'background']);
+                        var banner = $props.getAsset(image);
+
+                        return h('div', {
+                                key: index
+                            },
+                            h('h1', {}, teaser.getIn(['widgets', 'title'])),
+                            h('p', {}, teaser.getIn(['widgets', 'sub_title'])),
+                            h('div', {}, teaser.getIn(['widgets', 'writeup'])),
+                            h('img', {
+                                src: banner.toString()
+                            }),
+                            h('div', {}, teaser.getIn(['widgets', 'clickables'])),
+
+                        );
+                    })
+                    // h('div', {
+                    //     "className": "text"
+                    // }, this.props.widgetFor('body'))
+                );
+            }
+        });
+
+        CMS.registerPreviewTemplate("home", PostPreview);
     </script>
 </body>
 
