@@ -107,7 +107,8 @@ collections:
       - label: "The Temasek Charter"
         name: "the-temasek-charter"
         file: "src/overview/the-temasek-charter.md"
-        fields: 
+        fields:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/the-temasek-charter" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview.njk" }
+          - { label: "Layout", name: "layout", widget: "string"}
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
