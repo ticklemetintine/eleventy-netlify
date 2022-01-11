@@ -1,4 +1,4 @@
 ---
 permalink: /overview/the-temasek-charter
-title: The Temasek Charter
+title: "The Temasek Charter "
 ---
