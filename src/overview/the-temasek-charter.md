@@ -13,7 +13,7 @@ sections:
     writeup: We act with integrity and are committed to the [pursuit of
       excellence](https://www.temasekreview.com.sg/institution/a-forward-looking-institution/).
     image: /images/uploads/forward-looking-institution-01.svg
-    theme: Institution
+    theme: institution
   - title: Temasek is a trusted steward.
     writeup: We strive for the [advancement of our
       communities](https://www.temasekreview.com.sg/steward/a-trusted-steward/) across
