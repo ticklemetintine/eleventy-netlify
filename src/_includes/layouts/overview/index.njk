@@ -1,10 +1,10 @@
 ---
-layout: /layouts/base.njk
+layout: "/layouts/base.njk"
 slug: "overview"
 pageType: "contentpage"
 eleventyNavigation:
-  key: Overview
-  parent: Home
+  key: "Overview"
+  parent: "Home"
 ---
 
 <div class="breadcrumb">
@@ -43,7 +43,9 @@ eleventyNavigation:
             </div>
 
             <p class="intro">
-                {{ intro_text }}
+                {% if intro_text %}
+                    {{ intro_text | markdown | safe }}
+                {% endif %}
             </p>
 
         </div>
