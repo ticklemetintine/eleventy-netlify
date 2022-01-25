@@ -540,7 +540,7 @@
         var relativeUrl = location.pathname + location.search + location.hash;
         var tinyUrlCode = TINY_URL_CODES[relativeUrl];
         var url = location.href;
-        if (tinyUrlCode) {
+        if (blacksunplc.sitemaps.isSg() && tinyUrlCode) {
             url =  "https://tmsk.sg/" + tinyUrlCode;
         }
         $(".share-links-menu").attr("data-url", url);

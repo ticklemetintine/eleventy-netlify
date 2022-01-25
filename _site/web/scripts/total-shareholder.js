@@ -1,9 +1,8 @@
 /*jslint browser: true, fudge: true, long: true, this: true */
 /*global jQuery Waypoint */
 
-jQuery(function ($) {
+blacksunplc.events.ready(function () {
     "use strict";
-
 
     var waypoint = new Waypoint({
         "element": document.getElementById("total-shareholder_tsr"),

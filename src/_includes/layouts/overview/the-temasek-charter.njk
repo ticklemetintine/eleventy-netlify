@@ -4,14 +4,22 @@ layout: /layouts/overview/index.njk
 
 <div class="contentpage-body">
 
-    {% if item['title']  %}
-        <h2 data-quick-links-item="{{item['title']}}" id="quicklink-{{loop.index}}">
-            {{ item['title'] }}
+     <ul class="the-charter flow-ignore">
+     {% for item in sections %}
+        <li class="{{ item['theme'] }}">
+            <div class="the-charter__image">
+                <img src="{{ item['image'] | url }}" alt="active-investor-{{ loop.index }}">
+            </div>
+            <div class="the-charter__content">
+                <h3 id="active-investor" data-quick-links-item="An Active Investor">
+                    {{ item['title'] }}
+                </h3>
 
-            {% if item['sub_title'] %}
-            <br/>
-            <small>{{item['sub_title']}}</small>
-            {% endif %}
-        </h2>
-    {% endif %}
+                <p>
+                   {{ item['writeup'] | markdown | safe }}
+                </p>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
 </div>

@@ -111,4 +111,26 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/the-temasek-charter" }
           - { label: "Layout", name: "layout", widget: "string"}
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro_text", widget: "markdown", required: false }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string' }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Theme"
+                name: "theme"
+                widget: "select"
+                options:
+                  - { label: "Investor", value: "investor" }
+                  - { label: "Institution", value: "institution" }
+                  - { label: "Steward", value: "steward" }
+                  - { label: "Overview", value: "overview" }
+      - label: "Performance Overview"
+        name: "performance-overview"
+        file: "src/overview/performance-overview.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/performance-overview" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }

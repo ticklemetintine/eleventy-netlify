@@ -2,7 +2,7 @@
 /*global $, MutationObserver, blacksunplc, document, is, navigator, parseFloat, setInterval, setTimeout, window */
 
 /** @module blacksunplc/menu */
-(function () {
+(function() {
     "use strict";
 
     var objects = blacksunplc.objects; // import * as objects  from "module:blacksunplc/objects"
@@ -10,9 +10,8 @@
     var utils = blacksunplc.utils; // import * as utils    from "./utils.js"
 
     var exports = {};
-
     /** Deactivates navigation. */
-    exports.closeMenu = function () {
+    exports.closeMenu = function() {
         var $body = $(document.body);
         if ($body.hasClass("navigation-active")) {
             $("button.hamburger").toggleClass("is-active");
@@ -23,7 +22,7 @@
     /**
      * @param {!jQuery} $buttons
      */
-    exports.clickMenuButton = function ($buttons) {
+    exports.clickMenuButton = function($buttons) {
         /* IE 11 safe. */
         var $toggleList = $buttons.siblings("ul");
         var $parentSiblings = $buttons.parent().siblings();
@@ -48,7 +47,7 @@
      * @param {null} changeToStr - Note Why bother with this parameter?
      * @param {(string|null)} reqHref
      */
-    exports.menuHashChange = function (changeToStr, reqHref) {
+    exports.menuHashChange = function(changeToStr, reqHref) {
 
         var $activeA = $(".main-navigation a.active");
         var $activeBtn = $(".main-navigation button.active");
@@ -73,12 +72,12 @@
     };
 
     /** Deactivates any active navigation anchors. */
-    exports.deactivateMenuCurr = function () {
+    exports.deactivateMenuCurr = function() {
         $(".main-navigation a.active").removeClass("active");
     };
 
     /** Detect location href and switch the language menu link state. */
-    exports.initializeLanguageState = function () {
+    exports.initializeLanguageState = function() {
 
         var $englishAnchors = $(".header-links li a").eq(0).add($(".mobile-links li a").eq(0));
         var $chineseAnchors = $("a", $(".header-links li").eq(1)).add($("a", $(".mobile-links li").eq(1)));
@@ -110,7 +109,7 @@
 
 }());
 
-(function () {
+(function() {
     "use strict";
 
     var arrays = blacksunplc.arrays; // import * as arrays        from "module:blacksunplc/arrays"
@@ -151,7 +150,7 @@
         var $activeBtn = null;
         var sectionHref;
 
-        arrays.forEach(sections, function (section, index) {
+        arrays.forEach(sections, function(section, index) {
 
             if (section.href) {
                 /* Strip the version of any version rewritten URLs */
@@ -205,12 +204,13 @@
 
                     $sPagesList.append($categorySection);
 
-                    arrays.forEach(section.sectionPages, function (sectionPage) {
-                        var count = sectionPage.pages.length == 1 ? "single" : "", $subPagesList = $("<ul class='menu-thumb " + sectionPage.category + " " + count + "'></ul>");
+                    arrays.forEach(section.sectionPages, function(sectionPage) {
+                        var count = sectionPage.pages.length === 1 ? "single" : "",
+                            $subPagesList = $("<ul class='menu-thumb " + sectionPage.category + " " + count + "'></ul>");
 
                         $categorySection.append($subPagesList);
 
-                        arrays.forEach(sectionPage.pages, function (pages) {
+                        arrays.forEach(sectionPage.pages, function(pages) {
 
                             var activeStr;
                             if (path === pages.href) {
@@ -224,14 +224,14 @@
 
                             $subPagesList.append($listItem);
 
-                            $listItem.append("<a href='" + pages.href + "'" + activeStr + " itemprop='url' class='img-container'><img src='" + pages.image + "' alt='" + itemName + "'></a>");
+                            $listItem.append("<a href='" + pages.href + "'" + activeStr + " itemprop='url' class='img-container'><img src='" + pages.image + "' alt='" + itemName + "' loading='lazy'></a>");
 
                             $listItem.append("<a href='" + pages.href + "'" + activeStr + " itemprop='url'><span itemprop='name'>" + itemName + "</span></a>");
                         });
 
                     });
                 } else {
-                    arrays.forEach(section.sectionPages, function (sectionPage) {
+                    arrays.forEach(section.sectionPages, function(sectionPage) {
 
                         //                    console.log('path=' + path + ', sectionPage.href=' + sectionPage.href);
 
@@ -252,7 +252,7 @@
         });
 
         populateMenu($navList, $activeBtn);
-        cookieconsent.addNavNotice();
+        // cookieconsent.addNavNotice();
     }
 
     /* Workaround for Safari on iPad where viewport is shortened by the address bar and tabs */
@@ -281,10 +281,10 @@
         if (!isSafari || !isIpad) {
             return;
         }
-        $(".main-header .hamburger").on("click", function () {
+        $(".main-header .hamburger").on("click", function() {
             setHeightOfMenuSafariIpad(viewportHeight);
         });
-        setInterval(function () {
+        setInterval(function() {
             var windowInnerHeight2 = /** @type {number} */ ($(window).innerHeight());
             var newViewportHeight = windowInnerHeight2 - 57;
             if (newViewportHeight === viewportHeight) {
@@ -307,8 +307,8 @@
 
         menuHeightMobile();
 
-        $(".main-header .hamburger").on("click", function (/** !jQuery.Event */ event) {
-            cookieconsent.dismiss();
+        $(".main-header .hamburger").on("click", function( /** !jQuery.Event */ event) {
+            // cookieconsent.dismiss();
             $(event.currentTarget).toggleClass("is-active");
             $(document.body).toggleClass("navigation-active");
             setInterval(menuHeightMobile, 500);
@@ -340,16 +340,16 @@
         //             menuHeight();
         //         });
 
-        $(".main-navigation > ul > li > button").on("click", function (/** !jQuery.Event */ event) {
+        $(".main-navigation > ul > li > button").on("click", function( /** !jQuery.Event */ event) {
             menu.clickMenuButton($(event.currentTarget));
         });
-        $(".main-navigation > ul > li > a").on("click", function (event) {
+        $(".main-navigation > ul > li > a").on("click", function(event) {
             if (!(sitemaps.isFr() || sitemaps.isDe())) {
                 event.preventDefault();
                 menu.clickMenuButton($(event.currentTarget).next("button"));
             }
         });
-        $(".main-navigation > ul > li > a + button + ul > li a").on("mouseenter", function (/** !jQuery.Event */ event) {
+        $(".main-navigation > ul > li > a + button + ul > li a").on("mouseenter", function( /** !jQuery.Event */ event) {
             var anchor = event.currentTarget;
             hoverMenuItem(anchor);
         });
@@ -382,13 +382,13 @@
         var windowHeight = /** @type {number} */ ($window.height());
         var footerHeight = /** @type {number} */ ($footer.height());
 
-        $(window).on("resize", function () {
+        $(window).on("resize", function() {
             documentHeight = /** @type {number} */ ($document.height());
             windowHeight = /** @type {number} */ ($window.height());
             footerHeight = /** @type {number} */ ($footer.height());
 
             /* iPad new window from share link (on closing) offsets fullpage window hack. */
-            setTimeout(function () {
+            setTimeout(function() {
                 var scrollTop = /** @type {number} */ ($window.scrollTop());
                 if (is.ipad() && is.safari() && scrollTop < 0) {
                     $window.scrollTop(0);
@@ -396,7 +396,7 @@
             }, 500);
         });
 
-        $window.on("scroll", function (/** !jQuery.Event */ event) {
+        $window.on("scroll", function( /** !jQuery.Event */ event) {
             if (
                 (document.activeElement && document.activeElement.className === "search-text") ||
                 ($(document.body).hasClass("navigation-active") && (is.iphone() || is.androidPhone()))
@@ -414,7 +414,7 @@
             }
         });
 
-        $window.on("load", function () {
+        $window.on("load", function() {
             var scrollTop = /** @type {number} */ ($window.scrollTop());
             if (!$footer.hasClass("visible") && (windowHeight + scrollTop + (footerHeight / 2) > documentHeight)) {
                 $footer.addClass("visible");
@@ -487,8 +487,8 @@
         isVisible = false;
         showIfNeeded();
 
-        $(window).one("load", function () {
-            $(".scroll-content").on("scroll", function () {
+        $(window).one("load", function() {
+            $(".scroll-content").on("scroll", function() {
                 $(".back-to-top").addClass("back-to-top--visible");
             });
         });
@@ -507,7 +507,7 @@
     /* Debounced to run at most once per 100 milliseconds. */
     events.add(window, "scroll", functions.debounce(listener, 100));
 
-    events.ready(function () {
+    events.ready(function() {
 
         getMenuItems();
         //        navigation;
@@ -547,8 +547,8 @@
              * An ugly hack to detect the first time some other script modifies
              * the "class" attribute of the ".carousel-slides" element.
              */
-            var observer = new MutationObserver(function (mutations) {
-                var classAttrMutations = mutations.filter(function (mutation) {
+            var observer = new MutationObserver(function(mutations) {
+                var classAttrMutations = mutations.filter(function(mutation) {
                     return mutation.attributeName === "class";
                 });
                 if (classAttrMutations.length > 0) {
@@ -556,7 +556,7 @@
                     initializeSiteFooter();
                 }
             });
-            observer.observe(carouselSlides, {"attributes": true});
+            observer.observe(carouselSlides, { "attributes": true });
 
         } else {
             initializeSiteFooter();

@@ -207,26 +207,30 @@
         $body.on("click touchend", ".media-open", function (/** !jQuery.Event */ event) {
             event.preventDefault();
 
-            var $link = $(event.currentTarget);
-            var videoid = /** @type {(string|undefined)} */ ($link.data("video-id"));
+            if (navigator.onLine) {
+                var $link = $(event.currentTarget);
+                var videoid = /** @type {(string|undefined)} */ ($link.data("video-id"));
 
-            if (!videoid) {
-                event.stopPropagation();
-                return;
+                if (!videoid) {
+                    event.stopPropagation();
+                    return;
+                }
+
+                populateVideoOverlay(videoid);
+
+                $("#overlay .media-close").show();
+                $("#overlay").addClass("active");
+
+                var $videoPopup = $("#video-panel-" + videoid);
+                $videoPopup.addClass("active");
+                var $videoContainer = $(".video-container-inner", $videoPopup);
+
+                var autoPlay = true;
+
+                insertVideo(videoid, $videoContainer, autoPlay);
+            } else {
+                alert("You are offline. Please connect to internet to play this video.")
             }
-
-            populateVideoOverlay(videoid);
-
-            $("#overlay .media-close").show();
-            $("#overlay").addClass("active");
-
-            var $videoPopup = $("#video-panel-" + videoid);
-            $videoPopup.addClass("active");
-            var $videoContainer = $(".video-container-inner", $videoPopup);
-
-            var autoPlay = true;
-
-            insertVideo(videoid, $videoContainer, autoPlay);
         });
 
         $body.on("click touchend", ".media-close, .video-overly", function (/** !jQuery.Event */ event) {

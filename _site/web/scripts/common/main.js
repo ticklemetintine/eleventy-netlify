@@ -82,4 +82,51 @@ blacksunplc.events.ready(function () {
 
     detectIphoneSafari();
 
+    function delayBeforePrintPreview(event) {
+        var documentHeight = $(document).height();
+        var timeout = 5000;
+        var bodyClasses = ".building-a-sustainable-organisation, "
+        + ".performance-overview, "
+        + ".how-we-grew, "
+        + ".pg-total-shareholder-return, "
+        + ".how-we-manage-risks, "
+        + ".twelve-month-returns, "
+        + ".investor-twenty-year, "
+        + ".credit-quality, "
+        + ".pg-temasek-bond, "
+        + ".overview-changes-in-accounting-standards, "
+        + ".tr-homepage";
+
+        if ($("#table-group-scrolling").length) {
+            $("#table-group-scrolling").floatThead("destroy")
+        }
+        if ($("body").is(bodyClasses)) {
+            event.preventDefault();
+
+            if($("body").hasClass("investor-twenty-year")) {
+                timeout = 15000;
+                documentHeight = 9999;
+            }
+            if($("body").hasClass("twelve-month-returns")) {
+                timeout = 8000;
+            }
+
+            $("html, body").animate({ scrollTop: documentHeight }, 3000);
+
+            setTimeout(function() {
+                window.print();
+            }, timeout);
+        }
+    }
+
+    function printPage() {
+        $(document).keydown(function(event) {
+            if (event.ctrlKey == true && (event.which === 80)) { //cntrl + p
+                delayBeforePrintPreview(event);
+            }
+        });
+    }
+
+    printPage();
+
 });

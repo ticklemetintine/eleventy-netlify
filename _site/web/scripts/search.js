@@ -46,7 +46,7 @@ function processSearchResults(searchResults) {
         }
     }
 
-    arrays.forEach(searchResults.hits, function (hit) {
+    arrays.forEach(searchResults.hits, function(hit) {
         var attribs = ["href='" + hit.url + "'"];
         var text = [];
         text.push(hit.title);
@@ -72,7 +72,7 @@ function processSearchResults(searchResults) {
     $("#search-results").show();
 }
 
-jQuery(function ($) {
+jQuery(function($) {
     "use strict";
 
     var urls = blacksunplc.urls; // import * as urls from "module:blacksunplc/urls"

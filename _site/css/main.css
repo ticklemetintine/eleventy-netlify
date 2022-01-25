@@ -12296,6 +12296,81 @@ html[lang=zh] .tr-homepage .fullwidth-teaser .title {
 .portfolio-highlights .tr-icons a:nth-of-type(6) {
   animation-delay: 1.2s;
 }
+.the-charter li {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .the-charter li {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+}
+.the-charter li:first-child {
+  margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .the-charter li .the-charter__content {
+    align-self: flex-start;
+  }
+}
+.the-charter li .the-charter__content h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .the-charter li .the-charter__content h3 {
+    font-size: 20px;
+  }
+}
+.the-charter li .the-charter__content p {
+  color: #464E52;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 767px) {
+  .the-charter li .the-charter__content p {
+    font-size: 14px;
+  }
+}
+.the-charter li .the-charter__content a {
+  font-size: inherit;
+}
+.the-charter__image {
+  height: 144px;
+  width: 144px;
+  border-radius: 50%;
+  border: solid 3px;
+  margin-right: 55px;
+  padding: 30px;
+  flex: 0 0 144px;
+}
+@media screen and (max-width: 767px) {
+  .the-charter__image {
+    margin: 0 0 20px;
+  }
+}
+.the-charter .investor h3 {
+  color: #009ee4;
+}
+.the-charter .investor .the-charter__image {
+  border-color: #009ee4;
+}
+.the-charter .institution h3 {
+  color: #12a639;
+}
+.the-charter .institution .the-charter__image {
+  border-color: #12a639;
+}
+.the-charter .steward h3 {
+  color: #ee7003;
+}
+.the-charter .steward .the-charter__image {
+  border-color: #ee7003;
+}
 .contentpage {
   overflow-x: hidden;
 }

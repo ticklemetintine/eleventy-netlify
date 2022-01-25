@@ -1,7 +1,7 @@
 /*jslint browser: true, fudge: true, long: true */
 /*global DocumentTouch, Headroom, blacksunplc, clearTimeout, document, jQuery, setInterval, setTimeout, window */
 
-jQuery(function ($) {
+jQuery(function($) {
     "use strict";
 
 
@@ -71,7 +71,7 @@ jQuery(function ($) {
             return;
         }
 
-        arrays.forEach($quickLinksItems, function (quickLinksItem) {
+        arrays.forEach($quickLinksItems, function(quickLinksItem) {
             var id = quickLinksItem.getAttribute("id");
             var text = quickLinksItem.getAttribute("data-quick-links-item");
             var htmlString = quickLinksTemplate(id, text);
@@ -112,7 +112,7 @@ jQuery(function ($) {
     generateSocialShareFeature();
 
     /* A nested "ready" callback: perhaps it needs to be called _after_ the above script. */
-    jQuery(function () {
+    jQuery(function() {
 
         /* Note The `outerWidth` method is not applicable to window objects; use function `layoutViewport` from "module:blacksunplc/css" instead. */
         var windowOuterWidth1 = /** @type {number} */ ($(window).outerWidth());
@@ -156,7 +156,7 @@ jQuery(function ($) {
         /* Function to adjust fullpage height on iOS to allow for the URL bar. */
         if ($("#fullpage").length && $(".our-story-page").length === 0) {
             var height = window.innerHeight;
-            var resize = function () {
+            var resize = function() {
                 if (window.innerHeight !== height) {
                     height = window.innerHeight;
                     $(".section, .fp-tableCell").css("height", height + "px");
@@ -168,15 +168,15 @@ jQuery(function ($) {
         // end
 
         var resizeTimer = 0;
-        $(window).on("resize", function () {
+        $(window).on("resize", function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(handleHeadroomOnResize, 250);
         });
 
         /* Note: to be removed on 10th */
         if ($(document.body).hasClass("conference-recording")) {
-            $(".header-links > li > a:not('.current'):not('.header-download-link')").attr("href", "/zh/media-centre/videos.html");
-            $(".mobile-links--left > li a:not('.current'):not('.header-download-link')").attr("href", "/zh/media-centre/videos.html");
+            $(".header-links > li > a:not('.current'):not('.header-download-link'):not(.header-print-basket-link)").attr("href", "/zh/media-centre/videos.html");
+            $(".mobile-links--left > li a:not('.current'):not('.header-download-link'):not(.header-print-basket-link)").attr("href", "/zh/media-centre/videos.html");
         }
     });
 
@@ -185,13 +185,13 @@ jQuery(function ($) {
     var $imgCaption = $(".image-caption");
 
     if ($imgCaption.length > 0) {
-        $caption.on("click", function (e) {
+        $caption.on("click", function(e) {
             e.preventDefault();
 
             $(this).focus();
             $(this).parent().toggleClass("show");
             $(this).parent().parent().toggleClass("show");
-        }).on("focusout", function () {
+        }).on("focusout", function() {
             $(this).parent().removeClass("show");
             $(this).parent().parent().removeClass("show");
         });

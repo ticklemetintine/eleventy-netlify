@@ -6,9 +6,9 @@
     "scripts": {
         "watch:eleventy": "eleventy --serve",
         "build:eleventy": "eleventy",
-        "gulp": "gulp serve",
+        "gulp": "gulp",
         "less": "less-watch-compiler src/less _site/css main.less",
-        "start": "npm-run-all --parallel watch:* less gulp",
+        "start": "npm-run-all --parallel gulp watch:* less ",
         "build": "npm-run-al build:*",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -21,14 +21,21 @@
         "gulp-order": "^1.2.0"
     },
     "dependencies": {
+        "del": "^6.0.0",
         "gulp": "^4.0.2",
+        "gulp-cache-bust": "^1.4.1",
+        "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.1.3",
         "gulp-sourcemaps": "^2.6.5",
+        "gulp-ssi": "^0.1.5",
         "gulp-uglify": "^3.0.2",
         "http-server": "^13.0.0",
         "markdown-it": "^12.2.0",
         "merge-stream": "^2.0.0",
         "npm-run-all": "^4.1.5",
+        "ssi": "^0.3.0",
         "terser": "^5.10.0"
     }
 }

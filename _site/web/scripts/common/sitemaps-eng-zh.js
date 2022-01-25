@@ -53,7 +53,7 @@
     exports.isSg = function () {
         var host = location.hostname;
         if (!host || (/^([\w\-]+\/)*[\w\-.\/]+$/).test(host)) {
-            return (host.indexOf(".com.sg") !== -1 || host === "localhost");
+            return (host.indexOf(".com.sg") !== -1 || host === "localhost" || host === "temasek-uat.blacksunplc.com" || host === "temasek-pwa-uat.blacksunplc.com");
         }
         throw new Error("Unsafe location.pathname");
     };
