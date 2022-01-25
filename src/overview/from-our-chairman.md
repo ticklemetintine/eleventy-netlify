@@ -1,13 +1,16 @@
 ---
-permalink: /overview/from-our-chairman/
+permalink: /overview/from-our-chairman.html
 layout: layouts/overview/from-our-chairman.njk
-title: "From Our Chairman "
 intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;
   the COVID-19 pandemic, and global warming.\r
 
   \r
 
   \ "
+name: LIM BOON HENG
+position: Chairman
+intro: ""
+title: "From Our Chairman "
 sections:
   - separator: "true"
     writeup: >-
@@ -354,7 +357,4 @@ sections:
 
       <!--EndFragment-->
 signature: /images/uploads/sign-limboonheng.png
-name: LIM BOON HENG
-position: Chairman
-intro: ""
 ---
