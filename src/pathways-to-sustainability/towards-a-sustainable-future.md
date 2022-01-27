@@ -28,4 +28,14 @@ sections:
       At Temasek, doing well, doing right and doing good are inseparable, as we strive to activate capital &mdash; [financial](/overview/our-financials-and-portfolio.html), [human](/overview/onetemasek-our-people.html), [natural ](/overview/towards-a-net-zero-world.html)and [social](/overview/uplifting-lives-and-communities.html) &mdash; to catalyse solutions for a better world, and deliver sustainable long term returns. Sustainability is at the core of everything we do.
     highlight: "A more liveable and equitable future goes hand in hand with long
       term opportunities and returns. "
+discover_more:
+  - title: " Investing for Impact and Returns"
+    link: /pathways-to-sustainability/investing-for-impact-and-returns.html
+    thumbnail: /images/uploads/dm-investing-for-impact.jpg
+  - title: How We Invest
+    link: /investor/how-we-invest.html
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
+  - title: A Forward Looking Institution
+    link: /institution/a-forward-looking-institution.html
+    thumbnail: /images/uploads/dm-a-forward-looking-institution.jpg
 ---
