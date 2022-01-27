@@ -86,4 +86,50 @@ sections:
       housing estates; and entered an MOU with [Sentosa Development
       Corporation](https://www.sentosa.gov.sg/) to lower the carbon footprint of
       Sentosa Island.
+  - separator: "true"
+    center: "false"
+    title: Beyond Carbon Impact
+    writeup: >-
+      Beyond carbon goals, we believe impact investing has potential, including
+      in underserved markets.
+
+
+      Earlier this year, we [partnered LeapFrog Investments](/news-and-views/news-room/news/2021/Temasek-and-LeapFrog-Investments-Forge-US500-Million-Partnership), a global impact investment group. This US$500 million strategic partnership aims to provide growth capital to expand the capabilities and resources of the LeapFrog team to uplift communities across Asia and Africa.
+
+
+      This partnership complements our earlier 2019 investment in [ABC World Asia](https://www.abcworld.com.sg/), a private equity firm dedicated to impact investing in Asia. Over the past year, ABC World Asia has made strides in building a diverse portfolio of companies across Asia, highlighted in its inaugural [impact report](https://www.abcworld.com.sg/impactreport2020/).
+  - separator: "false"
+    center: "true"
+    writeup: "[Environmental, social and governance
+      (ESG)](/sustainability/mainstreaming-sustainability) factors are part of
+      our investment framework, alongside our climate and carbon goals. We
+      advocate best practices and encourage businesses to embrace sustainable
+      ways of doing business. One initiative was the Temasek Portfolio Companies
+      (TPC) Sustainability Council, set up last year. This brings together the
+      CEOs and Sustainability Leads of our major TPCs, to share experiences on
+      sustainability strategies, and foster collaboration on common ESG goals."
+    highlight: Beyond carbon goals, we believe impact investing has potential,
+      including in underserved markets.
+  - separator: "false"
+    center: "true"
+    writeup: Members of our *[Ecosperity](https://www.ecosperity.sg/)* Advisory
+      Group and our Clean Energy Advisory Group provided us with valuable
+      guidance and insights. Our *Ecosperity* Advisory Group focused on
+      Sustainable Living as one of our [key investment
+      trends](https://www.temasekreview.com.sg/investor/how-we-invest.html). The
+      dialogues with our Clean Energy Advisory Group helped us to identify new
+      trends, developments, and opportunities to invest in emerging technologies
+      and build ecosystem capabilities. These thought-provoking online
+      discussions during the pandemic shape our transition into a global low
+      carbon energy future, which includes hydrogen, CCUS, advanced biofuels,
+      and fusion.
+    highlight: We advocate best practices and encourage businesses to embrace
+      sustainable ways of doing business.
+  - separator: "false"
+    center: "false"
+    writeup: We have appointed a [Chief Sustainability Officer
+      (CSO)](/media-centre/forging-pathways-to-decarbonisation.html) to
+      accelerate and amplify our sustainability strategy. Our CSO will engage
+      our portfolio companies and the wider ecosystem to address sustainability
+      challenges and advocate a clear transition to a net zero world.
 ---
