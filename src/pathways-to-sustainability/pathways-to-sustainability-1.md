@@ -3,10 +3,10 @@ permalink: /pathways-to-sustainability/investing-for-impact-and-returns.html
 layout: layouts/pathways-to-sustainability/index.njk
 title: Investing for Impact and Returns
 intro_text: >-
-  <!--StartFragment-->
-
-
-  We have stepped up our efforts to invest in carbon avoidance opportunities, such as renewable energy and plant-based proteins. We look for carbon negative solutions, such as Carbon Capture, Utilisation and Storage (CCUS), as and when these become feasible.
+  We have stepped up our efforts to invest in carbon avoidance opportunities,
+  such as renewable energy and plant-based proteins. We look for carbon negative
+  solutions, such as Carbon Capture, Utilisation and Storage (CCUS), as and when
+  these become feasible.
 
 
   <div class="medialine m-t-30">
@@ -18,8 +18,6 @@ intro_text: >-
                               Sunseap&rsquo;s first offshore floating photovoltaic system in Woodlands, which transmits generated solar power to the national grid
                          </div>
                   </div>
-
-  <!--EndFragment-->
 sections:
   - separator: "false"
     center: "false"
