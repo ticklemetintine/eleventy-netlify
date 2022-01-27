@@ -15,4 +15,21 @@ sections:
 
 
       The nub of the [climate emergency](https://www.un.org/sustainabledevelopment/climate-change/) is the externalisation of the future costs of carbon emissions. This is further clouded by the long lag between actions and results, the tragedy of horizons.
+  - separator: "false"
+    center: "true"
+    writeup: >
+      Carbon pricing internalises the economic and social costs of carbon
+      emissions, such as the increasingly negative consequences to liveability.
+      The impact is wide-ranging, from acute risks such as extreme weather
+      events, to chronic risks such as rising sea levels. As a result, the
+      viability of businesses and economies will be impacted. Carbon prices may
+      need to surpass US$100 per tonne of carbon dioxide equivalent (tCO2e) by
+      2030 to drive effective decarbonisation and deliver on the Paris
+      Agreement.
+
+
+      We have set an initial internal carbon price of US$42 per tCO2e to inform our investment decisions. A portion of our long term incentives will be aligned with our 10-year carbon targets.
+    highlight: "Carbon pricing internalises the economic and social costs of carbon
+      emissions, such as the increasingly negative consequences to liveability.
+      "
 ---
