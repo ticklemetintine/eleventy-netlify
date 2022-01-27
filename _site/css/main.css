@@ -8178,6 +8178,92 @@ html[lang="zh"] .related-list h2 {
     transition: 0.3s;
   }
 }
+.medialine {
+  margin-bottom: 30px;
+}
+.medialine img {
+  display: block;
+  width: 100%;
+}
+.medialine iframe {
+  display: block;
+  width: 100%;
+}
+.medialine-caption {
+  position: relative;
+  margin-right: 10px;
+  margin-left: auto;
+  padding: 10px 10px 0 0;
+  font-size: 11px;
+  text-align: right;
+  color: #464E52;
+}
+@media only screen and (min-width: 768px) {
+  .medialine-caption {
+    margin-right: 20px;
+    padding: 20px 14px 3px 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .medialine-caption {
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+html[lang="zh"] .medialine-caption {
+  letter-spacing: 0.1em;
+}
+@media only screen and (min-width: 1024px) {
+  html[lang="zh"] .medialine-caption {
+    font-size: 14px;
+  }
+}
+.medialine-caption a {
+  color: #006ba6;
+  font-size: 11px;
+}
+html[lang="zh"] .medialine-caption a {
+  font-size: inherit;
+}
+.medialine-caption:after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: transparent;
+  transition: 0.3s;
+}
+@media only screen and (min-width: 1024px) {
+  .medialine-caption:after {
+    height: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 551px) and (max-width: 1200px) {
+  .medialine .medialine-caption {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .medialine .medialine-caption:after {
+    height: 100%;
+    transition: 0.3s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .medialine.is-active .medialine-caption,
+  .medialine:hover .medialine-caption {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .medialine.is-active .medialine-caption:after,
+  .medialine:hover .medialine-caption:after {
+    height: 100%;
+    transition: 0.3s;
+  }
+}
 .breadcrumb {
   margin: 0 30px;
 }

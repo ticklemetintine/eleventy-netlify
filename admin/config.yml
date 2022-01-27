@@ -137,7 +137,7 @@ collections:
     slug: "pathways-to-sustainability"
     fields:
       - { label: "Permalink", name: "permalink", widget: "string", default: "/pathways-to-sustainability/slug.html" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/pathways-to-sustainability/index.njk" }
+      - { label: "Layout", name: "layout", widget: "string", default: "layouts/pathways-to-sustainability/index.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Intro", name: "intro_text", widget: "markdown" }
       - { label: "Intro Image", name: "intro_image", widget: "image", required: false }

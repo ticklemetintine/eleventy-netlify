@@ -50,8 +50,10 @@ eleventyNavigation:
             {% if intro_image %}
             <div class="medialine m-t-30">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="/images/pathway/investing-for-impact-and-returns/investing-for-impact.jpg" />
-                    <img src="/images/pathway/investing-for-impact-and-returns/investing-for-impact-m.jpg" alt="Investing for impact" />
+                {% if intro_image_mobile %}
+                    <source media="(min-width: 768px)" srcset="{{intro_image_mobile | url}}" />
+                {% endif %}
+                    <img src="{{intro_image | url}}" alt="{{title}}" />
                 </picture>
                 <div class="medialine-caption">
                    {{media_caption}}
