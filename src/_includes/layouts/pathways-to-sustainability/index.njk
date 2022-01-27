@@ -47,7 +47,17 @@ eleventyNavigation:
                     {{ intro_text | markdown | safe }}
                 {% endif %}
             </p>
-
+            {% if intro_image %}
+            <div class="medialine m-t-30">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/images/pathway/investing-for-impact-and-returns/investing-for-impact.jpg" />
+                    <img src="/images/pathway/investing-for-impact-and-returns/investing-for-impact-m.jpg" alt="Investing for impact" />
+                </picture>
+                <div class="medialine-caption">
+                   {{media_caption}}
+                </div>
+            </div>
+            {% endif %}
         </div>
         {{ content | safe }}
 
@@ -58,11 +68,11 @@ eleventyNavigation:
             <h2 class="dash-above">Discover More</h2>
 
             <div class="row">
-                {% for related in discover-more %}
+                {% for related in discover_more %}
                 <div class="col-4">
                     <div class="related-item is-mobile-column">
                         <div class="related-item-media">
-                            <a href="{{related['link']}}">
+                            <a href="{{related['link'] | url }}">
                                 <img src="{{related['thumbnail'] | url}}" />
                             </a>
                         </div>
@@ -70,7 +80,7 @@ eleventyNavigation:
                             <a class="anchor" href="{{related['link']}}">
                                 <span class="icon"><span class="icon-inner"></span></span>
                                 <span class="anchor-text">
-                                    Investing for Impact and Returns
+                                    {{related['title'] | url}}
                                 </span>
                             </a>
                         </div>
