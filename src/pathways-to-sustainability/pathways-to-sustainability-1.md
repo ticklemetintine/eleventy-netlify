@@ -11,7 +11,12 @@ intro_image_mobile: /images/uploads/investing-for-impact.jpg
 media_caption: Sunseap's first offshore floating photovoltaic system in
   Woodlands, which transmits generated solar power to the national grid
 sections:
-  - separator: "false"
+  - separator: "true"
     center: "false"
-    writeup: s
+    writeup: |-
+      On the climate and carbon front, we have a three-pronged approach:
+
+      1. Investing in climate-aligned opportunities;
+      2. Enabling carbon negative solutions; and
+      3. Encouraging decarbonisation efforts in businesses.
 ---
