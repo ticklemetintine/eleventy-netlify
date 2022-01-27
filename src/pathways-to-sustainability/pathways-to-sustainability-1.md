@@ -6,8 +6,8 @@ intro_text: We have stepped up our efforts to invest in carbon avoidance
   opportunities, such as renewable energy and plant-based proteins. We look for
   carbon negative solutions, such as Carbon Capture, Utilisation and Storage
   (CCUS), as and when these become feasible.
-intro_image: /images/uploads/investing-for-impact.jpg
-intro_image_mobile: /images/uploads/investing-for-impact-m.jpg
+intro_image: /images/uploads/investing-for-impact-m.jpg
+intro_image_mobile: /images/uploads/investing-for-impact.jpg
 media_caption: Sunseap's first offshore floating photovoltaic system in
   Woodlands, which transmits generated solar power to the national grid
 sections:
