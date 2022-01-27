@@ -94,20 +94,21 @@ sections:
       in underserved markets.
 
 
-      Earlier this year, we [partnered LeapFrog Investments](/news-and-views/news-room/news/2021/Temasek-and-LeapFrog-Investments-Forge-US500-Million-Partnership), a global impact investment group. This US$500 million strategic partnership aims to provide growth capital to expand the capabilities and resources of the LeapFrog team to uplift communities across Asia and Africa.
+      Earlier this year, we [partnered LeapFrog Investments](https://www.temasek.com.sg/en/news-and-views/news-room/news/2021/Temasek-and-LeapFrog-Investments-Forge-US500-Million-Partnership), a global impact investment group. This US$500 million strategic partnership aims to provide growth capital to expand the capabilities and resources of the LeapFrog team to uplift communities across Asia and Africa.
 
 
       This partnership complements our earlier 2019 investment in [ABC World Asia](https://www.abcworld.com.sg/), a private equity firm dedicated to impact investing in Asia. Over the past year, ABC World Asia has made strides in building a diverse portfolio of companies across Asia, highlighted in its inaugural [impact report](https://www.abcworld.com.sg/impactreport2020/).
   - separator: "false"
     center: "true"
     writeup: "[Environmental, social and governance
-      (ESG)](/sustainability/mainstreaming-sustainability) factors are part of
-      our investment framework, alongside our climate and carbon goals. We
-      advocate best practices and encourage businesses to embrace sustainable
-      ways of doing business. One initiative was the Temasek Portfolio Companies
-      (TPC) Sustainability Council, set up last year. This brings together the
-      CEOs and Sustainability Leads of our major TPCs, to share experiences on
-      sustainability strategies, and foster collaboration on common ESG goals."
+      (ESG)](https://www.temasek.com.sg/en/sustainability/mainstreaming-sustain\
+      ability) factors are part of our investment framework, alongside our
+      climate and carbon goals. We advocate best practices and encourage
+      businesses to embrace sustainable ways of doing business. One initiative
+      was the Temasek Portfolio Companies (TPC) Sustainability Council, set up
+      last year. This brings together the CEOs and Sustainability Leads of our
+      major TPCs, to share experiences on sustainability strategies, and foster
+      collaboration on common ESG goals."
     highlight: Beyond carbon goals, we believe impact investing has potential,
       including in underserved markets.
   - separator: "false"
@@ -132,4 +133,15 @@ sections:
       accelerate and amplify our sustainability strategy. Our CSO will engage
       our portfolio companies and the wider ecosystem to address sustainability
       challenges and advocate a clear transition to a net zero world.
+discover_more:
+  - title: " Measuring and Tracking Portfolio Emissions Measuring and Tracking
+      Portfolio Emissions"
+    link: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
+    thumbnail: /images/uploads/dm-measuring-and-tracking.jpg
+  - title: " How We Invest "
+    link: /investor/how-we-invest.html
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
+  - title: "Producing Sustainable Animal Feed "
+    link: /pathways-to-sustainability/producing-sustainable-animal-feed.html
+    thumbnail: /images/uploads/dm-producing-sustainable-animal-feed.jpg
 ---
