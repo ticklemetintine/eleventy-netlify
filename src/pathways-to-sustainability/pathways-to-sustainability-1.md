@@ -54,4 +54,36 @@ sections:
 
       We funded research led by the [NUS Centre for Nature-based Climate Solutions](https://www.nus.edu.sg/cncs/) to understand how <span class="tooltip tooltipstered" data-title="Carbon stored in coastal and marine ecosystems, such as mangroves and seagrass.">
                               blue carbon</span> can mitigate climate change in Southeast Asia. This research will develop a knowledge database of blue carbon stocks in the region and a toolkit for better monitoring, reporting and verification.
+  - separator: "true"
+    center: "false"
+    title: Encouraging Decarbonisation Efforts in Businesses
+    writeup: >-
+      Businesses are a key driver for decarbonisation. We continue to learn and
+      add tools for an evidence-based approach to encourage carbon abatement.
+
+
+      Over the year, we have [advanced our dialogue](/pathways-to-sustainability/collaborating-for-progress.html) with companies on their climate strategies and emissions reduction plans. We compare notes on knowledge and tools for carbon measurement, physical climate risk assessments, and climate-related disclosures according to international standards.
+
+
+      The Memorandum of Understanding (MOU) with [Schneider Electric](https://www.se.com/), a global leader in energy, aims to provide practical solutions for businesses to reduce carbon emissions, lower energy costs and reduce upfront investment needed.
+  - separator: "false"
+    center: "false"
+    writeup: In hard-to-abate sectors such as aviation and transport, we are working
+      proactively to catalyse new solutions or accelerate industry-wide
+      decarbonisation. For example, Temasek and the [Maritime and Port Authority
+      of Singapore](https://www.mpa.gov.sg/) signed an MOU during the annual
+      [Singapore Maritime Week](https://www.smw.sg/) in April 2021, to explore
+      measures such as cleaner ship fuels, and decarbonisation solutions for
+      port operations and maritime supply chains.
+    highlight: >
+      We continue to learn and add tools for an evidence-based approach to
+      encourage carbon abatement.
+  - separator: "false"
+    center: "false"
+    writeup: Elsewhere, we harnessed our network to [support
+      projects](https://www.spgroup.com.sg/wcm/connect/spgrp/dbd6c845-5d53-4757-bf41-307cb5b1d5fe/%5B20201212%5D+Media+Release+-+Tampines+town+first+in+Singapore+to+get+Eco+Boards+with+real-time+updates+on+utilities+consumption.pdf?MOD=AJPERES&CVID=)
+      that improved the efficiency of resource management in Singapore's public
+      housing estates; and entered an MOU with [Sentosa Development
+      Corporation](https://www.sentosa.gov.sg/) to lower the carbon footprint of
+      Sentosa Island.
 ---
