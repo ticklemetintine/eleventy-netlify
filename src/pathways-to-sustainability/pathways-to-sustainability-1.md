@@ -134,8 +134,7 @@ sections:
       our portfolio companies and the wider ecosystem to address sustainability
       challenges and advocate a clear transition to a net zero world.
 discover_more:
-  - title: " Measuring and Tracking Portfolio Emissions Measuring and Tracking
-      Portfolio Emissions"
+  - title: " Measuring and Tracking Portfolio Emissions"
     link: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
     thumbnail: /images/uploads/dm-measuring-and-tracking.jpg
   - title: " How We Invest "
