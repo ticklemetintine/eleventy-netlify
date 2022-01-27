@@ -32,4 +32,9 @@ sections:
     highlight: "Carbon pricing internalises the economic and social costs of carbon
       emissions, such as the increasingly negative consequences to liveability.
       "
+  - separator: "false"
+    center: "false"
+    writeup: We will refine our carbon pricing strategies during this coming decade,
+      likely with increasing internal carbon pricing, as we get further clarity
+      on the economic and policy levers of change.
 ---
