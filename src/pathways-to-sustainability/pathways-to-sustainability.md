@@ -39,7 +39,7 @@ sections:
       on the economic and policy levers of change.
 discover_more:
   - thumbnail: /images/uploads/dm-investing-for-impact.jpg
-    title: " Investing for Impact and Returns Investing for Impact and Returns"
+    title: " Investing for Impact and Returns "
     link: /pathways-to-sustainability/investing-for-impact-and-returns.html
   - thumbnail: /images/uploads/dm-measuring-and-tracking.jpg
     link: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
