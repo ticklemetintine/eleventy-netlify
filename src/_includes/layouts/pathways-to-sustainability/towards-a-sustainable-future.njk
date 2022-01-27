@@ -1,0 +1,49 @@
+---
+layout: "/layouts/pathways-to-sustainability/index.njk"
+---
+<div class="contentpage-body">
+    {% for item in sections %}
+        {% if item['separator'] == 'true' %}
+            <div class="dash-above margin-top70">
+        {% endif %}
+
+        {% if item['title']  %}
+        <h2 data-quick-links-item="{{item['title']}}" id="quicklink-{{loop.index}}">
+            {{ item['title'] }}
+
+            {% if item['sub_title'] %}
+            <br/>
+            <small>{{item['sub_title']}}</small>
+            {% endif %}
+        </h2>
+        {% endif %}
+
+        {% if item['highlight'] %}
+            <div class="contentpage-blockquote-row row highlight-below">
+                <div class="col-8">
+                    {{ item['writeup'] | markdown | safe }}
+                    <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-desktop">
+                        {{ item['highlight'] | markdown | safe }}
+                    </div>
+                </div>
+                
+                {% if item['center'] == "true" %}
+                <div class="col-4 v-centre">
+                {% else %}
+                <div class="col-4">
+                {% endif %}
+                    <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-mobile">
+                        {{ item['highlight'] | markdown | safe }}
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            {{ item['writeup'] | markdown | safe }}
+        {% endif %}
+
+         {% if item['separator'] == 'true' %}
+            </div>
+        {% endif %}
+    {% endfor %}
+
+</div>

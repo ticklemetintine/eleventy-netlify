@@ -1,0 +1,84 @@
+---
+layout: "/layouts/base.njk"
+slug: "overview"
+pageType: "contentpage"
+eleventyNavigation:
+  key: "Overview"
+  parent: "Home"
+---
+
+<div class="breadcrumb">
+  <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemtype="https://schema.org/Thing" itemprop="item" href="{{ '/' | url }}">
+              <span itemprop="name">Home</span>
+          </a>
+          <span class="breadcrumb-seperator">/</span>
+          <meta itemprop="position" content="1" />
+      </li>
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemtype="https://schema.org/Thing" itemprop="item" href="{{ '/pathways-to-sustainability' | url }}">
+              <span itemprop="name">Pathways to Sustainability</span>
+          </a>
+          <span class="breadcrumb-seperator">/</span>
+          <meta itemprop="position" content="2" />
+      </li>
+      <li class="is-active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemtype="https://schema.org/Thing" itemprop="item" href="#">
+              <span itemprop="name">{{title}}</span>
+          </a>
+          <meta itemprop="position" content="3" />
+      </li>
+  </ul>
+</div>
+
+<main class="contentpage-main">
+
+    <div class="contentpage-container">
+
+        <div class="contentpage-header">
+            <div class="dash-below">
+                <small>Pathways to Sustainability</small>
+                <h1>{{title}}</h1>
+            </div>
+
+            <p class="intro">
+                {% if intro_text %}
+                    {{ intro_text | markdown | safe }}
+                {% endif %}
+            </p>
+
+        </div>
+        {{ content | safe }}
+
+    </div>
+    <div class="related-list">
+        <div class="contentpage-container">
+
+            <h2 class="dash-above">Discover More</h2>
+
+            <div class="row">
+                {% for related in discover-more %}
+                <div class="col-4">
+                    <div class="related-item is-mobile-column">
+                        <div class="related-item-media">
+                            <a href="{{related['link']}}">
+                                <img src="{{related['thumbnail'] | url}}" />
+                            </a>
+                        </div>
+                        <div class="related-item-body">
+                            <a class="anchor" href="{{related['link']}}">
+                                <span class="icon"><span class="icon-inner"></span></span>
+                                <span class="anchor-text">
+                                    Investing for Impact and Returns
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+

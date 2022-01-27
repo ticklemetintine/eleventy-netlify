@@ -37,7 +37,7 @@ sections:
     writeup: We will refine our carbon pricing strategies during this coming decade,
       likely with increasing internal carbon pricing, as we get further clarity
       on the economic and policy levers of change.
-discover-more:
+discover_more:
   - thumbnail: /images/uploads/dm-investing-for-impact.jpg
     title: " Investing for Impact and Returns Investing for Impact and Returns"
     link: /pathways-to-sustainability/investing-for-impact-and-returns.html
