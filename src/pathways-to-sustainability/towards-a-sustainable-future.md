@@ -1,6 +1,6 @@
 ---
 permalink: /pathways-to-sustainability/towards-a-sustainable-future.html
-layout: layouts/pathways-to-sustainability/towards-a-sustainable-future.njk
+layout: layouts/pathways-to-sustainability/template.njk
 title: Towards a Sustainable Future
 intro_text: "We are at the dawn of a critical decade. Swift global action on the
   climate threat is needed to curb global carbon emissions. "
