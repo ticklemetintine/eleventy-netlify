@@ -90,6 +90,14 @@ collections:
           - { label: "Signature", name: "signature", widget: "image", required: false}
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "Position", name: "position", widget: "string", required: false }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
       - label: "The Temasek Charter"
         name: "the-temasek-charter"
         file: "src/overview/the-temasek-charter.md"
@@ -112,6 +120,14 @@ collections:
                   - { label: "Institution", value: "institution" }
                   - { label: "Steward", value: "steward" }
                   - { label: "Overview", value: "overview" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
       - label: "Performance Overview"
         name: "performance-overview"
         file: "src/overview/performance-overview.md"
@@ -120,6 +136,74 @@ collections:
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - label: "Net portfolio value"
+            name: "net_porfolio_value"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+              - { label: "Link Text", name: "link_text", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+          - label: "Investments & Divestments"
+            name: "investment_and_divestment"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+          - label: "Portfolio by Geography"
+            name: "portfolio_by_geography"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Title Tooltip", name: "header_tooltip", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+              - { label: "Chart Notes", name: "chart_notes", widget: "string"}
+          - label: "Total Shareholder Return"
+            name: "total_shareholder_return"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+              - { label: "Footer Tooltip Heading", name: "tooltip_heading", widget: "string"}
+              - { label: "Footer Tooltip", name: "tooltip", widget: "string"}
+          - label: "Rolling Total Shareholder Return"
+            name: "rolling_total_shareholder_return"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+          - label: "Dividend income"
+            name: "dividend_income"
+            widget: "object"
+            fields: 
+              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+
       - label: "Temasek Portfolio at Inception"
         name: "temasek-portfolio-at-inception"
         file: "src/overview/temasek-portfolio-at-inception.md"
@@ -129,6 +213,22 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - { label: "List", name: "list", widget: "markdown" }
+
+      - label: "Portfolio Highlights"
+        name: "portfolio-highlights"
+        file: "src/overview/portfolio-highlights.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/portfolio-highlights" }
+          - { label: "Layout", name: "layout", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
   
   - name: "pathways-to-sustainability"
     label: "Pathways to Sustainability"

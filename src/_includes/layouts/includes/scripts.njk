@@ -20,5 +20,10 @@
     <script src="{{'/web/scripts/fusioncharts.js' | url }}" defer></script>
     <script src="{{'/web/scripts/fusioncharts.charts.js' | url }}" defer></script>
     <script src="{{'/web/scripts/performance-overview.js' | url }}" defer></script>
+    {% endif %}
+
+    {% if slug == 'pathway' %}
+    <script src="{{ '/web/scripts/content-page.js' | url }}" defer></script>
+    <script src="{{ '/web/scripts/share-selected-text.js' | url }}" defer></script>
     <script src="{{'/web/scripts/pages/pathway_towards_net_zero.js' | url }}" defer></script>
     {% endif %}

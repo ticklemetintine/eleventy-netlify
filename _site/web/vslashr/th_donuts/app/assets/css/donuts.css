@@ -1,0 +1,261 @@
+body {
+}
+
+.extra_top_margin {
+    margin-top:1em;
+}
+#chart_container {
+    height:540px;
+    position:relative;
+}
+#chart {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#chart .slice {
+    pointer-events:none;
+}
+#chart .slice path {
+    pointer-events:visible;
+    stroke:#fff;
+    stroke-width:2;
+}
+#slice0, #slice1, #slice2, #slice3, #slice4, #slice5, .slice {
+    position:absolute;
+}
+#tooltip {
+    margin:0;
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:8em;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    color:#007fb2;
+    text-align:center;
+}
+
+#tooltip small {
+    color:#007fb2;
+}
+
+#as_at {
+    color:#007fb2;
+    font-size: 14px;
+}
+
+th {
+}
+th.years {
+    cursor:pointer;
+}
+th.years.selected, td.selected {
+    color:#007fb2;
+    font-weight:bold;
+}
+
+table {
+    font-size: 1em;
+}
+
+table [data-link] {
+    color:#1273a1;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.container {
+  position:relative;
+}
+
+.viz_container {
+  width:100%;
+}
+
+.viz_container h2 {
+    font-size:28px;
+}
+
+.anim_container {
+  width:100%;
+  text-align: center;
+}
+
+a {
+  color:#1273a1;
+}
+
+/* Tooltip */
+
+/* Hack for menu color just too target this menu */
+#menu li span.menuColor {
+    color:#49176d;
+}
+
+#menu > li {
+    font-size: 14px;
+}
+
+#geography_tag {
+  cursor: default;
+}
+
+.tooltip.bottom .tooltip-arrow, .tooltip.left .tooltip-arrow {
+  border-width: 0;
+}
+.tooltip-inner {
+  font-weight:normal;
+  text-align: left;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+}
+
+.icon {
+  font-size: 2.15em;
+  margin: 20px 0;
+  cursor: pointer;
+}
+@media (max-width: 511px) {
+  .icon {
+    font-size: 1.5em;
+  }
+}
+
+#icon0 {
+  color:#7fb046;
+}
+#icon1 {
+  color:#cd0057;
+}
+#icon2 {
+  color:#00b3e6;
+}
+#icon3 {
+  color:#ffdc00;
+}
+
+.nag {
+    margin:0 auto;
+    background-color:#fdf2ab;
+    color:#000;
+    width:80%;
+}
+.nag a {
+    color:#e25600;
+    text-decoration:underline;
+}
+
+
+@media (min-width: 700px) {
+    .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+        cursor: pointer;
+    }
+    .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+    .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #dddddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #ffffff;
+    }
+    
+    #menu li:first-child {
+        padding-left: 2px;
+    }
+    
+    #tooltip
+    {
+        font-size: 2.5em;
+    }
+    
+    #tooltip small
+    {
+        font-size: 0.8em;
+    }    
+}
+text.percentage {
+    font-size: 16px;
+}
+text.slice_underline {
+    text-decoration:underline;
+    font-size: 1.2em;
+}
+
+@media (max-width: 480px) and (min-width: 361px){
+    body {
+        font-size:14px;
+    }
+    
+    /* // For small widths donut arcs do not show numbers
+    text.percentage { 
+        display: none;
+    }
+    */
+
+    text.percentage {
+        font-size: 14px;
+    }
+
+    .table thead tr th, .table tbody tr td {
+        padding: 0.4em;
+    }
+
+    #text-carousel .item h1 {
+        font-size: 2em;
+    }
+    
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+}
+
+
+@media (max-width: 360px) {
+    body {
+        font-size:13px;
+    }
+    
+    /* // For small widths donut arcs do not show numbers
+    text.percentage { 
+        display: none;
+    }
+    */
+
+    text.percentage {
+        font-size: 14px;
+    }
+
+    .table thead tr th, .table tbody tr td {
+        padding: 0.2em;
+    }
+
+    #text-carousel .item h1 {
+        font-size: 1.8em;
+    }
+    
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+}

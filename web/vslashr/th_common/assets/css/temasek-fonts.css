@@ -1,0 +1,160 @@
+/* noto-sans-regular - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'),
+       url('../fonts/noto-sans-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-italic - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'),
+       url('../fonts/noto-sans-v7-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v7-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-700 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+       url('../fonts/noto-sans-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-700italic - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'),
+       url('../fonts/noto-sans-v7-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v7-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*
+* Noto Sans SC (Chinese Simplified) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NotoSansSC-Light.woff2') format('woff2'),
+        url('../fonts/NotoSansSC-Light.woff') format('woff'),
+        url('../fonts/NotoSansSC-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NotoSansSC-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSansSC-Regular.woff') format('woff'),
+        url('../fonts/NotoSansSC-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/NotoSansSC-Bold.woff2') format('woff2'),
+        url('../fonts/NotoSansSC-Bold.woff') format('woff'),
+        url('../fonts/NotoSansSC-Bold.otf') format('opentype');
+}
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size:16px;
+}
+/*html[lang="zh"] body {
+    font-family: "Noto Sans SC", "Noto Sans", Helvetica, Arial, sans-serif;
+}*/
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+/*
+html[lang="zh"] button {
+    font-family: "Noto Sans SC", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+*/
+
+/*
+    creditprofile - #chart .rotate
+    newvsi, rollingtsrnpv, tgem - #chart-container .rotate
+*/
+#chart .rotate, 
+#chart-container .rotate {
+    position:absolute;
+    overflow:hidden;
+    background-color:#333;
+    opacity:0.7;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+#chart .rotate .rotate-content, 
+#chart-container .rotate .rotate-content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding:1em;
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+}
+
+#chart .rotate .rotate-content p, 
+#chart-container .rotate .rotate-content p {
+    margin: 0;
+}
+#chart .rotate .rotate-content img {
+    width: 50%;
+}
+#chart-container .rotate .rotate-content img {
+    width: 30%;
+}
+
+/*
+    creditprofile - #chart .axis line.tooltipLine
+    newvsi - #chart .axis line.tooltipLine, #chart .legend line.tooltipLine
+    rollingtsrnpv - #chart .axis line.tooltipLine
+*/
+#chart .axis line.tooltipLine,
+#chart .legend line.tooltipLine {
+    stroke: #49176d;
+    stroke-width: 1px;
+    stroke-dasharray: 2 2;
+}
+
+/*
+    creditprofile - #chart .axis text[data-toggle="tooltip"]
+    newvsi - #chart text.label[data-toggle="tooltip"]
+    tgem - #chart .legend text[data-toggle="tooltip"]
+*/
+#chart .axis text[data-toggle="tooltip"],
+#chart text.label[data-toggle="tooltip"],
+#chart .legend text[data-toggle="tooltip"] {
+    fill: #49176d;
+    cursor: help;
+}
+
+/*
+    newvsi, simulationportfolio, donuts - span[data-toggle="tooltip"]
+*/
+span[data-toggle="tooltip"] {
+    border-bottom: 1px dotted #49176d;
+    color: #49176d;
+    text-decoration: none;
+    cursor: help;
+}
+

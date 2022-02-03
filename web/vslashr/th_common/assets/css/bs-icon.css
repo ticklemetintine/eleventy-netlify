@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+.icon-inner{
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+span.icon {
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: block;
+  background: transparent;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+}
+span.icon .icon-inner {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-inner::before {
+  display: block;
+  color: white;
+}
+span.icon:hover {
+  background: white;
+  border: 1px solid #ffffff;
+}
+
+.icon-inner.left::before {
+  content: "\ea40";
+}
+
+.icon-inner.right::before {
+  content: "\ea3c";
+}
+
+.icon-link:hover .icon-inner.left {
+  animation-name: anim-arrow-left;
+  animation-duration: 800ms;
+  animation-iteration-count: 2;
+}
+
+.icon-link:hover .icon-inner.right {
+  animation-name: anim-arrow-right;
+  animation-duration: 800ms;
+  animation-iteration-count: 2;
+}
+
+.icon-link {
+  color: #006ba6;
+}
+.icon-link span.icon {
+  border: 1px solid #bfdae9;
+}
+.icon-link span.icon .icon-inner::before {
+  color: #006ba6;
+}
+.icon-link span.icon:hover {
+  background: #006ba6;
+  border: 1px solid #006ba6;
+}
+.icon-link span.icon:hover .icon-inner::before {
+  color: white;
+}
+
+@keyframes anim-arrow-left {
+  0% {
+    left: 0.5em
+  }
+  30% {
+    left: 0.5em
+  }
+  70% {
+    left: -3em
+  }
+  71% {
+    left: -3em
+  }
+  72% {
+    left: 3em
+  }
+  73% {
+    left: 3em
+  }
+  100% {
+    left: 0.5em
+  }
+}
+
+@keyframes anim-arrow-right {
+  0% {
+    left: 0.5em
+  }
+  30% {
+    left: 0.5em
+  }
+  70% {
+    left: 3em
+  }
+  71% {
+    left: 3em
+  }
+  72% {
+    left: -3em
+  }
+  73% {
+    left: -3em
+  }
+  100% {
+    left: 0.5em
+  }
+}

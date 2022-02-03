@@ -1,0 +1,188 @@
+body {
+    margin:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+/*    background-color:#ffffee;*/
+}
+
+#chart-container {
+/*    padding: 1%;*/
+/*    width:98%;*/
+    margin:0 auto;
+/*    background-color:#eeffff;*/
+}
+
+#chart {
+    position: relative;
+}
+#chart text {
+    font-size:16px;
+}
+
+#chart .chart1ContainerContainer {
+    position:relative;
+    width:100%;
+}
+#chart .chart1Container {
+    /* fix for IE11 */
+    position:relative;
+    width:100%;
+    height:0;
+    padding:0;
+    padding-bottom:calc(600 / 800 * 100%);
+}
+#chart .chart1 {
+/*    background-color:#ffeeff;*/
+/*    border:1px solid orange;*/
+    /* fix for IE11 */
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+#chart .chart2Container {
+}
+#chart .chart2 {
+/*    background-color:#eeffee;*/
+/*    border:1px solid orange;*/
+/*    opacity:0.7;*/
+    /* fix for IE11 */
+    width:100%;
+    padding-bottom:calc(375 / 500 * 100%);
+    height:1px;
+    overflow:visible;
+}
+
+#chart .title {
+}
+
+#chart .tooltip_container {
+    opacity:0.6;
+    width:90%;
+    box-sizing:border-box;
+/*    background-color:#eee;*/
+}
+#chart .tooltip_container .tooltip {
+    border:1px solid lightgrey;
+    padding:0.5em;
+}
+
+/*@media (max-width: 720px) {
+    #chart  {
+        text-align:center;
+    }
+
+    #chart .tooltip_container {
+        margin:0 auto;
+    }
+    #chart .tooltip_container .tooltip {
+        text-align:left;
+    }
+}*/
+
+/*@media (min-width: 721px) {
+    #chart .chart1 {
+        margin-top:10%;
+    }
+
+    #chart .chart2 {
+        position:absolute;
+        top:10%;
+        right:4%;
+    }
+
+    #chart .tooltip_container {
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    #chart .tooltip_container .tooltip {
+        margin:0 3em 0 0;
+    }
+}*/
+
+#chart .axis path, 
+#chart .axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: geometricPrecision;
+}
+
+#chart .axis text {
+    fill: #999;
+}
+
+#chart .x.axis path {
+}
+
+#chart .legend rect {
+    stroke-width: 0.8;
+    stroke: gray;
+}
+
+#chart .legend rect {
+    fill: #eee;
+}
+
+#chart .line {
+    fill: none;
+}
+#chart .boxplot {
+    fill: #eee;
+    stroke-width: 0.8;
+    stroke-dasharray: 2, 2;
+    stroke: gray;
+    opacity: 0.8;
+}
+#chart .focus .line.background {
+    stroke: none;
+}
+#chart .focus .line, #chart .focus .arrow {
+    stroke-width: 2;
+    opacity: 0.8;
+}
+
+#chart .bell .line {
+    stroke: #000;
+    stroke-width: 1.2;
+}
+#chart .bell .area {
+    opacity: 0.6;
+}
+#chart .working .line {
+    visibility:hidden;
+    stroke:orange;
+}
+
+#chart .left_marker .line, #chart .right_marker .line {
+    stroke: gray;
+    stroke-width: 0.8;
+}
+
+#chart line.zero-line {
+    stroke: gray;
+    stroke-width: 0.5;
+}
+
+/*#chart .chart2 .x.axis .tick line {
+    stroke: none;
+}
+#chart .chart2 .x.axis path {
+    stroke: none;
+}*/
+
+#chart .dot {
+    stroke: steelblue;
+    fill: steelblue;
+}
+
+#chart .point .label, #chart .legend circle {
+    fill: steelblue;
+}
+
+#chart .overlay {
+    fill: none;
+    pointer-events: all;
+}

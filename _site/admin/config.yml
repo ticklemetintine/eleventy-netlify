@@ -221,6 +221,7 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/portfolio-highlights" }
           - { label: "Layout", name: "layout", widget: "string"}
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
@@ -229,48 +230,124 @@ collections:
               - { label: "Link", name: "link", widget: "string"}
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
   
-  - name: "pathways-to-sustainability"
-    label: "Pathways to Sustainability"
-    folder: "src/pathways-to-sustainability"
-    create: true
-    slug: "pathways-to-sustainability"
-    fields:
-      - { label: "Permalink", name: "permalink", widget: "string", default: "/pathways-to-sustainability/slug.html" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/pathways-to-sustainability/template.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro", name: "intro_text", widget: "markdown" }
-      - { label: "Intro Image", name: "intro_image", widget: "image", required: false }
-      - { label: "Intro Image Mobile", name: "intro_image_mobile", widget: "image", required: false }
-      - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
-      - label: "Sections"
-        name: "sections"
-        widget: "list"
-        fields: 
-          - {label: "Section Title", name: "title", widget: 'string', required: false }
-          - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
-          - label: "Add top separator?"
-            name: "separator"
-            widget: "select"
-            default: "false"
-            options:
-              - { label: "Yes", value: "true" }
-              - { label: "No", value: "false" }
-          - { label: "Writeup", name: "writeup", widget: 'markdown' }
-          - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
-          - label: "Vertically center align the highlight?"
-            name: "center"
-            widget: "select"
-            default: "false"
-            required: false
-            options:
-              - { label: "Yes", value: "true" }
-              - { label: "No", value: "false" }
-      - label: "Discover More"
-        name: "discover_more"
-        widget: "list"
-        fields: 
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Link", name: "link", widget: "string"}
-          - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
- 
+  - label: "Pathways to Sustainability"
+    name: "pathways-to-sustainability"
+    files: 
+      - label: "Towards a Sustainable Future"
+        name: "towards-a-sustainable-future"
+        file: "src/pathways-to-sustainability/towards-a-sustainable-future.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string', required: false }
+              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+              - label: "Add top separator?"
+                name: "separator"
+                widget: "select"
+                default: "false"
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
       
+      - label: "Putting a Price on Carbon"
+        name: "putting-a-price-on-carbon"
+        file: "src/pathways-to-sustainability/putting-a-price-on-carbon.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string', required: false }
+              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+              - label: "Add top separator?"
+                name: "separator"
+                widget: "select"
+                default: "false"
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Investing for Impact and Returns"
+        name: "investing-for-impact-and-returns"
+        file: "src/pathways-to-sustainability/investing-for-impact-and-returns.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Intro Image", name: "intro_image", widget: "image", required: false }
+          - { label: "Intro Image Mobile", name: "intro_image_mobile", widget: "image", required: false }
+          - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string', required: false }
+              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+              - label: "Add top separator?"
+                name: "separator"
+                widget: "select"
+                default: "false"
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }

@@ -1,0 +1,135 @@
+body {
+    margin:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+/*    box-sizing:border-box;*/
+/*    background-color:#ffffee;*/
+}
+
+#chart-container {
+/*    padding: 1%;*/
+/*    width:98%;*/
+    margin:0 auto;
+/*    background-color:#eeffff;*/
+/*    border:1px solid black;*/
+}
+
+#chart {
+    position: relative;
+    /* fix for IE11 */
+    width:100%;
+    height:0;
+    padding:0;
+    padding-bottom:calc(780 / 1024 * 100%);
+}
+#chart text {
+    font-size:16px;
+}
+
+#chart .chart1 {
+/*    border:1px solid black;
+      background-color:#ffeeff;*/
+    /* fix for IE11 */
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-10;
+}
+
+/*#chart .title {
+}*/
+
+#chart .table_container {
+/*    background-color:#eee;*/
+/*    font-size:1.7vw;*/
+    width:43%;
+    position:absolute;
+    top:1em;
+    right:1em;
+}
+#chart .table_container table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width:100%;
+}
+#chart .table_container table td, #chart .table_container table th {
+    border:1px solid #999;
+    padding:0 0.4em 0.2em 0.4em;
+}
+#chart .table_container table thead {
+}
+#chart .table_container table thead tr {
+}
+#chart .table_container table thead th {
+    font-weight: bold;
+}
+#chart .table_container table thead th:nth-child(1) {
+    width:22%;
+}
+#chart .table_container table thead th:nth-child(2) {
+    width:50%;
+}
+#chart .table_container table thead th:nth-child(3) {
+    width:28%;
+    text-align:right;
+    vertical-align:bottom;
+}
+#chart .table_container table tbody {
+}
+#chart .table_container table tbody tr {
+}
+#chart .table_container table tbody tr:hover {
+    border: 1px solid #bbb;
+    background: #bbb;
+    font-weight: bold;
+}
+#chart .table_container table tbody tr:last-child {
+	color: #fff;
+}
+#chart .table_container table tbody td {
+}
+#chart .table_container table tbody td:nth-child(1) {
+    text-align:center;
+}
+#chart .table_container table tbody td:nth-child(2) {
+    text-align:right;
+}
+#chart .table_container table tbody td:nth-child(3) {
+    text-align:right;
+}
+#chart .table_container table tbody td:nth-child(4) {
+    text-align:right;
+}
+#chart .table_container table tbody td span.dashes {
+    display:inline-block;
+    text-align:center;
+    width:1em;
+}
+
+#chart .axis path, #chart .axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: geometricPrecision;
+}
+
+#chart .axis text {
+    fill: #999;
+}
+
+#chart .x.axis .tick line {
+    stroke: none;
+}
+#chart .x.axis path, #chart .y.axis path {
+    stroke: none;
+}
+
+#chart .line {
+    fill: none;
+}
+
+#chart .legend text {
+    cursor:pointer;
+}
+
+/* Tooltip */
