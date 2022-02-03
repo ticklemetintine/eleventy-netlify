@@ -2,13 +2,15 @@
 permalink: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
 layout: layouts/pathways-to-sustainability/template.njk
 title: Measuring and Tracking Portfolio Emissions
-intro_text: >-
-  <p>
-                      Last year, we committed to reducing the net carbon emissions attributable to our portfolio to half
-                      the
-                      2010 levels by <span class="tooltip tooltipstered" data-title="The target has been established in reference to the latest scientific assessments (AR5) published by the Intergovernmental Panel on Climate Change (IPCC).">2030</span>. We also signalled our ambitions for net zero carbon emissions by
-                      <span class="tooltip tooltipstered" data-title="Due to differences in the calendar year and our financial year, calendar year emissions data and targets are reported in the subsequent financial year.">2050</span>.
-                  </p>
+intro_text: Last year, we committed to reducing the net carbon emissions
+  attributable to our portfolio to half the 2010 levels by <span class="tooltip
+  tooltipstered" data-title="The target has been established in reference to the
+  latest scientific assessments (AR5) published by the Intergovernmental Panel
+  on Climate Change (IPCC).">2030</span>. We also signalled our ambitions for
+  net zero carbon emissions by <span class="tooltip tooltipstered"
+  data-title="Due to differences in the calendar year and our financial year,
+  calendar year emissions data and targets are reported in the subsequent
+  financial year.">2050</span>.
 sections:
   - separator: "true"
     center: "false"
@@ -19,4 +21,19 @@ sections:
 
 
       On the basis of more refined company-level data and sub industry-level proxies, we have updated our estimates of the carbon emission attributable to our portfolio in the financial year ended 31 March 2011, as shown in the chart below.
+  - separator: "false"
+    center: "false"
+    writeup: >-
+      ```
+
+      <div class="date-wrapper">
+          <p>(for year ending 31 March)</p>
+      </div>
+
+      <h3 id="towards-net-zero" data-quick-links-item="Towards Net Zero">Towards Net Zero</h3>
+
+      ```
+
+
+      ![](/images/uploads/towards-net-zero.svg)
 ---
