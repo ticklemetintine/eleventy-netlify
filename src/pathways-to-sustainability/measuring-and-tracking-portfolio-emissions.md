@@ -820,5 +820,29 @@ code:
                                     </g>
                                 </svg>
 chart_mobile: /images/uploads/pathway_towards_net_zero.svg
-after_chart: asd
+chart_notes: "1. tCO&lt;sub&gt;2&lt;&sol;sub&gt;e refers to tonnes of carbon
+  dioxide equivalent, a standard unit used in greenhouse gas emissions
+  accounting and reporting.<br/>
+
+  \                            2. The 2010 baseline (as reflected in FY2011)
+  has been revised to 22 million tCO<sub>2</sub>e as more refined company-level
+  data sets and sub industry-level proxies have become available. Our 2030
+  target (to be reported on in FY2031) is 11 million tCO<sub>2</sub>e,
+  reflecting half of our 2010 baseline.
+
+  \                            "
+after_chart: Our estimated <span class="tooltip" title="This metric is also
+  known as Total Carbon Emissions (tCO<sub>2</sub>e) within the TCFD
+  Supplemental Guidance for the Financial Sector. It reflects the absolute GHG
+  emissions (Scope 1 and Scope 2) associated with our portfolio, expressed in
+  tCO<sub>2</sub>e." data-title="This metric is also known as Total Carbon
+  Emissions (tCO<sub>2</sub>e) within the TCFD Supplemental Guidance for the
+  Financial Sector. It reflects the absolute GHG emissions (Scope 1 and Scope 2)
+  associated with our portfolio, expressed in tCO<sub>2</sub>e.">Total Portfolio
+  Emissions</span> have remained largely flat over the <span class="tooltip"
+  title="Due to the time lag in reported emissions data, the impact of COVID-19
+  on some of our portfolio companies' emissions is not yet reflected."
+  data-title="Due to the time lag in reported emissions data, the impact of
+  COVID-19 on some of our portfolio companies' emissions is not yet
+  reflected.">year</span>.
 ---
