@@ -1,6 +1,6 @@
 ---
 permalink: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
-layout: layouts/pathways-to-sustainability/template.njk
+layout: layouts/pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.njk
 title: Measuring and Tracking Portfolio Emissions
 intro_text: >-
   Last year, we committed to reducing the net carbon emissions
@@ -25,7 +25,9 @@ before_chart: >-
 
   On the basis of more refined company-level data and sub industry-level proxies, we have updated our estimates of the carbon emission attributable to our portfolio in the financial year ended 31 March 2011, as shown in the chart below.
 date_text: (for year ending 31 March)
+chart_title: Towards Net Zero
 code:
   code: ds
+chart_mobile: /images/uploads/pathway_towards_net_zero.svg
 after_chart: asd
 ---
