@@ -9,6 +9,16 @@ intro_text: "Two issues will greatly impact our lives in the years ahead &mdash;
   \ "
 name: LIM BOON HENG
 position: Chairman
+discover_more:
+  - title: Our Financials and Portfolio
+    link: /overview/our-financials-and-portfolio.html
+    thumbnail: /images/uploads/dm-4k-financials-portfolio.jpg
+  - title: Towards a Net Zero World
+    link: /overview/towards-a-net-zero-world.html
+    thumbnail: /images/uploads/dm-4k-net-zero-world.jpg
+  - title: Uplifting Lives and Communities
+    link: /overview/uplifting-lives-and-communities.html
+    thumbnail: /images/uploads/dm-4k-uplifting-lives.jpg
 intro: ""
 title: "From Our Chairman "
 sections:
