@@ -5,9 +5,8 @@ intro_text: We ended the year with a net portfolio value of <span class="tooltip
   tooltipstered" data-title="Equivalent to US$283 billion as at
   31&nbsp;March&nbsp;2021.">S$381 billion</span>.
 net_porfolio_value:
-  header: S$381b
+  quicklink_title: Net Portfolio Value
   sub_header: Net portfolio value
-  more_details: Up S$188 billion over the last decade
   code:
     code: >-
       <div class="chart-container"
@@ -18,9 +17,11 @@ net_porfolio_value:
                   alt="Net Portfolio Value" />
           </div>
       </div>
+  header: S$381b
   link_text: Find out more about Temasek's Net Portfolio Value since Inception
-  link: /investor/how-we-grew.html
   title: Net Portfolio Value (S$b)
+  more_details: Up S$188 billion over the last decade
+  link: /investor/how-we-grew.html
   mobile_image: /images/uploads/net-portfolio-value-m.svg
 investment_and_divestment:
   header: S$49b
@@ -28,6 +29,7 @@ investment_and_divestment:
   more_details: Invested S$276 billion over the last decade
   title: Investments & Divestments (S$b)
   mobile_image: /images/uploads/investments-divestments-m.svg
+  quicklink_title: "Investments & Divestments "
 portfolio_by_geography:
   title: Portfolio by Geography
   header: 64%
@@ -36,6 +38,7 @@ portfolio_by_geography:
   more_details: Singapore exposure up S$29 billion over the last 10 years
   mobile_image: /images/uploads/portfolio-by-geography-m.svg
   chart_notes: 2004-2010 restated on a comparative basis.
+  quicklink_title: Portfolio by Geography
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
@@ -228,4 +231,5 @@ total_shareholder_return:
   tooltip_heading: Period in years
   tooltip: TSR in US$ terms was 32%, 6%, 9%, 14%, 14% and 16% for 1, 10, 20, 30,
     40-year and since inception periods respectively.
+  quicklink_title: Total Shareholder Return
 ---
