@@ -21,6 +21,7 @@ net_porfolio_value:
   link_text: Find out more about Temasek's Net Portfolio Value since Inception
   link: /investor/how-we-grew.html
   title: Net Portfolio Value (S$b)
+  mobile_image: /images/uploads/net-portfolio-value-m.svg
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
