@@ -136,6 +136,19 @@ collections:
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - label: "Net portfolio value"
+            name: "net_porfolio_value"
+            widget: "object"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Header", name: "header", widget: "string"}
+              - { label: "Sub Header", name: "sub_header", widget: "string"}
+              - { label: "More Details", name: "more_details", widget: "string"}
+              - { label: "Chart Code", name: "code", widget: "code" }
+              - { label: "Link Text", name: "link_text", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+          
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
