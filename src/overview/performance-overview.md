@@ -232,4 +232,11 @@ total_shareholder_return:
   tooltip: TSR in US$ terms was 32%, 6%, 9%, 14%, 14% and 16% for 1, 10, 20, 30,
     40-year and since inception periods respectively.
   quicklink_title: Total Shareholder Return
+rolling_total_shareholder_return:
+  quicklink_title: Rolling Total Shareholder Return
+  title: Rolling S$ Total Shareholder Return (%)
+  header: 8%
+  sub_header: 20-year return to shareholder
+  more_details: One-year returns of -9% to 25% during the last decade
+  mobile_image: /images/uploads/rolling-s-total-shareholder-return-m.svg
 ---
