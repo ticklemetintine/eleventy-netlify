@@ -1,5 +1,5 @@
 ---
-permalink: /pathways-to-sustainability/slug.html
+permalink: /pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.html
 layout: layouts/pathways-to-sustainability/template.njk
 title: Measuring and Tracking Portfolio Emissions
 intro_text: >-
