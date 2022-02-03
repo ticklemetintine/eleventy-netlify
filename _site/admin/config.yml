@@ -136,7 +136,7 @@ collections:
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
-          - { label: "Content", name: "content", widget: "code", output_code_only: true }
+          - { label: "Content", name: "content_main", widget: "markdown" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
