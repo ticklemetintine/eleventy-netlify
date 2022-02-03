@@ -22,6 +22,12 @@ net_porfolio_value:
   link: /investor/how-we-grew.html
   title: Net Portfolio Value (S$b)
   mobile_image: /images/uploads/net-portfolio-value-m.svg
+investment_and_divestment:
+  header: S$49b
+  sub_header: Invested during the year
+  more_details: Invested S$276 billion over the last decade
+  title: Investments & Divestments (S$b)
+  mobile_image: /images/uploads/investments-divestments-m.svg
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
