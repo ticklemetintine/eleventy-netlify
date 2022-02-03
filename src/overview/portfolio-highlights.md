@@ -2,6 +2,7 @@
 permalink: /overview/portfolio-highlights.html
 layout: layouts/overview/portfolio-highlights.njk
 title: Portfolio Highlights
+intro_text: Anchored in Asia, we have 60% underlying exposure to developed economies.
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
