@@ -1,5 +1,4 @@
 ---
-permalink: /overview/performance-overview.html
 layout: layouts/overview/performance-overview.njk
 intro_text: We ended the year with a net portfolio value of <span class="tooltip
   tooltipstered" data-title="Equivalent to US$283 billion as at
@@ -30,15 +29,6 @@ investment_and_divestment:
   title: Investments & Divestments (S$b)
   mobile_image: /images/uploads/investments-divestments-m.svg
   quicklink_title: "Investments & Divestments "
-portfolio_by_geography:
-  title: Portfolio by Geography
-  header: 64%
-  header_tooltip: Distribution based on underlying assets.
-  sub_header: Exposure to Asia
-  more_details: Singapore exposure up S$29 billion over the last 10 years
-  mobile_image: /images/uploads/portfolio-by-geography-m.svg
-  chart_notes: 2004-2010 restated on a comparative basis.
-  quicklink_title: Portfolio by Geography
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
@@ -49,6 +39,16 @@ discover_more:
   - title: Investment Update
     link: /investor/investment-update.html
     thumbnail: /images/uploads/dm-investment-update.jpg
+permalink: /overview/performance-overview.html
+portfolio_by_geography:
+  title: Portfolio by Geography
+  header: 64%
+  header_tooltip: Distribution based on underlying assets.
+  sub_header: Exposure to Asia
+  more_details: Singapore exposure up S$29 billion over the last 10 years
+  mobile_image: /images/uploads/portfolio-by-geography-m.svg
+  chart_notes: 2004-2010 restated on a comparative basis.
+  quicklink_title: Portfolio by Geography
 code:
   code: >-
     <section class="contentpage--section contentpage--section-chart
@@ -239,4 +239,11 @@ rolling_total_shareholder_return:
   sub_header: 20-year return to shareholder
   more_details: One-year returns of -9% to 25% during the last decade
   mobile_image: /images/uploads/rolling-s-total-shareholder-return-m.svg
+dividend_income:
+  quicklink_title: Dividend income
+  title: Dividend Income (S$b)
+  header: S$8b
+  more_details: Average annual dividend income of S$8 billion over the last decade
+  sub_header: Dividend income
+  mobile_image: /images/uploads/dividend-income-m.svg
 ---
