@@ -20,4 +20,14 @@ sections:
       generations.
     image: /images/uploads/trusted-steward-01.svg
     theme: steward
+discover_more:
+  - title: How We Invest
+    link: /investor/how-we-invest.html
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
+  - title: A Forward Looking Institution
+    link: /institution/a-forward-looking-institution.html
+    thumbnail: /images/uploads/dm-a-forward-looking-institution.jpg
+  - title: A trusted Steward
+    link: /steward/a-trusted-steward.html
+    thumbnail: /images/uploads/dm-a-trusted-steward.jpg
 ---
