@@ -2,35 +2,173 @@
 layout: "/layouts/overview/index.njk"
 unique_slug: "performance-overview"
 ---
+{% include '../includes/socialshare-quick-links.njk' %}
 
 <div class="contentpage-body">
     <section class="contentpage--section contentpage--section-chart spacing-adjust remove-margin flow-ignore">
         <div class="row chart-row no-padding-top">
             <div class="contentpage--section-chart-single col-12">
                 <div class="date-wrapper">
-                    <p class="date">sas</p>
+                    <p class="date">{{ date_text }}</p>
                 </div>
-                <h4 id="net-portfolio-value" data-quick-links-item="{{ net_porfolio_value['title'] }}" class="header">
-                    S$381b</h4>
-                <h5 class="subheader">Net portfolio value</h5>
-                <p class="paragraph">Up S$188 billion over the last decade<br /><br /></p>
-                <h5 class="title">Net Portfolio Value (S$b)</h5>
+                <h4 id="net-portfolio-value" data-quick-links-item="{{ net_porfolio_value['quicklink_title'] }}" class="header">{{ net_porfolio_value['header'] }}</h4>
+                <h5 class="subheader">{{ net_porfolio_value['sub_header'] }}</h5>
+                <p class="paragraph">{{ net_porfolio_value['more_details'] }}<br/><br/></p>
+                <h5 class="title">{{ net_porfolio_value['title'] }}</h5>
                 <div class="chart-container" id="performance-overview_net-portfolio-value">
                     <div id="chart_net-portfolio-value" class="chart-display-desktop hidden-mobile"></div>
                     <div class="chart-display-mobile hidden-desktop reduced">
-                        <img src="/images/overview/performance-overview/net-portfolio-value-m.svg"
-                            alt="Net Portfolio Value" />
+                        <img src="{{ net_porfolio_value['mobile_image'] | url }}"
+                            alt="{{ net_porfolio_value['title'] }}"/>
                     </div>
                 </div>
                 <div class="navigation">
                     <p class="navigation-title">
-                        <a href="/investor/how-we-grew.html" class="arrow-tail-right"
+                        <a href="{{ net_porfolio_value['link'] }}" class="arrow-tail-right"
                             id="net-portfolio-value_find-out-more">
-                            <span>Find out more about Temasek's Net Portfolio Value since Inception</span>
+                            <span>{{ net_porfolio_value['link_text'] }}</span>
                             <span class="tr-icon arrow-tail-right-after"></span>
                         </a>
 
                     </p>
+                </div>
+            </div>
+        </div>
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <h4 id="investments-and-divestments" data-quick-links-item="{{ investment_and_divestment['quicklink_title'] }}" class="header">{{ investment_and_divestment['header'] }}</h4>
+                <h5 class="subheader">{{ investment_and_divestment['sub_header'] }}</h5>
+                <p class="paragraph">{{ investment_and_divestment['more_details'] }}<br/><br/></p>
+                <h5 class="title">{{ investment_and_divestment['title'] }}</h5>
+                <div class="chart-container" id="performance-overview_investments-and-divestments">
+                    <div id="chart_investments-and-divestments" class="chart-display-desktop hidden-mobile"></div>
+                    <div class="chart-display-mobile hidden-desktop reduced">
+                        <img src="{{ investment_and_divestment['mobile_image'] | url }}"
+                            alt="{{ investment_and_divestment['title'] }}"/>
+                    </div>
+                </div>
+                <ul class="chart-legend">
+                    <li>
+                        <span class="purple-dot small-dot"></span>
+                        <span>Investments</span></li>
+                    <li>
+                        <span class="green-dot small-dot"></span>
+                        <span>Divestments</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <h4 id="portfolio-by-geography" data-quick-links-item="{{ portfolio_by_geography['title'] }}" class="header">{{ portfolio_by_geography['header'] }}</h4>
+                <h5 class="subheader">{{ portfolio_by_geography['sub_header'] }}</h5>
+                <p class="paragraph">{{ portfolio_by_geography['more_details'] }}<br/><br/></p>
+                <h5 class="title">
+                    <span class="tooltip chart-dotted-span" title="{{ portfolio_by_geography['header_tooltip'] }}" data-title="{{ portfolio_by_geography['header_tooltip'] }}">{{ portfolio_by_geography['title'] }}</span>(%)</h5>
+                <div class="chart-container" id="performance-overview_portfolio-by-geography">
+                    <div class="chart-display-desktop hidden-mobile">
+                        <table class="table_portfolio-by-geography">
+                            <caption>Net portfolio value (S$b)</caption>
+                            <tbody>
+                                <tr>
+                                    <td>90</td>
+                                    <td>103</td>
+                                    <td>129</td>
+                                    <td>164</td>
+                                    <td>185</td>
+                                    <td>130</td>
+                                    <td>186</td>
+                                    <td>193</td>
+                                    <td>198</td>
+                                    <td>215</td>
+                                    <td>223</td>
+                                    <td>266</td>
+                                    <td>242</td>
+                                    <td>275</td>
+                                    <td>308</td>
+                                    <td>313</td>
+                                    <td>306</td>
+                                    <td>381</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="chart_portfolio-by-geography"></div>
+                    </div>
+                    <div class="chart-display-mobile reduced hidden-desktop">
+                        <img src="{{ portfolio_by_geography['mobile_image'] }}" alt="{{ portfolio_by_geography['title'] }}"/>
+                    </div>
+                </div>
+                <div class="chart-notes-hidden-mobile" style=" float:right; font-size:13px; margin-top: 5px;">
+                    <span class="tooltip chart-dotted-span" title="{{ portfolio_by_geography['chart_notes'] }}" data-title="{{ portfolio_by_geography['chart_notes'] }}">Chart Notes</span></div>
+                <ul class="chart-legend">
+                    <li>
+                        <span class="pink-dot small-dot"></span>
+                        <span>Singapore</span></li>
+                    <li>
+                        <span class="blue-dot small-dot"></span>
+                        <span>Asia ex-Singapore</span></li>
+                    <li>
+                        <span class="orange-dot small-dot"></span>
+                        <span>Rest of world</span></li>
+                </ul>
+                <div class="tooltip hidden-desktop tooltip-link" title="2004-2010 restated on a comparative basis." data-title="2004-2010 restated on a comparative basis">Chart Notes</div>
+            </div>
+        </div>
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <h4 id="total-shareholder-return" data-quick-links-item="{{ total_shareholder_return['quicklink_title'] }}"
+                    class="header">{{ total_shareholder_return['header'] }}</h4>
+                <h5 class="subheader">{{ total_shareholder_return['sub_header'] }}</h5>
+                <p class="paragraph">{{ total_shareholder_return['more_details'] }}<br /><br /></p>
+                <h5 class="title">{{ total_shareholder_return['title'] }}</h5>
+                <div class="chart-container" id="performance-overview_total-shareholder-return">
+                    <div class="chart-display-desktop hidden-mobile">
+                        <div id="chart_total-shareholder-return"></div>
+                        <span class="tooltip chart-dotted-span" title="{{ total_shareholder_return['tooltip'] }}" data-title="{{ total_shareholder_return['tooltip'] }}">{{ total_shareholder_return['tooltip_heading'] }}</span>
+                    </div>
+                    <div class="chart-display-mobile hidden-desktop">
+                        <img src="{{ total_shareholder_return['mobile_image'] }}"
+                            alt="{{ total_shareholder_return['quicklink_title'] }}" />
+                        <div class="m-t-15"><span class="tooltip chart-dotted-span" title="{{ total_shareholder_return['tooltip'] }}" data-title="{{ total_shareholder_return['tooltip'] }}">{{ total_shareholder_return['tooltip_heading'] }}</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <h4 id="rolling-total-shareholder-return"
+                    data-quick-links-item="{{ rolling_total_shareholder_return['quicklink_title'] }}" class="header">{{ rolling_total_shareholder_return['header'] }}</h4>
+                <h5 class="subheader">{{ rolling_total_shareholder_return['subheader'] }}</h5>
+                <p class="paragraph">{{ rolling_total_shareholder_return['more_details'] }}<br /><br /></p>
+                <h5 class="title">{{ rolling_total_shareholder_return['title'] }}</h5>
+                <div class="chart-container" id="performance-overview_rolling-total-shareholder-return">
+                    <div id="chart_rolling-total-shareholder-return"
+                        class="chart-display-desktop hidden-mobile"></div>
+                    <div class="chart-display-mobile hidden-desktop">
+                        <img src="{{ rolling_total_shareholder_return['mobile_image'] }}"
+                            alt="{{ rolling_total_shareholder_return['quicklink_title'] }}" />
+                    </div>
+                </div>
+                <ul class="chart-legend">
+                    <li><span class="blue-dot small-dot"></span><span>One-year</span></li>
+                    <li><span class="light-purple-dot small-dot"></span><span>10-year</span></li>
+                    <li><span class="orange-dot small-dot"></span><span>20-year</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <h4 id="dividend-income" data-quick-links-item="{{ dividend_income['quicklink_title'] }}" class="header">{{ dividend_income['header'] }}</h4>
+                <h5 class="subheader">{{ dividend_income['sub_header'] }}</h5>
+                <p class="paragraph">{{ dividend_income['more_details'] }}<br /><br />
+                </p>
+                <h5 class="title">{{ dividend_income['title'] }}</h5>
+                <div class="chart-container" id="performance-overview_dividend-income">
+                    <div id="chart_dividend-income" class="chart-display-desktop hidden-mobile"></div>
+                    <div class="chart-display-mobile reduced hidden-desktop">
+                        <img src="{{ dividend_income['mobile_image'] }}"
+                            alt="{{ dividend_income['quicklink_title'] }}" />
+                    </div>
                 </div>
             </div>
         </div>
