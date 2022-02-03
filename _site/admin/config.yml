@@ -351,3 +351,23 @@ collections:
               - { label: "Title", name: "title", widget: "string"}
               - { label: "Link", name: "link", widget: "string"}
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Measuring and Tracking Portfolio Emissions"
+        name: "measuring-and-tracking-portfolio-emissions"
+        file: "src/pathways-to-sustainability/measuring-and-tracking-portfolio-emissions.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Before Chart Content", name: "before_chart", widget: "markdown" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - { label: "Chart", name: "code", widget: "code" }
+          - { label: "After Chart Content", name: "after_chart", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
