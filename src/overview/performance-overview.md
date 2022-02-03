@@ -5,9 +5,6 @@ title: Performance Overview
 intro_text: We ended the year with a net portfolio value of <span class="tooltip
   tooltipstered" data-title="Equivalent to US$283 billion as at
   31&nbsp;March&nbsp;2021.">S$381 billion</span>.
-<<<<<<< HEAD
- 
-=======
 content:
   code: >-
     <section class="contentpage--section contentpage--section-chart
@@ -349,7 +346,6 @@ content_main: >-
           </div>
       </section>
   ```
->>>>>>> bb22e09d6511e6dd03dbac9b8d48c3e25df7d869
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
