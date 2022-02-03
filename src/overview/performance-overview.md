@@ -181,9 +181,18 @@ net_porfolio_value:
   sub_header: Net portfolio value
   more_details: Up S$188 billion over the last decade
   code:
-    code: s
-  link_text: s
-  link: s
+    code: >-
+      <div class="chart-container"
+      id="performance-overview_net-portfolio-value">
+          <div id="chart_net-portfolio-value" class="chart-display-desktop hidden-mobile"></div>
+          <div class="chart-display-mobile hidden-desktop reduced">
+              <img src="/images/overview/performance-overview/net-portfolio-value-m.svg"
+                  alt="Net Portfolio Value" />
+          </div>
+      </div>
+  link_text: Find out more about Temasek's Net Portfolio Value since Inception
+  link: /investor/how-we-grew.html
+  title: Net Portfolio Value (S$b)
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
