@@ -1,0 +1,177 @@
+backend: 
+  name: git-gateway
+  branch: master
+  repo: ticklemetintine/eleventy-netlify
+
+media_folder: "_site/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - label: "Generics"
+    name: "static"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/static/home.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/index.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Banner Image", name: "banner", widget: "image" }
+          - { label: "Banner Mobile Image", name: "banner_mobile", widget: "image" }
+          - { label: "Banner Mobile Image (Landscape)", name: "banner_mobile_landscape", widget: "image" }
+          - label: "Teasers" 
+            name: "teasers"
+            widget: "list"
+            fields:
+              - {label: Teaser name, name: teaser_name, widget: "string" }
+              - {label: Title, name: title, widget: "string" }
+              - {label: Sub-title, name: sub_title, widget: "string" }
+              - {label: Writeup, name: writeup, widget: "markdown" }
+              - label: "Content Placement"
+                name: "placement"
+                widget: "select"
+                options:
+                  - { label: "Left", value: "left" }
+                  - { label: "Right", value: "right" }
+
+              - {label: Custom ID, name: custom_id, widget: "string", required: false }
+              - {label: Custom Class, name: custom_class, widget: "string", required: false }
+              - {label: "Background Image", name: "background", widget: "image"}
+              - {label: "Background Image Mobile", name: "background_mobile", widget: "image"}
+              - label: "Clickables"
+                name: "clickables"
+                widget: "list"
+                fields: 
+                  - label: "Clickable Type"
+                    name: "type"
+                    widget: "select"
+                    options:
+                      - { label: "Link", value: "link" }
+                      - { label: "Popup Video", value: "video" }
+                  - { label: "Placeholder Text", name: "placeholder", widget: "string"}
+                  - { label: "Value", name: "value", widget: "string", hint: "Please input the video ID if type selected is Popup Video, otherwise put the URL Link"}
+  
+  - label: "Overview"
+    name: "overview"
+    files:
+      - label: "From Our Chairman"
+        name: "from-our-chairman"
+        file: "src/overview/from-our-chairman.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/from-our-chairman" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string', required: false }
+              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+              - label: "Add top separator?"
+                name: "separator"
+                widget: "select"
+                default: "false"
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+          - { label: "Signature", name: "signature", widget: "image", required: false}
+          - { label: "Name", name: "name", widget: "string", required: false }
+          - { label: "Position", name: "position", widget: "string", required: false }
+      - label: "The Temasek Charter"
+        name: "the-temasek-charter"
+        file: "src/overview/the-temasek-charter.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/the-temasek-charter" }
+          - { label: "Layout", name: "layout", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields: 
+              - {label: "Section Title", name: "title", widget: 'string' }
+              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Theme"
+                name: "theme"
+                widget: "select"
+                options:
+                  - { label: "Investor", value: "investor" }
+                  - { label: "Institution", value: "institution" }
+                  - { label: "Steward", value: "steward" }
+                  - { label: "Overview", value: "overview" }
+      - label: "Performance Overview"
+        name: "performance-overview"
+        file: "src/overview/performance-overview.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/performance-overview" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+      - label: "Temasek Portfolio at Inception"
+        name: "temasek-portfolio-at-inception"
+        file: "src/overview/temasek-portfolio-at-inception.md"
+        fields: 
+          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/temasek-portfolio-at-inception" }
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/temasek-portfolio-at-inception.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "List", name: "list", widget: "markdown" }
+  
+  - name: "pathways-to-sustainability"
+    label: "Pathways to Sustainability"
+    folder: "src/pathways-to-sustainability"
+    create: true
+    slug: "pathways-to-sustainability"
+    fields:
+      - { label: "Permalink", name: "permalink", widget: "string", default: "/pathways-to-sustainability/slug.html" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/pathways-to-sustainability/template.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Intro", name: "intro_text", widget: "markdown" }
+      - { label: "Intro Image", name: "intro_image", widget: "image", required: false }
+      - { label: "Intro Image Mobile", name: "intro_image_mobile", widget: "image", required: false }
+      - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        fields: 
+          - {label: "Section Title", name: "title", widget: 'string', required: false }
+          - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+          - label: "Add top separator?"
+            name: "separator"
+            widget: "select"
+            default: "false"
+            options:
+              - { label: "Yes", value: "true" }
+              - { label: "No", value: "false" }
+          - { label: "Writeup", name: "writeup", widget: 'markdown' }
+          - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+          - label: "Vertically center align the highlight?"
+            name: "center"
+            widget: "select"
+            default: "false"
+            required: false
+            options:
+              - { label: "Yes", value: "true" }
+              - { label: "No", value: "false" }
+      - label: "Discover More"
+        name: "discover_more"
+        widget: "list"
+        fields: 
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Link", name: "link", widget: "string"}
+          - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+ 
+      

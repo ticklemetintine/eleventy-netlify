@@ -48,12 +48,11 @@ layout: "/layouts/overview/index.njk"
     {% endfor %}
 
     <br />
+    <img src="{{ signature | url }}" alt="Sign {{name}}" title="sign {{name}}" width="198" style="margin-left:0;" />
 
-    <img src="{{ item['signature'] | url }}" alt="Sign {{item['name']}}" title="sign {{item['name']}}" width="198" style="margin-left:0;" />
-
-    <h3>{{item['name']}}</h3> 
+    <h3>{{name}}</h3> 
     <p>
-       {{item['position']}}
+       {{position}}
     </p>
     <p>
     </p>

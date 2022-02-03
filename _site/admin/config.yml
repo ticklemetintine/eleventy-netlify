@@ -90,6 +90,14 @@ collections:
           - { label: "Signature", name: "signature", widget: "image", required: false}
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "Position", name: "position", widget: "string", required: false }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
       - label: "The Temasek Charter"
         name: "the-temasek-charter"
         file: "src/overview/the-temasek-charter.md"
@@ -112,6 +120,14 @@ collections:
                   - { label: "Institution", value: "institution" }
                   - { label: "Steward", value: "steward" }
                   - { label: "Overview", value: "overview" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
       - label: "Performance Overview"
         name: "performance-overview"
         file: "src/overview/performance-overview.md"
@@ -120,6 +136,15 @@ collections:
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Content", name: "content", widget: "code", output_code_only: true }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
       - label: "Temasek Portfolio at Inception"
         name: "temasek-portfolio-at-inception"
         file: "src/overview/temasek-portfolio-at-inception.md"
@@ -137,7 +162,7 @@ collections:
     slug: "pathways-to-sustainability"
     fields:
       - { label: "Permalink", name: "permalink", widget: "string", default: "/pathways-to-sustainability/slug.html" }
-      - { label: "Layout", name: "layout", widget: "string", default: "layouts/pathways-to-sustainability/index.njk" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/pathways-to-sustainability/template.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Intro", name: "intro_text", widget: "markdown" }
       - { label: "Intro Image", name: "intro_image", widget: "image", required: false }

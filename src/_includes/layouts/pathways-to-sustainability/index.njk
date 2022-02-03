@@ -7,6 +7,8 @@ eleventyNavigation:
   parent: "Home"
 ---
 
+{% include '../includes/socialshare-quick-links.njk' %}
+
 <div class="breadcrumb">
   <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
       <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -64,6 +66,7 @@ eleventyNavigation:
         {{ content | safe }}
 
     </div>
+    {% if discover_more.length > 0 %}
     <div class="related-list">
         <div class="contentpage-container">
 
@@ -92,5 +95,6 @@ eleventyNavigation:
             </div>
         </div>
     </div>
+    {% endif %}
 </main>
 

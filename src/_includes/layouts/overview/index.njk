@@ -52,6 +52,35 @@ eleventyNavigation:
         {{ content | safe }}
 
     </div>
+    {% if discover_more.length > 0 %}
+    <div class="related-list">
+        <div class="contentpage-container">
 
+            <h2 class="dash-above">Discover More</h2>
+
+            <div class="row">
+                {% for related in discover_more %}
+                <div class="col-4">
+                    <div class="related-item is-mobile-column">
+                        <div class="related-item-media">
+                            <a href="{{related['link'] | url }}">
+                                <img src="{{related['thumbnail'] | url}}" />
+                            </a>
+                        </div>
+                        <div class="related-item-body">
+                            <a class="anchor" href="{{related['link']}}">
+                                <span class="icon"><span class="icon-inner"></span></span>
+                                <span class="anchor-text">
+                                    {{related['title'] | url}}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </main>
 

@@ -21,7 +21,7 @@ layout: "/layouts/pathways-to-sustainability/index.njk"
         {% if item['highlight'] %}
             <div class="contentpage-blockquote-row row highlight-below">
                 <div class="col-8">
-                    {{ item['writeup'] | markdown | safe }}
+                    {{ item['writeup'] }}
                     <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-desktop">
                         {{ item['highlight'] | markdown | safe }}
                     </div>
