@@ -27,7 +27,7 @@ discover_more:
   - title: A Forward Looking Institution
     link: /institution/a-forward-looking-institution.html
     thumbnail: /images/uploads/dm-a-forward-looking-institution.jpg
-  - title: A trusted Steward
+  - title: A Trusted Steward
     link: /steward/a-trusted-steward.html
     thumbnail: /images/uploads/dm-a-trusted-steward.jpg
 ---
