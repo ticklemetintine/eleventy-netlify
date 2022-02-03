@@ -175,6 +175,15 @@ code:
                 </div>
             </div>
         </section>
+date: (as at 31 March)
+net_porfolio_value:
+  header: S$381b
+  sub_header: Net portfolio value
+  more_details: Up S$188 billion over the last decade
+  code:
+    code: s
+  link_text: s
+  link: s
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
