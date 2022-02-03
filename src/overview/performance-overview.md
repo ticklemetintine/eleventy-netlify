@@ -219,4 +219,13 @@ code:
 date: (as at 31 March)
 title: Performance Overview
 date_text: (as at 31 March)
+total_shareholder_return:
+  title: S$ Total Shareholder Return (%)
+  header: 24.53%
+  sub_header: One-year return to shareholder
+  more_details: Total shareholder return of 14% since inception
+  mobile_image: /images/uploads/s-total-shareholder-return-m.svg
+  tooltip_heading: Period in years
+  tooltip: TSR in US$ terms was 32%, 6%, 9%, 14%, 14% and 16% for 1, 10, 20, 30,
+    40-year and since inception periods respectively.
 ---
