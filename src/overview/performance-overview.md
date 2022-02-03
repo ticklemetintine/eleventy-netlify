@@ -28,6 +28,14 @@ investment_and_divestment:
   more_details: Invested S$276 billion over the last decade
   title: Investments & Divestments (S$b)
   mobile_image: /images/uploads/investments-divestments-m.svg
+portfolio_by_geography:
+  title: Portfolio by Geography
+  header: 64%
+  header_tooltip: Distribution based on underlying assets.
+  sub_header: Exposure to Asia
+  more_details: Singapore exposure up S$29 billion over the last 10 years
+  mobile_image: /images/uploads/portfolio-by-geography-m.svg
+  chart_notes: 2004-2010 restated on a comparative basis.
 discover_more:
   - title: From Our Chairman
     link: /overview/from-our-chairman.html
