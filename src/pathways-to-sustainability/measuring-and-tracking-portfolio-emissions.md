@@ -858,9 +858,11 @@ chart_legend:
       src="/web/images/pathway/transitioning-to-a-climate-positive-world/legend-line-orange.svg"
       alt="line-orange" class="line">Pathway for Net Portfolio Emissions
       (Illustrative)
+    chart_icon_class: line-orange
   - chart_icon: /images/uploads/legend-triangle-purple.svg
     legend: Calendar year emissions data and targets are reported in the subsequent
       financial year
+    chart_icon_class: triangle
 after_chart: Our estimated <span class="tooltip" title="This metric is also
   known as Total Carbon Emissions (tCO<sub>2</sub>e) within the TCFD
   Supplemental Guidance for the Financial Sector. It reflects the absolute GHG
