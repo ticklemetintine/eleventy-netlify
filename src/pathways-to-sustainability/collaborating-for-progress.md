@@ -1,6 +1,6 @@
 ---
 permalink: /pathways-to-sustainability/collaborating-for-progress.html
-layout: layouts/pathways-to-sustainability/enabling-a-sustainable-company.njk
+layout: layouts/pathways-to-sustainability/collaborating-for-progress.njk
 title: Collaborating for Progress
 intro_text: We work with a growing list of like-minded partners, to catalyse
   ideas for an *abc World* of **a**ctive and productive economies, **b**eautiful
