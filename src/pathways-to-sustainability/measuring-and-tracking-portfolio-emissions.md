@@ -845,4 +845,14 @@ after_chart: Our estimated <span class="tooltip" title="This metric is also
   data-title="Due to the time lag in reported emissions data, the impact of
   COVID-19 on some of our portfolio companies' emissions is not yet
   reflected.">year</span>.
+discover_more:
+  - title: "Investing for Impact and Returns "
+    link: /pathways-to-sustainability/investing-for-impact-and-returns.html
+    thumbnail: /images/uploads/dm-investing-for-impact.jpg
+  - link: /pathways-to-sustainability/enabling-a-sustainable-company.html
+    title: " Enabling a Sustainable Company"
+    thumbnail: /images/uploads/dm-enabling-a-sustainable-company.jpg
+  - title: "Collaborating for Progress "
+    link: /pathways-to-sustainability/collaborating-for-progress.html
+    thumbnail: /images/uploads/dm-collaborating-for-progress.jpg
 ---
