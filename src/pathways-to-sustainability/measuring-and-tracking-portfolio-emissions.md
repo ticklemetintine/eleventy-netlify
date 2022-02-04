@@ -831,6 +831,36 @@ chart_notes: "1. tCO&lt;sub&gt;2&lt;&sol;sub&gt;e refers to tonnes of carbon
   reflecting half of our 2010 baseline.
 
   \                            "
+chart_legend:
+  - chart_icon: /images/uploads/legend-dot-blue.svg
+    legend: Historical <span class="tooltip" title="Our total portfolio emissions
+      refer to the absolute greenhouse gas emissions (Scope 1 and Scope 2)
+      associated with our equities portfolio, excluding private equity funds."
+      data-title="Our total portfolio emissions refer to the absolute greenhouse
+      gas emissions (Scope 1 and Scope 2) associated with our equities
+      portfolio, excluding private equity funds.">Total Portfolio Emissions
+  - chart_icon: /images/uploads/legend-dot-grey.svg
+    legend: <span class="tooltip" title="Our total portfolio emissions refer to the
+      absolute greenhouse gas emissions (Scope 1 and Scope 2) associated with
+      our equities portfolio, excluding private equity funds." data-title="Our
+      total portfolio emissions refer to the absolute greenhouse gas emissions
+      (Scope 1 and Scope 2) associated with our equities portfolio, excluding
+      private equity funds.">Total Portfolio Emissions</span> (Illustrative)
+  - chart_icon: /images/uploads/legend-dot-green.svg
+    legend: <span class="tooltip" title="Negative emissions can comprise
+      compensation (i.e. carbon avoidance) and neutralisation (i.e. carbon
+      removals) acquired through investments and carbon credits."
+      data-title="Negative emissions can comprise compensation (i.e. carbon
+      avoidance) and neutralisation (i.e. carbon removals) acquired through
+      investments and carbon credits.">Negative Emissions</span> (Illustrative)
+  - chart_icon: /images/uploads/legend-line-orange.svg
+    legend: <img
+      src="/web/images/pathway/transitioning-to-a-climate-positive-world/legend-line-orange.svg"
+      alt="line-orange" class="line">Pathway for Net Portfolio Emissions
+      (Illustrative)
+  - chart_icon: /images/uploads/legend-triangle-purple.svg
+    legend: Calendar year emissions data and targets are reported in the subsequent
+      financial year
 after_chart: Our estimated <span class="tooltip" title="This metric is also
   known as Total Carbon Emissions (tCO<sub>2</sub>e) within the TCFD
   Supplemental Guidance for the Financial Sector. It reflects the absolute GHG
