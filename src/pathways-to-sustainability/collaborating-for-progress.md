@@ -25,7 +25,7 @@ content: >-
   We are a member of the [World Economic Forum](https://www.weforum.org/), the [Focusing Capital on the Long Term Initiative](https://www.fcltglobal.org/) and the [Sustainability Accounting Standards Board (SASB)](https://www.sasb.org/). We work with them and others to promote responsible investing. In order to promote increased sustainability-related disclosures among listed companies, for example, we have partnered SASB and [SGX](https://www.sgx.com/) to host awareness sessions for SGX-listed company boards and senior management.
 
 
-  We also engage with forward thinking partners to promote investing for sustainability and impact, through forums such as the [Global Impact Investing Network](https://thegiin.org/).
+  We also engage with forward thinking partners to promote investing for sustainability and impact, through forums such as the [Global Impact Investing Network](https://thegiin.org/).  123
 discover_more:
   - title: " Investing for Impact and Returns"
     link: /pathways-to-sustainability/investing-for-impact-and-returns.html
