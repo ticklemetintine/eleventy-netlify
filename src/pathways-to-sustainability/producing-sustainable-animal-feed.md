@@ -26,7 +26,6 @@ main_content:
     image_caption: " InnovaFeed staff check a tray where black soldier fly larvae
       are bred for use as an alternative protein in animal feed, and other
       applications"
-    mobile_image: /images/uploads/black-soldier-fly-larvae-m.jpg
   - writeup: >-
       InnovaFeed’s insect protein is a timely and sustainable solution to
       meeting the growing demand for protein in the aquaculture and agriculture
@@ -41,7 +40,6 @@ main_content:
     mobile_image: /images/uploads/insect-fed-chicken-m.jpg
     image_caption: InnovaFeed launched the world&rsquo;s first insect-fed chicken
       which is sold in French supermarket chain Auchan
-    mobile_image: /images/uploads/insect-fed-chicken-m.jpg
   - writeup: In recent years, InnovaFeed has developed fertiliser made entirely of
       insect droppings as a sustainable solution to soil and plant nutrition.
       About 18kg of carbon dioxide is stored in the soil for every tonne of
@@ -50,7 +48,6 @@ main_content:
     mobile_image: /images/uploads/insect-fertiliser-m.jpg
     image_caption: InnovaFeed&rsquo;s insect fertiliser contains more than 75%
       organic matter that helps improve soil conditions
-    mobile_image: /images/uploads/insect-fertiliser-m.jpg
   - writeup: Looking ahead, InnovaFeed aims to become the global leader of
       sustainable ingredients for the feed industry. To achieve this, it plans
       to open 20 sites worldwide by 2030. Construction for its third production

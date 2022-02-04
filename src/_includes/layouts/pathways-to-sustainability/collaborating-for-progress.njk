@@ -1,6 +1,21 @@
 ---
 layout: "/layouts/pathways-to-sustainability/index.njk"
 ---
- <div class="contentpage-body dash-above">
-    {{ main_content | markdown | safe }}
+<div class="contentpage-body dash-above">
+    {% for content in main_content %}
+        {{ content['writeup'] }}
+
+        {% if content['image'] %}
+        <div class="medialine">
+            <picture>
+                <source media="(min-width: 768px)" srcset="{{ content['image'] | url }}" />
+
+                <img src="{{ content['image'] | url }}" alt=" InnovaFeed staff check a tray" />
+            </picture>
+            <div class="medialine-caption">
+                {{ content['image_caption'] | safe }}
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>
