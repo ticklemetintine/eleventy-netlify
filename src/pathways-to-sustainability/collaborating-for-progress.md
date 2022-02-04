@@ -1,5 +1,5 @@
 ---
-permalink: pathways-to-sustainability/collaborating-for-progress.html
+permalink: /pathways-to-sustainability/collaborating-for-progress.html
 layout: layouts/pathways-to-sustainability/enabling-a-sustainable-company.njk
 title: Collaborating for Progress
 intro_text: We work with a growing list of like-minded partners, to catalyse
