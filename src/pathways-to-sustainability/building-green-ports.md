@@ -1,6 +1,6 @@
 ---
-permalink: /pathways-to-sustainability/entries/building-green-ports.html
-layout: layouts/pathways-to-sustainability/entries/building-green-ports.njk
+permalink: /pathways-to-sustainability/building-green-ports.html
+layout: layouts/pathways-to-sustainability/building-green-ports.njk
 title: Building Green Ports
 main_content:
   - writeup: >-
