@@ -1,0 +1,49 @@
+--- 
+layout: "/layouts/pathways-to-sustainability/index.njk" 
+unique_slug: "building-a-sustainable-organisation"
+---
+<div class="contentpage-body dash-above">
+    {{ before_chart | markdown | safe }}
+
+    <div class="date-wrapper">
+        <p>{{ date_text }}</p>
+    </div>
+
+    <h3 id="annual-environment-footprint" data-quick-links-item="{{ chart_title }}">{{ chart_title }}</h3>
+    <div class="chart">
+        <div class="row chart-row">
+            <div class="contentpage--section-chart-single col-12">
+                <div class="chart-container" id="building-a-sustainable-future_environmental-footprint">
+                    <div class="chart-display-desktop hidden-mobile">
+                        <div id="chart_three-year-environmental-footprint"></div>
+                    </div>
+                    <div class="chart-display-mobile hidden-desktop m-t-15">
+                        <img src="{{ chart_mobile | url }}"
+                            alt="Total Shareholder Return" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="chart-legend fullwidth type--dotted">
+            {% for item in chart_legend %}
+            <li class="legend">
+                <img src="{{ item['chart_icon'] | url }}" class="{{ item['chart_icon_class'] }}" /> {{ item['legend'] | safe }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="m-b-30">
+        <div class="related-item-body">
+            <a class="anchor" href="#" data-toggle="modal" data-target="#build-a-sustainable-future-modal-1"
+                data-page="emissions-table" data-slideindex="0">
+                <span class="icon"><span class="icon-inner"></span></span>
+                <span class="anchor-text">
+                    For a detailed breakdown, please click here to view our emissions table
+                </span>
+            </a>
+        </div>
+    </div>
+    {{ after_chart | markdown | safe }}
+</div>
+
+{{ breakdown['code'] | safe}}

@@ -4,11 +4,11 @@
 
     &-plus {
         position: relative;
-        width: percentage(30/300);
+        width: ~"percentage(30/300)";
         opacity: 0;
 
         @media @tablet {
-            width: percentage(50/750);
+            width: ~"percentage(50/750)";
         }
 
         &:before,
@@ -103,7 +103,7 @@
             justify-content: center;
             align-items: center;
             padding: 12px 25px;
-            width: percentage(135/300);
+            width: ~"percentage(135/300)";
             font-size: 11px;
             color: white;
             border-radius: 10px;
@@ -113,7 +113,7 @@
             @media @tablet {
                 font-size: 15px;
                 padding: 12px 15px;
-                width: percentage(350/750);
+                width: ~"percentage(350/750)";
             }
 
             html[lang="zh"] & {

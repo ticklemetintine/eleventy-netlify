@@ -1,0 +1,37 @@
+---
+layout: "/layouts/pathways-to-sustainability/index.njk"
+---
+<div class="contentpage-body dash-above">
+    {{ before_chart | markdown | safe }}
+
+     <div class="date-wrapper">
+        <p>{{ date_text }}</p>
+    </div>
+
+    <h3 id="towards-net-zero" data-quick-links-item="{{ chart_title }}">{{ chart_title }}</h3>
+    <div class="chart chart-container" id="measuring-and-tracking-portfolio-emissions_towards-net-zero">
+        <div class="image-wrapper m-b-30">
+            <div class="chart-display-desktop">
+                {{ code['code'] | safe }}
+            </div>
+
+            <div class="chart-display-mobile">
+                <img src="{{ chart_mobile | url }}"
+                    alt="Net Portfolio Value over Total Debt" />
+            </div>
+
+        </div>
+        <ul class="chart-legend fullwidth type--dotted">
+            {% for item in chart_legend %}
+                <li class="legend">
+                    <img src="{{ item['chart_icon'] | url }}" class="{{ item['chart_icon_class'] }}"/>
+                    {{ item['legend'] | safe }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <p>
+            <span class="tooltip" title="{{ chart_notes | safe }}" data-title="{{ chart_notes | safe }}">Chart Notes</span>
+        </p>
+    </div>
+</div>

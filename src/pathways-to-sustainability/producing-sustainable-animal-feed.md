@@ -22,7 +22,7 @@ main_content:
 
       InnovaFeed feeds fly larvae reared at its factories in northern France with local agricultural co-products recycled from starch factories, namely wheat bran and grain-based stillage, which is the residue produced when alcohol is manufactured from grain. By using renewable energy and recycled materials at its vertical farms, the company estimates that the process of rearing black soldier flies emits 50% to 80% less carbon dioxide compared to the production of alternative animal feed.
     image: /images/uploads/black-soldier-fly-larvae.jpg
-    mobile image: /images/uploads/black-soldier-fly-larvae-m.jpg
+    mobile_image: /images/uploads/black-soldier-fly-larvae-m.jpg
     image_caption: " InnovaFeed staff check a tray where black soldier fly larvae
       are bred for use as an alternative protein in animal feed, and other
       applications"
@@ -37,7 +37,7 @@ main_content:
 
       Besides insect protein, InnovaFeed also makes insect oil rich in lauric acid, known to improve gut health in livestock and poultry. In 2020, InnovaFeed worked with animal feed formulator and farmer [Nealia](https://www.nealia.fr/) to launch the world’s first insect-fed chicken value chain. The chickens, fed with InnovaFeed’s insect oil, were observed to be healthier than those fed with soybean oil, which is commonly used in poultry farming.
     image: /images/uploads/insect-fed-chicken.jpg
-    mobile image: /images/uploads/insect-fed-chicken-m.jpg
+    mobile_image: /images/uploads/insect-fed-chicken-m.jpg
     image_caption: InnovaFeed launched the world&rsquo;s first insect-fed chicken
       which is sold in French supermarket chain Auchan
   - writeup: In recent years, InnovaFeed has developed fertiliser made entirely of
@@ -45,7 +45,7 @@ main_content:
       About 18kg of carbon dioxide is stored in the soil for every tonne of
       insect fertiliser spread on lands.
     image: /images/uploads/insect-fertiliser.jpg
-    mobile image: /images/uploads/insect-fertiliser-m.jpg
+    mobile_image: /images/uploads/insect-fertiliser-m.jpg
     image_caption: InnovaFeed&rsquo;s insect fertiliser contains more than 75%
       organic matter that helps improve soil conditions
   - writeup: Looking ahead, InnovaFeed aims to become the global leader of

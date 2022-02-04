@@ -362,8 +362,88 @@ collections:
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - { label: "Before Chart Content", name: "before_chart", widget: "markdown" }
           - { label: "Date Text", name: "date_text", widget: "string" }
+          - { label: "Chart Title", name: "chart_title", widget: "string" }
           - { label: "Chart", name: "code", widget: "code" }
+          - { label: "Chart Mobile", name: "chart_mobile", widget: "image" }
+          - { label: "Chart Notes", name: "chart_notes", widget: "markdown" }
+          - label: "Chart Legends"
+            name: "chart_legend"
+            widget: "list"
+            fields:
+              - { label: "Chart Icon", name: "chart_icon", widget: "image"}
+              - { label: "Chart Icon Class", name: "chart_icon_class", widget: "string", required: false}
+              - { label: "Legend", name: "legend", widget: "markdown"}
           - { label: "After Chart Content", name: "after_chart", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      
+      - label: "Enabling a Sustainable Company"
+        name: "enabling-a-sustainable-company"
+        file: "src/pathways-to-sustainability/enabling-a-sustainable-company.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Before Chart Content", name: "before_chart", widget: "markdown" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - { label: "Chart Title", name: "chart_title", widget: "string" }
+          - { label: "Chart Mobile", name: "chart_mobile", widget: "image" }
+          - label: "Chart Legends"
+            name: "chart_legend"
+            widget: "list"
+            fields:
+              - { label: "Chart Icon", name: "chart_icon", widget: "image"}
+              - { label: "Chart Icon Class", name: "chart_icon_class", widget: "string", required: false}
+              - { label: "Legend", name: "legend", widget: "markdown"}
+          - { label: "After Chart Content", name: "after_chart", widget: "markdown" }
+          - { label: "Detailed breakdown", name: "breakdown", widget: "code" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      
+      - label: "Collaborating for Progress"
+        name: "collaborating-for-progress"
+        file: "src/pathways-to-sustainability/collaborating-for-progress.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Content", name: "main_content", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      
+      - label: "Producing Sustainable Animal Feed"
+        name: "producing-sustainable-animal-feed"
+        file: "src/pathways-to-sustainability/producing-sustainable-animal-feed.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown", required: false }
+          - label: "Content"
+            name: "main_content"
+            widget: "list"
+            fields: 
+              - { label: "Writeup", name: "writeup", widget: "markdown", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false }
+              - { label: "Image Caption", name: "image_caption", widget: "string", required: false }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"

@@ -1,7 +1,7 @@
 /*jslint browser: true, fudge: true, long: true */
 /*global $, blacksunplc, dialogPolyfill, document, location, navigator, window */
 
-blacksunplc.events.ready(function () {
+blacksunplc.events.ready(function() {
     "use strict";
 
 
@@ -22,7 +22,7 @@ blacksunplc.events.ready(function () {
      * @type {!Object<function(!Element)>}
      */
     var dialogFns = {
-        "showModal": function (/** !Element */ button) {
+        "showModal": function( /** !Element */ button) {
             var dialogId = button.getAttribute("aria-controls");
             var dialog = /** @type {!HTMLDialogElement} */ (document.getElementById(dialogId));
             if (!dialog.showModal) {
@@ -30,7 +30,7 @@ blacksunplc.events.ready(function () {
             }
             dialog.showModal();
         },
-        "show": function (/** !Element */ button) {
+        "show": function( /** !Element */ button) {
             var dialogId = button.getAttribute("aria-controls");
             var dialog = /** @type {!HTMLDialogElement} */ (document.getElementById(dialogId));
             if (!dialog.show) {
@@ -38,7 +38,7 @@ blacksunplc.events.ready(function () {
             }
             dialog.show();
         },
-        "close": function (/** !Element */ button) {
+        "close": function( /** !Element */ button) {
             var dialog = /** @type {!HTMLDialogElement} */ (nodes.closest(button, "dialog"));
             if (dialog) {
                 if (!dialog.close) {
@@ -49,7 +49,7 @@ blacksunplc.events.ready(function () {
         }
     };
 
-    events.add(document.body, "click", function (event) {
+    events.add(document.body, "click", function(event) {
         var button = events.closest(event, "[data-dialog]");
         if (button) {
             var fn = dialogFns[button.getAttribute("data-dialog")];
@@ -60,8 +60,16 @@ blacksunplc.events.ready(function () {
         }
     });
 
+    $('a').each(function() {
+        var a = new RegExp('/' + window.location.host + '/');
+        if (!a.test(this.href)) {
+            $(this).attr("target", "_blank");
+            $(this).attr("rel", "noopener noreferrer");
+        }
+    });
+
     function refreshIphone() {
-        $(window).on("orientationchange", function () {
+        $(window).on("orientationchange", function() {
             if (!$(".video-overly").is(":visible")) {
                 location.reload();
             }
@@ -85,17 +93,17 @@ blacksunplc.events.ready(function () {
     function delayBeforePrintPreview(event) {
         var documentHeight = $(document).height();
         var timeout = 5000;
-        var bodyClasses = ".building-a-sustainable-organisation, "
-        + ".performance-overview, "
-        + ".how-we-grew, "
-        + ".pg-total-shareholder-return, "
-        + ".how-we-manage-risks, "
-        + ".twelve-month-returns, "
-        + ".investor-twenty-year, "
-        + ".credit-quality, "
-        + ".pg-temasek-bond, "
-        + ".overview-changes-in-accounting-standards, "
-        + ".tr-homepage";
+        var bodyClasses = ".building-a-sustainable-organisation, " +
+            ".performance-overview, " +
+            ".how-we-grew, " +
+            ".pg-total-shareholder-return, " +
+            ".how-we-manage-risks, " +
+            ".twelve-month-returns, " +
+            ".investor-twenty-year, " +
+            ".credit-quality, " +
+            ".pg-temasek-bond, " +
+            ".overview-changes-in-accounting-standards, " +
+            ".tr-homepage";
 
         if ($("#table-group-scrolling").length) {
             $("#table-group-scrolling").floatThead("destroy")
@@ -103,11 +111,11 @@ blacksunplc.events.ready(function () {
         if ($("body").is(bodyClasses)) {
             event.preventDefault();
 
-            if($("body").hasClass("investor-twenty-year")) {
+            if ($("body").hasClass("investor-twenty-year")) {
                 timeout = 15000;
                 documentHeight = 9999;
             }
-            if($("body").hasClass("twelve-month-returns")) {
+            if ($("body").hasClass("twelve-month-returns")) {
                 timeout = 8000;
             }
 
