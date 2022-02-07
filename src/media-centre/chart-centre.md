@@ -45,4 +45,24 @@ sections:
         download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-geography.png
         file_size: 64KB PNG
         thumbnail: /images/uploads/geography_580x420.jpg
+      - title: Sector (%)
+        link: /overview/portfolio-highlights.html#sector
+        thumbnail: /images/uploads/sector_580x420.jpg
+        download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-sector.png
+        file_size: 75KB PNG
+      - title: Liquidity (%)
+        link: /overview/portfolio-highlights.html#liquidity
+        download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-liquidity.png
+        file_size: 59KB PNG
+        thumbnail: /images/uploads/liquidity_580x420.jpg
+      - title: Currency (%)
+        link: /overview/portfolio-highlights.html#currency
+        thumbnail: /images/uploads/currency_580x420.jpg
+        file_size: 60KB PNG
+        download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-currency.png
+      - title: Single Name (%)
+        link: /overview/portfolio-highlights.html#single-name
+        download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-single-name.png
+        file_size: 61KB PNG
+        thumbnail: /images/uploads/single_name_580x420.jpg
 ---
