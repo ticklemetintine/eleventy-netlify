@@ -451,3 +451,106 @@ collections:
               - { label: "Title", name: "title", widget: "string"}
               - { label: "Link", name: "link", widget: "string"}
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Building Green Ports"
+        name: "building-green-ports"
+        file: "src/pathways-to-sustainability/building-green-ports.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown", required: false }
+          - label: "Content"
+            name: "main_content"
+            widget: "list"
+            fields: 
+              - { label: "Section title", name: "title", widget: "string", required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false }
+              - { label: "Image Caption", name: "image_caption", widget: "string", required: false }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+  - label: "Media Centre"
+    name: "media-centre"
+    files: 
+      - label: "Videos"
+        name: "videos"
+        file: "src/media-centre/videos.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Videos"
+            name: "videos"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "desc", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" } 
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      
+      - label: "Temasek Review 2021: Bounce Forward"
+        name: "temasek-review-2021-bounce-forward"
+        file: "src/media-centre/temasek-review-2021-bounce-forward.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Video ID", name: "video_id", widget: "string" }
+          - label: "More Video Options"
+            name: "more_video"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "desc", widget: "text"}
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      
+      - label: "Paying it Forward: Mentoring for Resilience"
+        name: "paying-it-forward-mentoring-for-resilience"
+        file: "src/media-centre/paying-it-forward-mentoring-for-resilience.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Video ID", name: "video_id", widget: "string" }
+          - label: "More Video Options"
+            name: "more_video"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "desc", widget: "text"}
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields: 
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Link", name: "link", widget: "string"}
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      

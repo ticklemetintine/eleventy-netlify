@@ -1,0 +1,43 @@
+---
+layout: "/layouts/media-centre/index.njk"
+unique_slug: "media-centre-videos"
+---
+
+<div class="contentpage-body">
+
+    <div class="video-wrapper">
+        <div class="video-container">
+            <div class="video-container-inner" data-video-id="{{ video_id }}"></div>
+        </div>
+    </div>
+    <h2 class="dash-above">More Video Options</h2>
+    <div class="row flow-ignore other-video-option">
+
+        {% for video in more_video %}
+        <div class="col-4 flow-this">
+            <div class="video-item">
+
+                <h4>{{ video['title'] }}</h4>
+                <div class="video-item-wrapper">
+                    <a href="{{ video['link'] }}"></a>
+
+                    <div class="img">
+                        <img src="{{ video['thumbnail'] }}" alt="{{ video['title'] }}" title="{{ video['title'] }}" />
+                        <div class="bg-gradient"></div>
+                    </div>
+
+                    <div class="detail">
+                        <p>{{ video['desc'] | safe }}</p>
+                        <div class="button-play">
+                            <span class="play-icon">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</div>

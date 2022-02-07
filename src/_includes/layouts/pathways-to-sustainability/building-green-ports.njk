@@ -3,7 +3,14 @@ layout: "/layouts/pathways-to-sustainability/index.njk"
 ---
 <div class="contentpage-body dash-above">
     {% for content in main_content %}
-        {{ content['writeup'] | markdown | safe }}
+        {% if content['title'] %}
+            <h2 class="dash-above fadeup" data-quick-links-item="{{ content['title'] | safe }}" id="section-{{ loop.index }}">
+                    {{ content['title'] | safe }}</h2>
+        {% endif %}
+
+        {% if content['writeup'] %}
+            {{ content['writeup'] | markdown | safe }}
+        {% endif %}
 
         {% if content['image'] %}
         <div class="medialine">
