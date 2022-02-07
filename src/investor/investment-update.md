@@ -166,4 +166,47 @@ sections:
     highlight: We founded a Centre of Excellence to build deep expertise in AI and
       to work with portfolio companies to use AI to develop new business
       opportunities.
+  - center: "false"
+    writeup: We continue to support start-ups in our portfolio as they scaled their
+      operations over the past year. We increased our position in [Perfect
+      Day](https://perfectdayfoods.com/), a company producing animal-free dairy
+      proteins, and helped facilitate the launch of their joint lab in Singapore
+      with the [Agency for Science, Technology and Research
+      (A*STAR)](https://www.a-star.edu.sg/). The lab will tap on local
+      researchers, scientists and engineers to support Perfect Day’s global
+      research and development activities. We made a follow-on investment in
+      [Zipline](https://flyzipline.com/), which uses autonomous drones to
+      deliver crucial medical supplies, such as vaccines and blood products, in
+      Africa and the US.
+  - center: "false"
+    title: " Strengthening Enterprises"
+    writeup: >-
+      Following a voting approval of around 99% of its shareholders, [Sembcorp
+      Marine (SCM)](https://www.sembmarine.com/) raised S$2.1 billion in a
+      rights issuance in September 2020 for its recapitalisation. SCM was then
+      demerged from [Sembcorp Industries (SCI)](https://www.sembcorp.com/en/
+      "the page will open in a new window") via a *dividend in specie* of SCM
+      shares by SCI to its shareholders. Both SCI and SCM will focus on
+      extending their business models to embrace green energy solutions, such as
+      renewables, building on their respective core engineering capabilities.
+
+
+      Temasek sub-underwrote S$600 million of the SCM rights issuance, and became a direct shareholder of both SCI (49% stake) and SCM (43% stake), after their demerger.
+
+
+      In October 2020, Temasek [established Seviora Holdings](https://www.temasek.com.sg/en/news-and-views/news-room/news/2020/Temasek-establishes-new-multi-asset-multi-strategy-asset-management-group), our asset management group comprising four existing companies currently owned by, or affiliated with, Temasek — namely, [Azalea Investment Management](https://www.azalea.com.sg/), [Fullerton Fund Management Company](https://www.fullertonfund.com/), [InnoVen Capital](https://www.innovencapital.com/), and [Seatown Holdings International](https://www.seatowninternational.com/). With a dedicated and integrated management team, Seviora will have scale and synergistic product offerings for accelerated growth, building on the brands and track records of each asset management company.
+  - center: "false"
+    title: An Enabler of Growth Capital
+    writeup: '[Heliconia Capital](http://www.heliconiacapital.com/) is a growth fund
+      set up by Temasek in 2012 to focus on Singapore-based small and medium
+      enterprises. During the year, it invested in the consumer, technology and
+      healthcare sectors. These included [Glife
+      Technologies](https://glife.com.sg/), a fresh produce platform that
+      connects farms directly with food and beverage businesses and consumers.
+      Investments were made in [CSE Global](http://www.cse-global.com/), a
+      listed engineering solution provider, as well as
+      [Flexxon](https://www.flexxon.com/ "the page will open in a new window"),
+      which develops flash storage and memory solutions. Heliconia also invested
+      in [Pacific International Lines](https://www.pilship.com/), an established
+      container shipping carrier in Southeast Asia.'
 ---
