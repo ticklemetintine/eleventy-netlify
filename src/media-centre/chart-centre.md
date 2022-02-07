@@ -7,11 +7,11 @@ sections:
   - title: Performance Overview
     quicklink_id: ten-year-performance-overview
     charts:
-      - title: Net portfolio value
+      - title: Net Portfolio Value (S$b)
         link: /overview/performance-overview.html#net-portfolio-value
         download_link: /images/uploads/net_portfolio_value_580x420.jpg
         thumbnail: /images/uploads/net_portfolio_value_580x420.jpg
-      - title: Investments &amp; divestments
+      - title: Investments &amp; Divestments (S$b)
         link: /overview/performance-overview.html#investments-and-divestments
         download_link: /images/uploads/investments_divestments_580x420.jpg
         thumbnail: /images/uploads/investments_divestments_580x420.jpg
