@@ -89,4 +89,51 @@ sections:
     image_caption: "Rivulis’ micro irrigation solutions help growers minimise water
       usage and optimise crop productivity (Photo: Rivulis; photo taken before
       COVID-19) "
+  - center: "false"
+    writeup: >-
+      We are working with partners to advance decarbonisation solutions. In
+      April this year, we [announced a partnership with
+      BlackRock](https://www.temasek.com.sg/en/news-and-views/news-room/news/2021/temasek-blackrock-launch-decarbonization-partnership)
+      to launch a series of late stage venture capital and early growth private
+      equity investment funds that will focus on advancing decarbonisation
+      solutions to accelerate global efforts to achieve a net zero economy by
+      2050. BlackRock and Temasek are committing a combined US$600 million in
+      initial capital.
+
+
+      In China, we invested in companies riding on the digitisation trend. As demand for online education services increases, in part due to the pandemic, we invested in [Trustbridge Global Media](http://www.trustbridgeglobalmedia.com/), an online children’s content platform. We invested in [Tezign](https://www.tezign.com/), a creative cloud platform; [Didi Freight](http://www.didihuoyun.com/), a digital truck matching platform specialising in on-demand freight services; and [Black Lake Technologies](https://blacklake.cn/), a manufacturing operations management software as a service provider.
+
+
+      In Singapore, we invested in some of our portfolio companies. This included participation in [Singapore Airlines’ S$8.8 billion rights issue](https://www.singaporeair.com/en_UK/sg/about-us/information-for-investors/rights-issue/) of shares and mandatory convertible bonds in May 2020, after the company had received close to 100% approval from all shareholders at an extraordinary general meeting in April 2020, for a rights issue of up to S$15 billion. Funds raised will help the airline ride through the COVID-19 pandemic, and recover with a strong and resilient balance sheet. We invested in [Sembcorp Marine](https://www.sembmarine.com/) as part of its demerger from [Sembcorp Industries](https://www.sembcorp.com/en/) — a transaction designed to allow each of the businesses to focus more on their respective strengths.
+
+
+      Additionally, we invested in growth companies including [XCL Education](https://xcledu.com/), a K-12 education platform with a presence across Vietnam, Malaysia, and Singapore; and made a follow-on investment alongside [Heliconia Capital](http://www.heliconiacapital.com/) in [Tessa Therapeutics](https://www.tessacell.com/), a Singapore-based early stage company developing cell therapies to treat cancer.
+
+
+      In North America, we invested in [Snowflake](https://www.snowflake.com/), a cloud data warehouse software provider; [Apeel](https://www.apeel.com/), an agritech innovator which produces edible plant-based fruit and vegetable coatings that extend the shelf life of perishable produce; and [Svante](https://svanteinc.com/), a company developing proprietary low cost carbon capture technology.
+
+
+      In Europe, we invested in German company [BioNTech](https://biontech.de/), a biotechnology company focused on next generation cancer treatment solutions, which most recently pivoted to jointly develop the Pfizer-BioNTech COVID-19 vaccine; as well as UK-based [Tropic Biosciences](https://www.tropicbioscience.com/), a biotechnology company developing high performing commercial tropical crops.
+  - center: "true"
+    writeup: >-
+      We stepped up our exposure to Southeast Asia, riding on [structural
+      trends](https://www.temasekreview.com.sg/investor/how-we-invest.html) in
+      the region, such as a growing middle income population and a thriving
+      Internet economy. We invested in e-commerce companies [Sea
+      Limited](https://www.sea.com/) and Indonesia-based Tokopedia, which has
+      since been merged with Gojek to form [GoTo
+      Group](https://www.gotocompany.com/). We also made a follow-on investment
+      in [Social Bella](https://www.sociolla.com/), a vertically-focused
+      platform in beauty and personal care in Indonesia.
+
+
+      <!--EndFragment-->
+    highlight: We stepped up our exposure to Southeast Asia, riding on structural
+      trends in the region.
+  - center: "false"
+    writeup: Post 31 March, we increased our investment in [Alan
+      SA](https://alan.com/), a digital health insurer based in France; and
+      invested in [Insitro](https://insitro.com/), an AI-driven drug discovery
+      and development company. We also invested in [Grab](https://www.grab.com/)
+      as part of the company’s funding round in April.
 ---
