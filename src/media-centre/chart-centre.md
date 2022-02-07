@@ -32,4 +32,9 @@ sections:
         thumbnail: /images/uploads/rolling_total_shareholder_return_580x420.jpg
         title: Rolling S$ Total Shareholder Return (%)
         file_size: 54KB PNG
+      - thumbnail: /images/uploads/dividend_income_580x420.jpg
+        download_link: /images/uploads/temasek-review-2021-chart-performance-overview-dividend-income.png
+        title: Dividend Income (S$b)
+        link: /overview/performance-overview.html#dividend-income
+        file_size: 18KB PNG
 ---
