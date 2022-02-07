@@ -25,4 +25,14 @@ videos:
       highlights and institutional activities over the past year. Here's a
       recap:"
     link: /media-centre/temasek-review-2021-media-conference-recording.html
+discover_more:
+  - title: Chart Centre
+    link: /media-centre/chart-centre.html
+    thumbnail: /images/uploads/dm-chart-centre.jpg
+  - title: Downloads
+    link: /media-centre/downloads.html
+    thumbnail: /images/uploads/dm-downloads.jpg
+  - title: Performance Overview
+    link: /overview/performance-overview.html
+    thumbnail: /images/uploads/dm-performance-overview.jpg
 ---
