@@ -23,4 +23,8 @@ sections:
         download_link: /images/uploads/temasek-review-2021-chart-performance-overview-total-shareholder-return.png
         title: S$ Total Shareholder Return (%)
         link: /overview/performance-overview.html#total-shareholder-return
+      - link: /overview/performance-overview.html#rolling-total-shareholder-return
+        download_link: /images/uploads/temasek-review-2021-chart-performance-overview-rolling-s-total-shareholder-return.png
+        thumbnail: /images/uploads/rolling_total_shareholder_return_580x420.jpg
+        title: Rolling S$ Total Shareholder Return (%)
 ---
