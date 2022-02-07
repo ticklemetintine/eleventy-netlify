@@ -16,4 +16,20 @@ more_video:
     thumbnail: /images/uploads/decarb-video-thumbnail.jpg
     desc: Our Chief Sustainability Officer <span class="nowrap">Steve Howard</span>
       shares how Temasek is accelerating the momentum towards a net zero world.
+  - link: temasek-review-2021-media-conference-recording.html
+    title: "Temasek Review 2021: Media Conference Recording"
+    desc: "Our senior management shared with the media our key performance
+      highlights and institutional activities over the past year. Here's a
+      recap:"
+    thumbnail: /images/uploads/conference-recording-video-thumbnail.jpg
+discover_more:
+  - title: From Our Chairman
+    link: /overview/from-our-chairman.html
+    thumbnail: /images/uploads/dm-from-our-chairman.jpg
+  - title: Performance Overview
+    link: /overview/performance-overview.html
+    thumbnail: /images/uploads/dm-performance-overview.jpg
+  - title: Investment Update
+    link: /investor/investment-update.html
+    thumbnail: /images/uploads/dm-investment-update.jpg
 ---
