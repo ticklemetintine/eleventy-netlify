@@ -209,4 +209,14 @@ sections:
       which develops flash storage and memory solutions. Heliconia also invested
       in [Pacific International Lines](https://www.pilship.com/), an established
       container shipping carrier in Southeast Asia.'
+discover_more:
+  - link: /investor/how-we-invest.html
+    title: "How We Invest "
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
+  - title: " Our Financials and Portfolio"
+    link: /overview/our-financials-and-portfolio.html
+    thumbnail: /images/uploads/dm-4k-financials-portfolio.jpg
+  - title: " Investing for Impact and Returns "
+    link: /pathways-to-sustainability/investing-for-impact-and-returns.html
+    thumbnail: /images/uploads/dm-investing-for-impact.jpg
 ---
