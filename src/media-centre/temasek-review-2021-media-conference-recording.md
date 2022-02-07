@@ -24,7 +24,7 @@ more_video:
 discover_more:
   - link: /media-centre/temasek-review-2021-bounce-forward.html
     title: " Temasek Review 2021: Bounce Forward"
-    thumbnail: /images/uploads/hero-video-thumbnail.jpg
+    thumbnail: /images/uploads/dm-video-tr21.jpg
   - link: /overview/from-our-chairman.html
     title: "From Our Chairman "
     thumbnail: /images/uploads/dm-from-our-chairman.jpg
