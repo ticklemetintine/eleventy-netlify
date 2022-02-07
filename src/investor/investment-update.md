@@ -2,7 +2,7 @@
 permalink: /investor/investment-update.html
 layout: layouts/investor/investment-update.njk
 title: Investment Update
-intro_text: " We continually invest for the long term in line with structural
+intro_text: "We continually invest for the long term in line with structural
   trends, even as we remain watchful of the risks and opportunities arising from
   disruptive events. "
 sections:
