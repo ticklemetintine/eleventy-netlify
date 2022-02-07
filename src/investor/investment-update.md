@@ -136,4 +136,34 @@ sections:
       invested in [Insitro](https://insitro.com/), an AI-driven drug discovery
       and development company. We also invested in [Grab](https://www.grab.com/)
       as part of the company’s funding round in April.
+  - center: "false"
+    title: Catalysing Innovative Solutions
+    writeup: >-
+      After a year of incubation, our Blockchain pod founded LemmaTree, a group
+      of companies that seeks to use decentralised technologies to develop
+      self-sovereign identity solutions, empowering individuals and
+      organisations to control their data.
+
+
+      [Affinidi](https://www.affinidi.com/), a LemmaTree company, enables the creation and sharing of digital identities that are portable and verifiable. Affinidi's technology has been applied towards facilitating safe travel by enabling the digital verification of health credentials and ensuring passengers meet destination country travel requirements. This is currently being piloted by 18 customers in Asia and the Middle East.
+
+
+      Additionally, we founded two companies that have been built using Affinidi’s technology: [GoodWorker](https://www.goodworker.in/), to deliver job matching, upskilling, financial and other services to blue-collar workers in India; and [Trustana](https://www.trustana.com/), a cross-border B2B trade platform focused on the food & beverage industry.
+    image: /images/uploads/affinidi.jpg
+    image_mobile: /images/uploads/affinidi-m.jpg
+    image_caption: " Temasek and Affinidi representatives Nicholas Foo (leftmost)
+      and Gina Chiang (middle) engaging SATS staff on the Affinidi Unifier app,
+      ahead of roll-out by airlines onboarded by Changi Airport Group "
+  - center: "false"
+    writeup: Our AI pod founded a Centre of Excellence to build deep expertise in AI
+      and to work with our portfolio companies to use AI to deliver better
+      commercial outcomes and develop new business opportunities. The AI pod is
+      also incubating a venture focused on using AI to engage customers. Temasek
+      joined [Singapore Computer Society’s](https://www.scs.org.sg/) corporate
+      pledge initiative to promote the responsible use of AI and data &mdash; we
+      nominated a representative to the Society’s AI Ethics and Governance
+      Certification Committee to promote training and certification in AI.
+    highlight: We founded a Centre of Excellence to build deep expertise in AI and
+      to work with portfolio companies to use AI to develop new business
+      opportunities.
 ---
