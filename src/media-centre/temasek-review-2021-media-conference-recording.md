@@ -1,6 +1,6 @@
 ---
 permalink: /media-centre/temasek-review-2021-media-conference-recording.html
-layout: layouts/media-centre/temasek-review-2021-media-conference-recording.njk
+layout: layouts/media-centre/video-inner.njk
 title: "Temasek Review 2021: Media Conference Recording"
 intro_text: "Our senior management shared with the media our key performance
   highlights and institutional activities over the past year. Here's a recap:"
