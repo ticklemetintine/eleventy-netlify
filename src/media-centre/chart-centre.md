@@ -9,10 +9,10 @@ sections:
     charts:
       - title: Net portfolio value
         link: /overview/performance-overview.html#net-portfolio-value
-        download_link: /web/images/media-centre/download/temasek-review-2021-chart-performance-overview-net-portfolio-value.png
+        download_link: /images/uploads/net_portfolio_value_580x420.jpg
         thumbnail: /images/uploads/net_portfolio_value_580x420.jpg
       - title: Investments &amp; divestments
         link: /overview/performance-overview.html#investments-and-divestments
-        download_link: /images/media-centre/download/temasek-review-2021-chart-performance-overview-investments-&-divestments.png
+        download_link: /images/uploads/investments_divestments_580x420.jpg
         thumbnail: /images/uploads/investments_divestments_580x420.jpg
 ---
