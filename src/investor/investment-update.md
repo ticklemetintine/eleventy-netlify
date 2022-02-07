@@ -44,4 +44,8 @@ sections:
 
 
       We are continually building our ESG capabilities across the firm. Our investment professionals are required to fulfil training on our methodologies and processes. Their analyses are supported by a network of ESG champions and a team of dedicated ESG professionals.
+  - center: "false"
+    title: " Investment Highlights"
+    writeup: We had significant activity in the technology, financial services,
+      industrials and energy sectors
 ---
