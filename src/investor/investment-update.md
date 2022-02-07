@@ -48,4 +48,45 @@ sections:
     title: " Investment Highlights"
     writeup: We had significant activity in the technology, financial services,
       industrials and energy sectors
+  - center: "true"
+    writeup: During the year, we invested in several technology companies that ride
+      on the [structural
+      trends](https://www.temasekreview.com.sg/investor/how-we-invest.html) we
+      have identified. These included investments in
+      [Roblox](https://www.roblox.com/), an online entertainment platform;
+      [Snyk](https://snyk.io/), a software developer of cybersecurity tools;
+      [Hopin](https://hopin.com/), a virtual live events management platform;
+      [TSMC](https://www.tsmc.com/english), a semiconductor manufacturer; and
+      NUVIA, a chip design start-up which has since been acquired by
+      [Qualcomm](https://www.qualcomm.com/). We also made follow-on investments
+      in [Kuaishou](https://www.kuaishou.com/), a digital media platform; and
+      [UST Global](https://www.ust.com/ "the page will open in a new window"), a
+      provider of technology services and solutions.
+    highlight: >
+      We had significant activity in the technology, financial services,
+      industrials and energy sectors.
+  - center: "false"
+    writeup: >-
+      We continued to increase our exposure to payments and financial technology
+      companies that stand to benefit from the acceleration in digitisation of
+      financial services. This included investments in
+      [FNZ](https://www.fnz.com/), a UK-based wealth management platform; and
+      [Nium](https://www.nium.com/), a Singapore start-up that facilitates
+      global digital payments and card issuance. We increased our investments in
+      [Flywire](https://www.flywire.com/), a US-based cross-border payment
+      service platform that recently listed in the US; and
+      [TrueLayer](https://truelayer.com/), a UK-based fintech platform that
+      enables financial apps to access bank data and make transactions securely.
+      We also invested in [BlackRock](https://www.blackrock.com/), a global
+      asset manager with a diversified product offering and client base.
+
+
+      Our investments in the industrials & energy sectors included [Eavor Technologies](https://eavor.com/), a Canada-based company developing proprietary technology to harvest geothermal energy; and a follow-on investment in [Assa Abloy](https://www.assaabloy.com/), a company specialising in access and security solutions based in Sweden. We partnered [Schneider Electric India Private Limited](https://www.se.com/in/en), a company focused on energy efficiency and digital transformation of energy management systems and industrial automation, to acquire India-based conglomerate Larsen & Toubro’s electrical and automation business, in a transaction that was completed during the year.
+
+
+      In line with our focus on sustainable solutions, we invested in [Rivulis](https://www.rivulis.com/), an Israel-headquartered company providing water-saving technology solutions to farmers worldwide; and [Solugen](https://www.solugentech.com/), a US-based specialty chemicals manufacturing platform that aims to decarbonise the chemicals industry. We also increased our position in [InnovaFeed](https://innovafeed.com/), a French biotechnology company producing insect protein that is used to manufacture sustainable animal feed.
+    image: /images/uploads/investment-highlights.jpg
+    image_caption: "Rivulis’ micro irrigation solutions help growers minimise water
+      usage and optimise crop productivity (Photo: Rivulis; photo taken before
+      COVID-19) "
 ---
