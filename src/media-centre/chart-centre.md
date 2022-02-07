@@ -37,4 +37,12 @@ sections:
         title: Dividend Income (S$b)
         link: /overview/performance-overview.html#dividend-income
         file_size: 18KB PNG
+  - title: Portfolio Highlights
+    quicklink_id: portfolio-highlights
+    charts:
+      - title: Geography (%)
+        link: /overview/portfolio-highlights.html#geography
+        download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-geography.png
+        file_size: 64KB PNG
+        thumbnail: /images/uploads/geography_580x420.jpg
 ---
