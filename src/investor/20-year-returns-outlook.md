@@ -58,4 +58,16 @@ section_3:
 
 
     The Temasek Portfolio has the highest upside potential (see blue shaded) at the end of the 20-year period, but also the highest volatility.
+section_4:
+  title: "20-year Expected Returns for Various Temasek Scenarios "
+  quicklink_id: twenty-year-expected-returns-scenarios
+  writeup_before: "We simulate our 20-year expected returns under different scenarios. "
+  writeup_after: >-
+    The T-GEM 20-year returns curves for the Temasek Portfolio are shown below
+    for the Central, Differing Climate Change Pathways, China Hard Landing,
+    Severe Escalation in Trade and Tech Tensions, and Secular Stagnation
+    Scenarios.
+
+
+    Broadly, the Central Scenario offers higher 20-year expected returns for the Temasek Portfolio, compared to those under the other alternate scenarios. The exception is the High Ambition Climate Change Scenario, where there is concerted effort and strong actions to mitigate climate change and carbon emissions, for a more liveable world.
 ---
