@@ -172,4 +172,14 @@ section_6:
 
 
         We continue to work with our ecosystem partners, including our portfolio companies and various government agencies, to [support the local responses to the COVID-19 outbreak](https://www.temasekreview.com.sg/steward/rising-above-covid-19.html) and to protect and safeguard our people and affected communities, both locally and overseas. Our staff have also stepped forward to volunteer in large numbers to support wider COVID-19 initiatives led by the firm, including assisting with swabbing exercises at foreign worker dormitories in Singapore.
+discover_more:
+  - link: /investor/12-month-returns-simulation.html
+    title: 12-month Returns Simulation
+    thumbnail: /images/uploads/dm-12-month-returns-outlook.jpg
+  - title: "20-year Returns Outlook "
+    link: /investor/20-year-returns-outlook.html
+    thumbnail: /images/uploads/dm-20-year-returns-outlook.jpg
+  - title: " How We Invest "
+    link: /investor/how-we-invest.html
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
 ---
