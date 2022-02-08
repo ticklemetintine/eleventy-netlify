@@ -121,7 +121,7 @@ section_5:
         including those arising from international treaties and UN sanctions. We
         also comply with the laws and regulations of jurisdictions where we have
         investments or operations. "
-    - center: "false"
+    - center: "true"
       writeup: >
         Our global footprint, coupled with an ever-evolving legal and regulatory
         environment and increasing oversight by authorities, underscores the
@@ -132,7 +132,7 @@ section_5:
       highlight: >
         We comply with the laws and regulations of jurisdictions where we have
         investments or operations.
-    - center: "false"
+    - center: "true"
       writeup: >
         LR monitors regulatory reporting compliance through securities tracking
         systems. Regulatory requirements and monitoring systems are continually
