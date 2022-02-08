@@ -16,4 +16,14 @@ after_charts: The range of possible returns from the simulation is dependent on
   prevailing volatility is high, such as at the onset of the COVID-19 pandemic
   or during the GFC years, the wider range of one-year simulated forward returns
   signals greater probability of larger gains and losses.
+discover_more:
+  - title: "20-year Returns Outlook "
+    link: /investor/20-year-returns-outlook.html
+    thumbnail: /images/uploads/dm-20-year-returns-outlook.jpg
+  - title: "How We Manage Risks "
+    link: /investor/how-we-manage-risks.html
+    thumbnail: /images/uploads/dm-how-we-manage-risks.jpg
+  - link: /investor/how-we-invest.html
+    title: "How We Invest "
+    thumbnail: /images/uploads/dm-how-we-invest.jpg
 ---
