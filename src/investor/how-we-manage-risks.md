@@ -113,4 +113,44 @@ section_3:
         In addition to scenario-based stress tests, we also monitor general market risk indicators such as the <span class="tooltip" title="Chicago Board Options Exchange" data-title="Chicago Board Options Exchange">CBOE</span> Volatility Index (VIX).
 section_4:
   title: " VIX Trend (March 2005 to March 2021) "
+section_5:
+  title: Legal &amp; Regulatory
+  content:
+    - center: "false"
+      writeup: "We comply with all obligations under Singapore laws and regulations,
+        including those arising from international treaties and UN sanctions. We
+        also comply with the laws and regulations of jurisdictions where we have
+        investments or operations. "
+    - center: "false"
+      writeup: >
+        Our global footprint, coupled with an ever-evolving legal and regulatory
+        environment and increasing oversight by authorities, underscores the
+        importance of robust compliance programmes.
+
+
+        Our Legal & Regulatory (LR) department ensures that policies, processes and systems are appropriately designed, consistent with applicable laws, and aligned with Board directives. For instance, our policy on derivative transactions permits only personnel authorised by a board resolution to enter into such transactions within tightly-defined scopes and limits on behalf of specific designated entities.
+      highlight: >
+        We comply with the laws and regulations of jurisdictions where we have
+        investments or operations.
+    - center: "false"
+      writeup: >
+        LR monitors regulatory reporting compliance through securities tracking
+        systems. Regulatory requirements and monitoring systems are continually
+        reviewed and updated to reflect changes in laws and regulations.
+
+
+        We encourage and facilitate the development of a sound corporate culture that incentivises good staff behaviour. High ethical standards and compliance with applicable laws and regulations are expected in the pursuit of our business interests. Specific attention is directed at governance, incentive systems and training.
+      highlight: >
+        Our policy permits only personnel authorised by a board resolution to
+        enter into derivatives transactions within tightly-defined scopes and
+        limits.
+    - center: "false"
+      writeup: At the core of this is our Temasek Code of Ethics and Conduct (T-Code)
+        and its related policies that guide our Board directors and staff in
+        their daily dealings and conduct. With integrity as a key overarching
+        principle, T-Code policies cover areas such as anti-bribery,
+        whistle-blowing, management of confidential information, and prohibition
+        against insider trading. [Our annual staff bonus
+        plans](https://www.temasekreview.com.sg/institution/instilling-ownership.html)
+        include T-Code compliance requirements.
 ---
