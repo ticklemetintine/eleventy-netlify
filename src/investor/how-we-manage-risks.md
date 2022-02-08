@@ -12,7 +12,7 @@ section_1:
         life cycle, from early stage and/or unlisted, to large or listed assets.
         We do not have predefined concentration limits, or targets for investing
         by asset class, country, sector, theme or single name.
-    - center: "false"
+    - center: "true"
       writeup: >
         Our long investment horizon means we have a portfolio of predominantly
         equities, including unlisted assets and private equity funds, designed
