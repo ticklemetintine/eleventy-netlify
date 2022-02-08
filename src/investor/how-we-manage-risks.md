@@ -98,12 +98,17 @@ section_3:
         our intrinsic value discipline, we may manage the risks as follows: 
 
 
-        * Divest, hold or protect the individual investment impacted;
-
-        * Change the portfolio composition for the long run;
-
-        * Take actions to protect the portfolio.
-
+        <ul class="disc">
+                <li>
+                    Divest, hold or protect the individual investment impacted;
+                </li>
+                <li>
+                    Change the portfolio composition for the long run;
+                </li>
+                <li>
+                    Take actions to protect the portfolio.
+                </li>
+            </ul>
 
         In addition to scenario-based stress tests, we also monitor general market risk indicators such as the CBOE Volatility Index (VIX).
 ---
