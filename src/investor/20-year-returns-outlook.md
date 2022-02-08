@@ -17,4 +17,17 @@ section_1:
         approach takes into account our views of long term macroeconomic
         fundamentals over the next 20 years, adjusted for current market
         valuations. "
+section_2:
+  title: Projection Based on Economic Fundamentals
+  quicklink_id: projection-economic-fundamentals
+  content:
+    - writeup: "In projecting economic fundamentals, we make more granular
+        year-to-year assumptions for the first five years, and transit to more
+        general assumptions based on longer term fundamentals as we go beyond 10
+        years. This &ldquo;pathing&rdquo; approach incorporates assumptions
+        about changes in economic conditions over time. We do not assume an
+        equilibrium return that remains unchanged over the 20-year period, nor
+        do we assume a reversion to the historical mean. "
+      image: /images/uploads/economic_scenario_pathing.svg
+      image_caption: Economic Scenario Pathing (Illustrative)
 ---
