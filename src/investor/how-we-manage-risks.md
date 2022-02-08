@@ -41,4 +41,44 @@ sections:
   - center: "false"
     writeup: "We have no tolerance for risks that could damage the reputation and
       credibility of Temasek. "
+  - center: "false"
+    title: Organisational Risk Management Framework
+    writeup: >-
+      Our Organisational Risk Management Framework includes Risk Return Appetite
+      Statements (RRAS) which set out various levels of risks tolerance, from
+      reputational risk, to liquidity risk and sustained loss of overall
+      portfolio value over prolonged periods.
+
+
+      `<table class="investor simple managing-risk fadeup">
+                          <colgroup>
+                              <col style="width:25.00%;">
+                              <col style="width:75.00%;">
+                          </colgroup>
+                          <tbody>
+                              <tr>
+                                  <th>RRAS 1</th>
+                                  <td>We have no tolerance for risks that could damage Temasek’s reputation and
+                                      credibility
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <th>RRAS 2</th>
+                                  <td>We focus on performance over the long term</td>
+                              </tr>
+                              <tr>
+                                  <th>RRAS 3</th>
+                                  <td>We have flexibility to take concentrated positions</td>
+                              </tr>
+                              <tr>
+                                  <th>RRAS 4</th>
+                                  <td>We maintain a resilient balance sheet</td>
+                              </tr>
+                              <tr>
+                                  <th>RRAS 5</th>
+                                  <td>We evaluate the potential for sustained loss of overall portfolio value over prolonged
+                                      periods and use different scenarios to test our resilience</td>
+                              </tr>
+                          </tbody>
+                      </table>`
 ---
