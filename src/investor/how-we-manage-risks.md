@@ -116,6 +116,8 @@ section_3:
 section_4:
   title: " VIX Trend (March 2005 to March 2021) "
   quicklink_id: vix-trend-and-var
+  vix_image: /images/uploads/managing-risk.svg
+  vix_image_large: /images/uploads/managing-risk-enlarged.svg
 section_5:
   title: Legal &amp; Regulatory
   content:
