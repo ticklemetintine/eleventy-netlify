@@ -89,4 +89,21 @@ section_2:
         which includes mark to market effects due to short term increases in
         risk aversion. We do not manage our portfolio to short term mark to
         market changes. "
+section_3:
+  title: Illustration of Fundamental Earnings Impact
+  content:
+    - center: "false"
+      writeup: >-
+        Based on our assessments of any likely sustained loss, consistent with
+        our intrinsic value discipline, we may manage the risks as follows: 
+
+
+        * Divest, hold or protect the individual investment impacted;
+
+        * Change the portfolio composition for the long run;
+
+        * Take actions to protect the portfolio.
+
+
+        In addition to scenario-based stress tests, we also monitor general market risk indicators such as the CBOE Volatility Index (VIX).
 ---
