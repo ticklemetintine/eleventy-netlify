@@ -1,0 +1,29 @@
+---
+layout: "/layouts/investor/index.njk"
+unique_slug: "how-we-grew"
+---
+<div class="contentpage-body dash-above">
+    {{ writeup | markdown | safe }}
+    <div class="row">
+        <div class="col-12">
+            <h5 id="npv-since-inception" data-quick-links-item="Temasek Net Portfolio Value since Inception" class="subheader"></h5>
+            <div class="chart-container" id="how-we-grew_npv-since-inception">
+                <iframe id="vsi" src="/vslashr/th_newvsi/app/vsi.html" frameborder="0" style="width:100%; box-sizing:border-box; margin:0 auto; padding:0;" scrolling="no" title="Temasek Net Portfolio Value since Inception"></iframe>
+                <script src="/vslashr/th_common/assets/js/iframeResizer.min.js"></script>
+                <script type="text/javascript">iFrameResize({ checkOrigin: true, log: false }, "iframe#vsi");</script>
+            </div>
+            <h4 id="relation-between-npv-and-tsr" data-quick-links-item="Relation between Net Portfolio Value and Total Shareholder Return" class="blue" style="margin-top: 80px; margin-left: 10px; margin-bottom: 13px;">Relation
+                between Net Portfolio Value and Total Shareholder Return</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="tableau-table chart-container" style="margin-top: 0;" id="how-we-grew_npv-and-tsr">
+                <iframe id="rollingtsr" src="/vslashr/th_rollingtsrnpv/app/rollingtsrnpv.html" frameborder="0" style="width:100%; box-sizing:border-box; margin:0 auto; padding:0;" scrolling="no" title="How we grew NPV and TSR"></iframe>
+                <script type="text/javascript">iFrameResize({ checkOrigin: true, log: false }, "iframe#rollingtsr");</script>
+            </div>
+        </div>
+    </div>
+</div>

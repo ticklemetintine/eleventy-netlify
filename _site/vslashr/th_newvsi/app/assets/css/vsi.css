@@ -1,0 +1,260 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color:#fff;
+    margin:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+}
+
+#chart-container {
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+#descriptionContainer {
+    position:absolute;
+    padding:1.2em;
+    text-align:justify;
+    top:3em;
+    left:0;
+}
+
+#descriptionContainer #descriptionText {
+    clear:both;
+    padding:0;
+    font-size:1.05em;
+    line-height:1.2;
+}
+html[lang="zh"] #descriptionContainer #descriptionText {
+    font-size:1.15em;
+    line-height:1.35;
+}
+#descriptionContainer #descriptionText p {
+    margin:0 0.5em 1em 0.5em;
+}
+#descriptionContainer #descriptionText p:last-child {
+    margin:0 0.5em 0 0.5em;
+}
+#descriptionContainer #descriptionText em {
+    font-style:normal;
+    text-decoration:underline;
+}
+#descriptionContainer .descriptionText span[data-toggle] {
+    border-bottom:1px dotted #49176d;
+    color:#49176d;
+}
+
+
+#menu-container ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    
+    position:relative;
+    width: 100%;
+    z-index:9;
+}
+
+#menu li {
+    width:50%;
+    height: 2.4em;
+    float:left;
+    text-align:center;
+    padding:0.3em 0;
+    font-size:1.3em;
+    text-decoration:none;
+    color:#1273a1;
+    background-color:white;
+    cursor:pointer;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+#menu li:first-child {
+    margin-left:0;
+}
+
+#menu li:hover {
+    background-color:#ddd;
+}
+
+#menu li.selected {
+    border: solid 1px #dddddd;
+    border-bottom: solid 1px transparent;
+    cursor:default;
+}
+
+#menu li.selected:hover {
+    background-color:#fff;
+}
+
+#chart {
+    /* border:1px solid pink; */
+    /* position:relative; */
+}
+#chart .svgSizeContainer {
+    position:relative;
+    width:100%;
+}
+#chart .svgContainer {
+    /* fix for IE11 */
+    position:relative;
+    width:100%;
+    height:0;
+    padding:0;
+}
+#chart .responsive {
+    /* fix for IE11 */
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+#chart .bold {
+    font-weight: bold;
+}
+
+#chart .container {
+}
+
+#chart .main.chart1 {
+}
+
+#chart .main.chart2 {
+}
+
+#chart,
+#chart path,
+#chart line {
+    shape-rendering: geometricPrecision;
+}
+
+#chart text {
+    font-size:16px;
+}
+
+#chart .axis path,
+#chart .axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.3px;
+}
+#chart .axis text {
+    fill:black;
+}
+#chart .chart2 .x.axis .tick text {
+    fill:black;
+}
+#chart .chart2 .x.axis .selected text {
+    font-weight: bold;
+    fill:#22b7e9;
+}
+
+#chart .chart2 line.arrow {
+    stroke-width:1px;
+    stroke:#000;
+}
+#chart .chart2 path.arrowFill {
+    fill:#000;
+}
+
+#chart .axis .tick text {
+}
+
+#chart .main .grid line {
+    stroke:lightgrey;
+    stroke-opacity:0.7;
+}
+#chart .main .grid path {
+    stroke-width:0;
+}
+#chart .main text.title {
+}
+
+#chart .marketValueColor {
+    color:#007fb2;
+    fill: #007fb2;
+    font-weight:bold;
+}
+#chart .shareholderEquityColor {
+/*    color:#d566a6;*/
+/*    fill: #d566a6;*/
+    color:#e283a7;
+    fill: #e283a7;
+    font-weight:bold;
+}
+#chart .shareholderFVRColor {
+    color:#f3cb03;
+    fill: #f3cb03;
+    font-weight:bold;
+}
+#chart .main .marketValueArea {
+    fill: #007fb2;
+}
+#chart .main .shareholderEquityArea {
+/*    fill: #d566a6;*/
+    fill: #e283a7;
+}
+#chart .main .shareholderFVR {
+    fill: none;
+    stroke: #f3cb03;
+    stroke-width: 2;
+}
+#chart .main .shareholderFVR.dotted {
+    stroke-dasharray: 5, 5;
+}
+
+#chart .main.chart2 .rollingArea {
+    fill:#22b7e9;
+}
+
+#chart .main .callout rect.background {
+    fill:white;
+    stroke:black;
+}
+#chart .main .callout text {
+    font-size:18px;
+}
+#chart .main .events line {
+    stroke:black;
+}
+#chart .main .events text {
+    font-size:16px;
+}
+#chart .main .legend text {
+}
+
+#chart .main .focus circle.point {
+    stroke:#333;
+    stroke-width:0.5px;
+}
+#chart .main .focus line.pointer {
+    stroke-width:1px;
+    stroke-dasharray: 10, 4;
+    stroke: #333;
+}
+#chart .main.chart1 .overlay {
+    fill:none;
+    pointer-events:visible;
+}
+#chart .main.chart2 .overlay {
+    fill:none;
+    pointer-events:none;
+}
+
+#chart .main .parallel line {
+    stroke: black;
+}
+#chart .main .parallel path {
+    fill: white;
+}
+
+/* Tooltip */

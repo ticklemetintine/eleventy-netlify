@@ -1,0 +1,261 @@
+/* @font-face {
+  font-family: 'icomoon';
+  src: url('icomoon.ttf?it4uw8') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.ed-svg-container {
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0;
+    width: 100%;
+    height: 625px;
+}
+.ed-svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ed-container text {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #434c50;
+	fill: #434c50;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.ed-container text.opac{
+  opacity: 0;
+}
+
+.ed-container text.fchart-xaxis-label,
+.ed-container text.fchart-xaxis-label-year{
+  font-weight: bold;
+}
+
+.ed-container {
+  min-width: 0px;
+  width:100%;
+  max-width: 920px;
+}
+
+.tick text{
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+}
+
+.chartLabel{
+  font-size: 17px !important;
+}
+
+#nextBtnCont.opac{
+  opacity: 0
+}
+
+.next-btn,
+.next-img,
+.fcNextBtnImg,
+.fcBackBtnImg{
+  cursor: pointer;
+}
+
+.fc-nextLabel,
+.fcBackBtnText,
+.fcNextBtnText{
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  font-weight: bold;
+  color:  #006ba6;
+  fill:  #006ba6 !important;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 !important;
+}
+
+.fchart-link-icon .icon-inner{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fchart-link-icon {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* margin-top: 13px; */
+  cursor: pointer;
+  position: fixed;
+}
+
+.fchart-link-icon span.icon {
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: block;
+  background: transparent;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  margin-left: 13px;
+  position: relative;
+}
+.fchart-link-icon span.icon .icon-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.fchart-link-icon span.icon .icon-inner::before {
+  display: block;
+  color: white;
+}
+.fchart-link-icon span.icon:hover {
+  background: white;
+  border: 1px solid #ffffff;
+}
+.fchart-link-icon-arrow .icon-inner::before {
+  transform: rotate(90deg);
+  content: "\e901";
+}
+
+.fchart-link-icon-arrow:hover .icon-inner {
+  animation-name: fchart-animate-arrow;
+  animation-duration: 800ms;
+  animation-iteration-count: 2;
+}
+
+.fchart-link-icon-arrow-left span.icon .icon-inner {
+  padding-top: 0;
+}
+
+.fchart-link-icon-arrow-left span.icon{
+  margin-right: 13px;
+  margin-left: 0;
+}
+
+.fchart-link-icon-arrow-left .icon-inner::before {
+  transform: rotate(270deg);
+  content: "\e901";
+}
+
+.fchart-link-icon-arrow-left:hover .icon-inner {
+  animation-name: fchart-left-animate-arrow;
+  animation-duration: 800ms;
+  animation-iteration-count: 2;
+}
+
+.fchart-link-icon-blue {
+  color: #006ba6;
+}
+.fchart-link-icon-blue span.icon {
+  border: 1px solid #bfdae9;
+  /* color: #006ba6; */
+}
+.fchart-link-icon-blue span.icon .icon-inner::before {
+  color: #006ba6;
+}
+.fchart-link-icon-blue span.icon:hover {
+  background: #006ba6;
+  border: 1px solid #006ba6;
+}
+.fchart-link-icon-blue span.icon:hover .icon-inner::before {
+  color: white;
+}
+
+@media (max-width: 768px){
+
+  .ed-container text,
+  .fc-nextLabel{
+    font-size: 21px;
+  }
+  .fchart-link-icon span.icon{
+    width: 41px;
+    height: 41px;
+  }
+  .fchart-link-icon span.icon .icon-inner{
+    padding-top: 24px;
+  }
+
+  .fchart-link-icon-arrow-left span.icon .icon-inner{
+    padding-top: 0;
+  }
+
+}
+
+@keyframes fchart-animate-arrow {
+  0% {
+    left: 0
+  }
+  30% {
+    left: 0
+  }
+  70% {
+    left: 100px
+  }
+  71% {
+    left: 100px
+  }
+  72% {
+    left: -100px
+  }
+  73% {
+    left: -100px
+  }
+  100% {
+    left: 0
+  }
+}
+
+
+@keyframes fchart-left-animate-arrow {
+  0% {
+    left: 0
+  }
+  30% {
+    left: 0
+  }
+  70% {
+    left: -100px
+  }
+  71% {
+    left: -100px
+  }
+  72% {
+    left: 100px
+  }
+  73% {
+    left: 100px
+  }
+  100% {
+    left: 0
+  }
+}

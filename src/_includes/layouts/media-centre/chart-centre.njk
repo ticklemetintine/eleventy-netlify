@@ -1,0 +1,80 @@
+---
+layout: "/layouts/media-centre/index.njk"
+unique_slug: "media-centre-chart"
+---
+
+<div class="contentpage-body">
+
+    <div class="grid-filter-container flow-ignore" id="chart-filter-container">
+        <div class="row chart-intro flow-this">
+            <div class="col-12">
+                <div class="chart-search">
+
+                    <div class="form-group">
+                        <button type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <input type="text" id="chart-filter-input"
+                            placeholder="Filter charts by key word here..." />
+                    </div>
+
+                    <span class="totalnumber-style">Total number of charts: <span class="totalnumber">
+                            66</span></span>
+                    <a class="link-button" id="chart-centre-download-all"
+                        href="/downloads/temasek_review_2021_chart_centre.zip" data-filetype="zip">
+                        Download All
+                        <i class="tr-icon download-before"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="grid-filter" id="chart-filter">
+            {% for section in sections %}
+            <li class="section">
+                <hr class="divider flow-this" />
+                <h2 class="flow-this" id="ten-year-performance-overview"
+                    data-quick-links-item="{{ section['title'] }}">{{ section['title'] }}</h2>
+                <ul class="grid grid-3-2-1">
+                    {% for chart in section['charts'] %}
+                    <li class="column">
+                        <div class="grid-item">
+                            <div class="grid-item-wrapper flow-this">
+                                <picture>
+
+                                    <img src="{{ chart['thumbnail'] }}"
+                                        alt="{{ chart['title'] }}" title="" />
+                                </picture>
+                                <div class="grid-item-overlay">
+                                    <a class="link-icon link-icon-white link-icon-arrow"
+                                        href="{{ chart['link'] }}">
+                                        Go to page
+                                        <span class="icon">
+                                            <i class="icon-inner tr-icon arrow-tail-right-before"></i>
+                                        </span>
+                                    </a>
+
+                                    <a class="link-icon link-icon-white link-icon-download"
+                                        href="{{ chart['download_link'] }}"
+                                        data-filetype="png" title="Download" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span class="download-button-text">
+                                            Download<br />
+                                            <span class="file-size">{{ chart['file_size'] }}</span>
+                                        </span>
+                                        <span class="icon">
+                                            <i class="icon-inner tr-icon download-before"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p>{{ chart['title'] | safe }}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

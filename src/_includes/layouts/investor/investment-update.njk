@@ -1,0 +1,47 @@
+---
+layout: "/layouts/investor/index.njk"
+---
+
+<div class="contentpage-body dash-above">
+    {% for item in sections %}
+        {% if item['title'] %}
+        <h2 class="dash-above" data-quick-links-item="{{ item['title'] }}" id="item-{{ loop.index }}">{{ item['title'] }}</h2>
+        {% endif %}
+
+        {% if item['highlight'] %}
+            <div class="contentpage-blockquote-row row highlight-below">
+                <div class="col-8">
+                    {{ item['writeup'] | markdown | safe }}
+                    <div class="contentpage-highlight contentpage--hidden-desktop contentpage-mobile--m-t-10">
+                        {{ item['highlight'] | markdown | safe }}
+                    </div>
+                </div>
+                
+                {% if item['center'] == "true" %}
+                <div class="col-4 v-centre">
+                {% else %}
+                <div class="col-4">
+                {% endif %}
+                    <div class="contentpage-highlight contentpage-mobile--m-t-10 contentpage--hidden-mobile">
+                        {{ item['highlight'] | markdown | safe }}
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            {{ item['writeup'] | markdown | safe }}
+        {% endif %}
+
+        {% if item['image'] %}
+         <div class="medialine">
+            <picture>
+                <source media="(min-width: 768px)"
+                    srcset="{{ item['image'] | url }}" />
+                <img src="{{ item['image_mobile'] | url }}" alt="{{ item['title'] }}" />
+            </picture>
+            <div class="medialine-caption">
+                {{ item['image_caption'] }}
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

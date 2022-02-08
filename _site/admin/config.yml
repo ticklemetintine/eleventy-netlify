@@ -1,4 +1,4 @@
-backend: 
+backend:
   name: git-gateway
   branch: master
   repo: ticklemetintine/eleventy-netlify
@@ -14,21 +14,39 @@ collections:
         name: "home"
         file: "src/static/home.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
-          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/index.njk" }
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/index.njk",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Banner Image", name: "banner", widget: "image" }
-          - { label: "Banner Mobile Image", name: "banner_mobile", widget: "image" }
-          - { label: "Banner Mobile Image (Landscape)", name: "banner_mobile_landscape", widget: "image" }
-          - label: "Teasers" 
+          - {
+              label: "Banner Mobile Image",
+              name: "banner_mobile",
+              widget: "image",
+            }
+          - {
+              label: "Banner Mobile Image (Landscape)",
+              name: "banner_mobile_landscape",
+              widget: "image",
+            }
+          - label: "Teasers"
             name: "teasers"
             widget: "list"
             fields:
-              - {label: Teaser name, name: teaser_name, widget: "string" }
-              - {label: Title, name: title, widget: "string" }
-              - {label: Sub-title, name: sub_title, widget: "string" }
-              - {label: Writeup, name: writeup, widget: "markdown" }
+              - { label: Teaser name, name: teaser_name, widget: "string" }
+              - { label: Title, name: title, widget: "string" }
+              - { label: Sub-title, name: sub_title, widget: "string" }
+              - { label: Writeup, name: writeup, widget: "markdown" }
               - label: "Content Placement"
                 name: "placement"
                 widget: "select"
@@ -36,23 +54,50 @@ collections:
                   - { label: "Left", value: "left" }
                   - { label: "Right", value: "right" }
 
-              - {label: Custom ID, name: custom_id, widget: "string", required: false }
-              - {label: Custom Class, name: custom_class, widget: "string", required: false }
-              - {label: "Background Image", name: "background", widget: "image"}
-              - {label: "Background Image Mobile", name: "background_mobile", widget: "image"}
+              - {
+                  label: Custom ID,
+                  name: custom_id,
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: Custom Class,
+                  name: custom_class,
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Background Image",
+                  name: "background",
+                  widget: "image",
+                }
+              - {
+                  label: "Background Image Mobile",
+                  name: "background_mobile",
+                  widget: "image",
+                }
               - label: "Clickables"
                 name: "clickables"
                 widget: "list"
-                fields: 
+                fields:
                   - label: "Clickable Type"
                     name: "type"
                     widget: "select"
                     options:
                       - { label: "Link", value: "link" }
                       - { label: "Popup Video", value: "video" }
-                  - { label: "Placeholder Text", name: "placeholder", widget: "string"}
-                  - { label: "Value", name: "value", widget: "string", hint: "Please input the video ID if type selected is Popup Video, otherwise put the URL Link"}
-  
+                  - {
+                      label: "Placeholder Text",
+                      name: "placeholder",
+                      widget: "string",
+                    }
+                  - {
+                      label: "Value",
+                      name: "value",
+                      widget: "string",
+                      hint: "Please input the video ID if type selected is Popup Video, otherwise put the URL Link",
+                    }
+
   - label: "Overview"
     name: "overview"
     files:
@@ -60,16 +105,36 @@ collections:
         name: "from-our-chairman"
         file: "src/overview/from-our-chairman.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/from-our-chairman" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview.njk" }
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/overview/from-our-chairman",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "string",
+              default: "layouts/overview.njk",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Sections"
             name: "sections"
             widget: "list"
-            fields: 
-              - {label: "Section Title", name: "title", widget: 'string', required: false }
-              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Section Sub Title",
+                  name: "sub_title",
+                  widget: "string",
+                  required: false,
+                }
               - label: "Add top separator?"
                 name: "separator"
                 widget: "select"
@@ -77,8 +142,13 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-              - { label: "Writeup", name: "writeup", widget: 'markdown' }
-              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
               - label: "Vertically center align the highlight?"
                 name: "center"
                 widget: "select"
@@ -87,30 +157,45 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-          - { label: "Signature", name: "signature", widget: "image", required: false}
+          - {
+              label: "Signature",
+              name: "signature",
+              widget: "image",
+              required: false,
+            }
           - { label: "Name", name: "name", widget: "string", required: false }
-          - { label: "Position", name: "position", widget: "string", required: false }
+          - {
+              label: "Position",
+              name: "position",
+              widget: "string",
+              required: false,
+            }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
       - label: "The Temasek Charter"
         name: "the-temasek-charter"
         file: "src/overview/the-temasek-charter.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/the-temasek-charter" }
-          - { label: "Layout", name: "layout", widget: "string"}
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/overview/the-temasek-charter",
+            }
+          - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - label: "Sections"
             name: "sections"
             widget: "list"
-            fields: 
-              - {label: "Section Title", name: "title", widget: 'string' }
-              - { label: "Writeup", name: "writeup", widget: 'markdown' }
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
               - { label: "Image", name: "image", widget: "image" }
               - label: "Theme"
                 name: "theme"
@@ -123,93 +208,193 @@ collections:
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
       - label: "Performance Overview"
         name: "performance-overview"
         file: "src/overview/performance-overview.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/performance-overview" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/performance-overview.njk" }
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/overview/performance-overview",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "string",
+              default: "layouts/overview/performance-overview.njk",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - { label: "Date Text", name: "date_text", widget: "string" }
           - label: "Net portfolio value"
             name: "net_porfolio_value"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
-              - { label: "Link Text", name: "link_text", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
+              - { label: "Link Text", name: "link_text", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
           - label: "Investments & Divestments"
             name: "investment_and_divestment"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
           - label: "Portfolio by Geography"
             name: "portfolio_by_geography"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Title Tooltip", name: "header_tooltip", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
-              - { label: "Chart Notes", name: "chart_notes", widget: "string"}
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - {
+                  label: "Title Tooltip",
+                  name: "header_tooltip",
+                  widget: "string",
+                }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
+              - { label: "Chart Notes", name: "chart_notes", widget: "string" }
           - label: "Total Shareholder Return"
             name: "total_shareholder_return"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
-              - { label: "Footer Tooltip Heading", name: "tooltip_heading", widget: "string"}
-              - { label: "Footer Tooltip", name: "tooltip", widget: "string"}
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
+              - {
+                  label: "Footer Tooltip Heading",
+                  name: "tooltip_heading",
+                  widget: "string",
+                }
+              - { label: "Footer Tooltip", name: "tooltip", widget: "string" }
           - label: "Rolling Total Shareholder Return"
             name: "rolling_total_shareholder_return"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
           - label: "Dividend income"
             name: "dividend_income"
             widget: "object"
-            fields: 
-              - { label: "Quicklink Title", name: "quicklink_title", widget: "string"}
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Header", name: "header", widget: "string"}
-              - { label: "Sub Header", name: "sub_header", widget: "string"}
-              - { label: "More Details", name: "more_details", widget: "string"}
-              - { label: "Chart Mobile Image", name: "mobile_image", widget: "image" }
+            fields:
+              - {
+                  label: "Quicklink Title",
+                  name: "quicklink_title",
+                  widget: "string",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Sub Header", name: "sub_header", widget: "string" }
+              - {
+                  label: "More Details",
+                  name: "more_details",
+                  widget: "string",
+                }
+              - {
+                  label: "Chart Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                }
 
       - label: "Temasek Portfolio at Inception"
         name: "temasek-portfolio-at-inception"
         file: "src/overview/temasek-portfolio-at-inception.md"
-        fields: 
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/temasek-portfolio-at-inception" }
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/overview/temasek-portfolio-at-inception.njk" }
+        fields:
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/overview/temasek-portfolio-at-inception",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "string",
+              default: "layouts/overview/temasek-portfolio-at-inception.njk",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - { label: "List", name: "list", widget: "markdown" }
@@ -218,21 +403,26 @@ collections:
         name: "portfolio-highlights"
         file: "src/overview/portfolio-highlights.md"
         fields:
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/overview/portfolio-highlights" }
-          - { label: "Layout", name: "layout", widget: "string"}
+          - {
+              label: "Permalink",
+              name: "permalink",
+              widget: "string",
+              default: "/overview/portfolio-highlights",
+            }
+          - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-  
+
   - label: "Pathways to Sustainability"
     name: "pathways-to-sustainability"
-    files: 
+    files:
       - label: "Towards a Sustainable Future"
         name: "towards-a-sustainable-future"
         file: "src/pathways-to-sustainability/towards-a-sustainable-future.md"
@@ -243,9 +433,19 @@ collections:
           - label: "Sections"
             name: "sections"
             widget: "list"
-            fields: 
-              - {label: "Section Title", name: "title", widget: 'string', required: false }
-              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Section Sub Title",
+                  name: "sub_title",
+                  widget: "string",
+                  required: false,
+                }
               - label: "Add top separator?"
                 name: "separator"
                 widget: "select"
@@ -253,8 +453,13 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-              - { label: "Writeup", name: "writeup", widget: 'markdown' }
-              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
               - label: "Vertically center align the highlight?"
                 name: "center"
                 widget: "select"
@@ -266,11 +471,11 @@ collections:
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Putting a Price on Carbon"
         name: "putting-a-price-on-carbon"
         file: "src/pathways-to-sustainability/putting-a-price-on-carbon.md"
@@ -278,13 +483,28 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string" }
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
+          - {
+              label: "Media Caption",
+              name: "media_caption",
+              widget: "string",
+              required: false,
+            }
           - label: "Sections"
             name: "sections"
             widget: "list"
-            fields: 
-              - {label: "Section Title", name: "title", widget: 'string', required: false }
-              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Section Sub Title",
+                  name: "sub_title",
+                  widget: "string",
+                  required: false,
+                }
               - label: "Add top separator?"
                 name: "separator"
                 widget: "select"
@@ -292,8 +512,13 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-              - { label: "Writeup", name: "writeup", widget: 'markdown' }
-              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
               - label: "Vertically center align the highlight?"
                 name: "center"
                 widget: "select"
@@ -305,9 +530,9 @@ collections:
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
       - label: "Investing for Impact and Returns"
@@ -318,15 +543,40 @@ collections:
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
-          - { label: "Intro Image", name: "intro_image", widget: "image", required: false }
-          - { label: "Intro Image Mobile", name: "intro_image_mobile", widget: "image", required: false }
-          - { label: "Media Caption", name: "media_caption", widget: "string", required: false }
+          - {
+              label: "Intro Image",
+              name: "intro_image",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "Intro Image Mobile",
+              name: "intro_image_mobile",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "Media Caption",
+              name: "media_caption",
+              widget: "string",
+              required: false,
+            }
           - label: "Sections"
             name: "sections"
             widget: "list"
-            fields: 
-              - {label: "Section Title", name: "title", widget: 'string', required: false }
-              - {label: "Section Sub Title", name: "sub_title", widget: 'string', required: false }
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Section Sub Title",
+                  name: "sub_title",
+                  widget: "string",
+                  required: false,
+                }
               - label: "Add top separator?"
                 name: "separator"
                 widget: "select"
@@ -334,8 +584,13 @@ collections:
                 options:
                   - { label: "Yes", value: "true" }
                   - { label: "No", value: "false" }
-              - { label: "Writeup", name: "writeup", widget: 'markdown' }
-              - { label: "Highlight", name: "highlight", widget: 'markdown', required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
               - label: "Vertically center align the highlight?"
                 name: "center"
                 widget: "select"
@@ -347,9 +602,9 @@ collections:
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
       - label: "Measuring and Tracking Portfolio Emissions"
@@ -360,7 +615,11 @@ collections:
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
-          - { label: "Before Chart Content", name: "before_chart", widget: "markdown" }
+          - {
+              label: "Before Chart Content",
+              name: "before_chart",
+              widget: "markdown",
+            }
           - { label: "Date Text", name: "date_text", widget: "string" }
           - { label: "Chart Title", name: "chart_title", widget: "string" }
           - { label: "Chart", name: "code", widget: "code" }
@@ -370,18 +629,27 @@ collections:
             name: "chart_legend"
             widget: "list"
             fields:
-              - { label: "Chart Icon", name: "chart_icon", widget: "image"}
-              - { label: "Chart Icon Class", name: "chart_icon_class", widget: "string", required: false}
-              - { label: "Legend", name: "legend", widget: "markdown"}
-          - { label: "After Chart Content", name: "after_chart", widget: "markdown" }
+              - { label: "Chart Icon", name: "chart_icon", widget: "image" }
+              - {
+                  label: "Chart Icon Class",
+                  name: "chart_icon_class",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "Legend", name: "legend", widget: "markdown" }
+          - {
+              label: "After Chart Content",
+              name: "after_chart",
+              widget: "markdown",
+            }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Enabling a Sustainable Company"
         name: "enabling-a-sustainable-company"
         file: "src/pathways-to-sustainability/enabling-a-sustainable-company.md"
@@ -390,7 +658,11 @@ collections:
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro", name: "intro_text", widget: "markdown" }
-          - { label: "Before Chart Content", name: "before_chart", widget: "markdown" }
+          - {
+              label: "Before Chart Content",
+              name: "before_chart",
+              widget: "markdown",
+            }
           - { label: "Date Text", name: "date_text", widget: "string" }
           - { label: "Chart Title", name: "chart_title", widget: "string" }
           - { label: "Chart Mobile", name: "chart_mobile", widget: "image" }
@@ -398,19 +670,28 @@ collections:
             name: "chart_legend"
             widget: "list"
             fields:
-              - { label: "Chart Icon", name: "chart_icon", widget: "image"}
-              - { label: "Chart Icon Class", name: "chart_icon_class", widget: "string", required: false}
-              - { label: "Legend", name: "legend", widget: "markdown"}
-          - { label: "After Chart Content", name: "after_chart", widget: "markdown" }
+              - { label: "Chart Icon", name: "chart_icon", widget: "image" }
+              - {
+                  label: "Chart Icon Class",
+                  name: "chart_icon_class",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "Legend", name: "legend", widget: "markdown" }
+          - {
+              label: "After Chart Content",
+              name: "after_chart",
+              widget: "markdown",
+            }
           - { label: "Detailed breakdown", name: "breakdown", widget: "code" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Collaborating for Progress"
         name: "collaborating-for-progress"
         file: "src/pathways-to-sustainability/collaborating-for-progress.md"
@@ -423,11 +704,11 @@ collections:
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Producing Sustainable Animal Feed"
         name: "producing-sustainable-animal-feed"
         file: "src/pathways-to-sustainability/producing-sustainable-animal-feed.md"
@@ -435,21 +716,46 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string" }
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro_text", widget: "markdown", required: false }
+          - {
+              label: "Intro",
+              name: "intro_text",
+              widget: "markdown",
+              required: false,
+            }
           - label: "Content"
             name: "main_content"
             widget: "list"
-            fields: 
-              - { label: "Writeup", name: "writeup", widget: "markdown", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false }
-              - { label: "Image Caption", name: "image_caption", widget: "string", required: false }
+            fields:
+              - {
+                  label: "Writeup",
+                  name: "writeup",
+                  widget: "markdown",
+                  required: false,
+                }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "Image Caption",
+                  name: "image_caption",
+                  widget: "string",
+                  required: false,
+                }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
       - label: "Building Green Ports"
@@ -459,27 +765,229 @@ collections:
           - { label: "Permalink", name: "permalink", widget: "string" }
           - { label: "Layout", name: "layout", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro_text", widget: "markdown", required: false }
+          - {
+              label: "Intro",
+              name: "intro_text",
+              widget: "markdown",
+              required: false,
+            }
           - label: "Content"
             name: "main_content"
             widget: "list"
-            fields: 
-              - { label: "Section title", name: "title", widget: "string", required: false }
-              - { label: "Writeup", name: "writeup", widget: "markdown", required: false }
+            fields:
+              - {
+                  label: "Section title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Writeup",
+                  name: "writeup",
+                  widget: "markdown",
+                  required: false,
+                }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "Mobile Image",
+                  name: "mobile_image",
+                  widget: "image",
+                  required: false,
+                }
+              - {
+                  label: "Image Caption",
+                  name: "image_caption",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+  - label: "Investor"
+    name: "investor"
+    files:
+      - label: "How We Invest"
+        name: "how-we-invest"
+        file: "src/investor/how-we-invest.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - {
+              label: "Before Trends Writeup",
+              name: "before_writeup",
+              widget: "markdown",
+            }
+          - {
+              label: "Desktop Trend Image",
+              name: "desktop_trend",
+              widget: "image",
+            }
+          - label: "Mobile Trend Images"
+            name: "mobile_trend"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
+          - {
+              label: Delivering Sustainable Returns Diagram",
+              name: "sustainable_image",
+              widget: "image",
+            }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "How We Grew"
+        name: "how-we-grew"
+        file: "src/investor/how-we-grew.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Writeup", name: "writeup", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Total Shareholder Return"
+        name: "total-shareholder-return"
+        file: "src/investor/total-shareholder-return.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Writeup", name: "writeup", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Investment Update"
+        name: "investment-update"
+        file: "src/investor/investment-update.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - {
+                  label: "Highlight",
+                  name: "highlight",
+                  widget: "markdown",
+                  required: false,
+                }
+              - label: "Vertically center align the highlight?"
+                name: "center"
+                widget: "select"
+                default: "false"
+                required: false
+                options:
+                  - { label: "Yes", value: "true" }
+                  - { label: "No", value: "false" }
               - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false }
+              - { label: "Image Mobile", name: "image_mobile", widget: "image", required: false }
               - { label: "Image Caption", name: "image_caption", widget: "string", required: false }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "How We Manage Risks"
+        name: "how-we-manage-risks"
+        file: "src/investor/how-we-manage-risks.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Section 1"
+            name: "section_1"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+                  - {
+                      label: "Highlight",
+                      name: "highlight",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - label: "Vertically center align the highlight?"
+                    name: "center"
+                    widget: "select"
+                    default: "false"
+                    required: false
+                    options:
+                      - { label: "Yes", value: "true" }
+                      - { label: "No", value: "false" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
 
   - label: "Media Centre"
     name: "media-centre"
-    files: 
+    files:
       - label: "Videos"
         name: "videos"
         file: "src/media-centre/videos.md"
@@ -495,15 +1003,15 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Thumbnail", name: "thumbnail", widget: "image" }
               - { label: "Short Description", name: "desc", widget: "text" }
-              - { label: "Link", name: "link", widget: "string" } 
+              - { label: "Link", name: "link", widget: "string" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Temasek Review 2021: Bounce Forward"
         name: "temasek-review-2021-bounce-forward"
         file: "src/media-centre/temasek-review-2021-bounce-forward.md"
@@ -516,19 +1024,19 @@ collections:
           - label: "More Video Options"
             name: "more_video"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-              - { label: "Short Description", name: "desc", widget: "text"}
+              - { label: "Short Description", name: "desc", widget: "text" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
       - label: "Paying it Forward: Mentoring for Resilience"
         name: "paying-it-forward-mentoring-for-resilience"
         file: "src/media-centre/paying-it-forward-mentoring-for-resilience.md"
@@ -541,16 +1049,108 @@ collections:
           - label: "More Video Options"
             name: "more_video"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-              - { label: "Short Description", name: "desc", widget: "text"}
+              - { label: "Short Description", name: "desc", widget: "text" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
-            fields: 
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Link", name: "link", widget: "string"}
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
-      
+
+      - label: "Forging Pathways to Decarbonisation"
+        name: "forging-pathways-to-decarbonisation"
+        file: "src/media-centre/forging-pathways-to-decarbonisation.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Video ID", name: "video_id", widget: "string" }
+          - label: "More Video Options"
+            name: "more_video"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "desc", widget: "text" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Temasek Review 2021: Media Conference Recording"
+        name: "temasek-review-2021-media-conference-recording"
+        file: "src/media-centre/temasek-review-2021-media-conference-recording.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Video ID", name: "video_id", widget: "string" }
+          - label: "More Video Options"
+            name: "more_video"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "desc", widget: "text" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "Chart Centre"
+        name: "chart-centre"
+        file: "src/media-centre/chart-centre.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Chart Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Quicklink ID",
+                  name: "quicklink_id",
+                  widget: "string",
+                }
+              - label: "Charts"
+                name: "charts"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Page Link", name: "link", widget: "string" }
+                  - {
+                      label: "Download File",
+                      name: "download_link",
+                      widget: "file",
+                    }
+                  - { label: "File Size", name: "file_size", widget: "string" }
+                  - {
+                      label: "Thumbnail Image",
+                      name: "thumbnail",
+                      widget: "image",
+                    }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }

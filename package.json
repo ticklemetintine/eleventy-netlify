@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "watch:eleventy": "eleventy --serve",
+        "watch:eleventy": "eleventy --serve --port=80",
         "build:eleventy": "eleventy",
         "gulp": "gulp",
         "less": "less-watch-compiler src/less _site/css main.less",

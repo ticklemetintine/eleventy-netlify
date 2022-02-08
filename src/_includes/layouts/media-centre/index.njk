@@ -6,6 +6,7 @@ eleventyNavigation:
   key: "Media Centre"
   parent: "Home"
 ---
+{% include '../includes/socialshare-quick-links.njk' %}
 
 <div class="breadcrumb">
   <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
@@ -39,12 +40,12 @@ eleventyNavigation:
         <div class="contentpage-header">
             <div class="dash-below">
                 <small>Media Centre</small>
-                <h1>{{title}}</h1>
+                <h1>{{title | safe}}</h1>
             </div>
 
             <p class="intro">
                 {% if intro_text %}
-                    {{ intro_text | markdown | safe }}
+                    {{ intro_text | safe }}
                 {% endif %}
             </p>
 
@@ -68,10 +69,10 @@ eleventyNavigation:
                             </a>
                         </div>
                         <div class="related-item-body">
-                            <a class="anchor" href="{{related['link']}}">
+                            <a class="anchor" href="{{related['link'] | url }}">
                                 <span class="icon"><span class="icon-inner"></span></span>
                                 <span class="anchor-text">
-                                    {{related['title'] | url}}
+                                    {{related['title'] | safe}}
                                 </span>
                             </a>
                         </div>

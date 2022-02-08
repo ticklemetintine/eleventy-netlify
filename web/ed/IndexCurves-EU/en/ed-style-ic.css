@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Noto Sans Regular";
+  src: url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.eot"), /* IE9 Compat Modes */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.otf") format("opentype"), /* Open Type Font */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.svg") format("svg"), /* Legacy iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.woff") format("woff"), /* Modern Browsers */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ed-svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.ed-svg-content-responsive {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/** We use "noto-sans" for the font-family because we need to sync the font to the main.css of the site **/
+.ed-container text {
+	/* font-family: 'Noto Sans Regular'; */
+	font-family:"noto-sans", Arial, sans-serif;
+	color: #343434;
+	font-size: 16px;
+	letter-spacing: 0;
+	font-weight:300;
+}
+#temasekLowArea {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.ed-container {
+  width:100%;
+}
+
+.tick text{
+  font-size: 12px;
+}
+
+.y-tick text{
+  font-size: 12px;
+}
+
+.x-tick text{
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+/*  shape-rendering: crispEdges;*/
+  shape-rendering: auto;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+}

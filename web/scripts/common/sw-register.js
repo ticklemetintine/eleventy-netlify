@@ -1,10 +1,10 @@
 /*jslint browser: true, fudge: true, long: true */
 /*global Waypoint, blacksunplc, jQuery, window, console */
 
-(function () {
+(function() {
     "use strict";
 
-    var jsonml = blacksunplc.jsonml;         // import * as jsonml     from "module:blacksunplc/jsonml"
+    var jsonml = blacksunplc.jsonml; // import * as jsonml     from "module:blacksunplc/jsonml"
 
     var CACHED_FILES = 1598;
     var isInstalled = false;
@@ -21,12 +21,12 @@
     var isFirefox = typeof InstallTrigger !== "undefined";
 
     // Safari 3.0+ "[object HTMLElementConstructor]"
-    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window["safari"] || (typeof safari !== "undefined" && safari.pushNotification));
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function(p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window["safari"] || (typeof safari !== "undefined" && safari.pushNotification));
 
     var isMobileSafari = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
 
     // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
     function hideInstallPromotion() {
         if (swOverly) {
@@ -36,16 +36,15 @@
 
     function displayMessageForSafari() {
         var isMessageClosed = localStorage.getItem("messageClosed");
-        var markup = ["div", {class: "add-to-home-screen-message"},
+        var markup = ["div", { class: "add-to-home-screen-message" },
             ["button", "close"],
-            "This website is ready to install on your device.",
-            ["br", {class: "br-small"}],
+            "This website is ready to install on your device.", ["br", { class: "br-small" }],
             "Tap the Share icon and then select Add to Home Screen"
         ];
         if (!isMessageClosed) {
             jsonml.append(document.body, markup);
 
-            $("body").on("click", "button", function () {
+            $("body").on("click", "button", function() {
                 document.querySelector(".add-to-home-screen-message").style.display = "none";
                 localStorage.setItem("messageClosed", true);
             })
@@ -89,8 +88,9 @@
     }
 
     function doRegister() {
-        var path = "/sw.js", scope="/";
-        navigator.serviceWorker.register(path, {scope: scope}).then(waitUntilInstalled);
+        var path = "/web/sw.js",
+            scope = "/";
+        navigator.serviceWorker.register(path, { scope: scope }).then(waitUntilInstalled);
     }
 
     function cacheCheck(registration) {
@@ -147,13 +147,13 @@
         });
 
         if (!navigator.serviceWorker.controller) {
-            if (swOverly) { swOverly.style.display = "flex";}
+            if (swOverly) { swOverly.style.display = "flex"; }
             console.error("This page is not currently controlled by a service worker.");
         }
         doRegister();
 
-        window.addEventListener("load", function () {
-            window.addEventListener("beforeinstallprompt", function (event) {
+        window.addEventListener("load", function() {
+            window.addEventListener("beforeinstallprompt", function(event) {
                 console.log("before install");
                 isBefore = true;
                 var addButton = document.querySelector(".home-screen-button");
@@ -163,10 +163,10 @@
                     addButton.style.display = "block";
                     spinner.style.display = "none";
 
-                    addBtn.addEventListener("click", function () {
+                    addBtn.addEventListener("click", function() {
                         addBtn.style.display = "none";
                         deferredPrompt.prompt();
-                        deferredPrompt.userChoice.then(function (choiceResult) {
+                        deferredPrompt.userChoice.then(function(choiceResult) {
                             checkPWADisplayMode("install");
                             if (choiceResult.outcome === "accepted") {
                                 console.log("User accepted the A2HS prompt");
@@ -184,7 +184,7 @@
         });
     }
 
-    window.addEventListener("appinstalled", function () {
+    window.addEventListener("appinstalled", function() {
         // Hide the app-provided install promotion
         hideInstallPromotion();
         // Clear the deferredPrompt so it can be garbage collected
@@ -195,11 +195,11 @@
     });
 
     function handleNetworkChange(event) {
-       if (navigator.onLine) {
-           document.body.classList.remove("offline");
-       } else {
-           document.body.classList.add("offline");
-       }
+        if (navigator.onLine) {
+            document.body.classList.remove("offline");
+        } else {
+            document.body.classList.add("offline");
+        }
     }
 
     if (!navigator.onLine) {

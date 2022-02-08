@@ -68,10 +68,10 @@ eleventyNavigation:
                             </a>
                         </div>
                         <div class="related-item-body">
-                            <a class="anchor" href="{{related['link']}}">
+                            <a class="anchor" href="{{related['link'] | url}}">
                                 <span class="icon"><span class="icon-inner"></span></span>
                                 <span class="anchor-text">
-                                    {{related['title'] | url}}
+                                    {{related['title'] | safe}}
                                 </span>
                             </a>
                         </div>

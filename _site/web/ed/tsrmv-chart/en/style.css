@@ -1,0 +1,426 @@
+/*
+Temasek Review 2019 - Total Shareholder Return by Market Value
+by Edge Digital. Made with d3.js.
+*/
+
+/** REMINDER: We use "noto-sans" for the font-family because we need to sync the font to the main.css of the site **/
+
+@font-face {
+  font-family: "Noto Sans Regular";
+  src: url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.eot"), /* IE9 Compat Modes */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.otf") format("opentype"), /* Open Type Font */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.svg") format("svg"), /* Legacy iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.woff") format("woff"), /* Modern Browsers */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans Light";
+  src: url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.eot"), /* IE9 Compat Modes */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.otf") format("opentype"), /* Open Type Font */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.svg") format("svg"), /* Legacy iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.woff") format("woff"), /* Modern Browsers */
+        url("https://d3d8warftsxza5.cloudfront.net/2018/Fonts/NotoSans-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    /* font-family: "Noto Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "noto-sans", Arial, sans-serif;
+    color: #3C484D;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 10px;
+}
+svg.ed-svg {
+    width: 100%;
+    height: 100%;
+}
+
+path.slice{
+    stroke-width:2px;
+}
+
+svg.ed-svg rect {
+    stroke-width: 2;
+    z-index: 999;
+    opacity: 1;
+}
+
+svg.ed-svg text.value{
+    font-size: 200%;
+    fill: white;
+}
+
+svg.ed-svg text.label{
+    font-size: 100%;
+}
+
+text.sm[class*=" label-"]{
+  line-height:12px;
+}
+
+svg.ed-svg .axis text {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+svg.ed-svg .axis path{
+    fill: none;
+    stroke: #000;
+}
+
+svg.ed-svg .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+svg.ed-svg .axis .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+svg.ed-svg .axisHorizontal path{
+    fill: none;
+}
+
+svg.ed-svg .axisHorizontal line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+svg.ed-svg .axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+svg.ed-svg rect.trsm {
+    fill: #006ba6;
+    opacity: 1;
+}
+
+svg.ed-svg rect.rac {
+    fill: #12A639;
+}
+
+svg.ed-svg rect.tsr{
+    fill: #FCB528;
+}
+
+svg.ed-svg rect.mcis{
+    fill: #ECA5B7;
+}
+
+svg.ed-svg rect.mcia{
+    fill: #bdd7ee;
+}
+
+svg.ed-svg rect.mciw{
+    fill: #f4b183;
+}
+
+svg.ed-svg .x.axis path {
+    display: none;
+}
+
+.ed-content-wrapper{
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.ed-chart{
+    /* font-family: "Noto Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "noto-sans", Arial, sans-serif;
+    float: left;
+    width: 70%;
+    height: 525px;
+}
+
+.ed-chart .axis-label{
+    font-size: 14px;
+    font-weight: 500;
+    fill: #49176d;
+	/* font-family: "Noto Sans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	font-family: "noto-sans", Arial, sans-serif;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.ed-desc{
+    float: left;
+    width: 30%;
+    height: 525px;
+    overflow-y: auto
+
+}
+
+ul.ed-list{
+    margin: 15px 10px;
+    padding: 0;
+}
+ul.ed-list li{
+    /* font-family: "Noto Sans", Helvetica, Arial, sans-serif; */
+    font-family: "noto-sans", Arial, sans-serif;
+    line-height:17px;
+    font-size: 15px;
+    list-style: none;
+    margin: 5px 10px 5px 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 3px 0px 3px 7px;
+    border: 1px solid transparent;
+    color: #434c50;
+    /* font-weight: 700;	 */
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+ul.ed-list li.trsm {
+    cursor: default !important;
+}
+
+ul.ed-list li.tsr .ed-tooltip{
+	color: #49176d;
+    border-bottom: 1px dotted #49176d;
+    line-height: 20px;
+}
+
+li.tsr .tooltiptext {
+	font-weight: 400;
+    font-size: 12px;
+    line-height:16px;
+    visibility: hidden;
+    width: 87%;
+    background-color: #e6e6e6;
+    color: #748085;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    margin-left: -48%;
+    opacity: 0;
+    -moz-transition: opacity 0.2s ease-in; /* Moz */
+    -webkit-transition: opacity 0.2s ease-in; /* Safari */
+    transition: opacity 0.2s ease-in;
+}
+
+li.tsr .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e6e6e6 transparent transparent transparent;
+}
+
+li.tsr:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ed-period-tooltiptext{
+	/* font-family: "Noto Sans Regular", sans-serif; */
+	font-family: "noto-sans", Arial, sans-serif;
+	position: relative;
+	font-size: 12px;
+	line-height:16px;
+	color: #748085;
+	fill: #748085;
+	text-align: left;
+	border-radius: 6px;
+	opacity: 0;
+    letter-spacing: 0;
+}
+
+ul.ed-list li.mcis,
+ul.ed-list li.mcia,
+ul.ed-list li.mciw{
+    margin-left: 40px;
+}
+
+ul.ed-list li.hide{
+    display: none;
+}
+
+ul.ed-list li:before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+ul.ed-list li.trsm:before,
+ul.ed-list li.active:before {
+    background: #0271A9;
+}
+
+
+ul.ed-list li:not(.trsm):hover {
+    border: 1px solid #BEC9E5;
+    border-radius: 5px;
+    -moz-transition: border 0.2s ease-in; /* Moz */
+    -webkit-transition: border 0.2s ease-in; /* Safari */
+    transition: border 0.2s ease-in
+}
+
+ul.ed-list li.msci:before{
+    font-family: 'Font Awesome 5 Free';
+    left: -20px;
+    top: 0;
+    background: none;
+    width: 0;
+    height: 0;
+    color: #f6dc70;
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+ul.ed-list li.rac:before{
+    background: #12A639;
+}
+
+ul.ed-list li.tsr:before{
+    background: #FAB600;
+}
+
+ul.ed-list li.mcis:before{
+    background: #ECA5B7;
+}
+ul.ed-list li.mcia:before{
+    background: #bdd7ee;
+}
+ul.ed-list li.mciw:before{
+    background: #f4b183;
+}
+
+ul.ed-list li.msci:after{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    margin: 0px 7px 0px 0px;
+    content: "\f107";
+    color: #724591;
+    font-weight: 900;
+    font-size: 20px;
+    line-height:20px;
+}
+
+ul.ed-list li.msci.active:after{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    margin: 0px 7px 0px 0px;
+    content: "\f062"; /* short up arrow */
+    color: #724591;
+    font-weight: 900;
+    font-size: 15px;
+    line-height:17px;
+}
+
+ul.ed-list li.rac.active:before{
+    background: #12A639;
+}
+
+ul.ed-list li.tsr.active:before{
+    background: #FCB528;
+}
+
+ul.ed-list li.mcis.active:before{
+    background: #ECA5B7;
+}
+ul.ed-list li.mcia.active:before{
+    background: #bdd7ee;
+}
+ul.ed-list li.mciw.active:before{
+    background: #f4b183s;
+}
+
+ul.ed-list li div{
+    /* font-family: "Noto Sans Light", Helvetica, Arial, sans-serif; */
+    font-family: "noto-sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    margin: 5px 0;
+    color: #666666;
+    font-weight: 400;
+}
+
+.bar-negative {
+  fill: darkorange;
+}
+
+.toolTip {
+	/* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	font-family: "noto-sans", Arial, sans-serif;
+	position: absolute;
+	display: none;
+	width: auto;
+	height: auto;
+	background: none repeat scroll 0 0 white;
+	border: 0 none;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: -3px 3px 15px #888888;
+	color: black;
+	font: 12px sans-serif;
+	padding: 5px;
+	text-align: center;
+}
+
+@media (max-width: 768px){
+    ul.ed-list{
+        margin: 0;
+    }
+    .ed-chart{
+        height: 400px;
+    }
+    .ed-chart,
+    .ed-desc{
+        width: 100%;
+        float: none;
+    }
+
+    .ed-chart .axis-label{
+      font-size: 12px;
+    }
+
+    .ed-desc{
+        overflow-y: none;
+        height: auto;
+    }
+
+    ul.ed-list li{
+        line-height:25px;
+        margin: 10px 10px 10px 20px;
+        padding: 0;
+    }
+
+    svg.ed-svg .axis text {
+        font: 12px sans-serif;
+	    letter-spacing: 0;
+    }
+
+}
+
+@media (max-width: 425px){
+
+	.ed-chart .axis-label{
+      font-size: 11px;
+    }
+
+}

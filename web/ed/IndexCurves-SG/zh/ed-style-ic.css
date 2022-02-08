@@ -1,0 +1,55 @@
+.ed-svg-container {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.ed-svg-content-responsive {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/** We use "noto-sans" for the font-family because we need to sync the font to the main.css of the site **/
+.ed-container text {
+	/* font-family: 'Noto Sans Regular'; */
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #343434;
+	font-size: 16px;
+	letter-spacing: 0;
+	font-weight:300;
+}
+#temasekLowArea {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.ed-container {
+  width:100%;
+}
+
+.tick text{
+  font-size: 12px;
+}
+
+.y-tick text{
+  font-size: 12px;
+}
+
+.x-tick text{
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+/*  shape-rendering: crispEdges;*/
+  shape-rendering: auto;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+}
