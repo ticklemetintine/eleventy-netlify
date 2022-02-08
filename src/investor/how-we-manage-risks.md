@@ -110,5 +110,5 @@ section_3:
                 </li>
             </ul>
 
-        In addition to scenario-based stress tests, we also monitor general market risk indicators such as the CBOE Volatility Index (VIX).
+        In addition to scenario-based stress tests, we also monitor general market risk indicators such as the <span class="tooltip" title="Chicago Board Options Exchange" data-title="Chicago Board Options Exchange">CBOE</span> Volatility Index (VIX).
 ---
