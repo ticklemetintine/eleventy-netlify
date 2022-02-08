@@ -89,6 +89,7 @@ section_2:
         which includes mark to market effects due to short term increases in
         risk aversion. We do not manage our portfolio to short term mark to
         market changes. "
+  quicklink_id: organisational-risk-management-framework
 section_3:
   title: Illustration of Fundamental Earnings Impact
   content:
@@ -111,8 +112,10 @@ section_3:
             </ul>
 
         In addition to scenario-based stress tests, we also monitor general market risk indicators such as the <span class="tooltip" title="Chicago Board Options Exchange" data-title="Chicago Board Options Exchange">CBOE</span> Volatility Index (VIX).
+  quicklink_id: illustration-of-fundamental-earnings-impact
 section_4:
   title: " VIX Trend (March 2005 to March 2021) "
+  quicklink_id: vix-trend-and-var
 section_5:
   title: Legal &amp; Regulatory
   content:
@@ -153,6 +156,7 @@ section_5:
         against insider trading. [Our annual staff bonus
         plans](https://www.temasekreview.com.sg/institution/instilling-ownership.html)
         include T-Code compliance requirements.
+  quicklink_id: legal-and-regulatory
 section_6:
   title: Business Continuity and Incident Management
   content:
@@ -172,6 +176,7 @@ section_6:
 
 
         We continue to work with our ecosystem partners, including our portfolio companies and various government agencies, to [support the local responses to the COVID-19 outbreak](https://www.temasekreview.com.sg/steward/rising-above-covid-19.html) and to protect and safeguard our people and affected communities, both locally and overseas. Our staff have also stepped forward to volunteer in large numbers to support wider COVID-19 initiatives led by the firm, including assisting with swabbing exercises at foreign worker dormitories in Singapore.
+  quicklink_id: business-continuity-and-incident-management
 discover_more:
   - link: /investor/12-month-returns-simulation.html
     title: 12-month Returns Simulation
