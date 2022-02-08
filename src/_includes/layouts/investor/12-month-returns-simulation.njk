@@ -1,0 +1,27 @@
+---
+layout: "/layouts/investor/index.njk"
+---
+<div class="contentpage-body dash-above">
+    {{ before_charts | markdown | safe }}
+
+    <div class="chart">
+        <div class="date-wrapper">
+            <p class="date">(as at 31 March)</p>
+        </div>
+        <h4 id="simulation-12-month-forward-returns" data-quick-links-item="Simulation of 12-month Forward Portfolio Returns" class="blue">Simulation
+            of 12-month Forward Portfolio Returns</h4>
+
+        <div class="chart-container" id="twelve-month-returns-simulation_simulation-12-month">
+            <iframe id="simulation2" frameborder="0" style="width:100%; box-sizing:border-box; margin:0 auto; padding:0;" scrolling="no" title="Simulation of 12-month Forward Portfolio Returns" ></iframe>
+        </div>
+        <h4 id="volatility-of-returns" class="chart-margin-top blue" data-quick-links-item="Volatility of Returns">Volatility of Returns</h4>
+        <p>A wider simulated range means a more volatile outlook.</p>
+        <div class="tableau-table chart-container" style="margin-top: 30px;" id="twelve-month-returns-simulation_volatility-of-returns">
+            <iframe id="simulation1" frameborder="0" style="width:100%; box-sizing:border-box; margin:0 auto; padding:0;" scrolling="no" title="Volatility of Returns"></iframe>
+        </div>
+    </div>
+    
+    {{ after_charts | markdown | safe }}
+
+
+    </div>

@@ -1,0 +1,102 @@
+---
+layout: "/layouts/investor/index.njk"
+---
+
+<div class="contentpage-body">
+    <h5 id="tgem-equity-rolling"></h5>
+    <div class="chart-container" id="twenty-year-returns_economic-scenario-pathing">
+        <div class="date-wrapper fadeup">
+            <p class="date">{{ date_text }}</p>
+        </div>
+
+        <iframe id="tgem" src="/vslashr/th_tgem/app/tgem.html" frameborder="0"
+            style="width: 100%; box-sizing: border-box; margin: 0px auto; padding: 0px; overflow: hidden;"
+            scrolling="no" title="T-GEM"></iframe>
+        <script src="/vslashr/th_common/assets/js/iframeResizer.min.js"></script>
+        <script
+            type="text/javascript">iFrameResize({ checkOrigin: true, log: false }, "iframe#tgem");</script>
+
+    </div>
+
+
+    <h2 class="dash-above" data-quick-links-item="{{ section_1['title'] | safe }}" id="{{ section_1['quicklink_id'] }}">{{ section_1['title'] | safe }}</h2>
+    {% for item in section_1['content'] %}
+        {{ item['writeup'] | markdown | safe }}
+    {% endfor %}
+
+    <h2 class="dash-above" data-quick-links-item="{{ section_2['title'] | safe }}" id="{{ section_2['quicklink_id'] }}">{{ section_2['title'] | safe }}</h2>
+    {{ section_2['writeup'] | markdown | safe }}
+
+    <div class="chart-container" id="economic-scenario-pathing-chart">
+        <h5 id="economic-scenario-pathing" data-quick-links-item="Economic Scenario Pathing" class="blue">
+            {{ section_2['image_caption'] | safe }}</h5>
+        <img src="{{ section_2['image'] | url }}"
+            class="p-t-15 p-b-0" alt="{{ section_2['image_caption'] | safe }}" />
+    </div>
+    
+    <h2 class="dash-above" data-quick-links-item="{{ section_3['title'] | safe }}" id="{{ section_3['quicklink_id'] }}">{{ section_3['title'] | safe }}</h2>
+    {{ section_3['writeup'] | markdown | safe }}
+
+    <div class="chart top-margin chart-container"
+        id="twenty-year-returns_likelihood-20-year-geometric-returns-portfolio">
+        <div class="date-wrapper">
+            <p class="date">(as at 31 March 2021)</p>
+        </div>
+        <h5 id="likelihood-20-year-geometric-returns-portfolio"
+            data-quick-links-item="Likelihood of Geometric Returns (Compounded Annualised) at the End of 20-year Period, by Portfolio Mix">
+            Likelihood of Geometric Returns (Compounded Annualised) at the End of 20-year Period, by
+            Portfolio Mix</h5>
+        <div id="chart_tgem1"></div>
+    </div>
+    <div class="chart chart-container" id="twenty-year-returns_likelihood-20-year-annual-returns-portfolio">
+        <div class="date-wrapper">
+            <p class="date">(as at 31 March 2021)</p>
+        </div>
+        <h5 id="likelihood-20-year-annual-returns-portfolio"
+            data-quick-links-item="Likelihood of Year-to-year Annual Returns during 20-year Period, by Portfolio Mix">
+            Likelihood of Year-to-year Annual Returns during 20-year Period, by Portfolio Mix</h5>
+        <div id="chart_tgem2"></div>
+    </div>
+
+    <h2 class="dash-above" data-quick-links-item="{{ section_4['title'] | safe }}" id="{{ section_4['quicklink_id'] }}">{{ section_4['title'] | safe }}</h2>
+
+    {{ section_4['writeup_before'] | markdown | safe }}
+
+    <h5>Potential Scenarios for 2021 and Beyond</h5>
+
+    <table class="investor simple fadeup">
+        <thead>
+            <tr>
+                <th>Potential Scenarios</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><strong>Central</strong><br/>(Our most likely scenario)</th>
+                <td>Our baseline expectations of growth that also includes longer term challenges such as climate change.
+                </td>
+            </tr>
+            <tr>
+                <th><strong>Differing Climate Change Pathways</strong><br/>(Less likely scenarios)</th>
+                <td>Our &ldquo;High Ambition&rdquo; scenario assumes greater mitigation efforts to slow the rise in temperatures. The &ldquo;Low Ambition&rdquo; or <span class="nowrap">&ldquo;business as usual&rdquo;</span> scenario with minimal mitigation efforts would result in a disastrously steep rise in temperatures by 2100.</td>
+            </tr>
+            <tr>
+                <th><strong>China Hard Landing</strong><br/>(Less likely scenario)</th>
+                <td>A disorderly and prolonged slowdown in growth may result from slowness to rebalance the economy and address risks in the financial system and corporate debt-related vulnerabilities.</td>
+            </tr>
+            <tr>
+                <th><strong>Severe Escalation in Trade and Tech Tensions</strong><br />(Less likely scenario)</th>
+                <td>Significant trade and investment conflicts among major economies will increase frictions and barriers to global trade, access to key inputs and technology. </td>
+            </tr>
+            <tr>
+                <th><strong>Secular Stagnation</strong><br />(Less likely scenario)</th>
+                <td>Weak growth potential and a lack of policy space will make the global economy more susceptible to prolonged downturns, during which rates and returns are lower, for longer periods.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    {{ section_4['writeup_after'] | markdown | safe }}
+    
+ 
+</div>

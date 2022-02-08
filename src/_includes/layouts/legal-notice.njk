@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+pageType: contentpage
+slug: siteservices 
+eleventyNavigation:
+  key: Home
+---
+{% include './includes/socialshare-quick-links.njk' %}
+
+<div class="breadcrumb">
+  <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemtype="https://schema.org/Thing" itemprop="item" href="{{ '/' | url }}">
+              <span itemprop="name">Home</span>
+          </a>
+          <span class="breadcrumb-seperator">/</span>
+          <meta itemprop="position" content="1" />
+      </li>
+      <li class="is-active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <a itemtype="https://schema.org/Thing" itemprop="item" href="#">
+              <span itemprop="name">{{title}}</span>
+          </a>
+          <meta itemprop="position" content="3" />
+      </li>
+  </ul>
+</div>
+
+<main class="contentpage-main">
+
+    <div class="contentpage-container">
+
+        <div class="contentpage-header">
+            <div class="dash-below">
+                <h1>{{title | safe}}</h1>
+            </div>
+
+        </div>
+        <div class="contentpage-body">
+            {% for section in sections %}
+                {% if loop.index == 1%}
+                <h2 class="no-top-margin" id="{{ section['quicklink_id'] }}" data-quick-links-item="{{ section['title'] | safe }}">{{ section['title'] | safe }}</h2>
+                {% else %}
+                <h2 class="dash-above" id="{{ section['quicklink_id'] }}" data-quick-links-item="{{ section['title'] | safe }}">{{ section['title'] | safe }}</h2>
+                {% endif %}
+
+                {{ section['writeup'] | markdown | safe }}
+            {% endfor %}
+        </div>
+    </div>
+</main>
+

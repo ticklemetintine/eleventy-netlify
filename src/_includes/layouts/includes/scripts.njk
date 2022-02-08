@@ -1,43 +1,50 @@
 <!-- picture tag polyfill for ie -->
-<script src="{{ '/web/scripts/vendors.min.js' | url }}"></script>
-<script src="{{ '/web/scripts/vendors-defer.min.js' | url }}" defer></script>
-<script src="{{ '/web/scripts/cookieconsent-en.js' | url }}" defer></script>
-<script src="{{ '/web/scripts/all.min.js' | url }}" defer></script>
+<script src="{{ '/scripts/vendors.min.js' | url }}"></script>
+<script src="{{ '/scripts/vendors-defer.min.js' | url }}" defer></script>
+<script src="{{ '/scripts/cookieconsent-en.js' | url }}" defer></script>
+<script src="{{ '/scripts/all.min.js' | url }}" defer></script>
 
-<script src="{{ '/web/scripts/gsap-3.6.1.min.js' | url }}" defer></script>
-<script src="{{ '/web/scripts/ScrollToPlugin-3.6.2.min.js' | url }}" defer></script>
-<script src="{{ '/web/scripts/ScrollTrigger-3.6.1.min.js' | url }}" defer></script> 
+<script src="{{ '/scripts/gsap-3.6.1.min.js' | url }}" defer></script>
+<script src="{{ '/scripts/ScrollToPlugin-3.6.2.min.js' | url }}" defer></script>
+<script src="{{ '/scripts/ScrollTrigger-3.6.1.min.js' | url }}" defer></script> 
 
 {% if slug == 'tr-homepage' %}
-    <script src="{{ '/web/scripts/homepage.js' | url }}" defer></script>
-    <script src="{{ '/web/scripts/key-pages.js' | url }}" defer></script>
+    <script src="{{ '/scripts/homepage.js' | url }}" defer></script>
+    <script src="{{ '/scripts/key-pages.js' | url }}" defer></script>
 {% endif %}
 
-{% if slug == 'overview' or slug == 'pathway' or slug == 'media-centre' or slug == 'investor' %}
-    <script src="{{ '/web/scripts/content-page.js' | url }}" defer></script>
-    <script src="{{ '/web/scripts/share-selected-text.js' | url }}" defer></script>
+{% if slug == 'overview' or slug == 'pathway' or slug == 'media-centre' or slug == 'investor' or slug == 'siteservices' %}
+    <script src="{{ '/scripts/content-page.js' | url }}" defer></script>
+    <script src="{{ '/scripts/share-selected-text.js' | url }}" defer></script>
 {% endif %}
 
 {% if slug == 'overview' %}
-    <script src="{{'/web/scripts/charts.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/fusioncharts.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/fusioncharts.charts.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/performance-overview.js' | url }}" defer></script>
+    <script src="{{'/scripts/charts.js' | url }}" defer></script>
+    <script src="{{'/scripts/fusioncharts.js' | url }}" defer></script>
+    <script src="{{'/scripts/fusioncharts.charts.js' | url }}" defer></script>
+    <script src="{{'/scripts/performance-overview.js' | url }}" defer></script>
 {% endif %}
 
 {% if slug == 'pathway' %}
-    <script src="{{'/web/scripts/pages/pathway_towards_net_zero.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/charts.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/fusioncharts.js' | url }}" defer></script>
-    <script src="{{'/web/scripts/fusioncharts.charts.js' | url }}" defer></script>
-    <script src="{{ '/web/scripts/building-a-sustainable-organisation.js' | url }}" defer></script>
+    <script src="{{'/scripts/pages/pathway_towards_net_zero.js' | url }}" defer></script>
+    <script src="{{'/scripts/charts.js' | url }}" defer></script>
+    <script src="{{'/scripts/fusioncharts.js' | url }}" defer></script>
+    <script src="{{'/scripts/fusioncharts.charts.js' | url }}" defer></script>
+    <script src="{{ '/scripts/building-a-sustainable-organisation.js' | url }}" defer></script>
 {% endif %}
 
 {% if slug == 'media-centre' %}
-    <script src="{{ '/web/scripts/jquery.liveFilter.js' | url }}" defer></script>
-    <script src="{{ '/web/scripts/chartcentrepage.js' | url }}" defer></script>
+    <script src="{{ '/scripts/jquery.liveFilter.js' | url }}" defer></script>
+    <script src="{{ '/scripts/chartcentrepage.js' | url }}" defer></script>
 {% endif %}
 
 {% if slug == 'investor' %}
-    <script src="{{ '/web/scripts/total-shareholder.js' | url }}" defer></script>
+    <script src="{{ '/scripts/total-shareholder.js' | url }}" defer></script>
+    <script src="{{ '/ed/fundamental/en/d3.v5.min.js' | url }}" defer></script>
+    <script src="{{ '/scripts/featherlight.js' | url }}" defer></script>
+    <script src="{{ '/scripts/iframeResizer.min.js' | url }}" defer></script>
+    <script src="{{ '/scripts/managing-risk.js' | url }}" defer></script>
+    <script src="{{ '/scripts/mobile-zoom.js' | url }}" defer></script>
+    <script src="{{ '/scripts/t-gem-simulations.js' | url }}" defer></script>
+    <script src="{{ '/scripts/chart_indexcurve.js' | url }}" defer></script>
 {% endif %}

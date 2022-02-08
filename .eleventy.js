@@ -35,6 +35,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("bin");
     eleventyConfig.addPassthroughCopy("config");
     eleventyConfig.addPassthroughCopy("web");
+    eleventyConfig.addPassthroughCopy("ed");
+    eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.addPassthroughCopy("vslashr");
 
     eleventyConfig.addPassthroughCopy(".checkstyle");

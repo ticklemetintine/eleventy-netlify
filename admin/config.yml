@@ -97,6 +97,21 @@ collections:
                       widget: "string",
                       hint: "Please input the video ID if type selected is Popup Video, otherwise put the URL Link",
                     }
+     
+      - label: "Legal Notice"
+        name: "legal-notice"
+        file: "src/static/legal-notice.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
 
   - label: "Overview"
     name: "overview"
@@ -956,8 +971,10 @@ collections:
           - label: "Section 1"
             name: "section_1"
             widget: "object"
+            summary: '{{fields.title}}'
             fields:
               - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
               - label: "Content"
                 name: "content"
                 widget: "list"
@@ -977,6 +994,288 @@ collections:
                     options:
                       - { label: "Yes", value: "true" }
                       - { label: "No", value: "false" }
+          - label: "Section 2"
+            name: "section_2"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+                  - {
+                      label: "Highlight",
+                      name: "highlight",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - label: "Vertically center align the highlight?"
+                    name: "center"
+                    widget: "select"
+                    default: "false"
+                    required: false
+                    options:
+                      - { label: "Yes", value: "true" }
+                      - { label: "No", value: "false" }
+          - label: "Section 3"
+            name: "section_3"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+                  - {
+                      label: "Highlight",
+                      name: "highlight",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - label: "Vertically center align the highlight?"
+                    name: "center"
+                    widget: "select"
+                    default: "false"
+                    required: false
+                    options:
+                      - { label: "Yes", value: "true" }
+                      - { label: "No", value: "false" }
+          - label: "Section 4"
+            name: "section_4"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - { label: "VIX Trend Image", name: "vix_image", widget: "image", required: false }
+              - { label: "VIX Trend Image Large", name: "vix_image_large", widget: "image", required: false }
+          - label: "Section 5"
+            name: "section_5"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+                  - {
+                      label: "Highlight",
+                      name: "highlight",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - label: "Vertically center align the highlight?"
+                    name: "center"
+                    widget: "select"
+                    default: "false"
+                    required: false
+                    options:
+                      - { label: "Yes", value: "true" }
+                      - { label: "No", value: "false" }
+          - label: "Section 6"
+            name: "section_6"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+                  - {
+                      label: "Highlight",
+                      name: "highlight",
+                      widget: "markdown",
+                      required: false,
+                    }
+                  - label: "Vertically center align the highlight?"
+                    name: "center"
+                    widget: "select"
+                    default: "false"
+                    required: false
+                    options:
+                      - { label: "Yes", value: "true" }
+                      - { label: "No", value: "false" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "12-month Returns Simulation"
+        name: "12-month-returns-simulation"
+        file: "src/investor/12-month-returns-simulation.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Content before Charts", name: "before_charts", widget: "markdown" }
+          - { label: "Content after Charts", name: "after_charts", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+      - label: "20-year Returns Outlook"
+        name: "20-year-returns-outlook"
+        file: "src/investor/20-year-returns-outlook.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - label: "Section 1"
+            name: "section_1"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - { label: "Writeup", name: "writeup", widget: "markdown" }
+          - label: "Section 2"
+            name: "section_2"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Caption", name: "image_caption", widget: "string" }
+          - label: "Section 3"
+            name: "section_3"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - { label: "Writeup", name: "writeup", widget: "markdown" }
+          - label: "Section 4"
+            name: "section_4"
+            widget: "object"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Quicklink ID", name: "quicklink_id", widget: "string", required: false }
+              - { label: "Writeup Before Table", name: "writeup_before", widget: "markdown" }
+              - { label: "Writeup After Table", name: "writeup_after", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+  
+  - label: "Institution"
+    name: "institution"
+    files:
+      - label: "A Forward Looking Institution"
+        name: "a-forward-looking-institution"
+        file: "src/institution/a-forward-looking-institution.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+  
+  - label: "Steward"
+    name: "steward"
+    files:
+      - label: "A Trusted Steward"
+        name: "a-trusted-steward"
+        file: "src/steward/a-trusted-steward.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+
+  - label: "Our Stories"
+    name: "our-stories"
+    files:
+      - label: "The Next Normal: How China's Gen Z is Fuelling the Post-Pandemic Economy"
+        name: "chinas-gen-z-next-normal-consumers"
+        file: "src/our-stories/chinas-gen-z-next-normal-consumers.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+              
+  - label: "Our Major Investments"
+    name: "our-major-investments"
+    files:
+      - label: "Financial Services"
+        name: "financial-services"
+        file: "src/our-major-investments/financial-services.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
+          - label: "Discover More"
+            name: "discover_more"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+  
+  - label: " Group Financials"
+    name: "group-financials"
+    files:
+      - label: "Adopting International Accounting Standards"
+        name: "adopting-international-accounting-standards"
+        file: "src/group-financials/adopting-international-accounting-standards.md"
+        fields:
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro_text", widget: "markdown" }
           - label: "Discover More"
             name: "discover_more"
             widget: "list"
