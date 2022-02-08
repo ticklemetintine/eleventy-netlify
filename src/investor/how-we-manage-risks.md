@@ -153,4 +153,23 @@ section_5:
         against insider trading. [Our annual staff bonus
         plans](https://www.temasekreview.com.sg/institution/instilling-ownership.html)
         include T-Code compliance requirements.
+section_6:
+  title: Business Continuity and Incident Management
+  content:
+    - center: "false"
+      writeup: >-
+        We are committed to continuously improve the way we manage business
+        continuity risks.
+
+
+        Our contingency management framework ensures business continuity and manages incidents arising from safety, physical security, cybersecurity, and other threats. The framework takes into account the potential impact of emerging risks and new responses enabled by technological advancements. We monitor security, safety and health situations around the world daily when emergencies occur. This allows us to support our staff wherever they are based.
+
+
+        We conducted response exercises regularly over the year to ensure that our contingency plans remain effective, relevant, and adequate, including responses to failure of critical infrastructure and cyber-related risks. We constantly work on improving our capabilities to ensure that critical business functions can resume functioning in a timely manner during times of emergencies. This is to minimise disruption to our work and operations.
+
+
+        Since the start of the COVID-19 outbreak, our Business Continuity and Technology teams have been supporting Temasek staff all over the world to adapt to long periods of working from home. Efforts were made to ensure staff remain effective working from home and to ensure their physical and psychological well-being through regular touchpoints. We provided care packages which included essential supplies such as masks, health supplements, wellness equipment, and additional IT equipment to all our employees around the world. We communicated regularly with them on developments, particularly with specific guidance on the COVID-19 impact in their locations.
+
+
+        We continue to work with our ecosystem partners, including our portfolio companies and various government agencies, to [support the local responses to the COVID-19 outbreak](https://www.temasekreview.com.sg/steward/rising-above-covid-19.html) and to protect and safeguard our people and affected communities, both locally and overseas. Our staff have also stepped forward to volunteer in large numbers to support wider COVID-19 initiatives led by the firm, including assisting with swabbing exercises at foreign worker dormitories in Singapore.
 ---
