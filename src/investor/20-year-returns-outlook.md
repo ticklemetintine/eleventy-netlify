@@ -39,4 +39,23 @@ section_2:
     reversion to the historical mean. "
   image: /images/uploads/economic_scenario_pathing.svg
   image_caption: " Economic Scenario Pathing (Illustrative)"
+section_3:
+  title: "20-year Expected Returns for Different Portfolio Mix "
+  quicklink_id: twenty-year-expected-returns-portfolio-mix
+  writeup: >-
+    The charts below illustrate the simulated returns for a <span
+    class="tooltip" title="The Global Bond Portfolio uses government bonds
+    within the Bloomberg Barclays Global Aggregate as a proxy." data-title="The
+    Global Bond Portfolio uses government bonds within the Bloomberg Barclays
+    Global Aggregate as a proxy.">Global Bond Portfolio</span>, a <span
+    class="tooltip" title="The Global Equity Portfolio uses the MSCI ACWI as a
+    proxy." data-title="The Global Equity Portfolio uses the MSCI ACWI as a
+    proxy.">Global Equity Portfolio</span> and the Temasek Portfolio. The
+    simulations are based on our Central Scenario.
+
+
+    The Global Bond Portfolio has the lowest upside potential, as compared to the Global Equity and Temasek Portfolios. It also has the least volatility, as shown by its narrower year-to-year annual returns distribution curve. 
+
+
+    The Temasek Portfolio has the highest upside potential (see blue shaded) at the end of the 20-year period, but also the highest volatility.
 ---
