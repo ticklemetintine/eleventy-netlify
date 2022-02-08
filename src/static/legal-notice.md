@@ -10,6 +10,7 @@ sections:
 
 
       By using this website, you signify you have read and accept these terms of use. If you (the "user") do not agree to these terms of use, do not access or use the website. The user is responsible for compliance with all applicable laws and regulations in any jurisdiction.
+    quicklink_id: conditions
   - title: Restrictions on use of materials
     writeup: >-
       In the event of any inconsistency between this Temasek Review 2021 in
@@ -43,6 +44,7 @@ sections:
                           <li><span>interfere or attempt to interfere with the operation or functionality of this website; or obtain or attempt to obtain unauthorized access, via whatever means, to any of Temasek’s systems.</span>
                           </li>
                       </ol>
+    quicklink_id: restrictions
   - title: Third party postings and hyperlinks to third party websites
     writeup: >-
       This website may contain hyperlinks to other websites ("External Sites")
@@ -60,6 +62,7 @@ sections:
 
 
       The user acknowledges that Temasek has no control over and excludes all liability for any material on the Internet which can be accessed by using this website. Neither will Temasek be deemed to have endorsed any such content thereto.
+    quicklink_id: third-party
   - title: Cookies
     writeup: >-
       Temasek takes certain industry-accepted precautions to secure the website
@@ -71,12 +74,14 @@ sections:
 
 
       During the user’s use of the website, Temasek may issue to and request from the user’s computer "cookies" to enable more convenient browsing when the user revisits the website. The user must not alter any cookies sent to his/her computer from the website and must ensure that the user’s computer sends correct and accurate cookies in response to any relevant request from the website.
+    quicklink_id: cookies
   - title: Personal data
     writeup: >-
       Temasek is committed to protecting and respecting your personal data.
 
 
       Please read the [Privacy Statement](https://www.temasekreview.com.sg/privacy.html) to understand our views and practices regarding your personal data and how we will treat it.
+    quicklink_id: personal-data
   - title: No representation or warranties
     writeup: >-
       While every effort has been made to ensure that the information provided
@@ -92,6 +97,7 @@ sections:
 
 
       Temasek and its affiliates, subsidiaries, employees, agents, partners, principals and representatives disclaim all warranties and obligations relating to this website, including but not limited to all implied warranties and obligations of merchantability, fitness for a particular purpose, title and non-infringement.
+    quicklink_id: no-representation
   - title: Limitation of liability
     writeup: The information contained herein in this website shall be accessed and
       used at the user's own risk and to the fullest extent permissible and
@@ -105,6 +111,7 @@ sections:
       affiliates, subsidiaries, employees, agents, partners, principals and
       representatives has been advised of the possibility of such damages or
       losses that were, are being or will be incurred.
+    quicklink_id: limitation
   - title: Modifications
     writeup: Temasek reserves all rights to make any and all changes in this website
       at its sole discretion without prior notice to the user. Temasek reserves
@@ -114,6 +121,7 @@ sections:
       this material. Temasek may make improvements and/or changes in the
       products, services and/or programmes described in these materials at any
       time without notice.
+    quicklink_id: modifications
   - title: Suggestions, comments and feedback
     writeup: Should the user respond to any part of the materials contained herein
       in this website with any communications including feedback data, such as
@@ -125,8 +133,10 @@ sections:
       information to others without limitation, and shall be free to use in any
       way for any purpose whatsoever the content of such communications
       including any ideas, know-how, techniques or concepts disclosed therein.
+    quicklink_id: suggestions
   - title: Applicable law and jurisdiction
     writeup: The law applicable to the terms of use of this website is the law of
       the Republic of Singapore and the courts of the Republic of Singapore will
       have exclusive jurisdiction in case of any dispute.
+    quicklink_id: applicable-law
 ---
