@@ -65,6 +65,7 @@ sections:
         download_link: /images/uploads/temasek-review-2021-chart-portfolio-highlights-single-name.png
         file_size: 61KB PNG
         thumbnail: /images/uploads/single_name_580x420.jpg
-  - title: Test
+  - title: edTest
     quicklink_id: test-section
+    charts: []
 ---
